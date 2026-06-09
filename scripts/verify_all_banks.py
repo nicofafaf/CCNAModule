@@ -38,6 +38,17 @@ def verify_bank(path):
             img = ROOT / q["image"]
             if not img.exists():
                 errors.append(f"Q{qid}: missing image {q['image']}")
+        needs_visual = (
+            not q.get("image")
+            and not q.get("exhibit")
+            and (
+                "refer to the" in q["question"].lower()
+                or "open the pt" in q["question"].lower()
+                or (q["type"] == "ordering" and "match" in q["question"].lower())
+            )
+        )
+        if needs_visual:
+            errors.append(f"Q{qid}: needs image/exhibit but has none")
     return bank_id, len(questions), errors
 
 
