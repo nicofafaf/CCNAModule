@@ -524,12 +524,13 @@ function toggleLang() {
   applyI18n();
 }
 
-document.getElementById('btn-change-exam').addEventListener('click', () => {
-  showScreen('screen-exams');
-});
+function on(id, event, handler) {
+  const el = document.getElementById(id);
+  if (el) el.addEventListener(event, handler);
+}
 
-document.getElementById('btn-back-courses').addEventListener('click', () => showScreen('screen-courses'));
-document.getElementById('btn-back-exams').addEventListener('click', () => showScreen('screen-exams'));
+on('btn-change-exam', 'click', () => showScreen('screen-exams'));
+on('btn-back-courses', 'click', () => showScreen('screen-courses'));
 
 document.querySelectorAll('.mode-card').forEach(card => {
   card.addEventListener('click', () => {
@@ -548,12 +549,12 @@ document.querySelectorAll('[data-back-home]').forEach(btn => {
   });
 });
 
-document.getElementById('btn-check').addEventListener('click', checkAnswer);
-document.getElementById('btn-next').addEventListener('click', nextQuestion);
-document.getElementById('btn-finish').addEventListener('click', finishQuiz);
-document.getElementById('btn-repeat-mistakes').addEventListener('click', () => startQuiz('mistakes'));
-document.getElementById('btn-lang').addEventListener('click', toggleLang);
-document.getElementById('btn-theme').addEventListener('click', toggleTheme);
+on('btn-check', 'click', checkAnswer);
+on('btn-next', 'click', nextQuestion);
+on('btn-finish', 'click', finishQuiz);
+on('btn-repeat-mistakes', 'click', () => startQuiz('mistakes'));
+on('btn-lang', 'click', toggleLang);
+on('btn-theme', 'click', toggleTheme);
 
 initTheme();
 initApp().then(() => applyI18n());
