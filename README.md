@@ -45,6 +45,18 @@ npx serve .
 
 **https://nicofafaf.github.io/CCNAModule/**
 
+### GitHub Pages einmalig aktivieren (wenn 404)
+
+Der Deploy-Workflow läuft, aber GitHub Pages muss **einmal** im Repo freigeschaltet werden:
+
+1. Öffne: **https://github.com/nicofafaf/CCNAModule/settings/pages**
+2. Bei **Build and deployment** → **Source**: **GitHub Actions** wählen
+3. Unter **Actions** → **Deploy GitHub Pages** → letzten Run **Re-run** (oder neuen Push abwarten)
+
+Nach 1–2 Minuten ist die Seite unter der URL oben erreichbar.
+
+GitLab (Alternative): **https://nicofafaf.gitlab.io/ccnamodulenico/**
+
 ## Daten pflegen
 
 ```bash
