@@ -1,0 +1,2164 @@
+[
+  {
+    "id": 1,
+    "module": 11,
+    "type": "single",
+    "question": "What is the prefix length notation for the subnet mask 255.255.255.224?",
+    "options": [
+      "/25",
+      "/26",
+      "/27",
+      "/28"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The binary format for 255.255.255.224 is 11111111.11111111.11111111.11100000. The prefix length is the number of consecutive 1s in the subnet mask. Therefore, the prefix length is /27.",
+    "topic": "Topic 11.1.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Wie lautet die Präfixlängennotation für die Subnetzmaske 255.255.255.224?",
+    "optionsDe": [
+      "/25",
+      "/26",
+      "/27",
+      "/28"
+    ],
+    "mnemonic": "Thema 11.1.3: Antwort = /27"
+  },
+  {
+    "id": 2,
+    "module": 11,
+    "type": "single",
+    "question": "How many valid host addresses are available on an IPv4 subnet that is configured with a /26 mask?",
+    "options": [
+      "254",
+      "190",
+      "192",
+      "62",
+      "64"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "topic": "Topic 11.5.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Wie viele gültige Hostadressen sind in einem IPv4-Subnetz verfügbar, das mit einer /26-Maske konfiguriert ist?",
+    "optionsDe": [
+      "254",
+      "190",
+      "192",
+      "62",
+      "64"
+    ],
+    "mnemonic": "Thema 11.5.2: Antwort = 62"
+  },
+  {
+    "id": 3,
+    "module": 11,
+    "type": "single",
+    "question": "Which subnet mask would be used if 5 host bits are available?",
+    "options": [
+      "255.255.255.0",
+      "255.255.255.128",
+      "255.255.255.224​",
+      "255.255.255.240"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "topic": "Topic 11.5.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welche Subnetzmaske würde verwendet, wenn 5 Hostbits verfügbar wären?",
+    "optionsDe": [
+      "255.255.255.0",
+      "255.255.255.128",
+      "255.255.255.224",
+      "255.255.255.240"
+    ],
+    "mnemonic": "Thema 11.5.2: Antwort = 255.255.255.224"
+  },
+  {
+    "id": 4,
+    "module": 11,
+    "type": "single",
+    "question": "A network administrator subnets the 192.168.10.0/24 network into subnets with /26 masks. How many equal-sized subnets are created?",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "8",
+      "16",
+      "64"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "topic": "Topic 11.5.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Netzwerkadministrator unterteilt das Netzwerk 192.168.10.0/24 in Subnetze mit /26-Masken. Wie viele gleich große Subnetze werden erstellt?",
+    "optionsDe": [
+      "1",
+      "2",
+      "4",
+      "8",
+      "16",
+      "64"
+    ],
+    "mnemonic": "Thema 11.5.2: Antwort = 4"
+  },
+  {
+    "id": 5,
+    "module": 11,
+    "type": "ordering",
+    "question": "Match the subnetwork to a host address that would be included within the subnetwork. (Not all options are used.)",
+    "options": [
+      "192.168.1.48 → 192.168.1.32/27",
+      "192.168.1.68 → 192.168.1.64/27",
+      "192.168.1.121 → 192.168.1.96/27"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "Subnet 192.168.1.32/27 will have a valid host range from 192.168.1.33 &#8211; 192.168.1.62 with the broadcast address as 192.168.1.63\n\nSubnet 192.168.1.64/27 will have a valid host range from 192.168.1.65 &#8211; 192.168.1.94 with the broadcast address as 192.168.1.95\n\nSubnet 192.168.1.96/27 will have a valid host range from 192.168.1.97 &#8211; 192.168.1.126 with the broadcast address as 192.168.1.127",
+    "topic": "Topic 11.5.2",
+    "image": "assets/images/ccna1-mod11-13-q5.png",
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ordnen Sie das Subnetzwerk einer Hostadresse zu, die im Subnetzwerk enthalten wäre. (Es werden nicht alle Optionen verwendet.)",
+    "mnemonic": "/27 Blockgröße 32: .48∈.32-.63 | .68∈.64-.95 | .121∈.96-.127",
+    "optionsDe": [
+      "192.168.1.48 → 192.168.1.32/27",
+      "192.168.1.68 → 192.168.1.64/27",
+      "192.168.1.121 → 192.168.1.96/27"
+    ]
+  },
+  {
+    "id": 6,
+    "module": 11,
+    "type": "single",
+    "question": "An administrator wants to create four subnetworks from the network address 192.168.1.0/24. What is the network address and subnet mask of the second useable subnet?",
+    "options": [
+      "subnetwork 192.168.1.64\n\nsubnet mask 255.255.255.192",
+      "subnetwork 192.168.1.32\n\nsubnet mask 255.255.255.240",
+      "subnetwork 192.168.1.64\n\nsubnet mask 255.255.255.240",
+      "subnetwork 192.168.1.128\n\nsubnet mask 255.255.255.192",
+      "subnetwork 192.168.1.8\n\nsubnet mask 255.255.255.224"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The number of bits that are borrowed would be two, thus giving a total of 4 useable subnets:\n\n192.168.1.0\n\n192.168.1.64\n\n192.168.1.128\n\n192.168.1.192\n\nBecause 2 bits are borrowed, the new subnet mask would be /26 or 255.255.255.192",
+    "topic": "Topic 11.1.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Administrator möchte aus der Netzwerkadresse 192.168.1.0/24 vier Subnetzwerke erstellen. Wie lautet die Netzwerkadresse und Subnetzmaske des zweiten nutzbaren Subnetzes?",
+    "optionsDe": [
+      "Subnetz 192.168.1.64 Subnetzmaske 255.255.255.192",
+      "Subnetz 192.168.1.32 Subnetzmaske 255.255.255.240",
+      "Subnetz 192.168.1.64 Subnetzmaske 255.255.255.240",
+      "Subnetz 192.168.1.128 Subnetzmaske 255.255.255.192",
+      "Subnetz 192.168.1.8 Subnetzmaske 255.255.255.224"
+    ],
+    "mnemonic": "Thema 11.1.3: Antwort = Subnetz 192.168.1.64 Subnetzmaske 255.255.255.192"
+  },
+  {
+    "id": 7,
+    "module": 11,
+    "type": "single",
+    "question": "How many bits must be borrowed from the host portion of an address to accommodate a router with five connected networks?",
+    "options": [
+      "two",
+      "three",
+      "four",
+      "five"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each network that is directly connected to an interface on a router requires its own subnet. The formula 2n, where n is the number of bits borrowed, is used to calculate the available number of subnets when borrowing a specific number of bits.",
+    "topic": "Topic 11.5.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Wie viele Bits müssen vom Host-Teil einer Adresse entlehnt werden, um einen Router mit fünf verbundenen Netzwerken unterzubringen?",
+    "optionsDe": [
+      "zwei",
+      "drei",
+      "vier",
+      "fünf"
+    ],
+    "mnemonic": "Thema 11.5.2: Antwort = drei"
+  },
+  {
+    "id": 8,
+    "module": 11,
+    "type": "single",
+    "question": "How many host addresses are available on the 192.168.10.128/26 network?",
+    "options": [
+      "30",
+      "32",
+      "60",
+      "62",
+      "64"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A /26 prefix gives 6 host bits, which provides a total of 64 addresses, because 2^6 = 64. Subtracting the network and broadcast addresses leaves 62 usable host addresses.",
+    "topic": "Topic 11.5.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Wie viele Hostadressen sind im Netzwerk 192.168.10.128/26 verfügbar?",
+    "optionsDe": [
+      "30",
+      "32",
+      "60",
+      "62",
+      "64"
+    ],
+    "mnemonic": "Thema 11.5.2: Antwort = 62"
+  },
+  {
+    "id": 9,
+    "module": 11,
+    "type": "single",
+    "question": "How many host addresses are available on the network 172.16.128.0 with a subnet mask of 255.255.252.0?",
+    "options": [
+      "510",
+      "512",
+      "1022",
+      "1024",
+      "2046",
+      "2048"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A mask of 255.255.252.0 is equal to a prefix of /22. A /22 prefix provides 22 bits for the network portion and leaves 10 bits for the host portion. The 10 bits in the host portion will provide 1022 usable IP addresses (210 &#8211; 2 = 1022).",
+    "topic": "Topic 11.5.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Wie viele Hostadressen sind im Netzwerk 172.16.128.0 mit der Subnetzmaske 255.255.252.0 verfügbar?",
+    "optionsDe": [
+      "510",
+      "512",
+      "1022",
+      "1024",
+      "2046",
+      "2048"
+    ],
+    "mnemonic": "Thema 11.5.2: Antwort = 1022"
+  },
+  {
+    "id": 10,
+    "module": 11,
+    "type": "ordering",
+    "question": "Match each IPv4 address to the appropriate address category. (Not all options are used.)",
+    "options": [
+      "192.168.100.161/25 → host address",
+      "203.0.113.100/24 → host address",
+      "10.10.10.128/25 → network address",
+      "172.110.12.64/28 → network address",
+      "192.168.1.191/26 → broadcast address",
+      "10.0.0.159/27 → broadcast address"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "explanation": "",
+    "topic": "Topic 11.1.6",
+    "image": "assets/images/ccna1-mod11-13-q10.png",
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ordnen Sie jede IPv4-Adresse der entsprechenden Adresskategorie zu. (Es werden nicht alle Optionen verwendet.)",
+    "mnemonic": "Host=mitten im Bereich | Network=erste Adresse | Broadcast=letzte Adresse",
+    "optionsDe": [
+      "192.168.100.161/25 → Hostadresse",
+      "203.0.113.100/24 → Hostadresse",
+      "10.10.10.128/25 → Netzwerkadresse",
+      "172.110.12.64/28 → Netzwerkadresse",
+      "192.168.1.191/26 → Broadcast-Adresse",
+      "10.0.0.159/27 → Broadcast-Adresse"
+    ]
+  },
+  {
+    "id": 11,
+    "module": 11,
+    "type": "multiple3",
+    "question": "What three blocks of addresses are defined by RFC 1918 for private network use? (Choose three.)",
+    "options": [
+      "10.0.0.0/8",
+      "172.16.0.0/12",
+      "192.168.0.0/16",
+      "100.64.0.0/14",
+      "169.254.0.0/16",
+      "239.0.0.0/8",
+      "10.0.0.0/8",
+      "172.16.0.0/12",
+      "192.168.0.0/16"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "RFC 1918, Address Allocation for Private Internets, defines three blocks of IPv4 address for private networks that should not be routable on the public Internet.",
+    "topic": "Topic 11.3.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welche drei Adressblöcke sind in RFC 1918 für die Verwendung in privaten Netzwerken definiert? (Wählen Sie drei.)",
+    "optionsDe": [
+      "10.0.0.0/8",
+      "172.16.0.0/12",
+      "192.168.0.0/16",
+      "100.64.0.0/14",
+      "169.254.0.0/16",
+      "239.0.0.0/8",
+      "10.0.0.0/8",
+      "172.16.0.0/12",
+      "192.168.0.0/16"
+    ],
+    "mnemonic": "Richtig: 3 Antworten – 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16"
+  },
+  {
+    "id": 12,
+    "module": 11,
+    "type": "single",
+    "question": "Refer to the exhibit. An administrator must send a message to everyone on the router A network. What is the broadcast address for network 172.16.16.0/22?",
+    "options": [
+      "172.16.16.255",
+      "172.16.20.255",
+      "172.16.19.255",
+      "172.16.23.255",
+      "172.16.255.255"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The 172.16.16.0/22 network has 22 bits in the network portion and 10 bits in the host portion. Converting the network address to binary yields a subnet mask of 255.255.252.0. The range of addresses in this network will end with the last address available before 172.16.20.0. Valid host addresses for this network range from 172.16.16.1-172.16.19.254, making 172.16.19.255 the broadcast address.",
+    "topic": "Topic 11.1.6",
+    "image": "assets/images/ccna1-mod11-13-q12-d019f6bea3.png",
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Siehe Ausstellung. Ein Administrator muss eine Nachricht an alle im Router-A-Netzwerk senden. Wie lautet die Broadcast-Adresse für das Netzwerk 172.16.16.0/22?",
+    "optionsDe": [
+      "172.16.16.255",
+      "172.16.20.255",
+      "172.16.19.255",
+      "172.16.23.255",
+      "172.16.255.255"
+    ],
+    "mnemonic": "Thema 11.1.6: Antwort = 172.16.19.255"
+  },
+  {
+    "id": 13,
+    "module": 11,
+    "type": "single",
+    "question": "A site administrator has been told that a particular network at the site must accommodate 126 hosts. Which subnet mask would be used that contains the required number of host bits?",
+    "options": [
+      "255.255.255.0",
+      "255.255.255.128",
+      "255.255.255.224",
+      "255.255.255.240"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The subnet mask of 255.255.255.0 has 8 host bits. The mask of 255.255.255.128 results in 7 host bits. The mask of 255.255.255.224 has 5 host bits. Finally, 255.255.255.240 represents 4 host bits.",
+    "topic": "Topic 11.5.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Einem Site-Administrator wurde mitgeteilt, dass ein bestimmtes Netzwerk am Standort 126 Hosts aufnehmen muss. Welche Subnetzmaske würde verwendet werden, die die erforderliche Anzahl an Hostbits enthält?",
+    "optionsDe": [
+      "255.255.255.0",
+      "255.255.255.128",
+      "255.255.255.224",
+      "255.255.255.240"
+    ],
+    "mnemonic": "Thema 11.5.2: Antwort = 255.255.255.128"
+  },
+  {
+    "id": 14,
+    "module": 11,
+    "type": "single",
+    "question": "Refer to the exhibit. Considering the addresses already used and having to remain within the 10.16.10.0/24 network range, which subnet address could be assigned to the network containing 25 hosts?",
+    "options": [
+      "10.16.10.160/26",
+      "10.16.10.128/28",
+      "10.16.10.64/27",
+      "10.16.10.224/26",
+      "10.16.10.240/27",
+      "10.16.10.240/28"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Addresses 10.16.10.0 through 10.16.10.63 are taken for the leftmost network. Addresses 10.16.10.192 through 10.16.10.207 are used by the center network.The address space from 208-255 assumes a /28 mask, which does not allow enough host bits to accommodate 25 host addresses.The address ranges that are available include 10.16.10.64/26 and10.16.10.128/26. To accommodate 25 hosts, 5 host bits are needed, so a /27 mask is necessary. Four possible /27 subnets could be created from the available addresses between 10.16.10.64 and 10.16.10.191:\n\n10.16.10.64/27\n\n10.16.10.96/27\n\n10.16.10.128/27\n\n10.16.10.160/27",
+    "topic": "Topic 11.5.2",
+    "image": "assets/images/ccna1-mod11-13-q14-096666dd7d.png",
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Siehe Ausstellung. Welche Subnetzadresse könnte angesichts der bereits verwendeten Adressen und der Notwendigkeit, innerhalb des Netzwerkbereichs 10.16.10.0/24 zu bleiben, dem Netzwerk mit 25 Hosts zugewiesen werden?",
+    "optionsDe": [
+      "10.16.10.160/26",
+      "10.16.10.128/28",
+      "10.16.10.64/27",
+      "10.16.10.224/26",
+      "10.16.10.240/27",
+      "10.16.10.240/28"
+    ],
+    "mnemonic": "Thema 11.5.2: Antwort = 10.16.10.64/27"
+  },
+  {
+    "id": 15,
+    "module": 11,
+    "type": "single",
+    "question": "What is the usable number of host IP addresses on a network that has a /26 mask?",
+    "options": [
+      "256",
+      "254",
+      "64",
+      "62",
+      "32",
+      "16"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A /26 mask is the same as 255.255.255.192. The mask leaves 6 host bits. With 6 host bits, 64 IP addresses are possible. One address represents the subnet number and one address represents the broadcast address, which means that 62 addresses can then be used to assign to network devices.",
+    "topic": "Topic 11.1.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Wie viele Host-IP-Adressen können in einem Netzwerk mit /26-Maske verwendet werden?",
+    "optionsDe": [
+      "256",
+      "254",
+      "64",
+      "62",
+      "32",
+      "16"
+    ],
+    "mnemonic": "Thema 11.1.3: Antwort = 62"
+  },
+  {
+    "id": 16,
+    "module": 11,
+    "type": "single",
+    "question": "Which address prefix range is reserved for IPv4 multicast?",
+    "options": [
+      "240.0.0.0 – 254.255.255.255",
+      "224.0.0.0 – 239.255.255.255",
+      "169.254.0.0 – 169.254.255.255",
+      "127.0.0.0 – 127.255.255.255"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Multicast IPv4 addresses use the reserved class D address range of 224.0.0.0 to 239.255.255.255.",
+    "topic": "Topic 11.2.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welcher Adresspräfixbereich ist für IPv4-Multicast reserviert?",
+    "optionsDe": [
+      "240.0.0.0 – 254.255.255.255",
+      "224.0.0.0 – 239.255.255.255",
+      "169.254.0.0 – 169.254.255.255",
+      "127.0.0.0 – 127.255.255.255"
+    ],
+    "mnemonic": "Thema 11.2.3: Antwort = 224.0.0.0 – 239.255.255.255"
+  },
+  {
+    "id": 17,
+    "module": 11,
+    "type": "ordering",
+    "question": "Refer to the exhibit. Match the network with the correct IP address and prefix that will satisfy the usable host addressing requirements for each network.",
+    "options": [
+      "Network A → 192.168.0.128 /25",
+      "Network B → 192.168.0.0 /26",
+      "Network C → 192.168.0.96 /27",
+      "Network D → 192.168.0.80 /30"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Network A needs to use 192.168.0.128 /25, which yields 128 host addresses.\n\nNetwork B needs to use 192.168.0.0 /26, which yields 64 host addresses.\n\nNetwork C needs to use 192.168.0.96 /27, which yields 32 host addresses.\n\nNetwork D needs to use 192.168.0.80/30, which yields 4 host addresses.",
+    "topic": "Topic 11.8.4",
+    "image": "assets/images/ccna1-mod11-13-q17-9a9bdf5b56.png",
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Siehe Ausstellung. Ordnen Sie dem Netzwerk die richtige IP-Adresse und das richtige Präfix zu, die die verwendbaren Hostadressierungsanforderungen für jedes Netzwerk erfüllen.",
+    "optionsDe": [
+      "Netzwerk A → 192.168.0.128 /25",
+      "Netzwerk B → 192.168.0.0 /26",
+      "Netzwerk C → 192.168.0.96 /27",
+      "Netzwerk D → 192.168.0.80 /30"
+    ],
+    "mnemonic": "Alle 4 Zuordnungen korrekt merken!"
+  },
+  {
+    "id": 18,
+    "module": 11,
+    "type": "single",
+    "question": "A high school in New York (school A) is using videoconferencing technology to establish student interactions with another high school (school B) in Russia. The videoconferencing is conducted between two end devices through the Internet. The network administrator of school A configures the end device with the IP address 209.165.201.10. The administrator sends a request for the IP address for the end device in school B and the response is 192.168.25.10. Neither school is using a VPN. The administrator knows immediately that this IP will not work. Why?",
+    "options": [
+      "This is a loopback address.",
+      "This is a link-local address.",
+      "This is a private IP address.",
+      "There is an IP address conflict."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The IP address 192.168.25.10 is an IPv4 private address. This address will not be routed over the Internet, so school A will not be able to reach school B. Because the address is a private one, it can be used freely on an internal network. As long as no two devices on the internal network are assigned the same private IP, there is no IP conflict issue. Devices that are assigned a private IP will need to use NAT in order to communicate over the Internet.",
+    "topic": "Topic 11.3.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Eine High School in New York (Schule A) nutzt Videokonferenztechnologie, um Schülerinteraktionen mit einer anderen High School (Schule B) in RussLANd aufzubauen. Die Videokonferenz wird zwischen zwei Endgeräten über das Internet durchgeführt. Der Netzwerkadministrator der Schule A konfiguriert das Endgerät mit der IP-Adresse 209.165.201.10. Der Administrator sendet eine Anfrage nach der IP-Adresse für das Endgerät in Schule B und die Antwort lautet 192.168.25.10. Keine der Schulen nutzt ein VPN. Der Administrator weiß sofort, dass diese IP nicht funktionieren wird. Warum?",
+    "optionsDe": [
+      "Dies ist eine Loopback-Adresse.",
+      "Dies ist eine Link-Local-Adresse.",
+      "This is a private IP address.",
+      "Es liegt ein IP-Adresskonflikt vor."
+    ],
+    "mnemonic": "Thema 11.3.1: Antwort = This is a private IP address."
+  },
+  {
+    "id": 19,
+    "module": 11,
+    "type": "multiple3",
+    "question": "Which three addresses are valid public addresses? (Choose three.)",
+    "options": [
+      "198.133.219.17",
+      "192.168.1.245",
+      "10.15.250.5",
+      "128.107.12.117",
+      "172.31.1.25",
+      "64.104.78.227"
+    ],
+    "correct": [
+      0,
+      3,
+      5
+    ],
+    "explanation": "The ranges of private IPv4 addresses are as folllows:\n\n10.0.0.0 – 10.255.255.255\n\n172.16.0.0 – 172.31.255.255\n\n192.168.0.0 – 192.168.255.255",
+    "topic": "Topic 11.3.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welche drei Adressen sind gültige öffentliche Adressen? (Wählen Sie drei.)",
+    "optionsDe": [
+      "198.133.219.17",
+      "192.168.1.245",
+      "10.15.250.5",
+      "128.107.12.117",
+      "172.31.1.25",
+      "64.104.78.227"
+    ],
+    "mnemonic": "Richtig: 3 Antworten – 198.133.219.17, 128.107.12.117, 64.104.78.227"
+  },
+  {
+    "id": 20,
+    "module": 11,
+    "type": "single",
+    "question": "A message is sent to all hosts on a remote network. Which type of message is it?",
+    "options": [
+      "limited broadcast",
+      "multicast",
+      "directed broadcast",
+      "unicast"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A directed broadcast is a message sent to all hosts on a specific network. It is useful for sending a broadcast to all hosts on a nonlocal network. A multicast message is a message sent to a selected group of hosts that are part of a subscribing multicast group. A limited broadcast is used for a communication that is limited to the hosts on the local network. A unicast message is a message sent from one host to another.",
+    "topic": "Topic 11.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Eine Nachricht wird an alle Hosts in einem Remote-Netzwerk gesendet. Um welche Art von Nachricht handelt es sich?",
+    "optionsDe": [
+      "begrenzte Ausstrahlung",
+      "Multicast",
+      "gerichtete Sendung",
+      "Unicast"
+    ],
+    "mnemonic": "Thema 11.2.2: Antwort = gerichtete Sendung"
+  },
+  {
+    "id": 21,
+    "module": 11,
+    "type": "multiple",
+    "question": "A company has a network address of 192.168.1.64 with a subnet mask of 255.255.255.192. The company wants to create two subnetworks that would contain 10 hosts and 18 hosts respectively. Which two networks would achieve that? (Choose two.)",
+    "options": [
+      "192.168.1.16/28",
+      "192.168.1.64/27",
+      "192.168.1.128/27",
+      "192.168.1.96/28",
+      "192.168.1.192/28"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Subnet 192.168.1.64 /27 has 5 bits that are allocated for host addresses and therefore will be able to support 32 addresses, but only 30 valid host IP addresses. Subnet 192.168.1.96/28 has 4 bits for host addresses and will be able to support 16 addresses, but only 14 valid host IP addresses.",
+    "topic": "Topic 11.8.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Unternehmen hat die Netzwerkadresse 192.168.1.64 mit der Subnetzmaske 255.255.255.192. Das Unternehmen möchte zwei Subnetzwerke erstellen, die jeweils 10 Hosts und 18 Hosts enthalten würden. Welche beiden Netzwerke würden das erreichen? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "192.168.1.16/28",
+      "192.168.1.64/27",
+      "192.168.1.128/27",
+      "192.168.1.96/28",
+      "192.168.1.192/28"
+    ],
+    "mnemonic": "Richtig: 2 Antworten – 192.168.1.64/27, 192.168.1.96/28"
+  },
+  {
+    "id": 22,
+    "module": 12,
+    "type": "single",
+    "question": "Which address is a valid IPv6 link-local unicast address?",
+    "options": [
+      "FEC8:1::FFFF",
+      "FD80::1:1234",
+      "FE80::1:4545:6578:ABC1",
+      "FE0A::100:7788:998F",
+      "FC90:5678:4251:FFFF"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "IPv6 LLAs are in the fe80::/10 range. The /10 indicates that the first 10 bits are 1111 1110 10xx xxxx. The first hextet has a range of 1111 1110 1000 0000 (fe80) to 1111 1110 1011 1111 (febf).",
+    "topic": "Topic 12.4.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welche Adresse ist eine gültige IPv6-Link-Local-Unicast-Adresse?",
+    "optionsDe": [
+      "FEC8:1::FFFF",
+      "FD80::1:1234",
+      "FE80::1:4545:6578:ABC1",
+      "FE0A::100:7788:998F",
+      "FC90:5678:4251:FFFF"
+    ],
+    "mnemonic": "Thema 12.4.3: Antwort = FE80::1:4545:6578:ABC1"
+  },
+  {
+    "id": 23,
+    "module": 12,
+    "type": "single",
+    "question": "Which of these addresses is the shortest abbreviation for the IP address:\n\n3FFE:1044:0000:0000:00AB:0000:0000:0057?",
+    "options": [
+      "3FFE:1044::AB::57",
+      "3FFE:1044::00AB::0057",
+      "3FFE:1044:0:0:AB::57",
+      "3FFE:1044:0:0:00AB::0057",
+      "3FFE:1044:0000:0000:00AB::57",
+      "3FFE:1044:0000:0000:00AB::0057"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The rules for reducing the notation of IPv6 addresses are:\n\n1. Omit any leading 0s (zeros) in any hextet.\n\n2. Replace any single, contiguous string of one or more 16-bit hextets consisting of all zeros with a double colon (::) .\n\n3. The double colon (::) can only be used once within an address.",
+    "topic": "Topic 12.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welche dieser Adressen ist die kürzeste Abkürzung für die IP-Adresse: 3FFE:1044:0000:0000:00AB:0000:0000:0057?",
+    "optionsDe": [
+      "3FFE:1044::AB::57",
+      "3FFE:1044::00AB::0057",
+      "3FFE:1044:0:0:AB::57",
+      "3FFE:1044:0:0:00AB::0057",
+      "3FFE:1044:0000:0000:00AB::57",
+      "3FFE:1044:0000:0000:00AB::0057"
+    ],
+    "mnemonic": "Thema 12.2.2: Antwort = 3FFE:1044:0:0:AB::57"
+  },
+  {
+    "id": 24,
+    "module": 12,
+    "type": "single",
+    "question": "A network administrator has received the IPv6 prefix 2001:DB8::/48 for subnetting. Assuming the administrator does not subnet into the interface ID portion of the address space, how many subnets can the administrator create from the /48 prefix?",
+    "options": [
+      "16",
+      "256",
+      "4096",
+      "65536"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "With a network prefix of 48, there will be 16 bits available for subnetting because the interface ID starts at bit 64. Sixteen bits will yield 65536 subnets.",
+    "topic": "Topic 12.8.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Netzwerkadministrator hat das IPv6-Präfix 2001:DB8::/48 für die Subnetzbildung erhalten. Unter der Annahme, dass der Administrator kein Subnetz in den Schnittstellen-ID-Teil des Adressraums einfügt, wie viele Subnetze kann der Administrator dann aus dem Präfix /48 erstellen?",
+    "optionsDe": [
+      "16",
+      "256",
+      "4096",
+      "65536"
+    ],
+    "mnemonic": "Thema 12.8.1: Antwort = 65536"
+  },
+  {
+    "id": 25,
+    "module": 12,
+    "type": "single",
+    "question": "Given IPv6 address prefix 2001:db8::/48, what will be the last subnet that is created if the subnet prefix is changed to /52?",
+    "options": [
+      "2001:db8:0:f00::/52",
+      "2001:db8:0:8000::/52",
+      "2001:db8:0:f::/52",
+      "2001:db8:0:f000::/52"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Prefix 2001:db8::/48 has 48 network bits. If we subnet to a /52, we are moving the network boundary four bits to the right and creating 16 subnets. The first subnet is 2001:db8::/52 the last subnet is 2001:db8:0:f000::/52.",
+    "topic": "Topic 12.8.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welches Subnetz wird angesichts des IPv6-Adresspräfixes 2001:db8::/48 als letztes erstellt, wenn das Subnetzpräfix in /52 geändert wird?",
+    "optionsDe": [
+      "2001:db8:0:f00::/52",
+      "2001:db8:0:8000::/52",
+      "2001:db8:0:f::/52",
+      "2001:db8:0:f000::/52"
+    ],
+    "mnemonic": "Thema 12.8.1: Antwort = 2001:db8:0:f000::/52"
+  },
+  {
+    "id": 26,
+    "module": 12,
+    "type": "single",
+    "question": "Consider the following range of addresses:\n2001:0DB8:BC15:00A0:0000::\n2001:0DB8:BC15:00A1:0000::\n...\n2001:0DB8:BC15:00AF:0000::\nThe prefix-length for the range of addresses is ____.",
+    "options": [
+      "/56",
+      "/58",
+      "/60",
+      "/64"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "All the addresses have the part 2001:0DB8:BC15:00A in common. Each number or letter in the address represents 4 bits, so the prefix-length is /60.",
+    "topic": "Topic 12.2.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Betrachten Sie den folgenden Adressbereich: 2001:0DB8:BC15:00A0:0000:: 2001:0DB8:BC15:00A1:0000:: ... 2001:0DB8:BC15:00AF:0000:: Die Präfixlänge für den Adressbereich ist ____.",
+    "mnemonic": "00A0 bis 00AF = 16 Adressen → /60 (4 Hex-Stellen gemeinsam)",
+    "optionsDe": [
+      "/56",
+      "/58",
+      "/60",
+      "/64"
+    ]
+  },
+  {
+    "id": 27,
+    "module": 12,
+    "type": "single",
+    "question": "What type of IPv6 address is FE80::1?",
+    "options": [
+      "loopback",
+      "link-local",
+      "multicast",
+      "global unicast"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Link-local IPv6 addresses start with FE80::/10, which is any address from FE80:: to FEBF::. Link-local addresses are used extensively in IPv6 and allow directly connected devices to communicate with each other on the link they share.",
+    "topic": "Topic 12.3.7",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welche Art von IPv6-Adresse ist FE80::1?",
+    "optionsDe": [
+      "Loopback",
+      "Link-lokal",
+      "Multicast",
+      "globaler Unicast"
+    ],
+    "mnemonic": "Thema 12.3.7: Antwort = Link-lokal"
+  },
+  {
+    "id": 28,
+    "module": 12,
+    "type": "single",
+    "question": "Refer to the exhibit. A company is deploying an IPv6 addressing scheme for its network. The company design document indicates that the subnet portion of the IPv6 addresses is used for the new hierarchical network design, with the site subsection to represent multiple geographical sites of the company, the sub-site section to represent multiple campuses at each site, and the subnet section to indicate each network segment separated by routers. With such a scheme, what is the maximum number of subnets achieved per sub-site?",
+    "options": [
+      "0",
+      "4",
+      "16",
+      "256"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Because only one hexadecimal character is used to represent the subnet, that one character can represent 16 different values 0 through F.",
+    "topic": "Topic 12.8.1",
+    "image": "assets/images/ccna1-mod11-13-q28-9d3fdc0b5a.png",
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Siehe Ausstellung. Ein Unternehmen implementiert ein IPv6-Adressierungsschema für sein Netzwerk. Aus dem Designdokument des Unternehmens geht hervor, dass der Subnetzteil der IPv6-Adressen für das neue hierarchische Netzwerkdesign verwendet wird, wobei der Standortunterabschnitt mehrere geografische Standorte des Unternehmens darstellt, der Unterstandortabschnitt mehrere Standorte an jedem Standort darstellt und der Subnetzabschnitt jedes durch Router getrennte Netzwerksegment angibt. Wie hoch ist mit einem solchen Schema die maximale Anzahl an Subnetzen pro Unterstandort?",
+    "optionsDe": [
+      "0",
+      "4",
+      "16",
+      "256"
+    ],
+    "mnemonic": "Thema 12.8.1: Antwort = 16"
+  },
+  {
+    "id": 29,
+    "module": 12,
+    "type": "single",
+    "question": "What is used in the EUI-64 process to create an IPv6 interface ID on an IPv6 enabled interface?",
+    "options": [
+      "the MAC address of the IPv6 enabled interface",
+      "a randomly generated 64-bit hexadecimal address",
+      "an IPv6 address that is provided by a DHCPv6 server",
+      "an IPv4 address that is configured on the interface"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The EUI-64 process uses the MAC address of an interface to construct an interface ID (IID). Because the MAC address is only 48 bits in length, 16 additional bits (FF:FE) must be added to the MAC address to create the full 64-bit interface ID.",
+    "topic": "Topic 12.5.6",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Was wird im EUI-64-Prozess verwendet, um eine IPv6-Schnittstellen-ID auf einer IPv6-fähigen Schnittstelle zu erstellen?",
+    "optionsDe": [
+      "die MAC-Adresse der IPv6-fähigen Schnittstelle",
+      "eine zufällig generierte 64-Bit-Hexadezimaladresse",
+      "eine IPv6-Adresse, die von einem DHCPv6-Server bereitgestellt wird",
+      "eine IPv4-Adresse, die auf der Schnittstelle konfiguriert ist"
+    ],
+    "mnemonic": "Thema 12.5.6: Antwort = die MAC-Adresse der IPv6-fähigen Schnittstelle"
+  },
+  {
+    "id": 30,
+    "module": 12,
+    "type": "single",
+    "question": "What is the prefix for the host address 2001:DB8:BC15:A:12AB::1/64?",
+    "options": [
+      "2001:DB8:BC15",
+      "2001:DB8:BC15:A",
+      "2001:DB8:BC15:A:1",
+      "2001:DB8:BC15:A:12"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The network portion, or prefix, of an IPv6 address is identified through the prefix length. A /64 prefix length indicates that the first 64 bits of the IPv6 address is the network portion. Hence the prefix is 2001:DB8:BC15:A.",
+    "topic": "Topic 12.8.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Wie lautet das Präfix für die Hostadresse 2001:DB8:BC15:A:12AB::1/64?",
+    "optionsDe": [
+      "2001:DB8:BC15",
+      "2001:DB8:BC15:A",
+      "2001:DB8:BC15:A:1",
+      "2001:DB8:BC15:A:12"
+    ],
+    "mnemonic": "Thema 12.8.1: Antwort = 2001:DB8:BC15:A"
+  },
+  {
+    "id": 31,
+    "module": 12,
+    "type": "single",
+    "question": "An IPv6 enabled device sends a data packet with the destination address of FF02::1. What is the target of this packet?​",
+    "options": [
+      "the one IPv6 device on the link that has been uniquely configured with this address",
+      "all IPv6 enabled devices on the local link​ or network",
+      "only IPv6 DHCP servers​",
+      "only IPv6 configured routers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "This address is one of the assigned IPv6 multicast addresses. Packets addressed to FF02::1 are for all IPv6 enabled devices on the link or network. FF02::2 is for all IPv6 routers that exist on the network.",
+    "topic": "Topic 12.7.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein IPv6-fähiges Gerät sendet ein Datenpaket mit der Zieladresse FF02::1. Was ist das Ziel dieses Pakets?",
+    "optionsDe": [
+      "das einzige IPv6-Gerät auf der Verbindung, das eindeutig mit dieser Adresse konfiguriert wurde",
+      "alle IPv6-fähigen Geräte auf der lokalen Verbindung oder im Netzwerk",
+      "nur IPv6-DHCP-Server",
+      "Nur IPv6-konfigurierte Router"
+    ],
+    "mnemonic": "Thema 12.7.2: Antwort = alle IPv6-fähigen Geräte auf der lokalen Verbindung oder im Netzwerk"
+  },
+  {
+    "id": 32,
+    "module": 12,
+    "type": "ordering",
+    "question": "Match the IPv6 address with the IPv6 address type. (Not all options are used.)",
+    "options": [
+      "::1 → loopback",
+      "FF02::1 → all node multicast",
+      "FF02::1:FFAE:F85F → solicited node multicast",
+      "2001:DB8::BAF:3F57:FE94 → global unicast"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "FF02::1:FFAE:F85F is a solicited node multicast address.\n\n2001:DB8::BAF:3F57:FE94 is a global unicast address.\n\nFF02::1 is the all node multicast address. Packets sent to this address will be received by all IPv6 hosts on the local link.\n\n::1 is the IPv6 loopback address.\n\nThere are no examples of link local or unique local addresses provided.",
+    "topic": "Topic 12.3.3",
+    "image": "assets/images/ccna1-mod11-13-q32-08247866b8.jpg",
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ordnen Sie die IPv6-Adresse dem IPv6-Adresstyp zu. (Es werden nicht alle Optionen verwendet.)",
+    "optionsDe": [
+      "::1 → Loopback",
+      "FF02::1 → Alle Knoten-Multicast",
+      "FF02::1:FFAE:F85F → angeforderter Knoten-Multicast",
+      "2001:DB8::BAF:3F57:FE94 → globaler Unicast"
+    ],
+    "mnemonic": "Alle 4 Zuordnungen korrekt merken!"
+  },
+  {
+    "id": 33,
+    "module": 12,
+    "type": "single",
+    "question": "Which IPv6 prefix is reserved for communication between devices on the same link?",
+    "options": [
+      "FC00::/7",
+      "2001::/32",
+      "FE80::/10",
+      "FDFF::/7"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "IPv6 link-local unicast addresses are in the FE80::/10 prefix range and are not routable. They are used only for communications between devices on the same link.",
+    "topic": "Topic 12.3.7",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welches IPv6-Präfix ist für die Kommunikation zwischen Geräten auf derselben Verbindung reserviert?",
+    "optionsDe": [
+      "FC00::/7",
+      "2001::/32",
+      "FE80::/10",
+      "FDFF::/7"
+    ],
+    "mnemonic": "Thema 12.3.7: Antwort = FE80::/10"
+  },
+  {
+    "id": 34,
+    "module": 12,
+    "type": "single",
+    "question": "Which type of IPv6 address refers to any unicast address that is assigned to multiple hosts?",
+    "options": [
+      "unique local",
+      "global unicast",
+      "link-local",
+      "anycast"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The IPv6 specifications include anycast addresses. An anycast address is any unicast IPv6 address that is assigned to multiple devices.",
+    "topic": "Topic 12.3.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welche Art von IPv6-Adresse bezieht sich auf eine Unicast-Adresse, die mehreren Hosts zugewiesen ist?",
+    "optionsDe": [
+      "einzigartiges Lokal",
+      "globaler Unicast",
+      "Link-lokal",
+      "Anycast"
+    ],
+    "mnemonic": "Thema 12.3.1: Antwort = Anycast"
+  },
+  {
+    "id": 35,
+    "module": 12,
+    "type": "multiple",
+    "question": "What are two types of IPv6 unicast addresses? (Choose two.)",
+    "options": [
+      "multicast",
+      "loopback",
+      "link-local",
+      "anycast",
+      "broadcast"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Multicast, anycast, and unicast are types of IPv6 addresses. There is no broadcast address in IPv6. Loopback and link-local are specific types of unicast addresses.",
+    "topic": "Topic 12.3.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welche zwei Arten von IPv6-Unicast-Adressen gibt es? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Multicast",
+      "Loopback",
+      "Link-lokal",
+      "Anycast",
+      "übertragen"
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Loopback, Link-lokal"
+  },
+  {
+    "id": 36,
+    "module": 12,
+    "type": "single",
+    "question": "Which service provides dynamic global IPv6 addressing to end devices without using a server that keeps a record of available IPv6 addresses?",
+    "options": [
+      "stateful DHCPv6",
+      "SLAAC",
+      "static IPv6 addressing",
+      "stateless DHCPv6"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Using stateless address autoconfiguration (SLAAC), a PC can solicit a router and receive the prefix length of the network. From this information the PC can then create its own IPv6 global unicast address.",
+    "topic": "Topic 12.5.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welcher Dienst bietet eine dynamische globale IPv6-Adressierung für Endgeräte, ohne einen Server zu verwenden, der die verfügbaren IPv6-Adressen aufzeichnet?",
+    "optionsDe": [
+      "Stateful DHCPv6",
+      "SLAAC",
+      "statische IPv6-Adressierung",
+      "zustanDSLoses DHCPv6"
+    ],
+    "mnemonic": "Thema 12.5.2: Antwort = SLAAC"
+  },
+  {
+    "id": 37,
+    "module": 12,
+    "type": "single",
+    "question": "Which protocol supports Stateless Address Autoconfiguration (SLAAC) for dynamic assignment of IPv6 addresses to a host?",
+    "options": [
+      "ARPv6",
+      "DHCPv6",
+      "ICMPv6",
+      "UDP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SLAAC uses ICMPv6 messages when dynamically assigning an IPv6 address to a host. DHCPv6 is an alternate method of assigning an IPv6 addresses to a host. ARPv6 does not exist. Neighbor Discovery Protocol (NDP) provides the functionality of ARP for IPv6 networks. UDP is the transport layer protocol used by DHCPv6.",
+    "topic": "Topic 12.5.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welches Protokoll unterstützt Stateless Address Autoconfiguration (SLAAC) für die dynamische Zuweisung von IPv6-Adressen an einen Host?",
+    "optionsDe": [
+      "ARPv6",
+      "DHCPv6",
+      "ICMPv6",
+      "UDP"
+    ],
+    "mnemonic": "Thema 12.5.1: Antwort = ICMPv6"
+  },
+  {
+    "id": 38,
+    "module": 12,
+    "type": "ordering",
+    "question": "Three methods allow IPv6 and IPv4 to co-exist. Match each method with its description. (Not all options are used.)",
+    "options": [
+      "The IPv4 packets and IPv6 packets coexist in the same network. → dual-stack",
+      "The IPv6 packet is transported inside an IPv4 packet. → tunneling",
+      "IPv6 packets are converted into IPv4 packets, and vice versa. → translation"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "The term for the method that allows for the coexistence of the two types of packets on a single network is dual-stack. Tunneling allows for the IPv6 packet to be transported inside IPv4 packets. An IP packet can also be converted from version 6 to version 4 and vice versa. DHCP is a protocol that is used for allocating network parameters to hosts on an IP network",
+    "topic": "Topic 12.1.2",
+    "image": "assets/images/ccna1-mod11-13-q38-a9c35e3f89.png",
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Drei Methoden ermöglichen die Koexistenz von IPv6 und IPv4. Ordnen Sie jeder Methode ihre Beschreibung zu. (Es werden nicht alle Optionen verwendet.)",
+    "optionsDe": [
+      "Die IPv4-Pakete und IPv6-Pakete existieren nebeneinander im selben Netzwerk. → Dual-Stack",
+      "Das IPv6-Paket wird innerhalb eines IPv4-Pakets transportiert. → Tunnelbau",
+      "IPv6-Pakete werden in IPv4-Pakete umgeWANdelt und umgekehrt. → Übersetzung"
+    ],
+    "mnemonic": "Alle 3 Zuordnungen korrekt merken!"
+  },
+  {
+    "id": 39,
+    "module": 13,
+    "type": "single",
+    "question": "A technician uses the ping 127.0.0.1 command. What is the technician testing?",
+    "options": [
+      "the TCP/IP stack on a network host",
+      "connectivity between two adjacent Cisco devices",
+      "connectivity between a PC and the default gateway",
+      "connectivity between two PCs on the same network",
+      "physical connectivity of a particular PC and the network"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 13.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Techniker verwendet den Befehl ping 127.0.0.1. Was testet der Techniker?",
+    "optionsDe": [
+      "den TCP/IP-Stack auf einem Netzwerkhost",
+      "Konnektivität zwischen zwei benachbarten Cisco-Geräten",
+      "Konnektivität zwischen einem PC und dem Standard-Gateway",
+      "Konnektivität zwischen zwei PCs im selben Netzwerk",
+      "physische Konnektivität eines bestimmten PCs und des Netzwerks"
+    ],
+    "mnemonic": "Thema 13.2.2: Antwort = den TCP/IP-Stack auf einem Netzwerkhost"
+  },
+  {
+    "id": 40,
+    "module": 13,
+    "type": "single",
+    "question": "Refer to the exhibit. An administrator is trying to troubleshoot connectivity between PC1 and PC2 and uses the tracert command from PC1 to do it. Based on the displayed output, where should the administrator begin troubleshooting?",
+    "options": [
+      "PC2",
+      "R1",
+      "SW2",
+      "R2",
+      "SW1"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tracert is used to trace the path a packet takes. The only successful response was from the first device along the path on the same LAN as the sending host. The first device is the default gateway on router R1. The administrator should therefore start troubleshooting at R1.",
+    "topic": "Topic 13.2.5",
+    "image": "assets/images/ccna1-mod11-13-q40-a5cddf36ad.png",
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Siehe Ausstellung. Ein Administrator versucht, Verbindungsprobleme zwischen PC1 und PC2 zu beheben und verwendet dazu den Befehl „tracert“ von PC1. Wo sollte der Administrator basierend auf der angezeigten Ausgabe mit der Fehlerbehebung beginnen?",
+    "optionsDe": [
+      "PC2",
+      "R1",
+      "SW2",
+      "R2",
+      "SW1"
+    ],
+    "mnemonic": "Thema 13.2.5: Antwort = R1"
+  },
+  {
+    "id": 41,
+    "module": 13,
+    "type": "single",
+    "question": "Which protocol is used by the traceroute command to send and receive echo-requests and echo-replies?",
+    "options": [
+      "SNMP",
+      "ICMP",
+      "Telnet",
+      "TCP"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Traceroute uses the ICMP (Internet Control Message Protocol) to send and receive echo-request and echo-reply messages.",
+    "topic": "Topic 13.2.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welches Protokoll wird vom Traceroute-Befehl zum Senden und Empfangen von Echo-Anfragen und Echo-Antworten verwendet?",
+    "optionsDe": [
+      "SNMP",
+      "ICMP",
+      "Telnet",
+      "TCP"
+    ],
+    "mnemonic": "Thema 13.2.1: Antwort = ICMP"
+  },
+  {
+    "id": 42,
+    "module": 13,
+    "type": "single",
+    "question": "Which ICMPv6 message is sent when the IPv6 hop limit field of a packet is decremented to zero and the packet cannot be forwarded?",
+    "options": [
+      "network unreachable",
+      "time exceeded",
+      "protocol unreachable",
+      "port unreachable"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "ICMPv6 uses the hop limit field in the IPv6 packet header to determine if the packet has expired. If the hop limit field has reached zero, a router will send a time exceeded message back towards the source indicating that the router cannot forward the packet.",
+    "topic": "Topic 13.2.5",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welche ICMPv6-Nachricht wird gesendet, wenn das IPv6-Hop-Limit-Feld eines Pakets auf Null verringert wird und das Paket nicht weitergeleitet werden kann?",
+    "optionsDe": [
+      "Netzwerk nicht erreichbar",
+      "Zeit überschritten",
+      "Protokoll nicht erreichbar",
+      "Port nicht erreichbar"
+    ],
+    "mnemonic": "Thema 13.2.5: Antwort = Zeit überschritten"
+  },
+  {
+    "id": 43,
+    "module": 13,
+    "type": "single",
+    "question": "A user executes a traceroute over IPv6. At what point would a router in the path to the destination device drop the packet?",
+    "options": [
+      "when the value of the Hop Limit field reaches 255",
+      "when the value of the Hop Limit field reaches zero",
+      "when the router receives an ICMP time exceeded message",
+      "when the target host responds with an ICMP echo reply message"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "When a traceroute is performed, the value in the Hop Limit field of an IPv6 packet determines how many router hops the packet can travel. Once the Hop Limit field reaches a value of zero, it can no longer be forwarded and the receiving router will drop the packet.",
+    "topic": "Topic 13.2.5",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Benutzer führt eine Traceroute über IPv6 aus. An welcher Stelle würde ein Router auf dem Weg zum Zielgerät das Paket verwerfen?",
+    "optionsDe": [
+      "wenn der Wert des Hop-Limit-Felds 255 erreicht",
+      "wenn der Wert des Felds „Hop Limit“ Null erreicht",
+      "wenn der Router eine ICMP-Zeitüberschreitungsmeldung empfängt",
+      "wenn der Zielhost mit einer ICMP-Echo-Antwortnachricht antwortet"
+    ],
+    "mnemonic": "Thema 13.2.5: Antwort = wenn der Wert des Felds „Hop Limit“ Null erreicht"
+  },
+  {
+    "id": 44,
+    "module": 13,
+    "type": "single",
+    "question": "What is the purpose of ICMP messages?",
+    "options": [
+      "to inform routers about network topology changes",
+      "to ensure the delivery of an IP packet",
+      "to provide feedback of IP packet transmissions",
+      "to monitor the process of a domain name to IP address resolution"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The purpose of ICMP messages is to provide feedback about issues that are related to the processing of IP packets.",
+    "topic": "Topic 13.1.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Was ist der Zweck von ICMP-Nachrichten?",
+    "optionsDe": [
+      "um Router über Änderungen der Netzwerktopologie zu informieren",
+      "um die Zustellung eines IP-Pakets sicherzustellen",
+      "um Feedback zu IP-Paketübertragungen bereitzustellen",
+      "um den Prozess der Auflösung eines Domänennamens in eine IP-Adresse zu überwachen"
+    ],
+    "mnemonic": "Thema 13.1.1: Antwort = um Feedback zu IP-Paketübertragungen bereitzustellen"
+  },
+  {
+    "id": 45,
+    "module": 13,
+    "type": "single",
+    "question": "What source IP address does a router use by default when the traceroute command is issued?",
+    "options": [
+      "the highest configured IP address on the router",
+      "a loopback IP address",
+      "the IP address of the outbound interface",
+      "the lowest configured IP address on the router"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When sending an echo request message, a router will use the IP address of the exit interface as the source IP address. This default behavior can be changed by using an extended ping and specifying a specific source IP address.",
+    "topic": "Topic 13.2.5",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welche Quell-IP-Adresse verwendet ein Router standardmäßig, wenn der Traceroute-Befehl ausgegeben wird?",
+    "optionsDe": [
+      "die höchste konfigurierte IP-Adresse auf dem Router",
+      "eine Loopback-IP-Adresse",
+      "die IP-Adresse der ausgehenden Schnittstelle",
+      "die niedrigste konfigurierte IP-Adresse auf dem Router"
+    ],
+    "mnemonic": "Thema 13.2.5: Antwort = die IP-Adresse der ausgehenden Schnittstelle"
+  },
+  {
+    "id": 46,
+    "module": 11,
+    "type": "ordering",
+    "question": "Match each description with an appropriate IP address. (Not all options are used.)",
+    "options": [
+      "a link-local address → 169.254.1.5",
+      "a TEST-NET address → 192.0.2.123",
+      "an experimental address → 240.2.6.255",
+      "a private address → 172.19.20.5",
+      "a loopback address → 127.0.0.1"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "Link-Local addresses are assigned automatically by the OS environment and are located in the block 169.254.0.0/16. The private addresses ranges are 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16. TEST-NET addresses belong to the range 192.0.2.0/24. The addresses in the block 240.0.0.0 to 255.255.255.254 are reserved as experimental addresses. Loopback addresses belong to the block 127.0.0.0/8.",
+    "topic": "Topic 11.3.1",
+    "image": "assets/images/ccna1-mod11-13-q46-a099f091d8.jpg",
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ordnen Sie jeder Beschreibung eine entsprechende IP-Adresse zu. (Es werden nicht alle Optionen verwendet.)",
+    "optionsDe": [
+      "eine Link-Local-Adresse → 169.254.1.5",
+      "eine TEST-NET-Adresse → 192.0.2.123",
+      "eine experimentelle Adresse → 240.2.6.255",
+      "eine Privatadresse → 172.19.20.5",
+      "eine Loopback-Adresse → 127.0.0.1"
+    ],
+    "mnemonic": "Alle 5 Zuordnungen korrekt merken!"
+  },
+  {
+    "id": 47,
+    "module": 13,
+    "type": "single",
+    "question": "A user issues a ping 192.135.250.103 command and receives a response that includes a code of 1. What does this code represent?",
+    "options": [
+      "host unreachable",
+      "protocol unreachable",
+      "port unreachable",
+      "network unreachable",
+      "Code 0: Network unreachable (the router lacks a valid path to the destination network).",
+      "Code 1: Host unreachable. This indicates that the packet successfully reached the local gateway or edge router responsible for the destination network segment, but the specific target host failed to respond (e.g., the device is powered off, disconnected, or its MAC address cannot be resolved via ARP).",
+      "Code 2: Protocol unreachable.",
+      "Code 3: Port unreachable."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 13.1.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Benutzer gibt einen Ping-Befehl 192.135.250.103 aus und erhält eine Antwort mit dem Code 1. Was stellt dieser Code dar?",
+    "optionsDe": [
+      "Host nicht erreichbar",
+      "Protokoll nicht erreichbar",
+      "Port nicht erreichbar",
+      "Netzwerk nicht erreichbar",
+      "Code 0: Netzwerk nicht erreichbar (dem Router fehlt ein gültiger Pfad zum Zielnetzwerk).",
+      "Code 1: Host nicht erreichbar. Dies weist darauf hin, dass das Paket erfolgreich das lokale Gateway oder den Edge-Router erreicht hat, der für das Zielnetzwerksegment verantwortlich ist, der spezifische Zielhost jedoch nicht geantwortet hat (z. B. ist das Gerät ausgeschaltet, nicht verbunden oder seine MAC-Adresse kann nicht über ARP aufgelöst werden).",
+      "Code 2: Protokoll nicht erreichbar.",
+      "Code 3: Port nicht erreichbar."
+    ],
+    "mnemonic": "Thema 13.1.3: Antwort = Host nicht erreichbar"
+  },
+  {
+    "id": 48,
+    "module": 11,
+    "type": "single",
+    "question": "Which subnet would include the address 192.168.1.96 as a usable host address?",
+    "options": [
+      "192.168.1.64/26",
+      "192.168.1.32/27",
+      "192.168.1.32/28",
+      "192.168.1.64/29"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "For the subnet of 192.168.1.64/26, there are 6 bits for host addresses, yielding 64 possible addresses. However, the first and last subnets are the network and broadcast addresses for this subnet. Therefore, the range of host addresses for this subnet is 192.168.1.65 to 192.168.1.126. The other subnets do not contain the address 192.168.1.96 as a valid host address.",
+    "topic": "Topic 11.5.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welches Subnetz würde die Adresse 192.168.1.96 als nutzbare Hostadresse enthalten?",
+    "optionsDe": [
+      "192.168.1.64/26",
+      "192.168.1.32/27",
+      "192.168.1.32/28",
+      "192.168.1.64/29"
+    ],
+    "mnemonic": "Thema 11.5.1: Antwort = 192.168.1.64/26"
+  },
+  {
+    "id": 49,
+    "module": 13,
+    "type": "single",
+    "question": "Open the PT Activity. Perform the tasks in the activity instructions and then answer the question.",
+    "options": [
+      "2001:DB8:1:1::1",
+      "2001:DB8:1:1::A",
+      "2001:DB8:1:2::2",
+      "2001:DB8:1:2::1",
+      "2001:DB8:1:3::1",
+      "2001:DB8:1:3::2",
+      "2001:DB8:1:4::1"
+    ],
+    "correct": [
+      0,
+      3,
+      5
+    ],
+    "explanation": "Using the ipv6config command on PC2 displays the IPv6 address of PC2, which is 2001:DB8:1:4::A. The IPV6 link-local address, FE80::260:70FF:FE34:6930, is not used in route tracing. Using the tracert 2001:DB8:1:4::A command on PC1 displays four addresses: 2001:DB8:1:1::1, 2001:DB8:1:2::1 , 2001:DB8:1:3::2, and 2001:DB8:1:4::A.",
+    "topic": "Topic 13.2.6",
+    "image": "assets/images/ccna1-mod11-13-q49-2159356ae0.jpg",
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Öffnen Sie die PT-Aktivität. Führen Sie die Aufgaben in der Aktivitätsanweisung aus und beantworten Sie anschließend die Frage.",
+    "optionsDe": [
+      "2001:DB8:1:1::1",
+      "2001:DB8:1:1::A",
+      "2001:DB8:1:2::2",
+      "2001:DB8:1:2::1",
+      "2001:DB8:1:3::1",
+      "2001:DB8:1:3::2",
+      "2001:DB8:1:4::1"
+    ],
+    "mnemonic": "Thema 13.2.6: Antwort = 2001:DB8:1:1::1"
+  },
+  {
+    "id": 50,
+    "module": 11,
+    "type": "single",
+    "question": "A host is transmitting a broadcast. Which host or hosts will receive it?",
+    "options": [
+      "all hosts in the same subnet",
+      "a specially defined group of hosts",
+      "the closest neighbor on the same network",
+      "all hosts on the Internet"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A broadcast is delivered to every host that has an IP address within the same network.",
+    "topic": "Topic 11.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Host sendet eine Sendung. Welcher Host oder welche Hosts werden es erhalten?",
+    "optionsDe": [
+      "alle Hosts im selben Subnetz",
+      "eine speziell definierte Gruppe von Hosts",
+      "der nächste Nachbar im selben Netzwerk",
+      "alle Hoster im Internet"
+    ],
+    "mnemonic": "Thema 11.2.2: Antwort = alle Hosts im selben Subnetz"
+  },
+  {
+    "id": 51,
+    "module": 11,
+    "type": "single",
+    "question": "A host is transmitting a unicast. Which host or hosts will receive it?",
+    "options": [
+      "one specific host",
+      "a specially defined group of hosts",
+      "all hosts on the Internet",
+      "the closest neighbor on the same network"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 11.2.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Host sendet einen Unicast. Welcher Host oder welche Hosts werden es erhalten?",
+    "optionsDe": [
+      "ein bestimmter Host",
+      "eine speziell definierte Gruppe von Hosts",
+      "alle Hoster im Internet",
+      "der nächste Nachbar im selben Netzwerk"
+    ],
+    "mnemonic": "Thema 11.2.1: Antwort = ein bestimmter Host"
+  },
+  {
+    "id": 52,
+    "module": 13,
+    "type": "single",
+    "question": "A user issues a ping 2001:db8:FACE:39::10 command and receives a response that includes a code of 3. What does this code represent?",
+    "options": [
+      "address unreachable",
+      "network unreachable",
+      "host unreachable",
+      "protocol unreachable",
+      "Code 0: No route to destination (the router lacks a path to that network).",
+      "Code 1: Communication with destination administratively prohibited (e.g., blocked by a firewall rule or ACL).",
+      "Code 2: Beyond scope of the source address.",
+      "Code 3: Address unreachable. This implies that the packet successfully reached the local gateway or edge router serving the destination segment, but that router failed to map or resolve the Layer 2 physical address (Neighbor Discovery/NDP failure) required to deliver the packet to the final host."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 13.1.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Benutzer gibt den Befehl ping 2001:db8:FACE:39::10 aus und erhält eine Antwort mit dem Code 3. Was stellt dieser Code dar?",
+    "optionsDe": [
+      "Adresse nicht erreichbar",
+      "Netzwerk nicht erreichbar",
+      "Host nicht erreichbar",
+      "Protokoll nicht erreichbar",
+      "Code 0: Keine Route zum Ziel (dem Router fehlt der Pfad zu diesem Netzwerk).",
+      "Code 1: Kommunikation mit dem Ziel administrativ verboten (z. B. durch eine Firewall-Regel oder ACL blockiert).",
+      "Code 2: Außerhalb des Bereichs der Quelladresse.",
+      "Code 3: Adresse nicht erreichbar. Dies bedeutet, dass das Paket das lokale Gateway oder den Edge-Router, der das Zielsegment bedient, erfolgreich erreicht hat, dieser Router jedoch die für die Zustellung des Pakets an den endgültigen Host erforderliche physische Layer-2-Adresse (Neighbor Discovery/NDP-Fehler) nicht zuordnen oder auflösen konnte."
+    ],
+    "mnemonic": "Thema 13.1.3: Antwort = Adresse nicht erreichbar"
+  },
+  {
+    "id": 53,
+    "module": 11,
+    "type": "single",
+    "question": "A host is transmitting a multicast. Which host or hosts will receive it?",
+    "options": [
+      "a specially defined group of hosts",
+      "the closest neighbor on the same network",
+      "one specific host",
+      "directly connected network devices"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 11.2.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Host sendet einen Multicast. Welcher Host oder welche Hosts werden es erhalten?",
+    "optionsDe": [
+      "eine speziell definierte Gruppe von Hosts",
+      "der nächste Nachbar im selben Netzwerk",
+      "ein bestimmter Host",
+      "direkt angeschlossene Netzwerkgeräte"
+    ],
+    "mnemonic": "Thema 11.2.3: Antwort = eine speziell definierte Gruppe von Hosts"
+  },
+  {
+    "id": 60,
+    "module": 12,
+    "type": "single",
+    "question": "Which is the compressed format of the IPv6 address 2001:0db8:0000:0000:0000:a0b0:0008:0001?",
+    "options": [
+      "2001:db8::a0b0:8:1",
+      "2001:db8::ab8:1:0:1000",
+      "2001:db80:0:1::80:1",
+      "2001:db80:::1::80:1"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 12.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welches ist das komprimierte Format der IPv6-Adresse 2001:0db8:0000:0000:0000:a0b0:0008:0001?",
+    "optionsDe": [
+      "2001:db8::a0b0:8:1",
+      "2001:db8::ab8:1:0:1000",
+      "2001:db80:0:1::80:1",
+      "2001:db80:::1::80:1"
+    ],
+    "mnemonic": "Thema 12.2.2: Antwort = 2001:db8::a0b0:8:1"
+  },
+  {
+    "id": 61,
+    "module": 12,
+    "type": "single",
+    "question": "Which is the compressed format of the IPv6 address fe80:09ea:0000:2200:0000:0000:0fe0:0290?",
+    "options": [
+      "fe80:9ea:0:2200::fe0:290",
+      "fe80:9:20::b000:290",
+      "fe80:9ea0::2020:0:bf:e0:9290",
+      "fe80:9ea0::2020::bf:e0:9290",
+      "Omit leading zeros: Remove any starting zeros from each 16-bit segment (hextet). Following this, 09ea becomes 9ea, 0000 becomes 0, 0fe0 simplifies to fe0, and 0290 reduces to 290. (Note: Trailing zeros, such as those in 2200, cannot be dropped).",
+      "Compress with double colons (::): This rule allows you to replace the longest contiguous string of all-zero hextets with a single ::. This specific address features a single 0000 in the third hextet and a consecutive pair of 0000:0000 in the fifth and sixth hextets. You must choose the longest sequence to compress, which substitutes the consecutive pair with ::."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 12.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welches ist das komprimierte Format der IPv6-Adresse fe80:09ea:0000:2200:0000:0000:0fe0:0290?",
+    "optionsDe": [
+      "fe80:9ea:0:2200::fe0:290",
+      "fe80:9:20::b000:290",
+      "fe80:9ea0::2020:0:bf:e0:9290",
+      "fe80:9ea0::2020::bf:e0:9290",
+      "Führende Nullen weglassen: Entfernen Sie alle Anfangsnullen aus jedem 16-Bit-Segment (Hexett). Danach wird 09ea zu 9ea, 0000 wird zu 0, 0fe0 vereinfacht sich zu fe0 und 0290 reduziert sich auf 290. (Hinweis: Nachgestellte Nullen, wie etwa die in 2200, können nicht gelöscht werden).",
+      "Komprimieren mit doppelten Doppelpunkten (::): Mit dieser Regel können Sie die längste zusammenhängende Zeichenfolge aus Hexetten, die nur aus Nullen bestehen, durch ein einzelnes :: ersetzen. Diese spezielle Adresse enthält eine einzelne 0000 im dritten Hextett und ein aufeinanderfolgendes Paar von 0000:0000 im fünften und sechsten Hextett. Sie müssen die längste Sequenz zum Komprimieren auswählen, wodurch das aufeinanderfolgende Paar durch :: ersetzt wird."
+    ],
+    "mnemonic": "Thema 12.2.2: Antwort = fe80:9ea:0:2200::fe0:290"
+  },
+  {
+    "id": 62,
+    "module": 12,
+    "type": "single",
+    "question": "Which is the compressed format of the IPv6 address 2002:0042:0010:c400:0000:0000:0000:0909?",
+    "options": [
+      "2002:42:10:c400::909",
+      "200:420:110:c4b::910:0:90",
+      "2002:4200::25:1090:0:99",
+      "2002:42::25:1090:0:99",
+      "Omit leading zeros: Drop any starting zeros within each 16-bit segment (hextet). Following this step, 0042 simplifies to 42, 0010 becomes 10, and 0909 reduces to 909. Trailing zeros (such as the ones in c400) must be kept exactly as they are.",
+      "Compress with the double colon (::): The contiguous string of three consecutive all-zero segments (0000:0000:0000) is fully replaced by a single :: notation."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 12.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welches ist das komprimierte Format der IPv6-Adresse 2002:0042:0010:c400:0000:0000:0000:0909?",
+    "optionsDe": [
+      "2002:42:10:c400::909",
+      "200:420:110:c4b::910:0:90",
+      "2002:4200::25:1090:0:99",
+      "2002:42::25:1090:0:99",
+      "Führende Nullen weglassen: Entfernen Sie alle Anfangsnullen innerhalb jedes 16-Bit-Segments (Hexett). Nach diesem Schritt vereinfacht sich 0042 zu 42, 0010 wird zu 10 und 0909 reduziert sich zu 909. Nachfolgende Nullen (wie die Einsen in c400) müssen genau so beibehalten werden, wie sie sind.",
+      "Komprimieren mit dem Doppelpunkt (::): Die zusammenhängende Zeichenfolge aus drei aufeinanderfolgenden Nullsegmenten (0000:0000:0000) wird vollständig durch eine einzelne ::-Notation ersetzt."
+    ],
+    "mnemonic": "Thema 12.2.2: Antwort = 2002:42:10:c400::909"
+  },
+  {
+    "id": 63,
+    "module": 12,
+    "type": "single",
+    "question": "Which is the compressed format of the IPv6 address 2001:0db8:0000:0000:0ab8:0001:0000:1000?",
+    "options": [
+      "2001:db8::ab8:1:0:1000",
+      "2001:db8::a0b0:8:1",
+      "2001:db8:1::ab8:0:1",
+      "2001:db8:0:1::8:1",
+      "Omit leading zeros: Drop any starting zeros within each 16-bit segment (hextet). Following this step, 0db8 simplifies to db8, 0ab8 becomes ab8, 0001 reduces to 1, and 0000 segments simplify to a single 0. (Note: Trailing zeros, such as the ones in 1000, cannot be omitted).",
+      "Compress with the double colon (::): Replace the longest continuous string of all-zero hextets with a single :: notation. This address contains two all-zero sequences: a two-block sequence (0000:0000) in the 3rd and 4th segments, and a single block (0000) in the 7th segment. Compressing the longest sequence turns the two consecutive blocks into ::, while the 7th segment remains represented by a single 0."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 12.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welches ist das komprimierte Format der IPv6-Adresse 2001:0db8:0000:0000:0ab8:0001:0000:1000?",
+    "optionsDe": [
+      "2001:db8::ab8:1:0:1000",
+      "2001:db8::a0b0:8:1",
+      "2001:db8:1::ab8:0:1",
+      "2001:db8:0:1::8:1",
+      "Führende Nullen weglassen: Entfernen Sie alle Anfangsnullen innerhalb jedes 16-Bit-Segments (Hexett). Nach diesem Schritt wird 0db8 zu db8 vereinfacht, 0ab8 wird zu ab8, 0001 wird auf 1 reduziert und 0000-Segmente werden zu einer einzelnen 0 vereinfacht. (Hinweis: Nachfolgende Nullen, wie die Einsen in 1000, können nicht weggelassen werden).",
+      "Komprimieren mit dem Doppelpunkt (::): Ersetzen Sie die längste fortlaufende Zeichenfolge aus Hexetten, die nur aus Nullen bestehen, durch eine einzelne ::-Notation. Diese Adresse enthält zwei reine Null-Sequenzen: eine Zwei-Block-Sequenz (0000:0000) im 3. und 4. Segment und einen einzelnen Block (0000) im 7. Segment. Durch Komprimieren der längsten Sequenz werden die beiden aufeinanderfolgenden Blöcke in :: umgeWANdelt, während das 7. Segment weiterhin durch eine einzelne 0 dargestellt wird."
+    ],
+    "mnemonic": "Thema 12.2.2: Antwort = 2001:db8::ab8:1:0:1000"
+  },
+  {
+    "id": 64,
+    "module": 12,
+    "type": "single",
+    "question": "Which is the compressed format of the IPv6 address 2002:0420:00c4:1008:0025:0190:0000:0990?",
+    "options": [
+      "2002:420:c4:1008:25:190::990",
+      "2002:42:10:c400::909",
+      "2002:4200::25:1090:0:99",
+      "2002:42::25:1090:0:99",
+      "Omit leading zeros in any 16-bit section (hextet). Following this rule: 0420 becomes 420, 00c4 becomes c4, 0025 becomes 25, 0190 becomes 190, and 0990 becomes 990. Trailing zeros must not be dropped.",
+      "Use a double colon (::) to replace any single, contiguous string of one or more segments consisting entirely of zeros. In this address, the seventh hextet is 0000, which is compressed into ::."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 12.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welches ist das komprimierte Format der IPv6-Adresse 2002:0420:00c4:1008:0025:0190:0000:0990?",
+    "optionsDe": [
+      "2002:420:c4:1008:25:190::990",
+      "2002:42:10:c400::909",
+      "2002:4200::25:1090:0:99",
+      "2002:42::25:1090:0:99",
+      "Lassen Sie führende Nullen in jedem 16-Bit-Abschnitt (Hexett) weg. Befolgen Sie diese Regel: 0420 wird zu 420, 00c4 wird zu c4, 0025 wird zu 25, 0190 wird zu 190 und 0990 wird zu 990. Nachfolgende Nullen dürfen nicht weggelassen werden.",
+      "Verwenden Sie einen Doppelpunkt (::), um eine einzelne, zusammenhängende Zeichenfolge aus einem oder mehreren Segmenten zu ersetzen, die ausschließlich aus Nullen bestehen. In dieser Adresse ist das siebte Hextett 0000, das zu :: komprimiert wird."
+    ],
+    "mnemonic": "Thema 12.2.2: Antwort = 2002:420:c4:1008:25:190::990"
+  },
+  {
+    "id": 65,
+    "module": 12,
+    "type": "single",
+    "question": "Which is the compressed format of the IPv6 address 2001:0db8:0000:0000:0000:a0b0:0008:0001?",
+    "options": [
+      "2001:db8::a0b0:8:1",
+      "2001:db8:1::ab8:0:1",
+      "2001:db8::ab8:1:0:1000",
+      "2001:db8:0:1::8:1"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 12.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welches ist das komprimierte Format der IPv6-Adresse 2001:0db8:0000:0000:0000:a0b0:0008:0001?",
+    "optionsDe": [
+      "2001:db8::a0b0:8:1",
+      "2001:db8:1::ab8:0:1",
+      "2001:db8::ab8:1:0:1000",
+      "2001:db8:0:1::8:1"
+    ],
+    "mnemonic": "Thema 12.2.2: Antwort = 2001:db8::a0b0:8:1"
+  },
+  {
+    "id": 66,
+    "module": 12,
+    "type": "single",
+    "question": "Which is the compressed format of the IPv6 address fe80:0000:0000:0000:0220:0b3f:f0e0:0029?",
+    "options": [
+      "fe80::220:b3f:f0e0:29",
+      "fe80:9ea:0:2200::fe0:290",
+      "fe80:9ea0::2020:0:bf:e0:9290",
+      "fe80:9ea0::2020::bf:e0:9290",
+      "Omit leading zeros: In every hextet, any leading zeros are dropped. Thus, 0220 becomes 220, 0b3f becomes b3f, and 0029 reduces to 29.",
+      "Compress contiguous zeros using the double colon (::): The three consecutive all-zero segments (0000:0000:0000) are replaced with a single :: notation."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 12.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welches ist das komprimierte Format der IPv6-Adresse fe80:0000:0000:0000:0220:0b3f:f0e0:0029?",
+    "optionsDe": [
+      "fe80::220:b3f:f0e0:29",
+      "fe80:9ea:0:2200::fe0:290",
+      "fe80:9ea0::2020:0:bf:e0:9290",
+      "fe80:9ea0::2020::bf:e0:9290",
+      "Führende Nullen weglassen: In jedem Hextet werden alle führenden Nullen weggelassen. Somit wird 0220 zu 220, 0b3f wird zu b3f und 0029 reduziert sich auf 29.",
+      "Komprimieren Sie aufeinanderfolgende Nullen mithilfe des Doppelpunkts (::): Die drei aufeinanderfolgenden Nullsegmente (0000:0000:0000) werden durch eine einzelne ::-Notation ersetzt."
+    ],
+    "mnemonic": "Thema 12.2.2: Antwort = fe80::220:b3f:f0e0:29"
+  },
+  {
+    "id": 67,
+    "module": 12,
+    "type": "single",
+    "question": "Which is the compressed format of the IPv6 address 2001:0db8:0000:0000:0000:a0b0:0008:0001?",
+    "options": [
+      "2001:db8::a0b0:8:1",
+      "2001:db8::ab8:1:0:1000",
+      "2001:db80:0:1::80:1",
+      "2001:db8:0:1::8:1"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 12.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welches ist das komprimierte Format der IPv6-Adresse 2001:0db8:0000:0000:0000:a0b0:0008:0001?",
+    "optionsDe": [
+      "2001:db8::a0b0:8:1",
+      "2001:db8::ab8:1:0:1000",
+      "2001:db80:0:1::80:1",
+      "2001:db8:0:1::8:1"
+    ],
+    "mnemonic": "Thema 12.2.2: Antwort = 2001:db8::a0b0:8:1"
+  },
+  {
+    "id": 68,
+    "module": 12,
+    "type": "single",
+    "question": "Which is the compressed format of the IPv6 address 2002:0042:0010:c400:0000:0000:0000:0909?",
+    "options": [
+      "2002:42:10:c400::909",
+      "2002:4200::25:1090:0:99",
+      "2002:420:c4:1008:25:190::990",
+      "2002:42::25:1090:0:99",
+      "Omit leading zeros: Drop any starting zeros within each 16-bit segment (hextet). Following this step, 0042 simplifies to 42, 0010 becomes 10, and 0909 reduces to 909. Trailing zeros (such as the ones in c400) must be kept exactly as they are.",
+      "Compress with the double colon (::): The contiguous string of three consecutive all-zero segments (0000:0000:0000) is fully replaced by a single :: notation."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 12.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welches ist das komprimierte Format der IPv6-Adresse 2002:0042:0010:c400:0000:0000:0000:0909?",
+    "optionsDe": [
+      "2002:42:10:c400::909",
+      "2002:4200::25:1090:0:99",
+      "2002:420:c4:1008:25:190::990",
+      "2002:42::25:1090:0:99",
+      "Führende Nullen weglassen: Entfernen Sie alle Anfangsnullen innerhalb jedes 16-Bit-Segments (Hexett). Nach diesem Schritt vereinfacht sich 0042 zu 42, 0010 wird zu 10 und 0909 reduziert sich zu 909. Nachfolgende Nullen (wie die Einsen in c400) müssen genau so beibehalten werden, wie sie sind.",
+      "Komprimieren mit dem Doppelpunkt (::): Die zusammenhängende Zeichenfolge aus drei aufeinanderfolgenden Nullsegmenten (0000:0000:0000) wird vollständig durch eine einzelne ::-Notation ersetzt."
+    ],
+    "mnemonic": "Thema 12.2.2: Antwort = 2002:42:10:c400::909"
+  },
+  {
+    "id": 69,
+    "module": 12,
+    "type": "single",
+    "question": "Which is the compressed format of the IPv6 address fe80:09ea:0000:2200:0000:0000:0fe0:0290?",
+    "options": [
+      "fe80:9ea:0:2200::fe0:290",
+      "fe80:9ea0::2020:0:bf:e0:9290",
+      "fe80::220:b3f:f0e0:29",
+      "fe80::0220:0b3f:f0e0:0029",
+      "Omit leading zeros: Remove any starting zeros from each 16-bit segment (hextet). Following this, 09ea becomes 9ea, 0000 becomes 0, 0fe0 simplifies to fe0, and 0290 reduces to 290. (Note: Trailing zeros, such as those in 2200, cannot be dropped).",
+      "Compress with double colons (::): This rule allows you to replace the longest contiguous string of all-zero hextets with a single ::. This specific address features a single 0000 in the third hextet and a consecutive pair of 0000:0000 in the fifth and sixth hextets. You must choose the longest sequence to compress, which substitutes the consecutive pair with ::."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 12.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Welches ist das komprimierte Format der IPv6-Adresse fe80:09ea:0000:2200:0000:0000:0fe0:0290?",
+    "optionsDe": [
+      "fe80:9ea:0:2200::fe0:290",
+      "fe80:9ea0::2020:0:bf:e0:9290",
+      "fe80::220:b3f:f0e0:29",
+      "fe80::0220:0b3f:f0e0:0029",
+      "Führende Nullen weglassen: Entfernen Sie alle Anfangsnullen aus jedem 16-Bit-Segment (Hexett). Danach wird 09ea zu 9ea, 0000 wird zu 0, 0fe0 vereinfacht sich zu fe0 und 0290 reduziert sich auf 290. (Hinweis: Nachgestellte Nullen, wie etwa die in 2200, können nicht gelöscht werden).",
+      "Komprimieren mit doppelten Doppelpunkten (::): Mit dieser Regel können Sie die längste zusammenhängende Zeichenfolge aus Hexetten, die nur aus Nullen bestehen, durch ein einzelnes :: ersetzen. Diese spezielle Adresse enthält eine einzelne 0000 im dritten Hextett und ein aufeinanderfolgendes Paar von 0000:0000 im fünften und sechsten Hextett. Sie müssen die längste Sequenz zum Komprimieren auswählen, wodurch das aufeinanderfolgende Paar durch :: ersetzt wird."
+    ],
+    "mnemonic": "Thema 12.2.2: Antwort = fe80:9ea:0:2200::fe0:290"
+  },
+  {
+    "id": 70,
+    "module": 13,
+    "type": "single",
+    "question": "A user issues a ping 2001:db8:FACE:39::10 command and receives a response that includes a code of 2. What does this code represent?",
+    "options": [
+      "beyond scope of the source address",
+      "communication with the destination administratively prohibited",
+      "address unreachable",
+      "no route to destination",
+      "Code 0: No route to destination.",
+      "Code 1: Communication with destination administratively prohibited.",
+      "Code 2: Beyond scope of the source address. This tells the sender that the scope of its source IP address is too constrained (for example, a Link-Local Address) to successfully communicate with the destination IP address (such as a Global Unicast Address).",
+      "Code 3: Address unreachable."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 13.1.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Benutzer gibt den Befehl ping 2001:db8:FACE:39::10 aus und erhält eine Antwort mit dem Code 2. Was stellt dieser Code dar?",
+    "optionsDe": [
+      "außerhalb des Bereichs der Quelladresse liegen",
+      "Die Kommunikation mit dem Zielort ist administrativ verboten",
+      "Adresse nicht erreichbar",
+      "kein Weg zum Ziel",
+      "Code 0: Keine Route zum Ziel.",
+      "Code 1: Kommunikation mit dem Zielort administrativ verboten.",
+      "Code 2: Außerhalb des Bereichs der Quelladresse. Dadurch wird dem Absender mitgeteilt, dass der Bereich seiner Quell-IP-Adresse zu eingeschränkt ist (z. B. eine Link-Local-Adresse), um erfolgreich mit der Ziel-IP-Adresse (z. B. einer globalen Unicast-Adresse) zu kommunizieren.",
+      "Code 3: Adresse nicht erreichbar."
+    ],
+    "mnemonic": "Thema 13.1.3: Antwort = außerhalb des Bereichs der Quelladresse liegen"
+  },
+  {
+    "id": 71,
+    "module": 13,
+    "type": "single",
+    "question": "A user issues a ping 192.135.250.103 command and receives a response that includes a code of 1. What does this code represent?",
+    "options": [
+      "host unreachable",
+      "beyond scope of the source address",
+      "address unreachable",
+      "communication with the destination administratively prohibited",
+      "Code 0: Network unreachable (the router lacks a valid path to the destination network).",
+      "Code 1: Host unreachable. This indicates that the packet successfully reached the local gateway or edge router responsible for the destination network segment, but the specific target host failed to respond (e.g., the device is powered off, disconnected, or its MAC address cannot be resolved via ARP).",
+      "Code 2: Protocol unreachable.",
+      "Code 3: Port unreachable."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 13.1.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Benutzer gibt einen Ping-Befehl 192.135.250.103 aus und erhält eine Antwort mit dem Code 1. Was stellt dieser Code dar?",
+    "optionsDe": [
+      "Host nicht erreichbar",
+      "außerhalb des Bereichs der Quelladresse liegen",
+      "Adresse nicht erreichbar",
+      "Die Kommunikation mit dem Zielort ist administrativ verboten",
+      "Code 0: Netzwerk nicht erreichbar (dem Router fehlt ein gültiger Pfad zum Zielnetzwerk).",
+      "Code 1: Host nicht erreichbar. Dies weist darauf hin, dass das Paket erfolgreich das lokale Gateway oder den Edge-Router erreicht hat, der für das Zielnetzwerksegment verantwortlich ist, der spezifische Zielhost jedoch nicht geantwortet hat (z. B. ist das Gerät ausgeschaltet, nicht verbunden oder seine MAC-Adresse kann nicht über ARP aufgelöst werden).",
+      "Code 2: Protokoll nicht erreichbar.",
+      "Code 3: Port nicht erreichbar."
+    ],
+    "mnemonic": "Thema 13.1.3: Antwort = Host nicht erreichbar"
+  },
+  {
+    "id": 72,
+    "module": 13,
+    "type": "single",
+    "question": "A user issues a ping fe80:65ab:dcc1::100 command and receives a response that includes a code of 3. What does this code represent?",
+    "options": [
+      "address unreachable",
+      "communication with the destination administratively prohibited",
+      "beyond scope of the source address",
+      "no route to destination",
+      "Code 0: No route to destination.",
+      "Code 1: Communication with destination administratively prohibited.",
+      "Code 2: Beyond scope of the source address.",
+      "Code 3: Address unreachable (the targeted destination IP cannot be resolved or is physically unavailable on the local link)."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 13.1.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Benutzer gibt den Befehl ping fe80:65ab:dcc1::100 aus und erhält eine Antwort mit dem Code 3. Was stellt dieser Code dar?",
+    "optionsDe": [
+      "Adresse nicht erreichbar",
+      "Die Kommunikation mit dem Zielort ist administrativ verboten",
+      "außerhalb des Bereichs der Quelladresse liegen",
+      "kein Weg zum Ziel",
+      "Code 0: Keine Route zum Ziel.",
+      "Code 1: Kommunikation mit dem Zielort administrativ verboten.",
+      "Code 2: Außerhalb des Bereichs der Quelladresse.",
+      "Code 3: Adresse nicht erreichbar (die Ziel-IP-Adresse kann nicht aufgelöst werden oder ist auf der lokalen Verbindung physisch nicht verfügbar)."
+    ],
+    "mnemonic": "Thema 13.1.3: Antwort = Adresse nicht erreichbar"
+  },
+  {
+    "id": 73,
+    "module": 13,
+    "type": "single",
+    "question": "A user issues a ping 10.10.14.67 command and receives a response that includes a code of 0. What does this code represent?",
+    "options": [
+      "network unreachable",
+      "protocol unreachable",
+      "port unreachable",
+      "host unreachable"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 13.1.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Benutzer gibt einen Ping-10.10.14.67-Befehl aus und erhält eine Antwort mit dem Code 0. Was stellt dieser Code dar?",
+    "optionsDe": [
+      "Netzwerk nicht erreichbar",
+      "Protokoll nicht erreichbar",
+      "Port nicht erreichbar",
+      "Host nicht erreichbar"
+    ],
+    "mnemonic": "Thema 13.1.3: Antwort = Netzwerk nicht erreichbar"
+  },
+  {
+    "id": 74,
+    "module": 13,
+    "type": "single",
+    "question": "A user issues a ping fe80:65ab:dcc1::100 command and receives a response that includes a code of 4. What does this code represent?",
+    "options": [
+      "port unreachable",
+      "host unreachable",
+      "protocol unreachable",
+      "network unreachable",
+      "Code 0: No route to destination (Network unreachable).",
+      "Code 1: Communication with destination administratively prohibited.",
+      "Code 3: Address unreachable (Host unreachable).",
+      "Code 4: Port unreachable."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 13.1.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Benutzer gibt den Befehl ping fe80:65ab:dcc1::100 aus und erhält eine Antwort mit dem Code 4. Was stellt dieser Code dar?",
+    "optionsDe": [
+      "Port nicht erreichbar",
+      "Host nicht erreichbar",
+      "Protokoll nicht erreichbar",
+      "Netzwerk nicht erreichbar",
+      "Code 0: Keine Route zum Ziel (Netzwerk nicht erreichbar).",
+      "Code 1: Kommunikation mit dem Zielort administrativ verboten.",
+      "Code 3: Adresse nicht erreichbar (Host nicht erreichbar).",
+      "Code 4: Port nicht erreichbar."
+    ],
+    "mnemonic": "Thema 13.1.3: Antwort = Port nicht erreichbar"
+  },
+  {
+    "id": 75,
+    "module": 13,
+    "type": "single",
+    "question": "A user issues a ping 198.133.219.8 command and receives a response that includes a code of 0. What does this code represent?",
+    "options": [
+      "network unreachable",
+      "protocol unreachable",
+      "port unreachable",
+      "host unreachable"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 13.1.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Benutzer gibt einen Ping-Befehl 198.133.219.8 aus und erhält eine Antwort mit dem Code 0. Was stellt dieser Code dar?",
+    "optionsDe": [
+      "Netzwerk nicht erreichbar",
+      "Protokoll nicht erreichbar",
+      "Port nicht erreichbar",
+      "Host nicht erreichbar"
+    ],
+    "mnemonic": "Thema 13.1.3: Antwort = Netzwerk nicht erreichbar"
+  },
+  {
+    "id": 76,
+    "module": 13,
+    "type": "single",
+    "question": "A user issues a ping 2001:db8:3040:114::88 command and receives a response that includes a code of 4. What does this code represent?",
+    "options": [
+      "port unreachable",
+      "host unreachable",
+      "protocol unreachable",
+      "network unreachable"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 13.1.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Benutzer gibt den Befehl ping 2001:db8:3040:114::88 aus und erhält eine Antwort mit dem Code 4. Was stellt dieser Code dar?",
+    "optionsDe": [
+      "Port nicht erreichbar",
+      "Host nicht erreichbar",
+      "Protokoll nicht erreichbar",
+      "Netzwerk nicht erreichbar"
+    ],
+    "mnemonic": "Thema 13.1.3: Antwort = Port nicht erreichbar"
+  },
+  {
+    "id": 77,
+    "module": 13,
+    "type": "single",
+    "question": "A user issues a ping 2001:db8:FACE:39::10 command and receives a response that includes a code of 2. What does this code represent?",
+    "options": [
+      "beyond scope of the source address",
+      "host unreachable",
+      "protocol unreachable",
+      "network unreachable",
+      "Code 0: No route to destination.",
+      "Code 1: Communication with destination administratively prohibited.",
+      "Code 2: Beyond scope of the source address. This tells the sender that the scope of its source IP address is too constrained (for example, a Link-Local Address) to successfully communicate with the destination IP address (such as a Global Unicast Address).",
+      "Code 3: Address unreachable."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 13.1.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod11-13",
+    "questionDe": "Ein Benutzer gibt den Befehl ping 2001:db8:FACE:39::10 aus und erhält eine Antwort mit dem Code 2. Was stellt dieser Code dar?",
+    "optionsDe": [
+      "außerhalb des Bereichs der Quelladresse liegen",
+      "Host nicht erreichbar",
+      "Protokoll nicht erreichbar",
+      "Netzwerk nicht erreichbar",
+      "Code 0: Keine Route zum Ziel.",
+      "Code 1: Kommunikation mit dem Zielort administrativ verboten.",
+      "Code 2: Außerhalb des Bereichs der Quelladresse. Dadurch wird dem Absender mitgeteilt, dass der Bereich seiner Quell-IP-Adresse zu eingeschränkt ist (z. B. eine Link-Local-Adresse), um erfolgreich mit der Ziel-IP-Adresse (z. B. einer globalen Unicast-Adresse) zu kommunizieren.",
+      "Code 3: Adresse nicht erreichbar."
+    ],
+    "mnemonic": "Thema 13.1.3: Antwort = außerhalb des Bereichs der Quelladresse liegen"
+  }
+]

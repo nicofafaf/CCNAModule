@@ -1,0 +1,173 @@
+{
+  "courses": [
+    {
+      "id": "ccna1",
+      "title": "CCNA 1 – Introduction to Networks v7",
+      "titleDe": "CCNA 1 – Einführung in Netzwerke v7",
+      "exams": [
+        {
+          "id": "ccna1-mod1-3",
+          "title": "Modules 1 – 3",
+          "titleDe": "Module 1 – 3",
+          "subtitle": "Basic Network Connectivity and Communications",
+          "subtitleDe": "Grundlegende Netzwerkverbindung und Kommunikation",
+          "modules": [
+            1,
+            2,
+            3
+          ],
+          "type": "checkpoint",
+          "available": true,
+          "file": "data/banks/ccna1-mod1-3.json"
+        },
+        {
+          "id": "ccna1-mod4-7",
+          "title": "Modules 4 – 7",
+          "titleDe": "Module 4 – 7",
+          "subtitle": "Ethernet Concepts",
+          "subtitleDe": "Ethernet-Konzepte",
+          "modules": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "type": "checkpoint",
+          "available": true,
+          "file": "data/banks/ccna1-mod4-7.json"
+        },
+        {
+          "id": "ccna1-mod8-10",
+          "title": "Modules 8 – 10",
+          "titleDe": "Module 8 – 10",
+          "subtitle": "Communicating Between Networks",
+          "subtitleDe": "Kommunikation zwischen Netzwerken",
+          "modules": [
+            8,
+            9,
+            10
+          ],
+          "type": "checkpoint",
+          "available": true,
+          "file": "data/banks/ccna1-mod8-10.json"
+        },
+        {
+          "id": "ccna1-mod11-13",
+          "title": "Modules 11 – 13",
+          "titleDe": "Module 11 – 13",
+          "subtitle": "IP Addressing",
+          "subtitleDe": "IP-Adressierung",
+          "modules": [
+            11,
+            12,
+            13
+          ],
+          "type": "checkpoint",
+          "available": true,
+          "file": "data/banks/ccna1-mod11-13.json"
+        },
+        {
+          "id": "ccna1-mod14-15",
+          "title": "Modules 14 – 15",
+          "titleDe": "Module 14 – 15",
+          "subtitle": "Network Application Communications",
+          "subtitleDe": "Netzwerkanwendungs-Kommunikation",
+          "modules": [
+            14,
+            15
+          ],
+          "type": "checkpoint",
+          "available": true,
+          "file": "data/banks/ccna1-mod14-15.json"
+        },
+        {
+          "id": "ccna1-mod16-17",
+          "title": "Modules 16 – 17",
+          "titleDe": "Module 16 – 17",
+          "subtitle": "Building and Securing a Small Network",
+          "subtitleDe": "Aufbau und Absicherung eines kleinen Netzwerks",
+          "modules": [
+            16,
+            17
+          ],
+          "type": "checkpoint",
+          "available": true,
+          "file": "data/banks/ccna1-mod16-17.json"
+        },
+        {
+          "id": "ccna1-ptsa-practice",
+          "title": "Practice PT Skills Assessment",
+          "titleDe": "Übungs-PT-Skills-Assessment",
+          "subtitle": "Packet Tracer Skills",
+          "subtitleDe": "Packet-Tracer-Fertigkeiten",
+          "modules": [],
+          "type": "skills",
+          "available": false,
+          "file": "data/banks/ccna1-ptsa-practice.json"
+        },
+        {
+          "id": "ccna1-final-skills",
+          "title": "ITN Final Skills Exam (PTSA)",
+          "titleDe": "ITN Abschluss-Skills-Prüfung (PTSA)",
+          "subtitle": "Final Packet Tracer Skills",
+          "subtitleDe": "Abschluss Packet-Tracer-Fertigkeiten",
+          "modules": [],
+          "type": "skills",
+          "available": false,
+          "file": "data/banks/ccna1-final-skills.json"
+        },
+        {
+          "id": "ccna1-practice-final",
+          "title": "ITNv7 Practice Final Exam",
+          "titleDe": "ITNv7 Übungs-Abschlussprüfung",
+          "subtitle": "Practice Final",
+          "subtitleDe": "Übungs-Abschlussprüfung",
+          "modules": [],
+          "type": "practice",
+          "available": false,
+          "file": "data/banks/ccna1-practice-final.json"
+        },
+        {
+          "id": "ccna1-course-final",
+          "title": "CCNA 1 v7 Course FINAL Exam",
+          "titleDe": "CCNA 1 v7 Kurs-Abschlussprüfung",
+          "subtitle": "Course Final Exam",
+          "subtitleDe": "Kurs-Abschlussprüfung",
+          "modules": [],
+          "type": "final",
+          "available": false,
+          "file": "data/banks/ccna1-course-final.json"
+        }
+      ]
+    },
+    {
+      "id": "ccna2",
+      "title": "CCNA 2 – Switching, Routing, and Wireless Essentials v7",
+      "titleDe": "CCNA 2 – Switching, Routing and Wireless Essentials v7",
+      "exams": [
+        {
+          "id": "ccna2-mod1-4",
+          "title": "Modules 1 – 4",
+          "titleDe": "Module 1 – 4",
+          "subtitle": "Switching Concepts, VLANs, InterVLAN Routing",
+          "subtitleDe": "Switching, VLANs, InterVLAN-Routing",
+          "modules": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "type": "checkpoint",
+          "available": false,
+          "file": "data/banks/ccna2-mod1-4.json"
+        }
+      ]
+    },
+    {
+      "id": "ccna3",
+      "title": "CCNA 3 – Enterprise Networking, Security, and Automation v7",
+      "titleDe": "CCNA 3 – Enterprise Networking, Security and Automation v7",
+      "exams": []
+    }
+  ]
+}

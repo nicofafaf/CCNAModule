@@ -1,0 +1,152 @@
+{
+  "ccna1-mod1-3": {
+    "27": {
+      "type": "ordering",
+      "image": "assets/images/ccna1-mod1-3-q27.jpg",
+      "options": [
+        "limited number of basic monitoring commands → user EXEC mode",
+        "the first entrance into the CLI of an IOS device → user EXEC mode",
+        "accessed by entering the enable command → privileged EXEC mode",
+        "identified by a prompt ending with the # character → privileged EXEC mode",
+        "changes made affect the operation of the device as a whole → global configuration mode",
+        "accessed by entering the configure terminal command → global configuration mode"
+      ],
+      "optionsDe": [
+        "begrenzte Anzahl grundlegender Überwachungsbefehle → User-EXEC-Modus",
+        "der erste Zugang zur CLI eines IOS-Geräts → User-EXEC-Modus",
+        "Zugriff durch Eingabe des Befehls enable → privilegierter EXEC-Modus",
+        "erkennbar an einem Prompt, der mit dem Zeichen # endet → privilegierter EXEC-Modus",
+        "vorgenommene Änderungen wirken sich auf den Betrieb des gesamten Geräts aus → globaler Konfigurationsmodus",
+        "Zugriff durch Eingabe des Befehls configure terminal → globaler Konfigurationsmodus"
+      ],
+      "questionDe": "Ordnen Sie die Beschreibung dem zugehörigen IOS-Modus zu. (Nicht alle Optionen werden verwendet.)",
+      "mnemonic": "User = wenig + erster Zugang | Privileged = enable + # | Global = configure terminal + ganzes Gerät"
+    },
+    "36": {
+      "type": "ordering",
+      "image": "assets/images/ccna1-mod1-3-q36.jpg",
+      "options": [
+        "This organization promotes the open development, evolution, and use of the Internet throughout the world. → ISOC",
+        "This organization is the largest developer of international standards in the world for a wide variety of products and services. It is known for its Open Systems Interconnection (OSI) reference model. → ISO",
+        "This organization is responsible for overseeing and managing IP address allocation, domain name management, and protocol identifiers. → IANA",
+        "This organization is an international standards and trade organization for electronics organizations. It is best known for its standards related to electrical wiring, connectors, and the 19-inch racks used to mount networking equipment. → EIA"
+      ],
+      "optionsDe": [
+        "Diese Organisation fördert die offene Entwicklung, Weiterentwicklung und Nutzung des Internets weltweit. → ISOC",
+        "Diese Organisation ist der weltweit größte Entwickler internationaler Standards für eine Vielzahl von Produkten und Dienstleistungen. Sie ist bekannt für ihr Open Systems Interconnection (OSI)-Referenzmodell. → ISO",
+        "Diese Organisation ist für die Überwachung und Verwaltung der IP-Adressvergabe, Domainnamenverwaltung und Protokollkennungen zuständig. → IANA",
+        "Diese Organisation ist eine internationale Standardisierungs- und Handelsorganisation für Elektronikorganisationen. Sie ist vor allem bekannt für Standards zu elektrischer Verkabelung, Steckverbindern und 19-Zoll-Racks für Netzwerkgeräte. → EIA"
+      ],
+      "questionDe": "Ordnen Sie die Beschreibung der Organisation zu. (Nicht alle Optionen werden verwendet.)",
+      "mnemonic": "ISOC=Internet weltweit | ISO=OSI-Modell | IANA=IP+Domains | EIA=Verkabelung+Racks"
+    }
+  },
+  "ccna1-mod4-7": {
+    "5": {
+      "type": "ordering",
+      "image": "assets/images/ccna1-mod4-7-q5.jpg",
+      "options": [
+        "horizontal cabling structure → Copper Cables",
+        "desktop PCs in offices in an enterprise → Copper Cables",
+        "backbone cabling in an enterprise → Fiber optic",
+        "long-haul networks → Fiber optic",
+        "guest access in a coffee shop → Wireless",
+        "waiting rooms in a hospital → Wireless"
+      ],
+      "questionDe": "Ordnen Sie die Situation dem passenden Netzwerkmedium zu.",
+      "mnemonic": "Kupfer=horizontal+Desktop | Glasfaser=Backbone+Long-haul | Wireless=Gäste+Wartezimmer"
+    },
+    "46": {
+      "type": "single",
+      "options": [
+        "1 - rollover, 2 - crossover, 3 - straight-through",
+        "1 - rollover, 2 - straight-through, 3 - crossover",
+        "1 - crossover, 2 - rollover, 3 - straight-through",
+        "1 - crossover, 2 - straight-through, 3 - rollover"
+      ],
+      "correct": [1],
+      "questionDe": "Beziehen Sie sich auf die Abbildung. Der PC ist mit dem Konsolenport des Switches verbunden. Welche UTP-Kabeltypen können zur Verbindung der Geräte verwendet werden?",
+      "mnemonic": "Console=rollover | Switch↔Router=crossover (oder straight mit MDIX) | Host↔Switch=straight"
+    }
+  },
+  "ccna1-mod11-13": {
+    "5": {
+      "type": "ordering",
+      "image": "assets/images/ccna1-mod11-13-q5.png",
+      "options": [
+        "192.168.1.48 → 192.168.1.32/27",
+        "192.168.1.68 → 192.168.1.64/27",
+        "192.168.1.121 → 192.168.1.96/27"
+      ],
+      "questionDe": "Ordnen Sie das Subnetz einer Host-Adresse zu, die in diesem Subnetz enthalten wäre. (Nicht alle Optionen werden verwendet.)",
+      "mnemonic": "/27 Blockgröße 32: .48∈.32-.63 | .68∈.64-.95 | .121∈.96-.127"
+    },
+    "10": {
+      "type": "ordering",
+      "image": "assets/images/ccna1-mod11-13-q10.png",
+      "options": [
+        "192.168.100.161/25 → host address",
+        "203.0.113.100/24 → host address",
+        "10.10.10.128/25 → network address",
+        "172.110.12.64/28 → network address",
+        "192.168.1.191/26 → broadcast address",
+        "10.0.0.159/27 → broadcast address"
+      ],
+      "questionDe": "Ordnen Sie jede IPv4-Adresse der passenden Adresskategorie zu. (Nicht alle Optionen werden verwendet.)",
+      "mnemonic": "Host=mitten im Bereich | Network=erste Adresse | Broadcast=letzte Adresse"
+    },
+    "26": {
+      "type": "single",
+      "options": ["/56", "/58", "/60", "/64"],
+      "correct": [2],
+      "question": "Consider the following range of addresses:\n2001:0DB8:BC15:00A0:0000::\n2001:0DB8:BC15:00A1:0000::\n...\n2001:0DB8:BC15:00AF:0000::\nThe prefix-length for the range of addresses is ____.",
+      "questionDe": "Betrachten Sie den folgenden Adressbereich:\n2001:0DB8:BC15:00A0:0000:: bis 2001:0DB8:BC15:00AF:0000::\nDie Präfixlänge für diesen Adressbereich ist ____.",
+      "mnemonic": "00A0 bis 00AF = 16 Adressen → /60 (4 Hex-Stellen gemeinsam)"
+    }
+  },
+  "ccna1-mod14-15": {
+    "13": {
+      "type": "ordering",
+      "image": "assets/images/ccna1-mod14-15-q13.jpg",
+      "options": [
+        "client sends FIN → step 1",
+        "server sends ACK → step 2",
+        "server sends FIN → step 3",
+        "client sends ACK → step 4"
+      ],
+      "optionsDe": [
+        "Client sendet FIN → Schritt 1",
+        "Server sendet ACK → Schritt 2",
+        "Server sendet FIN → Schritt 3",
+        "Client sendet ACK → Schritt 4"
+      ],
+      "questionDe": "Eine Client-Anwendung muss eine TCP-Kommunikationssitzung mit einem Server beenden. Ordnen Sie die Schritte des Beendigungsprozesses in der Reihenfolge zu, in der sie auftreten.",
+      "mnemonic": "TCP-Beendigung: FIN → ACK → FIN → ACK (4-Wege-Handshake)"
+    }
+  },
+  "ccna1-mod16-17": {
+    "11": {
+      "type": "ordering",
+      "options": [
+        "Stateful packet inspection → Prevents or allows access based on whether the traffic is in response to requests from internal hosts.",
+        "URL filtering → Prevents or allows access based on web addresses or keywords.",
+        "Application filtering → Prevents or allows access based on the port numbers used in the request.",
+        "Packet filtering → Prevents or allows access based on the IP or MAC addresses of the source and destination."
+      ],
+      "questionDe": "Ordnen Sie die Beschreibung dem Typ der Firewall-Filterung zu. (Nicht alle Optionen werden verwendet.)",
+      "mnemonic": "Stateful=Antwort auf intern | URL=Web | Application=Port | Packet=IP/MAC"
+    },
+    "15": {
+      "type": "ordering",
+      "options": [
+        "configure IP domain name on the switch",
+        "generate RSA key pairs",
+        "configure SSH version 2",
+        "configure the vty lines to only accept SSH",
+        "configure local username and password for authentication"
+      ],
+      "questionDe": "Identifizieren Sie die Schritte zur SSH-Konfiguration eines Switches. (Nicht alle Optionen werden verwendet.)",
+      "mnemonic": "Domain → RSA-Keys → SSHv2 → VTY transport ssh → Username/Passwort"
+    }
+  }
+}

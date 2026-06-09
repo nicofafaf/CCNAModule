@@ -8,8 +8,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="mobile-web-app-capable" content="yes">
-  <title>CCNA Modul 8-10 Quiz</title>
-  <link rel="stylesheet" href="css/styles.css?v=litde2">
+  <title>CCNA v7 Quiz</title>
+  <link rel="stylesheet" href="css/styles.css?v=4">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -27,11 +27,35 @@
   </header>
 
   <div id="app">
-    <section id="screen-home" class="screen active">
+    <!-- Kursauswahl -->
+    <section id="screen-courses" class="screen">
+      <header class="hero hero-compact">
+        <div class="hero-badge" data-i18n="badgeGlobal"></div>
+        <h1 data-i18n="chooseCourse"></h1>
+        <p class="hero-sub" data-i18n="chooseCourseSub"></p>
+      </header>
+      <div id="course-list" class="course-grid"></div>
+    </section>
+
+    <!-- Prüfungsblock-Auswahl (strikt getrennt) -->
+    <section id="screen-exams" class="screen">
+      <button class="btn-back" id="btn-back-courses" data-i18n="backCourses"></button>
+      <header class="hero hero-compact">
+        <h1 id="exam-course-title"></h1>
+        <p class="hero-sub" data-i18n="chooseExamSub"></p>
+        <p class="isolation-banner" data-i18n="isolationBanner"></p>
+      </header>
+      <div id="exam-list" class="exam-grid"></div>
+    </section>
+
+    <!-- Startseite eines gewählten Prüfungsblocks -->
+    <section id="screen-home" class="screen">
+      <button class="btn-back btn-change-exam" id="btn-change-exam" data-i18n="changeExam"></button>
       <header class="hero">
-        <div class="hero-badge" data-i18n="badge"></div>
-        <h1 data-i18n="heroTitle"></h1>
-        <p class="hero-sub" data-i18n="heroSub"></p>
+        <div class="hero-badge" id="hero-badge"></div>
+        <h1 id="hero-title"></h1>
+        <p class="hero-sub" id="hero-sub"></p>
+        <p class="isolation-notice" id="isolation-notice"></p>
       </header>
 
       <div class="stats-grid" id="stats-overview"></div>
@@ -69,53 +93,24 @@
         </button>
       </div>
 
-      <div class="learning-overview">
+      <div class="learning-overview" id="learning-overview">
         <h2 data-i18n="learnTitle"></h2>
-        <div class="topic-cards">
-          <div class="topic-card mod8">
-            <h4 data-i18n="mod8Title"></h4>
-            <ul id="mod8-list"></ul>
-          </div>
-          <div class="topic-card mod9">
-            <h4 data-i18n="mod9Title"></h4>
-            <ul id="mod9-list"></ul>
-          </div>
-          <div class="topic-card mod10">
-            <h4 data-i18n="mod10Title"></h4>
-            <ul id="mod10-list"></ul>
-          </div>
-        </div>
+        <div class="topic-cards" id="topic-cards"></div>
       </div>
     </section>
 
     <section id="screen-module" class="screen">
-      <button class="btn-back" data-back data-i18n="back"></button>
+      <button class="btn-back" data-back-home data-i18n="back"></button>
       <h2 data-i18n="chooseModule"></h2>
-      <div class="module-select">
-        <button class="module-btn" data-module="8">
-          <span data-i18n="mod8Btn"></span>
-          <small data-i18n="mod8Sub"></small>
-        </button>
-        <button class="module-btn" data-module="9">
-          <span data-i18n="mod9Btn"></span>
-          <small data-i18n="mod9Sub"></small>
-        </button>
-        <button class="module-btn" data-module="10">
-          <span data-i18n="mod10Btn"></span>
-          <small data-i18n="mod10Sub"></small>
-        </button>
-        <button class="module-btn all" data-module="all">
-          <span data-i18n="modAllBtn"></span>
-          <small data-i18n="modAllSub"></small>
-        </button>
-      </div>
+      <div class="module-select" id="module-select"></div>
     </section>
 
     <section id="screen-quiz" class="screen">
       <div class="quiz-header">
-        <button class="btn-back" data-back data-i18n="backQuiz"></button>
+        <button class="btn-back" data-back-home data-i18n="backQuiz"></button>
         <div class="quiz-meta">
           <span id="quiz-mode-label"></span>
+          <span id="quiz-bank-label" class="quiz-bank-label"></span>
           <span id="quiz-progress">1 / 76</span>
         </div>
         <div class="progress-bar"><div id="progress-fill"></div></div>
@@ -165,16 +160,15 @@
         <p id="score-detail"></p>
         <div id="results-breakdown"></div>
         <div class="results-actions">
-          <button class="btn-primary" data-mode="mistakes" id="btn-repeat-mistakes" data-i18n="repeatMistakes"></button>
-          <button class="btn-secondary" data-back data-i18n="home"></button>
+          <button class="btn-primary" id="btn-repeat-mistakes" data-i18n="repeatMistakes"></button>
+          <button class="btn-secondary" data-back-home data-i18n="home"></button>
         </div>
       </div>
     </section>
   </div>
 
-  <script src="js/questions.js?v=litde2"></script>
-  <script src="js/options-de-data.js?v=litde2"></script>
-  <script src="js/i18n.js?v=litde2"></script>
-  <script src="js/app.js?v=litde2"></script>
+  <script src="js/options-de-data.js?v=4"></script>
+  <script src="js/i18n.js?v=4"></script>
+  <script src="js/app.js?v=4"></script>
 </body>
 </html>

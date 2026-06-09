@@ -1,0 +1,2134 @@
+[
+  {
+    "id": 1,
+    "module": 4,
+    "type": "single",
+    "question": "What is the purpose of the OSI physical layer?",
+    "options": [
+      "controlling access to media",
+      "transmitting bits across the local media",
+      "performing error detection on received frames",
+      "exchanging frames between nodes over physical network media"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "topic": "Topic 4.1.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Was ist der Zweck der OSI-Physical-Layer?",
+    "optionsDe": [
+      "Kontrolle des Zugriffs auf Medien",
+      "Übertragung von Bits über die lokalen Medien",
+      "Durchführen einer Fehlererkennung für empfangene Frames",
+      "Austausch von Frames zwischen Knoten über physische Netzwerkmedien"
+    ],
+    "mnemonic": "Thema 4.1.1: Antwort = Übertragung von Bits über die lokalen Medien"
+  },
+  {
+    "id": 2,
+    "module": 4,
+    "type": "single",
+    "question": "Why are two strands of fiber used for a single fiber optic connection?",
+    "options": [
+      "The two strands allow the data to travel for longer distances without degrading.",
+      "They prevent crosstalk from causing interference on the connection.",
+      "They increase the speed at which the data can travel.",
+      "They allow for full-duplex connectivity."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "topic": "Topic 4.5.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Warum werden für eine einzelne Glasfaserverbindung zwei Glasfaserstränge verwendet?",
+    "optionsDe": [
+      "Die beiden Stränge ermöglichen die Übertragung der Daten über größere Entfernungen ohne Verschlechterung.",
+      "Sie verhindern, dass Übersprechen die Verbindung stört.",
+      "Sie erhöhen die Geschwindigkeit, mit der die Daten übertragen werden können.",
+      "Sie ermöglichen eine Vollduplex-Konnektivität."
+    ],
+    "mnemonic": "Thema 4.5.4: Antwort = Sie ermöglichen eine Vollduplex-Konnektivität."
+  },
+  {
+    "id": 3,
+    "module": 4,
+    "type": "single",
+    "question": "Which characteristic describes crosstalk?",
+    "options": [
+      "the distortion of the network signal from fluorescent lighting",
+      "the distortion of the transmitted messages from signals carried in adjacent wires",
+      "the weakening of the network signal over long cable lengths",
+      "the loss of wireless signal over excessive distance from the access point"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "topic": "Topic 4.3.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welches Merkmal beschreibt Übersprechen?",
+    "optionsDe": [
+      "die Verzerrung des Netzwerksignals durch Leuchtstofflampen",
+      "die Verzerrung der übertragenen Nachrichten durch Signale, die in benachbarten Leitungen übertragen werden",
+      "die Schwächung des Netzwerksignals über große Kabellängen",
+      "der Verlust des drahtlosen Signals über eine zu große Entfernung vom Zugangspunkt"
+    ],
+    "mnemonic": "Thema 4.3.1: Antwort = die Verzerrung der übertragenen Nachrichten durch Signale, die in benachbarten L..."
+  },
+  {
+    "id": 4,
+    "module": 4,
+    "type": "single",
+    "question": "Which procedure is used to reduce the effect of crosstalk in copper cables?",
+    "options": [
+      "requiring proper grounding connections",
+      "twisting opposing circuit wire pairs together",
+      "wrapping the bundle of wires with metallic shielding",
+      "designing a cable infrastructure to avoid crosstalk interference",
+      "avoiding sharp bends during installation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "topic": "Topic 4.3.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Mit welchem Verfahren wird der Effekt des Übersprechens bei Kupferkabeln reduziert?",
+    "optionsDe": [
+      "ordnungsgemäße Erdungsanschlüsse erforderlich sind",
+      "Verdrehen gegenüberliegender Leiterpaare des Stromkreises",
+      "Umwickeln des Kabelbündels mit einer metallischen Abschirmung",
+      "Entwurf einer Kabelinfrastruktur zur Vermeidung von Übersprechstörungen",
+      "Vermeiden Sie scharfe Biegungen während der Installation"
+    ],
+    "mnemonic": "Thema 4.3.1: Antwort = Verdrehen gegenüberliegender Leiterpaare des Stromkreises"
+  },
+  {
+    "id": 5,
+    "module": 4,
+    "type": "ordering",
+    "question": "Match the situation with the appropriate use of network media.",
+    "options": [
+      "horizontal cabling structure → Copper Cables",
+      "desktop PCs in offices in an enterprise → Copper Cables",
+      "backbone cabling in an enterprise → Fiber optic",
+      "long-haul networks → Fiber optic",
+      "guest access in a coffee shop → Wireless",
+      "waiting rooms in a hospital → Wireless"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "explanation": "",
+    "topic": "Topic 4.3.3",
+    "image": "assets/images/ccna1-mod4-7-q5.jpg",
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Passen Sie die Situation durch den geeigneten Einsatz von Netzwerkmedien an.",
+    "mnemonic": "Kupfer=horizontal+Desktop | Glasfaser=Backbone+Long-haul | Wireless=Gäste+Wartezimmer",
+    "optionsDe": [
+      "horizontale Verkabelungsstruktur → Kupferkabel",
+      "Desktop-PCs in Büros eines Unternehmens → Kupferkabel",
+      "Backbone-Verkabelung in einem Unternehmen → Glasfaser",
+      "LANgstreckennetze → Glasfaser",
+      "Gastzugang in einem Café → Kabellos",
+      "Wartezimmer in einem Krankenhaus → Kabellos"
+    ]
+  },
+  {
+    "id": 6,
+    "module": 4,
+    "type": "multiple3",
+    "question": "A network administrator is measuring the transfer of bits across the company backbone for a mission critical financial application. The administrator notices that the network throughput appears lower than the bandwidth expected. Which three factors could influence the differences in throughput? (Choose three.)",
+    "options": [
+      "the amount of traffic that is currently crossing the network",
+      "the sophistication of the encapsulation method applied to the data",
+      "the type of traffic that is crossing the network",
+      "the latency that is created by the number of network devices that the data is crossing",
+      "the bandwidth of the WAN connection to the Internet",
+      "the reliability of the gigabit Ethernet infrastructure of the backbone"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Throughput usually does not match the specified bandwidth of physical links due to multiple factors. These factors include, the amount of traffic, type of traffic, and latency created by the network devices the data has to cross.",
+    "topic": "Topic 4.2.6",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Ein Netzwerkadministrator misst die Übertragung von Bits über den Backbone des Unternehmens für eine geschäftskritische Finanzanwendung. Der Administrator stellt fest, dass der Netzwerkdurchsatz geringer zu sein scheint als die erwartete Bandbreite. Welche drei Faktoren könnten die Unterschiede im Durchsatz beeinflussen? (Wählen Sie drei.)",
+    "optionsDe": [
+      "die Menge an Datenverkehr, die derzeit das Netzwerk durchquert",
+      "die Ausgereiftheit der auf die Daten angewendeten Kapselungsmethode",
+      "die Art des Datenverkehrs, der das Netzwerk durchquert",
+      "die Latenz, die durch die Anzahl der Netzwerkgeräte entsteht, die die Daten durchlaufen",
+      "die Bandbreite der WAN-Verbindung zum Internet",
+      "die Zuverlässigkeit der Gigabit-Ethernet-Infrastruktur des Backbones"
+    ],
+    "mnemonic": "Richtig: 3 Antworten – die Menge an Datenverkehr, die derzeit d, die Art des Datenverkehrs, der das Netzw, die Latenz, die durch die Anzahl der Net"
+  },
+  {
+    "id": 7,
+    "module": 4,
+    "type": "multiple",
+    "question": "What are two characteristics of fiber-optic cable? (Choose two.)",
+    "options": [
+      "It is not affected by EMI or RFI.",
+      "Each pair of cables is wrapped in metallic foil.",
+      "It combines the technique of cancellation, shielding, and twisting to protect data.",
+      "It typically contains 4 pairs of fiber-optic wires.",
+      "It is more expensive than UTP cabling is."
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "explanation": "Fiber-optic cabling supports higher bandwidth than UTP for longer distances. Fiber is immune to EMI and RFI, but costs more, requires more skill to install, and requires more safety precautions.",
+    "topic": "Topic 4.5.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Was sind zwei Eigenschaften von Glasfaserkabeln? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Es wird nicht durch EMI oder RFI beeinflusst.",
+      "Jedes Kabelpaar ist mit Metallfolie umwickelt.",
+      "Es kombiniert die Technik der Löschung, Abschirmung und Verdrehung zum Schutz der Daten.",
+      "Es enthält typischerweise 4 Paar Glasfaserkabel.",
+      "Es ist teurer als UTP-Verkabelung."
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Es wird nicht durch EMI oder RFI beeinfl, Es ist teurer als UTP-Verkabelung."
+  },
+  {
+    "id": 8,
+    "module": 4,
+    "type": "single",
+    "question": "What is a primary role of the Physical layer in transmitting data on the network?",
+    "options": [
+      "create the signals that represent the bits in each frame on to the media",
+      "provide physical addressing to the devices",
+      "determine the path packets take through the network",
+      "control data access to the media"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The OSI physical layer provides the means to transport the bits that make up a frame across the network media. This layer accepts a complete frame from the data link layer and encodes it as a series of signals that are transmitted to the local media.",
+    "topic": "Topic 4.1.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche primäre Rolle spielt die physikalische Schicht bei der Datenübertragung im Netzwerk?",
+    "optionsDe": [
+      "Erstellen Sie die Signale, die die Bits in jedem Frame darstellen, auf dem Medium",
+      "Stellen Sie den Geräten eine physische Adressierung zur Verfügung",
+      "Bestimmen Sie den Pfad, den Pakete durch das Netzwerk nehmen",
+      "Kontrollieren Sie den Datenzugriff auf die Medien"
+    ],
+    "mnemonic": "Thema 4.1.2: Antwort = Erstellen Sie die Signale, die die Bits in jedem Frame darstellen, auf dem Mediu..."
+  },
+  {
+    "id": 9,
+    "module": 4,
+    "type": "single",
+    "question": "With the use of unshielded twisted-pair copper wire in a network, what causes crosstalk within the cable pairs?",
+    "options": [
+      "the magnetic field around the adjacent pairs of wire",
+      "the use of braided wire to shield the adjacent wire pairs",
+      "the reflection of the electrical wave back from the far end of the cable",
+      "the collision caused by two nodes trying to use the media simultaneously"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Crosstalk is a type of noise, or interference that occurs when signal transmission on one wire interferes with another wire. When current flows through a wire a magnetic field is produced. The produced magnetic field will interface the signal carried in the adjacent wire.",
+    "topic": "Topic 4.3.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Was führt bei der Verwendung von ungeschirmten Twisted-Pair-Kupferkabeln in einem Netzwerk zu Übersprechen innerhalb der Kabelpaare?",
+    "optionsDe": [
+      "das Magnetfeld um die benachbarten Adernpaare",
+      "die Verwendung von geflochtenem Draht zur Abschirmung der benachbarten Adernpaare",
+      "die Reflexion der elektrischen Welle zurück vom anderen Ende des Kabels",
+      "die Kollision, die dadurch verursacht wird, dass zwei Knoten versuchen, die Medien gleichzeitig zu nutzen"
+    ],
+    "mnemonic": "Thema 4.3.1: Antwort = das Magnetfeld um die benachbarten Adernpaare"
+  },
+  {
+    "id": 10,
+    "module": 4,
+    "type": "single",
+    "question": "Refer to the graphic. What type of cabling is shown?",
+    "options": [
+      "STP",
+      "UTP",
+      "coax",
+      "fiber",
+      "UTP cable consists of four pairs of color-coded wires that have been twisted together and then encased in a flexible plastic sheath.",
+      "STP cable uses four pairs of wires, each wrapped in a foil shield, which are then wrapped in an overall metallic braid or foil.",
+      "Coaxial cable uses a copper conductor and a layer of flexible plastic insulation surrounds the copper conductor.",
+      "Fiber cable is a flexible, extremely thin, transparent strand of glass surrounded by plastic insulation."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "topic": "Topic 4.5.1",
+    "image": "assets/images/ccna1-mod4-7-q10-875b013973.jpg",
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Siehe Grafik. Welche Art der Verkabelung wird angezeigt?",
+    "optionsDe": [
+      "STP",
+      "UTP",
+      "koax",
+      "Faser",
+      "UTP-Kabel bestehen aus vier Paaren farbcodierter Drähte, die miteinander verdrillt und dann von einer flexiblen Kunststoffhülle umgeben sind.",
+      "Bei STP-Kabeln werden vier Adernpaare verwendet, die jeweils mit einer Folienabschirmung umwickelt sind und anschließend von einem gesamten Metallgeflecht oder einer Metallfolie umwickelt werden.",
+      "Koaxialkabel verwenden einen Kupferleiter und eine Schicht flexibler Kunststoffisolierung umgibt den Kupferleiter.",
+      "Bei einem Glasfaserkabel handelt es sich um einen flexiblen, extrem dünnen, transparenten Glasstrang, der von einer Kunststoffisolierung umgeben ist."
+    ],
+    "mnemonic": "Thema 4.5.1: Antwort = Faser"
+  },
+  {
+    "id": 11,
+    "module": 4,
+    "type": "multiple",
+    "question": "In addition to the cable length, what two factors could interfere with the communication carried over UTP cables? (Choose two.)",
+    "options": [
+      "crosstalk",
+      "bandwidth",
+      "size of the network",
+      "signal modulation technique",
+      "electromagnetic interference",
+      "Electromagnetic interference (EMI) or radio frequency interference (RFI) &#8211; EMI and RFI signals can distort and corrupt the data signals being carried by copper media.",
+      "Crosstalk &#8211; Crosstalk is a disturbance caused by the electric or magnetic fields of a signal on one wire interfering with the signal in an adjacent wire."
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "explanation": "Copper media is widely used in network communications. However, copper media is limited by distance and signal interference. Data is transmitted on copper cables as electrical pulses. The electrical pulses are susceptible to interference from two sources:",
+    "topic": "Topic 4.3.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche zwei Faktoren könnten neben der Kabellänge die über UTP-Kabel übertragene Kommunikation beeinträchtigen? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Übersprechen",
+      "Bandbreite",
+      "Größe des Netzwerks",
+      "Signalmodulationstechnik",
+      "elektromagnetische Störungen",
+      "Elektromagnetische Störungen (EMI) oder Hochfrequenzstörungen (RFI) &#8211; EMI- und RFI-Signale können die von Kupfermedien übertragenen Datensignale verzerren und beschädigen.",
+      "Übersprechen &#8211; Übersprechen ist eine Störung, die dadurch verursacht wird, dass die elektrischen oder magnetischen Felder eines Signals auf einem Kabel das Signal auf einem benachbarten Kabel stören."
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Übersprechen, elektromagnetische Störungen"
+  },
+  {
+    "id": 12,
+    "module": 4,
+    "type": "single",
+    "question": "Refer to the graphic. What type of cabling is shown?",
+    "options": [
+      "STP",
+      "UTP",
+      "coax",
+      "fiber",
+      "UTP cable consists of four pairs of color-coded wires that have been twisted together and then encased in a flexible plastic sheath.",
+      "STP cable uses four pairs of wires, each wrapped in a foil shield, which are then wrapped in an overall metallic braid or foil.",
+      "Coaxial cable uses a copper conductor and a layer of flexible plastic insulation surrounds the copper conductor.",
+      "Fiber cable is a flexible, extremely thin, transparent strand of glass surrounded by plastic insulation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Network cabling include different types of cables:",
+    "topic": "Topic 4.3.3",
+    "image": "assets/images/ccna1-mod4-7-q12-c27b0c2912.jpg",
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Siehe Grafik. Welche Art der Verkabelung wird angezeigt?",
+    "optionsDe": [
+      "STP",
+      "UTP",
+      "koax",
+      "Faser",
+      "UTP-Kabel bestehen aus vier Paaren farbcodierter Drähte, die miteinander verdrillt und dann von einer flexiblen Kunststoffhülle umgeben sind.",
+      "Bei STP-Kabeln werden vier Adernpaare verwendet, die jeweils mit einer Folienabschirmung umwickelt sind und anschließend von einem gesamten Metallgeflecht oder einer Metallfolie umwickelt werden.",
+      "Koaxialkabel verwenden einen Kupferleiter und eine Schicht flexibler Kunststoffisolierung umgibt den Kupferleiter.",
+      "Bei einem Glasfaserkabel handelt es sich um einen flexiblen, extrem dünnen, transparenten Glasstrang, der von einer Kunststoffisolierung umgeben ist"
+    ],
+    "mnemonic": "Thema 4.3.3: Antwort = UTP"
+  },
+  {
+    "id": 13,
+    "module": 4,
+    "type": "multiple",
+    "question": "Which two devices commonly affect wireless networks? (Choose two.)",
+    "options": [
+      "Blu-ray players",
+      "home theaters",
+      "cordless phones",
+      "microwaves",
+      "incandescent light bulbs",
+      "external hard drives"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Radio Frequency Interference (RFI) is the interference that is caused by radio transmitters and other devices that are transmitting in the same frequency.",
+    "topic": "Topic 4.6.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche beiden Geräte wirken sich häufig auf drahtlose Netzwerke aus? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Blu-ray-Player",
+      "Heimkinos",
+      "schnurlose Telefone",
+      "Mikrowellen",
+      "Glühlampen",
+      "externe FeSTPlatten"
+    ],
+    "mnemonic": "Richtig: 2 Antworten – schnurlose Telefone, Mikrowellen"
+  },
+  {
+    "id": 14,
+    "module": 6,
+    "type": "multiple",
+    "question": "Which two statements describe the services provided by the data link layer? (Choose two.)",
+    "options": [
+      "It defines the end-to-end delivery addressing scheme.",
+      "It maintains the path between the source and destination devices during the data transmission.",
+      "It manages the access of frames to the network media.",
+      "It provides reliable delivery through link establishment and flow control.",
+      "It ensures that application data will be transmitted according to the prioritization.",
+      "It packages various Layer 3 PDUs into a frame format that is compatible with the network interface."
+    ],
+    "correct": [
+      2,
+      5
+    ],
+    "explanation": "The data link layer is divided into two sub layers, namely Logical Link Control (LLC) and Media Access Control (MAC). LLC forms a frame from the network layer PDU into a format that conforms to the requirements of the network interface and media. A network layer PDU might be for IPv4 or IPv6. The MAC sub layer defines the media access processes performed by the hardware. It manages the frame access to the network media according to the physical signaling requirements (copper cable, fiber optic, wireless, etc.)",
+    "topic": "Topic 6.1.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche beiden Aussagen beschreiben die von der Datenverbindungsschicht bereitgestellten Dienste? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Es definiert das End-to-End-Adressierungsschema für die Zustellung.",
+      "Es behält den Pfad zwischen den Quell- und Zielgeräten während der Datenübertragung bei.",
+      "Es verwaltet den Zugriff von Frames auf die Netzwerkmedien.",
+      "Es sorgt für eine zuverlässige Zustellung durch Verbindungsaufbau und Flusskontrolle.",
+      "Es stellt sicher, dass Bewerbungsdaten entsprechend der Priorisierung übermittelt werden.",
+      "Es verpackt verschiedene Layer-3-PDUs in ein Rahmenformat, das mit der Netzwerkschnittstelle kompatibel ist."
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Es verwaltet den Zugriff von Frames auf , Es verpackt verschiedene Layer-3-PDUs in"
+  },
+  {
+    "id": 15,
+    "module": 6,
+    "type": "single",
+    "question": "What is the function of the CRC value that is found in the FCS field of a frame?",
+    "options": [
+      "to verify the integrity of the received frame",
+      "to verify the physical address in the frame",
+      "to verify the logical address in the frame",
+      "to compute the checksum header for the data field in the frame"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The CRC value in the FCS field of the received frame is compared to the computed CRC value of that frame, in order to verify the integrity of the frame. If the two values do not match, then the frame is discarded.",
+    "topic": "Topic 6.3.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche Funktion hat der CRC-Wert, der im FCS-Feld eines Frames gefunden wird?",
+    "optionsDe": [
+      "um die Integrität des empfangenen Frames zu überprüfen",
+      "um die physikalische Adresse im Frame zu überprüfen",
+      "um die logische Adresse im Frame zu überprüfen",
+      "um den Prüfsummenheader für das Datenfeld im Frame zu berechnen"
+    ],
+    "mnemonic": "Thema 6.3.2: Antwort = um die Integrität des empfangenen Frames zu überprüfen"
+  },
+  {
+    "id": 16,
+    "module": 6,
+    "type": "single",
+    "question": "What is contained in the trailer of a data-link frame?",
+    "options": [
+      "logical address",
+      "physical address",
+      "data",
+      "error detection"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The trailer in a data-link frame contains error detection information that is pertinent to the frame included in the FCS field. The header contains control information, such as the addressing, while the area that is indicated by the word &#8220;data&#8221; includes the data, transport layer PDU, and the IP header.",
+    "topic": "Topic 6.3.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Was ist im Trailer eines Data-Link-Frames enthalten?",
+    "optionsDe": [
+      "logische Adresse",
+      "physische Adresse",
+      "Daten",
+      "Fehlererkennung"
+    ],
+    "mnemonic": "Thema 6.3.2: Antwort = Fehlererkennung"
+  },
+  {
+    "id": 17,
+    "module": 6,
+    "type": "single",
+    "question": "Which statement describes a characteristic of the frame header fields of the data link layer?",
+    "options": [
+      "They all include the flow control and logical connection fields.",
+      "Ethernet frame header fields contain Layer 3 source and destination addresses.",
+      "They vary depending on protocols.",
+      "They include information on user applications."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "All data link layer protocols encapsulate the Layer 3 PDU within the data field of the frame. However, the structure of the frame and the fields that are contained in the header vary according to the protocol. Different data link layer protocols may use different fields, like priority/quality of service, logical connection control, physical link control, flow control, and congestion control.",
+    "topic": "Topic 6.3.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche Aussage beschreibt eine Eigenschaft der Frame-Header-Felder der Datenverbindungsschicht?",
+    "optionsDe": [
+      "Sie alle umfassen die Felder Flusskontrolle und logische Verbindung.",
+      "Ethernet-Frame-Header-Felder enthalten Layer-3-Quell- und Zieladressen.",
+      "Sie variieren je nach Protokoll.",
+      "Sie enthalten Informationen zu Benutzeranwendungen."
+    ],
+    "mnemonic": "Thema 6.3.2: Antwort = Sie variieren je nach Protokoll."
+  },
+  {
+    "id": 18,
+    "module": 6,
+    "type": "single",
+    "question": "A network team is comparing physical WAN topologies for connecting remote sites to a headquarters building. Which topology provides high availability and connects some, but not all, remote sites?",
+    "options": [
+      "mesh",
+      "partial mesh",
+      "hub and spoke",
+      "point-to-point"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Partial mesh topologies provide high availability by interconnecting multiple remote sites, but do not require a connection between all remote sites. A mesh topology requires point-to-point links with every system being connected to every other system. A point-to-point topology is where each device is connected to one other device. A hub and spoke uses a central device in a star topology that connects to other point-to-point devices.",
+    "topic": "Topic 6.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Ein Netzwerkteam vergleicht physische WAN-Topologien für die Verbindung entfernter Standorte mit einem Hauptgebäude. Welche Topologie bietet hohe Verfügbarkeit und verbindet einige, aber nicht alle Remotestandorte?",
+    "optionsDe": [
+      "Netz",
+      "Teilnetz",
+      "Hub und Speiche",
+      "Punkt-zu-Punkt"
+    ],
+    "mnemonic": "Thema 6.2.2: Antwort = Teilnetz"
+  },
+  {
+    "id": 19,
+    "module": 7,
+    "type": "multiple",
+    "question": "Which two fields or features does Ethernet examine to determine if a received frame is passed to the data link layer or discarded by the NIC? (Choose two.)",
+    "options": [
+      "auto-MDIX",
+      "CEF",
+      "Frame Check Sequence",
+      "minimum frame size",
+      "source MAC address"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "An Ethernet frame is not processed and is discarded if it is smaller than the minimum (64 bytes) or if the calculated frame check sequence (FCS) value does not match the received FCS value. Auto-MDIX (automatic medium-dependent interface crossover) is Layer 1 technology that detects cable straight-through or crossover types. The source MAC address is not used to determine how the frame is received. CEF (Cisco Express Forwarding) is a technology used to expedite Layer 3 switching.",
+    "topic": "Topic 7.1.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche beiden Felder oder Merkmale untersucht Ethernet, um festzustellen, ob ein empfangener Frame an die Datenverbindungsschicht weitergeleitet oder von der NIC verworfen wird? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Auto-MDIX",
+      "CEF",
+      "Frame-Check-Sequenz",
+      "Mindestrahmengröße",
+      "Quell-MAC-Adresse"
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Frame-Check-Sequenz, Mindestrahmengröße"
+  },
+  {
+    "id": 20,
+    "module": 6,
+    "type": "single",
+    "question": "Which media communication type does not require media arbitration in the data link layer?",
+    "options": [
+      "deterministic",
+      "half-duplex",
+      "full-duplex",
+      "controlled access"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Half-duplex communication occurs when both devices can both transmit and receive on the medium but cannot do so simultaneously. Full-duplex communication occurs when both devices can transmit and receive on the medium at the same time and therefore does not require media arbitration. Half-duplex communication is typically contention-based, whereas controlled (deterministic) access is applied in technologies where devices take turns to access the medium.",
+    "topic": "Topic 6.2.5",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Für welchen Medienkommunikationstyp ist keine Medienarbitrierung in der Datenverbindungsschicht erforderlich?",
+    "optionsDe": [
+      "deterministisch",
+      "Halbduplex",
+      "Vollduplex",
+      "kontrollierter Zugang"
+    ],
+    "mnemonic": "Thema 6.2.5: Antwort = Vollduplex"
+  },
+  {
+    "id": 21,
+    "module": 6,
+    "type": "single",
+    "question": "Which statement describes an extended star topology?",
+    "options": [
+      "End devices connect to a central intermediate device, which in turn connects to other central intermediate devices.",
+      "End devices are connected together by a bus and each bus connects to a central intermediate device.",
+      "Each end system is connected to its respective neighbor via an intermediate device.",
+      "All end and intermediate devices are connected in a chain to each other."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In an extended star topology, central intermediate devices interconnect other star topologies.",
+    "topic": "Topic 6.2.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche Aussage beschreibt eine erweiterte Sterntopologie?",
+    "optionsDe": [
+      "Endgeräte stellen eine Verbindung zu einem zentralen Zwischengerät her, das wiederum eine Verbindung zu anderen zentralen Zwischengeräten herstellt.",
+      "Endgeräte sind über einen Bus miteinander verbunden und jeder Bus stellt eine Verbindung zu einem zentralen Zwischengerät her.",
+      "Jedes Endsystem ist über ein Zwischengerät mit seinem jeweiligen Nachbarn verbunden.",
+      "Alle End- und Zwischengeräte sind in einer Kette miteinander verbunden."
+    ],
+    "mnemonic": "Thema 6.2.4: Antwort = Endgeräte stellen eine Verbindung zu einem zentralen Zwischengerät her, das wied..."
+  },
+  {
+    "id": 22,
+    "module": 6,
+    "type": "single",
+    "question": "What is a characteristic of the LLC sublayer?",
+    "options": [
+      "It provides the logical addressing required that identifies the device.",
+      "It provides delimitation of data according to the physical signaling requirements of the medium.",
+      "It places information in the frame allowing multiple Layer 3 protocols to use the same network interface and media.",
+      "It defines software processes that provide services to the physical layer."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Logical Link Control (LLC) defines the software processes that provide services to the network layer protocols. The information is placed by LLC in the frame and identifies which network layer protocol is being used for the frame. This information allows multiple Layer 3 protocols, such as IPv4 and IPv6, to utilize the same network interface and media.",
+    "topic": "Topic 6.1.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Was ist ein Merkmal der LLC-Unterschicht?",
+    "optionsDe": [
+      "Es stellt die erforderliche logische Adressierung bereit, die das Gerät identifiziert.",
+      "Es ermöglicht die Abgrenzung von Daten entsprechend den physikalischen Signalisierungsanforderungen des Mediums.",
+      "Es platziert Informationen im Frame, sodass mehrere Layer-3-Protokolle dieselbe Netzwerkschnittstelle und dieselben Medien verwenden können.",
+      "Es definiert Softwareprozesse, die Dienste für die physische Schicht bereitstellen."
+    ],
+    "mnemonic": "Thema 6.1.2: Antwort = Es platziert Informationen im Frame, sodass mehrere Layer-3-Protokolle dieselbe ..."
+  },
+  {
+    "id": 23,
+    "module": 6,
+    "type": "multiple3",
+    "question": "What are three ways that media access control is used in networking? (Choose three.)",
+    "options": [
+      "Ethernet utilizes CSMA/CD.",
+      "Media access control provides placement of data frames onto the media.",
+      "Contention-based access is also known as deterministic.",
+      "802.11 utilizes CSMA/CD.",
+      "Data link layer protocols define the rules for access to different media.",
+      "Networks with controlled access have reduced performance due to data collisions."
+    ],
+    "correct": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Wired Ethernet networks use CSMA/CD for media access control. IEEE 802.11 wireless networks use CSMA/CA, a similar method. Media access control defines the way data frames get placed on the media. The controlled access method is deterministic, not a contention-based access to networks. Because each device has its own time to use the medium, controlled access networks such as legacy Token Ring do not have collisions.",
+    "topic": "Topic 6.2.7",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Auf welche drei Arten wird die Medienzugriffskontrolle in Netzwerken eingesetzt? (Wählen Sie drei.)",
+    "optionsDe": [
+      "Ethernet nutzt CSMA/CD.",
+      "Die Medienzugriffskontrolle ermöglicht die Platzierung von Datenrahmen auf den Medien.",
+      "Der konfliktbasierte Zugriff wird auch als deterministisch bezeichnet.",
+      "802.11 nutzt CSMA/CD.",
+      "Protokolle der Datenverbindungsschicht definieren die Regeln für den Zugriff auf verschiedene Medien.",
+      "Netzwerke mit kontrolliertem Zugriff weisen aufgrund von Datenkollisionen eine verringerte Leistung auf."
+    ],
+    "mnemonic": "Richtig: 3 Antworten – Ethernet nutzt CSMA/CD., Die Medienzugriffskontrolle ermöglicht d, Protokolle der Datenverbindungsschicht d"
+  },
+  {
+    "id": 24,
+    "module": 6,
+    "type": "single",
+    "question": "During the encapsulation process, what occurs at the data link layer for a PC connected to an Ethernet network?",
+    "options": [
+      "An IP address is added.",
+      "The logical address is added.",
+      "The physical address is added.",
+      "The process port number is added."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Ethernet frame includes the source and destination physical address. The trailer includes a CRC value in the Frame Check Sequence field to allow the receiving device to determine if the frame has been changed (has errors) during the transmission.",
+    "topic": "Topic 6.3.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Was passiert während des Kapselungsprozesses auf der Datenverbindungsschicht für einen PC, der mit einem Ethernet-Netzwerk verbunden ist?",
+    "optionsDe": [
+      "Eine IP-Adresse wird hinzugefügt.",
+      "Die logische Adresse wird hinzugefügt.",
+      "Die physische Adresse wird hinzugefügt.",
+      "Die Prozessportnummer wird hinzugefügt."
+    ],
+    "mnemonic": "Thema 6.3.3: Antwort = Die physische Adresse wird hinzugefügt."
+  },
+  {
+    "id": 25,
+    "module": 6,
+    "type": "multiple3",
+    "question": "What three items are contained in an Ethernet header and trailer? (Choose three.)",
+    "options": [
+      "source IP address",
+      "source MAC address",
+      "destination IP address",
+      "destination MAC address",
+      "error-checking information",
+      "Frame start and stop indicator flags at the beginning and end of a frame",
+      "Addressing &#8211; for Ethernet networks this part of the header contains source and destination MAC addresses",
+      "Type field to indicate what Layer 3 protocol is being used",
+      "Error detection to determine if the frame arrived without error"
+    ],
+    "correct": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Layer 2 headers contain the following:",
+    "topic": "Topic 6.3.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche drei Elemente sind in einem Ethernet-Header und -Trailer enthalten? (Wählen Sie drei.)",
+    "optionsDe": [
+      "Quell-IP-Adresse",
+      "Quell-MAC-Adresse",
+      "Ziel-IP-Adresse",
+      "Ziel-MAC-Adresse",
+      "Informationen zur Fehlerprüfung",
+      "Frame-Start- und -Stopp-Anzeigeflags am Anfang und Ende eines Frames",
+      "Adressierung &#8211; Bei Ethernet-Netzwerken enthält dieser Teil des Headers Quell- und Ziel-MAC-Adressen",
+      "Geben Sie das Feld „Typ“ ein, um anzugeben, welches Layer-3-Protokoll verwendet wird",
+      "Fehlererkennung, um festzustellen, ob der Frame ohne Fehler angekommen ist"
+    ],
+    "mnemonic": "Richtig: 3 Antworten – Quell-MAC-Adresse, Ziel-MAC-Adresse, Informationen zur Fehlerprüfung"
+  },
+  {
+    "id": 26,
+    "module": 6,
+    "type": "single",
+    "question": "What type of communication rule would best describe CSMA/CD?",
+    "options": [
+      "access method",
+      "flow control",
+      "message encapsulation",
+      "message encoding"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Carrier sense multiple access collision detection (CSMA/CD) is the access method used with Ethernet. The access method rule of communication dictates how a network device is able to place a signal on the carrier. CSMA/CD dictates those rules on an Ethernet network and CSMA/CA dictates those rules on an 802.11 wireless LAN.",
+    "topic": "Topic 6.2.6",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche Art von Kommunikationsregel würde CSMA/CD am besten beschreiben?",
+    "optionsDe": [
+      "Zugriffsmethode",
+      "Flusskontrolle",
+      "Nachrichtenkapselung",
+      "Nachrichtenkodierung"
+    ],
+    "mnemonic": "Thema 6.2.6: Antwort = Zugriffsmethode"
+  },
+  {
+    "id": 27,
+    "module": 6,
+    "type": "multiple3",
+    "question": "Which three basic parts are common to all frame types supported by the data link layer? (Choose three.)",
+    "options": [
+      "header",
+      "type field",
+      "MTU size",
+      "data",
+      "trailer",
+      "CRC value",
+      "Header",
+      "Data",
+      "Trailer"
+    ],
+    "correct": [
+      0,
+      3,
+      4
+    ],
+    "explanation": "The data link protocol is responsible for NIC-to-NIC communications within the same network. Although there are many different data link layer protocols that describe data link layer frames, each frame type has three basic parts:",
+    "topic": "Topic 6.3.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche drei grundlegenden Teile sind allen von der Datenverbindungsschicht unterstützten Frame-Typen gemeinsam? (Wählen Sie drei.)",
+    "optionsDe": [
+      "Kopfzeile",
+      "Typfeld",
+      "MTU-Größe",
+      "Daten",
+      "Anhänger",
+      "CRC-Wert",
+      "Kopfzeile",
+      "Daten",
+      "Anhänger"
+    ],
+    "mnemonic": "Richtig: 3 Antworten – Kopfzeile, Daten, Anhänger"
+  },
+  {
+    "id": 28,
+    "module": 6,
+    "type": "single",
+    "question": "Which statement is true about the CSMA/CD access method that is used in Ethernet?",
+    "options": [
+      "When a device hears a carrier signal and transmits, a collision cannot occur.",
+      "A jamming signal causes only devices that caused the collision to execute a backoff algorithm.",
+      "All network devices must listen before transmitting.",
+      "Devices involved in a collision get priority to transmit after the backoff period."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Legacy bus-topology Ethernet LAN uses CSMA/CD as network media access control protocol. It works by detecting a collision in the medium and backing off (after transmitting a jam signal) as necessary. When one host wants to transmit a frame, it listens on the medium to check if the medium is busy. After it senses that no one else is transmitting, the host starts transmitting the frame, it also monitors the current level to detect a collision. If it detects a collision, it transmits a special jam signal so that all other hosts can know there was a collision. The other host will receive this jam signal and stop transmitting. After this, both hosts enter an exponential backoff phase and retry transmission.",
+    "topic": "Topic 6.2.7",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche Aussage trifft auf die CSMA/CD-Zugriffsmethode zu, die im Ethernet verwendet wird?",
+    "optionsDe": [
+      "Wenn ein Gerät ein Trägersignal hört und sendet, kann es nicht zu einer Kollision kommen.",
+      "Ein Störsignal führt nur dazu, dass Geräte, die die Kollision verursacht haben, einen Backoff-Algorithmus ausführen.",
+      "Alle Netzwerkgeräte müssen vor der Übertragung zuhören.",
+      "Geräte, die an einer Kollision beteiligt sind, erhalten nach der Backoff-Zeit Priorität beim Senden."
+    ],
+    "mnemonic": "Thema 6.2.7: Antwort = Alle Netzwerkgeräte müssen vor der Übertragung zuhören."
+  },
+  {
+    "id": 29,
+    "module": 7,
+    "type": "single",
+    "question": "What is the auto-MDIX feature on a switch?",
+    "options": [
+      "the automatic configuration of an interface for 10/100/1000 Mb/s operation",
+      "the automatic configuration of an interface for a straight-through or a crossover Ethernet cable connection",
+      "the automatic configuration of full-duplex operation over a single Ethernet copper or optical cable",
+      "the ability to turn a switch interface on or off accordingly if an active connection is detected"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The auto-MDIX enables a switch to use a crossover or a straight-through Ethernet cable to connect to a device regardless of the device on the other end of the connection.",
+    "topic": "Topic 7.4.5",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Was ist die Auto-MDIX-Funktion eines Switches?",
+    "optionsDe": [
+      "die automatische Konfiguration einer Schnittstelle für 10/100/1000 Mbit/s-Betrieb",
+      "die automatische Konfiguration einer Schnittstelle für eine Straight-Through- oder Crossover-Ethernet-Kabelverbindung",
+      "die automatische Konfiguration des Vollduplex-Betriebs über ein einziges Ethernet-Kupfer- oder optisches Kabel",
+      "die Möglichkeit, eine Switch-Schnittstelle entsprechend ein- oder auszuschalten, wenn eine aktive Verbindung erkannt wird"
+    ],
+    "mnemonic": "Thema 7.4.5: Antwort = die automatische Konfiguration einer Schnittstelle für eine Straight-Through- od..."
+  },
+  {
+    "id": 30,
+    "module": 7,
+    "type": "single",
+    "question": "Refer to the exhibit. What is the destination MAC address of the Ethernet frame as it leaves the web server if the final destination is PC1?",
+    "options": [
+      "00-60-2F-3A-07-AA",
+      "00-60-2F-3A-07-BB",
+      "00-60-2F-3A-07-CC",
+      "00-60-2F-3A-07-DD"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The destination MAC address is used for local delivery of Ethernet frames. The MAC (Layer 2) address changes at each network segment along the path. As the frame leaves the web server, it will be delivered by using the MAC address of the default gateway.",
+    "topic": "Topic 7.3.5",
+    "image": "assets/images/ccna1-mod4-7-q30-b3e578ddcb.png",
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Siehe Ausstellung. Wie lautet die Ziel-MAC-Adresse des Ethernet-Frames beim Verlassen des Webservers, wenn das endgültige Ziel PC1 ist?",
+    "optionsDe": [
+      "00-60-2F-3A-07-AA",
+      "00-60-2F-3A-07-BB",
+      "00-60-2F-3A-07-CC",
+      "00-60-2F-3A-07-DD"
+    ],
+    "mnemonic": "Thema 7.3.5: Antwort = 00-60-2F-3A-07-CC"
+  },
+  {
+    "id": 31,
+    "module": 7,
+    "type": "single",
+    "question": "A Layer 2 switch is used to switch incoming frames from a 1000BASE-T port to a port connected to a 100Base-T network. Which method of memory buffering would work best for this task?",
+    "options": [
+      "port-based buffering",
+      "level 1 cache buffering",
+      "shared memory buffering",
+      "fixed configuration buffering"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With shared memory buffering, the number of frames stored in the buffer is restricted only by the of the entire memory buffer and not limited to a single port buffer. This permits larger frames to be transmitted with fewer dropped frames. This is important to asymmetric switching, which applies to this scenario, where frames are being exchanged between ports of different rates. With port-based memory buffering, frames are stored in queues that are linked to specific incoming and outgoing ports making it possible for a single frame to delay the transmission of all the frames in memory because of a busy destination port. Level 1 cache is memory used in a CPU. Fixed configuration refers to the port arrangement in switch hardware.",
+    "topic": "Topic 7.4.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Ein Layer-2-Switch dient zum Umschalten eingehender Frames von einem 1000BASE-T-Port zu einem Port, der mit einem 100Base-T-Netzwerk verbunden ist. Welche Methode der Speicherpufferung eignet sich am besten für diese Aufgabe?",
+    "optionsDe": [
+      "portbasierte Pufferung",
+      "Cache-Pufferung der Ebene 1",
+      "Shared-Memory-Pufferung",
+      "Pufferung mit fester Konfiguration"
+    ],
+    "mnemonic": "Thema 7.4.3: Antwort = Shared-Memory-Pufferung"
+  },
+  {
+    "id": 32,
+    "module": 7,
+    "type": "multiple",
+    "question": "What are two examples of the cut-through switching method? (Choose two.)",
+    "options": [
+      "store-and-forward switching",
+      "fast-forward switching",
+      "CRC switching",
+      "fragment-free switching",
+      "QOS switching"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Store-and forward switching accepts the entire frame and performs error checking using CRC before forwarding the frame. Store-and-forward is often required for QOS analysis. Fast-forward and fragment-free are both variations of the cut-through switching method where only part of the frame is received before the switch begins to forward it.",
+    "topic": "Topic 7.4.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Was sind zwei BeISPiele für die Cut-Through-Switching-Methode? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Store-and-Forward-Switching",
+      "schnelles Vorwärtsschalten",
+      "CRC-Umschaltung",
+      "Fragmentfreies Schalten",
+      "QoS-Umschaltung"
+    ],
+    "mnemonic": "Richtig: 2 Antworten – schnelles Vorwärtsschalten, Fragmentfreies Schalten"
+  },
+  {
+    "id": 33,
+    "module": 7,
+    "type": "single",
+    "question": "Which frame forwarding method receives the entire frame and performs a CRC check to detect errors before forwarding the frame?",
+    "options": [
+      "cut-through switching",
+      "store-and-forward switching",
+      "fragment-free switching",
+      "fast-forward switching"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fast-forward and fragment-free switching are variations of cut-through switching, which begins to forward the frame before the entire frame is received.",
+    "topic": "Topic 7.4.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche Frame-Weiterleitungsmethode empfängt den gesamten Frame und führt vor der Weiterleitung des Frames eine CRC-Prüfung durch, um Fehler zu erkennen?",
+    "optionsDe": [
+      "Cut-Through-Schaltung",
+      "Store-and-Forward-Switching",
+      "Fragmentfreies Schalten",
+      "schnelles Vorwärtsschalten"
+    ],
+    "mnemonic": "Thema 7.4.1: Antwort = Store-and-Forward-Switching"
+  },
+  {
+    "id": 34,
+    "module": 7,
+    "type": "single",
+    "question": "What is the purpose of the FCS field in a frame?",
+    "options": [
+      "to obtain the MAC address of the sending node",
+      "to verify the logical address of the sending node",
+      "to compute the CRC header for the data field",
+      "to determine if errors occurred in the transmission and reception"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The FCS field in a frame is used to detect any errors in the transmission and receipt of a frame. This is done by comparing the CRC value within the frame against a computed CRC value of the frame. If the two values do not match, then the frame is discarded.",
+    "topic": "Topic 7.1.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welchen Zweck hat das FCS-Feld in einem Frame?",
+    "optionsDe": [
+      "um die MAC-Adresse des sendenden Knotens zu erhalten",
+      "um die logische Adresse des sendenden Knotens zu überprüfen",
+      "um den CRC-Header für das Datenfeld zu berechnen",
+      "um festzustellen, ob beim Senden und Empfangen Fehler aufgetreten sind"
+    ],
+    "mnemonic": "Thema 7.1.4: Antwort = um festzustellen, ob beim Senden und Empfangen Fehler aufgetreten sind"
+  },
+  {
+    "id": 35,
+    "module": 7,
+    "type": "single",
+    "question": "Which switching method has the lowest level of latency?",
+    "options": [
+      "cut-through",
+      "store-and-forward",
+      "fragment-free",
+      "fast-forward"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Fast-forward switching begins to forward a frame after reading the destination MAC address, resulting in the lowest latency. Fragment-free reads the first 64 bytes before forwarding. Store-and-forward has the highest latency because it reads the entire frame before beginning to forward it. Both fragment-free and fast-forward are types of cut-through switching.",
+    "topic": "Topic 7.4.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche Umschaltmethode hat die geringste Latenz?",
+    "optionsDe": [
+      "durchschneiden",
+      "Store-and-Forward",
+      "fragmentfrei",
+      "Schneller Vorlauf"
+    ],
+    "mnemonic": "Thema 7.4.2: Antwort = Schneller Vorlauf"
+  },
+  {
+    "id": 36,
+    "module": 7,
+    "type": "multiple3",
+    "question": "A network administrator is connecting two modern switches using a straight-through cable. The switches are new and have never been configured. Which three statements are correct about the final result of the connection? (Choose three.)",
+    "options": [
+      "The link between the switches will work at the fastest speed that is supported by both switches.",
+      "The link between switches will work as full-duplex.",
+      "If both switches support different speeds, they will each work at their own fastest speed.",
+      "The auto-MDIX feature will configure the interfaces eliminating the need for a crossover cable.",
+      "The connection will not be possible unless the administrator changes the cable to a crossover cable.",
+      "The duplex capability has to be manually configured because it cannot be negotiated."
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Modern switches can negotiate to work in full-duplex mode if both switches are capable. They will negotiate to work using the fastest possible speed and the auto-MDIX feature is enabled by default, so a cable change is not needed.",
+    "topic": "Topic 7.4.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Ein Netzwerkadministrator verbindet zwei moderne Switches über ein Durchgangskabel. Die Schalter sind neu und wurden noch nie konfiguriert. Welche drei Aussagen zum Endergebnis der Verbindung sind richtig? (Wählen Sie drei.)",
+    "optionsDe": [
+      "Die Verbindung zwischen den Switches funktioniert mit der höchsten Geschwindigkeit, die von beiden Switches unterstützt wird.",
+      "Die Verbindung zwischen den Switches funktioniert als Vollduplex.",
+      "Wenn beide Switches unterschiedliche Geschwindigkeiten unterstützen, arbeiten sie jeweils mit ihrer jeweils höchsten Geschwindigkeit.",
+      "Die Auto-MDIX-Funktion konfiguriert die Schnittstellen, sodass kein Crossover-Kabel erforderlich ist.",
+      "Die Verbindung ist nicht möglich, es sei denn, der Administrator ändert das Kabel in ein Crossover-Kabel.",
+      "Die Duplexfähigkeit muss manuell konfiguriert werden, da sie nicht ausgehandelt werden kann."
+    ],
+    "mnemonic": "Richtig: 3 Antworten – Die Verbindung zwischen den Switches fun, Die Verbindung zwischen den Switches fun, Die Auto-MDIX-Funktion konfiguriert die "
+  },
+  {
+    "id": 37,
+    "module": 7,
+    "type": "single",
+    "question": "Which advantage does the store-and-forward switching method have compared with the cut-through switching method?",
+    "options": [
+      "collision detecting",
+      "frame error checking",
+      "faster frame forwarding",
+      "frame forwarding using IPv4 Layer 3 and 4 information"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A switch using the store-and-forward switching method performs an error check on an incoming frame by comparing the FCS value against its own FCS calculations after the entire frame is received. In comparison, a switch using the cut-through switching method makes quick forwarding decisions and starts the forwarding process without waiting for the entire frame to be received. Thus a switch using cut-through switching may send invalid frames to the network. The performance of store-and-forward switching is slower compared to cut-through switching performance. Collision detection is monitored by the sending device. Store-and-forward switching does not use IPv4 Layer 3 and 4 information for its forwarding decisions.",
+    "topic": "Topic 7.4.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welchen Vorteil hat das Store-and-Forward-Switching-Verfahren gegenüber dem Cut-Through-Switching-Verfahren?",
+    "optionsDe": [
+      "Kollisionserkennung",
+      "Rahmenfehlerprüfung",
+      "schnellere Frame-Weiterleitung",
+      "Frame-Weiterleitung mithilfe von IPv4 Layer 3- und 4-Informationen"
+    ],
+    "mnemonic": "Thema 7.4.1: Antwort = Rahmenfehlerprüfung"
+  },
+  {
+    "id": 38,
+    "module": 7,
+    "type": "single",
+    "question": "When the store-and-forward method of switching is in use, what part of the Ethernet frame is used to perform an error check?",
+    "options": [
+      "CRC in the trailer",
+      "source MAC address in the header",
+      "destination MAC address in the header",
+      "protocol type in the header"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The cyclic redundancy check (CRC) part of the trailer is used to determine if the frame has been modified during transit.​ If the integrity of the frame is verified, the frame is forwarded. If the integrity of the frame cannot be verified, then the frame is dropped.",
+    "topic": "Topic 7.4.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welcher Teil des Ethernet-Frames wird verwendet, um eine Fehlerprüfung durchzuführen, wenn die Store-and-Forward-Switching-Methode verwendet wird?",
+    "optionsDe": [
+      "CRC im Trailer",
+      "Quell-MAC-Adresse im Header",
+      "Geben Sie im Header die Ziel-MAC-Adresse an",
+      "Protokolltyp im Header"
+    ],
+    "mnemonic": "Thema 7.4.1: Antwort = CRC im Trailer"
+  },
+  {
+    "id": 39,
+    "module": 7,
+    "type": "single",
+    "question": "Which switching method uses the CRC value in a frame?",
+    "options": [
+      "cut-through",
+      "fast-forward",
+      "fragment-free",
+      "store-and-forward"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "When the store-and-forward switching method is used, the switch receives the complete frame before forwarding it on to the destination. The cyclic redundancy check (CRC) part of the trailer is used to determine if the frame has been modified during transit.​​ In contrast, a cut-through switch forwards the frame once the destination Layer 2 address is read. Two types of cut-through switching methods are fast-forward and fragment-free.",
+    "topic": "Topic 7.4.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche Schaltmethode verwendet den CRC-Wert in einem Frame?",
+    "optionsDe": [
+      "durchschneiden",
+      "Schneller Vorlauf",
+      "fragmentfrei",
+      "Store-and-Forward"
+    ],
+    "mnemonic": "Thema 7.4.1: Antwort = Store-and-Forward"
+  },
+  {
+    "id": 40,
+    "module": 7,
+    "type": "multiple",
+    "question": "What are two actions performed by a Cisco switch? (Choose two.)",
+    "options": [
+      "building a routing table that is based on the first IP address in the frame header",
+      "using the source MAC addresses of frames to build and maintain a MAC address table",
+      "forwarding frames with unknown destination IP addresses to the default gateway",
+      "utilizing the MAC address table to forward frames via the destination MAC address",
+      "examining the destination MAC address to add new entries to the MAC address table",
+      "When a frame comes in, the switch examines the Layer 2 source address to build and maintain the Layer 2 MAC address table.",
+      "It examines the Layer 2 destination address to determine how to forward the frame. When the destination address is in the MAC address table, then the frame is sent out a particular port. When the address is unknown, the frame is sent to all ports that have devices connected to that network."
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Important actions that a switch performs are as follows:",
+    "topic": "Topic 7.3.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche zwei Aktionen werden von einem Cisco-Switch ausgeführt? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Erstellen einer Routing-Tabelle, die auf der ersten IP-Adresse im Frame-Header basiert",
+      "Verwenden der Quell-MAC-Adressen von Frames zum Erstellen und Verwalten einer MAC-Adresstabelle",
+      "Weiterleitung von Frames mit unbekannten Ziel-IP-Adressen an das Standard-Gateway",
+      "Verwenden der MAC-Adresstabelle, um Frames über die Ziel-MAC-Adresse weiterzuleiten",
+      "Untersuchen der Ziel-MAC-Adresse, um neue Einträge zur MAC-Adresstabelle hinzuzufügen",
+      "Wenn ein Frame eingeht, untersucht der Switch die Layer-2-Quelladresse, um die Layer-2-MAC-Adresstabelle zu erstellen und zu verwalten.",
+      "Es untersucht die Layer-2-Zieladresse, um zu bestimmen, wie der Frame weitergeleitet werden soll. Wenn die Zieladresse in der MAC-Adresstabelle enthalten ist, wird der Frame über einen bestimmten Port gesendet. Wenn die Adresse unbekannt ist, wird der Frame an alle Ports gesendet, an denen Geräte mit diesem Netzwerk verbunden sind."
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Verwenden der Quell-MAC-Adressen von Fra, Verwenden der MAC-Adresstabelle, um Fram"
+  },
+  {
+    "id": 41,
+    "module": 7,
+    "type": "multiple",
+    "question": "Which two statements describe features or functions of the logical link control sublayer in Ethernet standards? (Choose two.)",
+    "options": [
+      "Logical link control is implemented in software.",
+      "Logical link control is specified in the IEEE 802.3 standard.",
+      "The LLC sublayer adds a header and a trailer to the data.",
+      "The data link layer uses LLC to communicate with the upper layers of the protocol suite.",
+      "The LLC sublayer is responsible for the placement and retrieval of frames on and off the media."
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Logical link control is implemented in software and enables the data link layer to communicate with the upper layers of the protocol suite. Logical link control is specified in the IEEE 802.2 standard. IEEE 802.3 is a suite of standards that define the different Ethernet types. The MAC (Media Access Control) sublayer is responsible for the placement and retrieval of frames on and off the media. The MAC sublayer is also responsible for adding a header and a trailer to the network layer protocol data unit (PDU).",
+    "topic": "Topic 7.1.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche beiden Aussagen beschreiben Merkmale oder Funktionen der Unterschicht zur logischen Verbindungssteuerung in Ethernet-Standards? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Die Steuerung der logischen Verbindung ist in Software implementiert.",
+      "Die Steuerung logischer Verbindungen ist im IEEE 802.3-Standard spezifiziert.",
+      "Die LLC-Unterschicht fügt den Daten einen Header und einen Trailer hinzu.",
+      "Die Datenverbindungsschicht verwendet LLC, um mit den oberen Schichten der Protokollsuite zu kommunizieren.",
+      "Die LLC-Unterschicht ist für die Platzierung und den Abruf von Frames auf und von den Medien verantwortlich."
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Die Steuerung der logischen Verbindung i, Die Datenverbindungsschicht verwendet LL"
+  },
+  {
+    "id": 42,
+    "module": 7,
+    "type": "single",
+    "question": "What is the auto-MDIX feature?",
+    "options": [
+      "It enables a device to automatically configure an interface to use a straight-through or a crossover cable.",
+      "It enables a device to automatically configure the duplex settings of a segment.",
+      "It enables a device to automatically configure the speed of its interface.",
+      "It enables a switch to dynamically select the forwarding method."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The auto-MDIX feature allows the device to configure its network port according to the cable type that is used (straight-through or crossover) and the type of device that is connected to that port. When a port of a switch is configured with auto-MDIX, this switch can be connected to another switch by the use of either a straight-through cable or a crossover cable.",
+    "topic": "Topic 7.4.5",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Was ist die Auto-MDIX-Funktion?",
+    "optionsDe": [
+      "Es ermöglicht einem Gerät, eine Schnittstelle automatisch für die Verwendung eines Straight-Through- oder Crossover-Kabels zu konfigurieren.",
+      "Es ermöglicht einem Gerät, die Duplexeinstellungen eines Segments automatisch zu konfigurieren.",
+      "Es ermöglicht einem Gerät, die Geschwindigkeit seiner Schnittstelle automatisch zu konfigurieren.",
+      "Es ermöglicht einem Switch, die Weiterleitungsmethode dynamisch auszuwählen."
+    ],
+    "mnemonic": "Thema 7.4.5: Antwort = Es ermöglicht einem Gerät, eine Schnittstelle automatisch für die Verwendung ein..."
+  },
+  {
+    "id": 43,
+    "module": 7,
+    "type": "single",
+    "question": "What is one advantage of using the cut-through switching method instead of the store-and-forward switching method?",
+    "options": [
+      "has a positive impact on bandwidth by dropping most of the invalid frames",
+      "makes a fast forwarding decision based on the source MAC address of the frame",
+      "has a lower latency appropriate for high-performance computing applications​",
+      "provides the flexibility to support any mix of Ethernet speeds"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cut-through switching provides lower latency switching for high-performance computing (HPC) applications. Cut-through switching allows more invalid frames to cross the network than store-and-forward switching. The cut-through switching method can make a forwarding decision as soon as it looks up the destination MAC address of the frame.",
+    "topic": "Topic 7.4.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Was ist ein Vorteil der Cut-Through-Switching-Methode anstelle der Store-and-Forward-Switching-Methode?",
+    "optionsDe": [
+      "wirkt sich pOSItiv auf die Bandbreite aus, indem die meisten ungültigen Frames gelöscht werden",
+      "trifft eine schnelle Weiterleitungsentscheidung basierend auf der Quell-MAC-Adresse des Frames",
+      "verfügt über eine geringere Latenz, die für Hochleistungs-Computing-Anwendungen geeignet ist",
+      "bietet die Flexibilität, jede Mischung von Ethernet-Geschwindigkeiten zu unterstützen"
+    ],
+    "mnemonic": "Thema 7.4.2: Antwort = verfügt über eine geringere Latenz, die für Hochleistungs-Computing-Anwendungen ..."
+  },
+  {
+    "id": 44,
+    "module": 7,
+    "type": "single",
+    "question": "Which is a multicast MAC address?",
+    "options": [
+      "FF-FF-FF-FF-FF-FF",
+      "5C-26-0A-4B-19-3E",
+      "01-00-5E-00-00-03",
+      "00-26-0F-4B-00-3E"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Multicast MAC addresses begin with the special value of 01-00-5E.",
+    "topic": "Topic 7.2.6",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Was ist eine Multicast-MAC-Adresse?",
+    "optionsDe": [
+      "FF-FF-FF-FF-FF-FF",
+      "5C-26-0A-4B-19-3E",
+      "01-00-5E-00-00-03",
+      "00-26-0F-4B-00-3E"
+    ],
+    "mnemonic": "Thema 7.2.6: Antwort = 01-00-5E-00-00-03"
+  },
+  {
+    "id": 45,
+    "module": 4,
+    "type": "single",
+    "question": "Refer to the exhibit. What is wrong with the displayed termination?",
+    "options": [
+      "The woven copper braid should not have been removed.",
+      "The wrong type of connector is being used.",
+      "The untwisted length of each wire is too long.",
+      "The wires are too thick for the connector that is used."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When a cable to an RJ-45 connector is terminated, it is important to ensure that the untwisted wires are not too long and that the flexible plastic sheath surrounding the wires is crimped down and not the bare wires. None of the colored wires should be visible from the bottom of the jack.",
+    "topic": "Topic 4.4.2",
+    "image": "assets/images/ccna1-mod4-7-q45-cc0d143783.png",
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Siehe Ausstellung. Was stimmt mit der angezeigten Kündigung nicht?",
+    "optionsDe": [
+      "Das geflochtene Kupfergeflecht hätte nicht entfernt werden dürfen.",
+      "Es wird der falsche Steckertyp verwendet.",
+      "Die unverdrillte Länge jedes Drahtes ist zu LANg.",
+      "Die Drähte sind zu dick für den verwendeten Stecker."
+    ],
+    "mnemonic": "Thema 4.4.2: Antwort = Die unverdrillte Länge jedes Drahtes ist zu LANg."
+  },
+  {
+    "id": 46,
+    "module": 4,
+    "type": "single",
+    "question": "Refer to the exhibit. The PC is connected to the console port of the switch. All the other connections are made through FastEthernet links. Which types of UTP cables can be used to connect the devices?​",
+    "options": [
+      "1 - rollover, 2 - crossover, 3 - straight-through",
+      "1 - rollover, 2 - straight-through, 3 - crossover",
+      "1 - crossover, 2 - rollover, 3 - straight-through",
+      "1 - crossover, 2 - straight-through, 3 - rollover"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "A straight-through cable is commonly used to interconnect a host to a switch and a switch to a router. A crossover cable is used to interconnect similar devices together like switch to a switch, a host to a host, or a router to a router. If a switch has the MDIX capability, a crossover could be used to connect the switch to the router; however, that option is not available. A rollover cable is used to connect to a router or switch console port.",
+    "topic": "Topic 4.4.3",
+    "image": "assets/images/ccna1-mod4-7-q46-dcdc18b1e7.png",
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Siehe Ausstellung. Der PC wird an den Konsolenport des Switches angeschlossen. Alle anderen Verbindungen werden über FastEthernet-Verbindungen hergestellt. Welche Arten von UTP-Kabeln können zum Anschluss der Geräte verwendet werden?",
+    "mnemonic": "Console=rollover | Switch↔Router=crossover (oder straight mit MDIX) | Host↔Switch=straight",
+    "optionsDe": [
+      "1 – Rollover, 2 – Crossover, 3 – Straight-Through",
+      "1 – Rollover, 2 – Straight-Through, 3 – Crossover",
+      "1 – Crossover, 2 – Rollover, 3 – Straight-Through",
+      "1 – Crossover, 2 – Straight-Through, 3 – Rollover"
+    ]
+  },
+  {
+    "id": 47,
+    "module": 7,
+    "type": "single",
+    "question": "Open the PT Activity. Perform the tasks in the activity instructions and then answer the question.",
+    "options": [
+      "Fa0/1",
+      "Fa0/5",
+      "Fa0/9",
+      "Fa0/11"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Issuing the command ipconfig /all from the PC0 command prompt displays the IPv4 address and MAC address. When the IPv4 address 10.1.1.5 is pinged from PC0, the switch stores the source MAC address (from PC0) along with the port to which PC0 is connected. When the destination reply is received, the switch takes the destination MAC address and compares to MAC addresses stored in the MAC address table. Issuing the show mac-address-table on the PC0 Terminal application displays two dynamic MAC address entries. The MAC address and port entry that does not belong to PC0 must be the MAC address and port of the destination with the IPv4 address 10.1.1.5.",
+    "topic": "Topic 7.3.2",
+    "image": "assets/images/ccna1-mod4-7-q47-dd3affa4e8.jpg",
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Öffnen Sie die PT-Aktivität. Führen Sie die Aufgaben in der Aktivitätsanweisung aus und beantworten Sie anschließend die Frage.",
+    "optionsDe": [
+      "Fa0/1",
+      "Fa0/5",
+      "Fa0/9",
+      "Fa0/11"
+    ],
+    "mnemonic": "Thema 7.3.2: Antwort = Fa0/11"
+  },
+  {
+    "id": 48,
+    "module": 4,
+    "type": "single",
+    "question": "What does the term “attenuation” mean in data communication?",
+    "options": [
+      "loss of signal strength as distance increases",
+      "time for a signal to reach its destination",
+      "leakage of signals from one cable pair to another",
+      "strengthening of a signal by a networking device"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Data is transmitted on copper cables as electrical pulses. A detector in the network interface of a destination device must receive a signal that can be successfully decoded to match the signal sent. However, the farther the signal travels, the more it deteriorates. This is referred to as signal attenuation.",
+    "topic": "Topic 4.3.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Was bedeutet der Begriff „Dämpfung“ in der Datenkommunikation?",
+    "optionsDe": [
+      "Verlust der Signalstärke mit zunehmender Entfernung",
+      "Zeit, bis ein Signal sein Ziel erreicht",
+      "Verlust von Signalen von einem Kabelpaar zum anderen",
+      "Verstärkung eines Signals durch ein Netzwerkgerät"
+    ],
+    "mnemonic": "Thema 4.3.1: Antwort = Verlust der Signalstärke mit zunehmender Entfernung"
+  },
+  {
+    "id": 49,
+    "module": 4,
+    "type": "multiple3",
+    "question": "What makes fiber preferable to copper cabling for interconnecting buildings? (Choose three.)",
+    "options": [
+      "greater distances per cable run",
+      "lower installation cost",
+      "limited susceptibility to EMI/RFI",
+      "durable connections",
+      "greater bandwidth potential",
+      "easily terminated"
+    ],
+    "correct": [
+      0,
+      2,
+      4
+    ],
+    "explanation": "Optical fiber cable transmits data over longer distances and at higher bandwidths than any other networking media. Unlike copper wires, fiber-optic cable can transmit signals with less attenuation and is completely immune to EMI and RFI.",
+    "topic": "Topic 4.5.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Warum ist Glasfaser bei der Gebäudeverbindung Kupferverkabelung vorzuziehen? (Wählen Sie drei.)",
+    "optionsDe": [
+      "größere Entfernungen pro Kabelstrecke",
+      "geringere Installationskosten",
+      "begrenzte Anfälligkeit für EMI/RFI",
+      "dauerhafte Verbindungen",
+      "größeres Bandbreitenpotenzial",
+      "leicht beendet"
+    ],
+    "mnemonic": "Richtig: 3 Antworten – größere Entfernungen pro Kabelstrecke, begrenzte Anfälligkeit für EMI/RFI, größeres Bandbreitenpotenzial"
+  },
+  {
+    "id": 50,
+    "module": 4,
+    "type": "single",
+    "question": "What OSI physical layer term describes the process by which one wave modifies another wave?",
+    "options": [
+      "modulation",
+      "IEEE",
+      "EIA/TIA",
+      "air"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 4.2.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welcher OSI-Begriff der physikalischen Schicht beschreibt den Prozess, durch den eine Welle eine andere Welle modifiziert?",
+    "optionsDe": [
+      "Modulation",
+      "IEEE",
+      "UVP/TIA",
+      "Luft"
+    ],
+    "mnemonic": "Thema 4.2.4: Antwort = Modulation"
+  },
+  {
+    "id": 51,
+    "module": 4,
+    "type": "single",
+    "question": "What OSI physical layer term describes the capacity at which a medium can carry data?",
+    "options": [
+      "bandwidth",
+      "IEEE",
+      "EIA/TIA",
+      "air"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 4.2.5",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welcher OSI-Begriff der physikalischen Schicht beschreibt die Kapazität, mit der ein Medium Daten übertragen kann?",
+    "optionsDe": [
+      "Bandbreite",
+      "IEEE",
+      "UVP/TIA",
+      "Luft"
+    ],
+    "mnemonic": "Thema 4.2.5: Antwort = Bandbreite"
+  },
+  {
+    "id": 53,
+    "module": 4,
+    "type": "single",
+    "question": "What OSI physical layer term describes the measure of the transfer of bits across a medium over a given period of time?",
+    "options": [
+      "throughput",
+      "bandwidth",
+      "latency",
+      "goodput"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 4.2.6",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welcher OSI-Begriff der physikalischen Schicht beschreibt das Maß für die Übertragung von Bits über ein Medium über einen bestimmten Zeitraum?",
+    "optionsDe": [
+      "Durchsatz",
+      "Bandbreite",
+      "Latenz",
+      "Goodput"
+    ],
+    "mnemonic": "Thema 4.2.6: Antwort = Durchsatz"
+  },
+  {
+    "id": 54,
+    "module": 4,
+    "type": "single",
+    "question": "What OSI physical layer term describes the amount of time, including delays, for data to travel from one point to another?",
+    "options": [
+      "latency",
+      "bandwidth",
+      "throughput",
+      "goodput"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 4.2.6",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welcher OSI-Begriff der physikalischen Schicht beschreibt die Zeitspanne, einschließlich Verzögerungen, die Daten für die Übertragung von einem Punkt zum anderen benötigen?",
+    "optionsDe": [
+      "Latenz",
+      "Bandbreite",
+      "Durchsatz",
+      "Goodput"
+    ],
+    "mnemonic": "Thema 4.2.6: Antwort = Latenz"
+  },
+  {
+    "id": 55,
+    "module": 4,
+    "type": "single",
+    "question": "What OSI physical layer term describes the amount of time, including delays, for data to travel from one point to another?",
+    "options": [
+      "latency",
+      "fiber-optic cable",
+      "air",
+      "copper cable"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 4.2.6",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welcher OSI-Begriff der physikalischen Schicht beschreibt die Zeitspanne, einschließlich Verzögerungen, die Daten für die Übertragung von einem Punkt zum anderen benötigen?",
+    "optionsDe": [
+      "Latenz",
+      "Glasfaserkabel",
+      "Luft",
+      "Kupferkabel"
+    ],
+    "mnemonic": "Thema 4.2.6: Antwort = Latenz"
+  },
+  {
+    "id": 56,
+    "module": 4,
+    "type": "single",
+    "question": "What OSI physical layer term describes the measure of usable data transferred over a given period of time?",
+    "options": [
+      "goodput",
+      "fiber-optic cable",
+      "air",
+      "copper cable"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 4.2.6",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welcher OSI-Begriff der physikalischen Schicht beschreibt das Maß der über einen bestimmten Zeitraum übertragenen nutzbaren Daten?",
+    "optionsDe": [
+      "Goodput",
+      "Glasfaserkabel",
+      "Luft",
+      "Kupferkabel"
+    ],
+    "mnemonic": "Thema 4.2.6: Antwort = Goodput"
+  },
+  {
+    "id": 57,
+    "module": 4,
+    "type": "single",
+    "question": "What OSI physical layer term describes the physical medium which uses electrical pulses?",
+    "options": [
+      "copper cable",
+      "fiber-optic cable",
+      "air",
+      "goodput"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 4.3.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welcher OSI-Begriff der physikalischen Schicht beschreibt das physikalische Medium, das elektrische Impulse verwendet?",
+    "optionsDe": [
+      "Kupferkabel",
+      "Glasfaserkabel",
+      "Luft",
+      "Goodput"
+    ],
+    "mnemonic": "Thema 4.3.1: Antwort = Kupferkabel"
+  },
+  {
+    "id": 58,
+    "module": 4,
+    "type": "single",
+    "question": "What OSI physical layer term describes the physical medium that uses the propagation of light?",
+    "options": [
+      "fiber-optic cable",
+      "goodput",
+      "latency",
+      "throughput"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 4.2.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welcher OSI-Begriff der physikalischen Schicht beschreibt das physikalische Medium, das die Ausbreitung von Licht nutzt?",
+    "optionsDe": [
+      "Glasfaserkabel",
+      "Goodput",
+      "Latenz",
+      "Durchsatz"
+    ],
+    "mnemonic": "Thema 4.2.4: Antwort = Glasfaserkabel"
+  },
+  {
+    "id": 59,
+    "module": 4,
+    "type": "single",
+    "question": "What OSI physical layer term describes the physical medium for microwave transmissions?",
+    "options": [
+      "air",
+      "goodput",
+      "latency",
+      "throughput"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 4.2.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welcher OSI-Begriff der physikalischen Schicht beschreibt das physikalische Medium für Mikrowellenübertragungen?",
+    "optionsDe": [
+      "Luft",
+      "Goodput",
+      "Latenz",
+      "Durchsatz"
+    ],
+    "mnemonic": "Thema 4.2.4: Antwort = Luft"
+  },
+  {
+    "id": 60,
+    "module": 6,
+    "type": "single",
+    "question": "Which two functions are performed at the MAC sublayer of the OSI data link layer? (Choose two.)",
+    "options": [
+      "Adds Layer 2 control information to network protocol data.",
+      "Places information in the frame that identifies which network layer protocol is being used for the frame.",
+      "Enables IPv4 and IPv6 to utilize the same network interface and media.",
+      "Communicates between the networking software at the upper layers and the device hardware at the lower layers.",
+      "Adds Layer 2 control information to network protocol data.",
+      "Enables IPv4 and IPv6 to utilize the same network interface and media.",
+      "Enables IPv4 and IPv6 to utilize the same network interface and media.",
+      "Adds Layer 2 control information to network protocol data.",
+      "Places information in the frame that identifies which network layer protocol is being used for the frame.",
+      "Enables IPv4 and IPv6 to utilize the same network interface and media.",
+      "Adds Layer 2 control information to network protocol data.",
+      "Communicates between the networking software at the upper layers and the device hardware at the lower layers.",
+      "Places information in the frame that identifies which network layer protocol is being used for the frame.",
+      "Adds Layer 2 control information to network protocol data.",
+      "Communicates between the networking software at the upper layers and the device hardware at the lower layers.",
+      "Synchronization: It embeds preamble and delimiter flags into the frame, which provides synchronization between source and destination nodes so they can detect precisely where a transmission begins and ends.",
+      "Error Detection: It computes the Cyclic Redundancy Check (CRC) value and implements a trailer (FCS field) at the end of the frame, allowing the receiving NIC to check for data corruption."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 6.1.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche beiden Funktionen werden auf der MAC-Unterschicht der OSI-Datenverbindungsschicht ausgeführt? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Fügt Layer-2-Steuerungsinformationen zu Netzwerkprotokolldaten hinzu.",
+      "Platziert Informationen im Frame, die angeben, welches Netzwerkschichtprotokoll für den Frame verwendet wird.",
+      "Ermöglicht IPv4 und IPv6 die Nutzung derselben Netzwerkschnittstelle und derselben Medien.",
+      "Kommuniziert zwischen der Netzwerksoftware auf den oberen Schichten und der Gerätehardware auf den unteren Schichten.",
+      "Fügt Layer-2-Steuerungsinformationen zu Netzwerkprotokolldaten hinzu.",
+      "Ermöglicht IPv4 und IPv6 die Nutzung derselben Netzwerkschnittstelle und derselben Medien.",
+      "Ermöglicht IPv4 und IPv6 die Nutzung derselben Netzwerkschnittstelle und derselben Medien.",
+      "Fügt Layer-2-Steuerungsinformationen zu Netzwerkprotokolldaten hinzu.",
+      "Platziert Informationen im Frame, die angeben, welches Netzwerkschichtprotokoll für den Frame verwendet wird.",
+      "Ermöglicht IPv4 und IPv6 die Nutzung derselben Netzwerkschnittstelle und derselben Medien.",
+      "Fügt Layer-2-Steuerungsinformationen zu Netzwerkprotokolldaten hinzu.",
+      "Kommuniziert zwischen der Netzwerksoftware auf den oberen Schichten und der Gerätehardware auf den unteren Schichten.",
+      "Platziert Informationen im Frame, die angeben, welches Netzwerkschichtprotokoll für den Frame verwendet wird.",
+      "Fügt Layer-2-Steuerungsinformationen zu Netzwerkprotokolldaten hinzu.",
+      "Kommuniziert zwischen der Netzwerksoftware auf den oberen Schichten und der Gerätehardware auf den unteren Schichten.",
+      "Synchronisierung: Es bettet Präambel- und Trennzeichen in den Frame ein, was für eine Synchronisierung zwischen Quell- und Zielknoten sorgt, sodass diese genau erkennen können, wo eine Übertragung beginnt und endet.",
+      "Fehlererkennung: Es berechnet den CRC-Wert (CyCLIc Redundancy Check) und implementiert einen Trailer (FCS-Feld) am Ende des Frames, der es der empfangenden Netzwerkkarte ermöglicht, auf Datenbeschädigung zu prüfen."
+    ],
+    "mnemonic": "Thema 6.1.2: Antwort = Fügt Layer-2-Steuerungsinformationen zu Netzwerkprotokolldaten hinzu."
+  },
+  {
+    "id": 61,
+    "module": 6,
+    "type": "multiple",
+    "question": "Which two functions are performed at the LLC sublayer of the OSI data link layer? (Choose two.)",
+    "options": [
+      "Enables IPv4 and IPv6 to utilize the same network interface and media.",
+      "Places information in the frame that identifies which network layer protocol is being used for the frame.",
+      "Integrates various physical technologies.",
+      "Implements a process to delimit fields within a Layer 2 frame.",
+      "Controls the NIC responsible for sending and receiving data on the physical medium.",
+      "Interfacing with upper layers: It acts as an intermediary between network software (Layer 3 protocols) and the underlying hardware. By inserting control information into the frame that identifies which network layer protocol is being used, it enables multiple protocols, such as IPv4 and IPv6, to utilize the same network interface and media."
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "",
+    "topic": "Topic 6.1.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche beiden Funktionen werden auf der LLC-Unterschicht der OSI-Datenverbindungsschicht ausgeführt? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Ermöglicht IPv4 und IPv6 die Nutzung derselben Netzwerkschnittstelle und derselben Medien.",
+      "Platziert Informationen im Frame, die angeben, welches Netzwerkschichtprotokoll für den Frame verwendet wird.",
+      "Integriert verschiedene physikalische Technologien.",
+      "Implementiert einen Prozess zum Abgrenzen von Feldern innerhalb eines Layer-2-Frames.",
+      "Steuert die Netzwerkkarte, die für das Senden und Empfangen von Daten auf dem physischen Medium verantwortlich ist.",
+      "Schnittstelle zu oberen Schichten: Es fungiert als Vermittler zwischen Netzwerksoftware (Schicht-3-Protokolle) und der zugrunde liegenden Hardware. Durch das Einfügen von Steuerinformationen in den Frame, die angeben, welches Netzwerkschichtprotokoll verwendet wird, können mehrere Protokolle wie IPv4 und IPv6 dieselbe Netzwerkschnittstelle und dieselben Medien verwenden."
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Ermöglicht IPv4 und IPv6 die Nutzung der, Platziert Informationen im Frame, die an"
+  },
+  {
+    "id": 64,
+    "module": 6,
+    "type": "multiple",
+    "question": "Which two functions are performed at the LLC sublayer of the OSI data link layer? (Choose two.)",
+    "options": [
+      "Adds Layer 2 control information to network protocol data.",
+      "Places information in the frame that identifies which network layer protocol is being used for the frame.",
+      "Performs data encapsulation.",
+      "Controls the NIC responsible for sending and receiving data on the physical medium.",
+      "Integrates various physical technologies.",
+      "Interfacing with upper layers: It acts as an intermediary between network software (Layer 3 protocols) and the underlying hardware. By inserting control information into the frame that identifies which network layer protocol is being used, it enables multiple protocols, such as IPv4 and IPv6, to utilize the same network interface and media."
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "",
+    "topic": "Topic 6.1.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche beiden Funktionen werden auf der LLC-Unterschicht der OSI-Datenverbindungsschicht ausgeführt? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Fügt Layer-2-Steuerungsinformationen zu Netzwerkprotokolldaten hinzu.",
+      "Platziert Informationen im Frame, die angeben, welches Netzwerkschichtprotokoll für den Frame verwendet wird.",
+      "Führt die Datenkapselung durch.",
+      "Steuert die Netzwerkkarte, die für das Senden und Empfangen von Daten auf dem physischen Medium verantwortlich ist.",
+      "Integriert verschiedene physikalische Technologien.",
+      "Schnittstelle zu oberen Schichten: Es fungiert als Vermittler zwischen Netzwerksoftware (Schicht-3-Protokolle) und der zugrunde liegenden Hardware. Durch das Einfügen von Steuerinformationen in den Frame, die angeben, welches Netzwerkschichtprotokoll verwendet wird, können mehrere Protokolle wie IPv4 und IPv6 dieselbe Netzwerkschnittstelle und dieselben Medien verwenden."
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Fügt Layer-2-Steuerungsinformationen zu , Platziert Informationen im Frame, die an"
+  },
+  {
+    "id": 66,
+    "module": 6,
+    "type": "multiple",
+    "question": "Which two functions are performed at the LLC sublayer of the OSI data link layer? (Choose two.)",
+    "options": [
+      "Adds Layer 2 control information to network protocol data.",
+      "Enables IPv4 and IPv6 to utilize the same network interface and media.",
+      "Provides data link layer addressing.",
+      "Implements a trailer to detect transmission errors.",
+      "Provides synchronization between source and target nodes.",
+      "Interfacing with upper layers: It acts as an intermediary between network software (Layer 3 protocols) and the underlying hardware. By inserting control information into the frame that identifies which network layer protocol is being used, it enables multiple protocols, such as IPv4 and IPv6, to utilize the same network interface and media."
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "",
+    "topic": "Topic 6.1.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche beiden Funktionen werden auf der LLC-Unterschicht der OSI-Datenverbindungsschicht ausgeführt? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Fügt Layer-2-Steuerungsinformationen zu Netzwerkprotokolldaten hinzu.",
+      "Ermöglicht IPv4 und IPv6 die Nutzung derselben Netzwerkschnittstelle und derselben Medien.",
+      "Bietet Adressierung der Datenverbindungsschicht.",
+      "Implementiert einen Trailer zur Erkennung von Übertragungsfehlern.",
+      "Bietet Synchronisierung zwischen Quell- und Zielknoten.",
+      "Schnittstelle zu oberen Schichten: Es fungiert als Vermittler zwischen Netzwerksoftware (Schicht-3-Protokolle) und der zugrunde liegenden Hardware. Durch das Einfügen von Steuerinformationen in den Frame, die angeben, welches Netzwerkschichtprotokoll verwendet wird, können mehrere Protokolle wie IPv4 und IPv6 dieselbe Netzwerkschnittstelle und dieselben Medien verwenden."
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Fügt Layer-2-Steuerungsinformationen zu , Ermöglicht IPv4 und IPv6 die Nutzung der"
+  },
+  {
+    "id": 68,
+    "module": 6,
+    "type": "multiple",
+    "question": "Which two functions are performed at the LLC sublayer of the OSI data link layer? (Choose two.)",
+    "options": [
+      "Enables IPv4 and IPv6 to utilize the same network interface and media.",
+      "Adds Layer 2 control information to network protocol data.",
+      "Integrates various physical technologies.",
+      "Implements a trailer to detect transmission errors.",
+      "Provides synchronization between source and target nodes.",
+      "Interfacing with upper layers: It acts as an intermediary between network software (Layer 3 protocols) and the underlying hardware. By inserting control information into the frame that identifies which network layer protocol is being used, it enables multiple protocols, such as IPv4 and IPv6, to utilize the same network interface and media.",
+      "Initial control encapsulation: It is responsible for adding Layer 2 control information to the network protocol data units (PDUs) before handing them down to the MAC sublayer."
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "",
+    "topic": "Topic 6.1.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche beiden Funktionen werden auf der LLC-Unterschicht der OSI-Datenverbindungsschicht ausgeführt? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Ermöglicht IPv4 und IPv6 die Nutzung derselben Netzwerkschnittstelle und derselben Medien.",
+      "Fügt Layer-2-Steuerungsinformationen zu Netzwerkprotokolldaten hinzu.",
+      "Integriert verschiedene physikalische Technologien.",
+      "Implementiert einen Trailer zur Erkennung von Übertragungsfehlern.",
+      "Bietet Synchronisierung zwischen Quell- und Zielknoten.",
+      "Schnittstelle zu oberen Schichten: Es fungiert als Vermittler zwischen Netzwerksoftware (Schicht-3-Protokolle) und der zugrunde liegenden Hardware. Durch das Einfügen von Steuerinformationen in den Frame, die angeben, welches Netzwerkschichtprotokoll verwendet wird, können mehrere Protokolle wie IPv4 und IPv6 dieselbe Netzwerkschnittstelle und dieselben Medien verwenden.",
+      "Anfängliche Steuerkapselung: Sie ist für das Hinzufügen von Schicht-2-Steuerinformationen zu den Netzwerkprotokoll-Dateneinheiten (PDUs) verantwortlich, bevor sie an die MAC-Unterschicht weitergegeben werden."
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Ermöglicht IPv4 und IPv6 die Nutzung der, Fügt Layer-2-Steuerungsinformationen zu "
+  },
+  {
+    "id": 71,
+    "module": 7,
+    "type": "single",
+    "question": "What action will occur if a switch receives a frame with the destination MAC address FF:FF:FF:FF:FF:FF?",
+    "options": [
+      "The switch forwards it out all ports except the ingress port.",
+      "The switch refreshes the timer on that entry.",
+      "The switch does not forward the frame.",
+      "The switch sends the frame to a connected router because the destination MAC address is not local."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 7.2.5",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche Aktion wird ausgeführt, wenn ein Switch einen Frame mit der Ziel-MAC-Adresse FF:FF:FF:FF:FF:FF empfängt?",
+    "optionsDe": [
+      "Der Switch leitet es an alle Ports außer dem Eingangsport weiter.",
+      "Der Schalter aktualisiert den Timer für diesen Eintrag.",
+      "Der Switch leitet den Frame nicht weiter.",
+      "Der Switch sendet den Frame an einen angeschlossenen Router, da die Ziel-MAC-Adresse nicht lokal ist."
+    ],
+    "mnemonic": "Thema 7.2.5: Antwort = Der Switch leitet es an alle Ports außer dem Eingangsport weiter."
+  },
+  {
+    "id": 73,
+    "module": 7,
+    "type": "single",
+    "question": "What action will occur if a switch receives a frame with the destination MAC address 01:00:5E:00:00:D9?",
+    "options": [
+      "The switch forwards it out all ports except the ingress port.",
+      "The switch does not forward the frame.",
+      "The switch sends the frame to a connected router because the destination MAC address is not local.",
+      "The switch shares the MAC address table entry with any connected switches."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 7.2.6",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche Aktion wird ausgeführt, wenn ein Switch einen Frame mit der Ziel-MAC-Adresse 01:00:5E:00:00:D9 empfängt?",
+    "optionsDe": [
+      "Der Switch leitet es an alle Ports außer dem Eingangsport weiter.",
+      "Der Switch leitet den Frame nicht weiter.",
+      "Der Switch sendet den Frame an einen angeschlossenen Router, da die Ziel-MAC-Adresse nicht lokal ist.",
+      "Der Switch teilt den MAC-Adresstabelleneintrag mit allen angeschlossenen Switches."
+    ],
+    "mnemonic": "Thema 7.2.6: Antwort = Der Switch leitet es an alle Ports außer dem Eingangsport weiter."
+  },
+  {
+    "id": 74,
+    "module": 7,
+    "type": "single",
+    "question": "What action will occur if a host receives a frame with a destination MAC address of FF:FF:FF:FF:FF:FF?",
+    "options": [
+      "The host will process the frame.",
+      "The host forwards the frame to the router.",
+      "The host sends the frame to the switch to update the MAC address table.",
+      "The host forwards the frame to all other hosts."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 7.2.5",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche Aktion wird ausgeführt, wenn ein Host einen Frame mit der Ziel-MAC-Adresse FF:FF:FF:FF:FF:FF empfängt?",
+    "optionsDe": [
+      "Der Host verarbeitet den Frame.",
+      "Der Host leitet den Frame an den Router weiter.",
+      "Der Host sendet den Frame an den Switch, um die MAC-Adresstabelle zu aktualisieren.",
+      "Der Host leitet den Frame an alle anderen Hosts weiter."
+    ],
+    "mnemonic": "Thema 7.2.5: Antwort = Der Host verarbeitet den Frame."
+  },
+  {
+    "id": 75,
+    "module": 7,
+    "type": "single",
+    "question": "What action will occur if a switch receives a frame and does have the source MAC address in the MAC table?",
+    "options": [
+      "The switch refreshes the timer on that entry.",
+      "The switch adds it to its MAC address table associated with the port number.",
+      "The switch forwards the frame to the associated port.",
+      "The switch sends the frame to a connected router because the destination MAC address is not local."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 7.3.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche Aktion wird ausgeführt, wenn ein Switch einen Frame empfängt und die Quell-MAC-Adresse in der MAC-Tabelle vorhanden ist?",
+    "optionsDe": [
+      "Der Schalter aktualisiert den Timer für diesen Eintrag.",
+      "Der Switch fügt es seiner MAC-Adresstabelle hinzu, die der Portnummer zugeordnet ist.",
+      "Der Switch leitet den Frame an den zugehörigen Port weiter.",
+      "Der Switch sendet den Frame an einen angeschlossenen Router, da die Ziel-MAC-Adresse nicht lokal ist."
+    ],
+    "mnemonic": "Thema 7.3.2: Antwort = Der Schalter aktualisiert den Timer für diesen Eintrag."
+  },
+  {
+    "id": 76,
+    "module": 7,
+    "type": "single",
+    "question": "What action will occur if a host receives a frame with a destination MAC address of FF:FF:FF:FF:FF:FF?",
+    "options": [
+      "The host will process the frame.",
+      "The host returns the frame to the switch.",
+      "The host forwards the frame to all other hosts."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 7.2.5",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche Aktion wird ausgeführt, wenn ein Host einen Frame mit der Ziel-MAC-Adresse FF:FF:FF:FF:FF:FF empfängt?",
+    "optionsDe": [
+      "Der Host verarbeitet den Frame.",
+      "Der Host sendet den Frame an den Switch zurück.",
+      "Der Host leitet den Frame an alle anderen Hosts weiter."
+    ],
+    "mnemonic": "Thema 7.2.5: Antwort = Der Host verarbeitet den Frame."
+  },
+  {
+    "id": 78,
+    "module": 7,
+    "type": "single",
+    "question": "What action will occur if a host receives a frame with a destination MAC address it does not recognize?",
+    "options": [
+      "The host will discard the frame.",
+      "The host replies to the switch with its own IP address.",
+      "The host forwards the frame to all other hosts.",
+      "The host returns the frame to the switch.",
+      "Its own unique physical MAC address.",
+      "A broadcast MAC address (FF-FF-FF-FF-FF-FF).",
+      "A multicast MAC address that the host is actively subscribed to."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 7.2.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche Aktion wird ausgeführt, wenn ein Host einen Frame mit einer Ziel-MAC-Adresse empfängt, die er nicht erkennt?",
+    "optionsDe": [
+      "Der Host verwirft den Frame.",
+      "Der Host antwortet dem Switch mit seiner eigenen IP-Adresse.",
+      "Der Host leitet den Frame an alle anderen Hosts weiter.",
+      "Der Host sendet den Frame an den Switch zurück.",
+      "Eine eigene, eindeutige physische MAC-Adresse.",
+      "Eine Broadcast-MAC-Adresse (FF-FF-FF-FF-FF-FF).",
+      "Eine Multicast-MAC-Adresse, die der Host aktiv abonniert hat."
+    ],
+    "mnemonic": "Thema 7.2.3: Antwort = Der Host verwirft den Frame."
+  },
+  {
+    "id": 79,
+    "module": 4,
+    "type": "single",
+    "question": "Which type of UTP cable is used to connect a PC to a switch port?",
+    "options": [
+      "console",
+      "rollover",
+      "crossover",
+      "straight-through",
+      "CCNA 1 - v7",
+      "CCNA 2 - v7",
+      "CCNA 3 - v7"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A rollover cable is a Cisco proprietary cable used to connect to a router or switch console port. A straight-through (also called patch) cable is usually used to interconnect a host to a switch and a switch to a router. A crossover cable is used to interconnect similar devices together, for example, between two switches, two routers, and two hosts.",
+    "topic": "Topic 4.4.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod4-7",
+    "questionDe": "Welche Art von UTP-Kabel wird verwendet, um einen PC mit einem Switch-Port zu verbinden?",
+    "optionsDe": [
+      "Konsole",
+      "sich umdrehen",
+      "Crossover",
+      "geradeaus",
+      "CCNA 1 – v7",
+      "CCNA 2 – v7",
+      "CCNA 3 – v7"
+    ],
+    "mnemonic": "Thema 4.4.3: Antwort = geradeaus"
+  }
+]

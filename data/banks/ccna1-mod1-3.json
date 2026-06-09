@@ -1,0 +1,2186 @@
+[
+  {
+    "id": 1,
+    "module": 1,
+    "type": "single",
+    "question": "During a routine inspection, a technician discovered that software that was installed on a computer was secretly collecting data about websites that were visited by users of the computer. Which type of threat is affecting this computer?",
+    "options": [
+      "DoS attack​",
+      "identity theft",
+      "spyware",
+      "zero-day attack"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Spyware is software that is installed on a network device and that collects information.",
+    "topic": "Topic 1.8.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Bei einer Routineinspektion entdeckte ein Techniker, dass auf einem Computer installierte Software heimlich Daten über Websites sammelte, die von Benutzern des Computers besucht wurden. Welche Art von Bedrohung betrifft diesen Computer?",
+    "optionsDe": [
+      "DoS-Angriff",
+      "Identitätsdiebstahl",
+      "Spyware",
+      "Zero-Day-Angriff"
+    ],
+    "mnemonic": "Thema 1.8.1: Antwort = Spyware"
+  },
+  {
+    "id": 2,
+    "module": 1,
+    "type": "single",
+    "question": "Which term refers to a network that provides secure access to the corporate offices by suppliers, customers and collaborators?",
+    "options": [
+      "Internet",
+      "intranet",
+      "extranet",
+      "extendednet"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The term Internet refers to the worldwide collection of connected networks. Intranet refers to a private connection of LANs and WANS that belong to an organization and is designed to be accessible to the members of the organization, employees, or others with authorization.​ Extranets provide secure and safe access to ​suppliers, customers, and collaborators. Extendednet is not a type of network.",
+    "topic": "Topic 1.4.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welcher Begriff bezieht sich auf ein Netzwerk, das Lieferanten, Kunden und Mitarbeitern einen sicheren Zugriff auf die Unternehmensbüros ermöglicht?",
+    "optionsDe": [
+      "Internet",
+      "Intranet",
+      "Extranet",
+      "erweitertes Netz"
+    ],
+    "mnemonic": "Thema 1.4.4: Antwort = Extranet"
+  },
+  {
+    "id": 3,
+    "module": 1,
+    "type": "single",
+    "question": "A large corporation has modified its network to allow users to access network resources from their personal laptops and smart phones. Which networking trend does this describe?",
+    "options": [
+      "cloud computing",
+      "online collaboration",
+      "bring your own device",
+      "video conferencing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "BYOD allows end users to use personal tools to access the corporate network. Allowing this trend can have major impacts on a network, such as security and compatibility with corporate software and devices.",
+    "topic": "Topic 1.7.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Ein großes Unternehmen hat sein Netzwerk geändert, um Benutzern den Zugriff auf Netzwerkressourcen über ihre persönlichen Laptops und Smartphones zu ermöglichen. Welchen Networking-Trend beschreibt das?",
+    "optionsDe": [
+      "Cloud-Computing",
+      "Online-Zusammenarbeit",
+      "Bringen Sie Ihr eigenes Gerät mit",
+      "Videokonferenzen"
+    ],
+    "mnemonic": "Thema 1.7.2: Antwort = Bringen Sie Ihr eigenes Gerät mit"
+  },
+  {
+    "id": 4,
+    "module": 1,
+    "type": "single",
+    "question": "What is an ISP?",
+    "options": [
+      "It is a standards body that develops cabling and wiring standards for networking.",
+      "It is a protocol that establishes how computers within a local network communicate.",
+      "It is an organization that enables individuals and businesses to connect to the Internet.",
+      "It is a networking device that combines the functionality of several different networking devices in one."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An ISP, or Internet Service Provider, is an organization that provides access to the Internet for businesses and individuals.",
+    "topic": "Topic 1.5.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Was ist ein ISP?",
+    "optionsDe": [
+      "Dabei handelt es sich um eine Normungsorganisation, die Verkabelungs- und Verkabelungsstandards für Netzwerke entwickelt.",
+      "Es handelt sich um ein Protokoll, das festlegt, wie Computer innerhalb eines lokalen Netzwerks kommunizieren.",
+      "Es handelt sich um eine Organisation, die Privatpersonen und Unternehmen den Zugang zum Internet ermöglicht.",
+      "Es handelt sich um ein Netzwerkgerät, das die Funktionalität mehrerer verschiedener Netzwerkgeräte in einem vereint."
+    ],
+    "mnemonic": "Thema 1.5.1: Antwort = Es handelt sich um eine Organisation, die Privatpersonen und Unternehmen den Zug..."
+  },
+  {
+    "id": 5,
+    "module": 1,
+    "type": "ordering",
+    "question": "Match the requirements of a reliable network with the supporting network architecture. (Not all options are used.)",
+    "options": [
+      "fault tolerance → Provide redundant links and devices.",
+      "scalability → Expand the network without degrading the service for existing users.",
+      "security → Protect the network from unauthorized access."
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "",
+    "topic": "Topic 1.6.5",
+    "image": "assets/images/ccna1-mod1-3-q5-5b6ef03f9b.jpg",
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Passen Sie die Anforderungen eines zuverlässigen Netzwerks an die unterstützende Netzwerkarchitektur an. (Es werden nicht alle Optionen verwendet.)",
+    "optionsDe": [
+      "Fehlertoleranz → Stellen Sie redundante Verbindungen und Geräte bereit.",
+      "Skalierbarkeit → Erweitern Sie das Netzwerk, ohne den Service für bestehende Benutzer zu beeinträchtigen.",
+      "Sicherheit → Schützen Sie das Netzwerk vor unbefugtem Zugriff."
+    ],
+    "mnemonic": "Alle 3 Zuordnungen korrekt merken!"
+  },
+  {
+    "id": 6,
+    "module": 1,
+    "type": "single",
+    "question": "An employee at a branch office is creating a quote for a customer. In order to do this, the employee needs to access confidential pricing information from internal servers at the Head Office. What type of network would the employee access?",
+    "options": [
+      "an intranet",
+      "the Internet",
+      "an extranet",
+      "a local area network"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Intranet is a term used to refer to a private connection of LANs and WANs that belongs to an organization. An intranet is designed to be accessible only by the organization's members, employees, or others with authorization.",
+    "topic": "Topic 1.4.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Ein Mitarbeiter einer Filiale erstellt ein Angebot für einen Kunden. Dazu muss der Mitarbeiter auf vertrauliche Preisinformationen von internen Servern in der Zentrale zugreifen. Auf welche Art von Netzwerk würde der Mitarbeiter zugreifen?",
+    "optionsDe": [
+      "ein Intranet",
+      "das Internet",
+      "ein Extranet",
+      "ein lokales Netzwerk"
+    ],
+    "mnemonic": "Thema 1.4.4: Antwort = ein Intranet"
+  },
+  {
+    "id": 7,
+    "module": 1,
+    "type": "single",
+    "question": "Which statement describes the use of powerline networking technology?",
+    "options": [
+      "New “smart” electrical cabling is used to extend an existing home LAN.",
+      "A home LAN is installed without the use of physical cabling.",
+      "A device connects to an existing home LAN using an adapter and an existing electrical outlet.",
+      "Wireless access points use powerline adapters to distribute data through the home LAN."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Powerline networking adds the ability to connect a device to the network using an adapter wherever there is an electrical outlet.​ The network uses existing electrical wiring to send data. It is not a replacement for physical cabling, but it can add functionality in places where wireless access points cannot be used or cannot reach devices.​",
+    "topic": "Topic 1.7.8",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welche Aussage beschreibt den Einsatz der Powerline-Netzwerktechnologie?",
+    "optionsDe": [
+      "Zur Erweiterung eines bestehenden Heim-LAN wird eine neue „intelligente“ Elektroverkabelung eingesetzt.",
+      "Ein Heim-LAN wird ohne physische Verkabelung installiert.",
+      "Ein Gerät wird über einen Adapter und eine vorhandene Steckdose mit einem vorhandenen Heim-LAN verbunden.",
+      "Drahtlose Zugangspunkte verwenden Powerline-Adapter, um Daten über das Heim-LAN zu verteilen."
+    ],
+    "mnemonic": "Thema 1.7.8: Antwort = Ein Gerät wird über einen Adapter und eine vorhandene Steckdose mit einem vorhan..."
+  },
+  {
+    "id": 8,
+    "module": 1,
+    "type": "single",
+    "question": "A networking technician is working on the wireless network at a medical clinic. The technician accidentally sets up the wireless network so that patients can see the medical records data of other patients. Which of the four network characteristics has been violated in this situation?",
+    "options": [
+      "fault tolerance",
+      "scalability",
+      "security",
+      "Quality of Service (QoS)",
+      "reliability"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Network security includes protecting the confidentiality of data that is on the network. In this case, because confidential data has been made available to unauthorized users, the security characteristic of the network has failed.",
+    "topic": "Topic 1.1.8",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Ein Netzwerktechniker arbeitet am drahtlosen Netzwerk einer medizinischen Klinik. Der Techniker richtet versehentlich das drahtlose Netzwerk ein, damit Patienten die Krankenakten anderer Patienten sehen können. Welche der vier Netzwerkeigenschaften wurde in dieser Situation verletzt?",
+    "optionsDe": [
+      "Fehlertoleranz",
+      "Skalierbarkeit",
+      "Sicherheit",
+      "Dienstqualität (QoS)",
+      "Zuverlässigkeit"
+    ],
+    "mnemonic": "Thema 1.1.8: Antwort = Sicherheit"
+  },
+  {
+    "id": 9,
+    "module": 1,
+    "type": "ordering",
+    "question": "Match each characteristic to its corresponding Internet connectivity type. (Not all options are used.)",
+    "options": [
+      "uses coaxial cable as a medium → cable",
+      "not suited for heavily wooded areas → satellite",
+      "typically has very low bandwidth → dialup telephone",
+      "high bandwidth connection that runs over telephone line → DSL"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "DSL is an always-on, high bandwidth connection that runs over telephone lines. Cable uses the same coaxial cable that carries television signals into the home to provide Internet access. Dialup telephone is much slower than either DSL or cable, but is the least expensive option for home users because it can use any telephone line and a simple modem. Satellite requires a clear line of sight and is affected by trees and other obstructions. None of these typical home options use dedicated leased lines such as T1/E1 and T3/E3.",
+    "topic": "Topic 1.5.2",
+    "image": "assets/images/ccna1-mod1-3-q9-dae46cc026.jpg",
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Ordnen Sie jedes Merkmal dem entsprechenden Internetverbindungstyp zu. (Es werden nicht alle Optionen verwendet.)",
+    "optionsDe": [
+      "verwendet Koaxialkabel als Medium → Kabel",
+      "nicht für stark bewaldete Gebiete geeignet → Satellit",
+      "hat normalerweise eine sehr geringe Bandbreite → Einwahltelefon",
+      "Verbindung mit hoher Bandbreite, die über eine Telefonleitung läuft → DSL"
+    ],
+    "mnemonic": "Alle 4 Zuordnungen korrekt merken!"
+  },
+  {
+    "id": 10,
+    "module": 2,
+    "type": "multiple",
+    "question": "What two criteria are used to help select a network medium from various network media? (Choose two.)",
+    "options": [
+      "the types of data that need to be prioritized",
+      "the cost of the end devices utilized in the network",
+      "the distance the selected medium can successfully carry a signal",
+      "the number of intermediate devices installed in the network",
+      "the environment where the selected medium is to be installed"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "Criteria for choosing a network medium are the distance the selected medium can successfully carry a signal, the environment in which the selected medium is to be installed, the amount of data and the speed at which the data must be transmitted, and the cost of the medium and its installation.",
+    "topic": "Topic 2.6.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welche zwei Kriterien helfen bei der Auswahl eines Netzwerkmediums aus verschiedenen Netzwerkmedien? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "welche Arten von Daten priorisiert werden müssen",
+      "die Kosten der im Netzwerk eingesetzten Endgeräte",
+      "die Entfernung, über die das ausgewählte Medium ein Signal erfolgreich übertragen kann",
+      "die Anzahl der im Netzwerk installierten Zwischengeräte",
+      "die Umgebung, in der das ausgewählte Medium installiert werden soll"
+    ],
+    "mnemonic": "Richtig: 2 Antworten – die Entfernung, über die das ausgewählte, die Umgebung, in der das ausgewählte Med"
+  },
+  {
+    "id": 11,
+    "module": 1,
+    "type": "single",
+    "question": "What type of network traffic requires QoS?",
+    "options": [
+      "email",
+      "on-line purchasing",
+      "video conferencing",
+      "wiki"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Video conferencing utilizes real-time audio and video communications. Both of these are time-sensitive and bandwidth-intensive forms of communication that require quality of service to be active on the network. QoS will ensure an uninterrupted user experience.",
+    "topic": "Topic 1.6.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welche Art von Netzwerkverkehr erfordert QoS?",
+    "optionsDe": [
+      "E-Mail",
+      "Online-Kauf",
+      "Videokonferenzen",
+      "Wiki"
+    ],
+    "mnemonic": "Thema 1.6.4: Antwort = Videokonferenzen"
+  },
+  {
+    "id": 12,
+    "module": 1,
+    "type": "multiple",
+    "question": "A user is implementing security on a small office network. Which two actions would provide the minimum security requirements for this network? (Choose two.)",
+    "options": [
+      "implementing a firewall",
+      "installing a wireless network",
+      "installing antivirus software",
+      "implementing an intrusion detection system",
+      "adding a dedicated intrusion prevention device"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Technically complex security measures such as intrusion prevention and intrusion prevention systems are usually associated with business networks rather than home networks. Installing antivirus software, antimalware software, and implementing a firewall will usually be the minimum requirements for home networks. Installing a home wireless network will not improve network security, and will require further security actions to be taken.",
+    "topic": "Topic 1.8.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Ein Benutzer implementiert Sicherheit in einem kleinen Büronetzwerk. Welche beiden Maßnahmen würden die Mindestsicherheitsanforderungen für dieses Netzwerk erfüllen? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Implementierung einer Firewall",
+      "Installation eines drahtlosen Netzwerks",
+      "Installation von Antivirensoftware",
+      "Implementierung eines Einbruchmeldesystems",
+      "Hinzufügen eines speziellen Intrusion-Prevention-Geräts"
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Implementierung einer Firewall, Installation von Antivirensoftware"
+  },
+  {
+    "id": 13,
+    "module": 2,
+    "type": "multiple3",
+    "question": "Passwords can be used to restrict access to all or parts of the Cisco IOS. Select the modes and interfaces that can be protected with passwords. (Choose three.)",
+    "options": [
+      "VTY interface",
+      "console interface",
+      "Ethernet interface",
+      "boot IOS mode",
+      "privileged EXEC mode",
+      "router configuration mode"
+    ],
+    "correct": [
+      0,
+      1,
+      4
+    ],
+    "explanation": "Access to the VTY and console interfaces can be restricted using passwords. Out-of-band management of the router can be restricted in both user EXEC and privileged EXEC modes.",
+    "topic": "Topic 2.4.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Passwörter können verwendet werden, um den Zugriff auf das Cisco IOS ganz oder teilweise einzuschränken. Wählen Sie die Modi und Schnittstellen aus, die mit Passwörtern geschützt werden können. (Wählen Sie drei.)",
+    "optionsDe": [
+      "VTY-Schnittstelle",
+      "Konsolenschnittstelle",
+      "Ethernet-Schnittstelle",
+      "Booten Sie den IOS-Modus",
+      "privilegierter EXEC-Modus",
+      "Router-Konfigurationsmodus"
+    ],
+    "mnemonic": "Richtig: 3 Antworten – VTY-Schnittstelle, Konsolenschnittstelle, privilegierter EXEC-Modus"
+  },
+  {
+    "id": 14,
+    "module": 2,
+    "type": "single",
+    "question": "Which interface allows remote management of a Layer 2 switch?",
+    "options": [
+      "the AUX interface",
+      "the console port interface",
+      "the switch virtual interface",
+      "the first Ethernet port interface"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In a Layer 2 switch, there is a switch virtual interface (SVI) that provides a means for remotely managing the device.",
+    "topic": "Topic 2.6.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welche Schnittstelle ermöglicht die Fernverwaltung eines Layer-2-Switches?",
+    "optionsDe": [
+      "die AUX-Schnittstelle",
+      "die Konsolen-Port-Schnittstelle",
+      "die virtuelle Schnittstelle des Switches",
+      "die erste Ethernet-Port-Schnittstelle"
+    ],
+    "mnemonic": "Thema 2.6.2: Antwort = die virtuelle Schnittstelle des Switches"
+  },
+  {
+    "id": 15,
+    "module": 2,
+    "type": "single",
+    "question": "What function does pressing the Tab key have when entering a command in IOS?",
+    "options": [
+      "It aborts the current command and returns to configuration mode.",
+      "It exits configuration mode and returns to user EXEC mode.",
+      "It moves the cursor to the beginning of the next line.",
+      "It completes the remainder of a partially typed word in a command."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pressing the Tab key after a command has been partially typed will cause the IOS to complete the rest of the command.",
+    "topic": "Topic 2.3.5",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welche Funktion hat das Drücken der Tab-Taste bei der Eingabe eines Befehls in IOS?",
+    "optionsDe": [
+      "Es bricht den aktuellen Befehl ab und kehrt in den Konfigurationsmodus zurück.",
+      "Es verlässt den Konfigurationsmodus und kehrt zum Benutzer-EXEC-Modus zurück.",
+      "Es bewegt den Cursor an den Anfang der nächsten Zeile.",
+      "Es vervollständigt den Rest eines teilweise eingegebenen Worts in einem Befehl."
+    ],
+    "mnemonic": "Thema 2.3.5: Antwort = Es vervollständigt den Rest eines teilweise eingegebenen Worts in einem Befehl."
+  },
+  {
+    "id": 16,
+    "module": 2,
+    "type": "single",
+    "question": "While trying to solve a network issue, a technician made multiple changes to the current router configuration file. The changes did not solve the problem and were not saved. What action can the technician take to discard the changes and work with the file in NVRAM?",
+    "options": [
+      "Issue the reload command without saving the running configuration.",
+      "Delete the vlan.dat file and reboot the device.",
+      "Close and reopen the terminal emulation software.",
+      "Issue the copy startup-config running-config command."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The technician does not want to make any mistakes trying to remove all the changes that were done to the running configuration file. The solution is to reboot the router without saving the running configuration. The copy startup-config running-config command does not overwrite the running configuration file with the configuration file stored in NVRAM, but rather it just has an additive effect.",
+    "topic": "Topic 2.5.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Beim Versuch, ein Netzwerkproblem zu lösen, nahm ein Techniker mehrere Änderungen an der aktuellen Router-Konfigurationsdatei vor. Die Änderungen haben das Problem nicht behoben und wurden nicht gespeichert. Welche Maßnahmen kann der Techniker ergreifen, um die Änderungen zu verwerfen und mit der Datei im NVRAM zu arbeiten?",
+    "optionsDe": [
+      "Geben Sie den Befehl zum erneuten Laden aus, ohne die laufende Konfiguration zu speichern.",
+      "Löschen Sie die Datei VLAN.dat und starten Sie das Gerät neu.",
+      "Schließen Sie die Terminalemulationssoftware und öffnen Sie sie erneut.",
+      "Geben Sie den Befehl „copy Startup-Config Running-Config“ aus."
+    ],
+    "mnemonic": "Thema 2.5.2: Antwort = Geben Sie den Befehl zum erneuten Laden aus, ohne die laufende Konfiguration zu ..."
+  },
+  {
+    "id": 17,
+    "module": 2,
+    "type": "single",
+    "question": "An administrator uses the Ctrl-Shift-6 key combination on a switch after issuing the ping command. What is the purpose of using these keystrokes?",
+    "options": [
+      "to restart the ping process",
+      "to interrupt the ping process",
+      "to exit to a different configuration mode",
+      "to allow the user to complete the command"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To interrupt an IOS process such as ping or traceroute, a user enters the Ctrl-Shift-6 key combination. Tab completes the remainder of parameters or arguments within a command. To exit from configuration mode to privileged mode use the Ctrl-Z keystroke. CTRL-R will redisplay the line just typed, thus making it easier for the user to press Enter and reissue the ping command.",
+    "topic": "Topic 2.3.5",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Ein Administrator verwendet die TastenkombiNATion Strg-Umschalt-6 auf einem Switch, nachdem er den Ping-Befehl ausgegeben hat. Zu welchem Zweck werden diese TastenkombiNATionen verwendet?",
+    "optionsDe": [
+      "um den Ping-Vorgang neu zu starten",
+      "um den Ping-Vorgang zu unterbrechen",
+      ", um in einen anderen Konfigurationsmodus zu wechseln",
+      "damit der Benutzer den Befehl ausführen kann"
+    ],
+    "mnemonic": "Thema 2.3.5: Antwort = um den Ping-Vorgang zu unterbrechen"
+  },
+  {
+    "id": 18,
+    "module": 2,
+    "type": "single",
+    "question": "Refer to the exhibit. A network administrator is configuring access control to switch SW1. If the administrator uses a console connection to connect to the switch, which password is needed to access user EXEC mode?",
+    "options": [
+      "letmein",
+      "secretin",
+      "lineconin",
+      "linevtyin"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Telnet accesses a network device through the virtual interface configured with the line VTY command. The password configured under this is required to access the user EXEC mode. The password configured under the line console 0 command is required to gain entry through the console port, and the enable and enable secret passwords are used to allow entry into the privileged EXEC mode.",
+    "topic": "Topic 2.4.3",
+    "image": "assets/images/ccna1-mod1-3-q18-fcc416dbbf.jpg",
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Siehe Ausstellung. Ein Netzwerkadministrator konfiguriert die Zugriffskontrolle für Switch SW1. Wenn der Administrator eine Konsolenverbindung verwendet, um eine Verbindung zum Switch herzustellen, welches Passwort ist für den Zugriff auf den Benutzer-EXEC-Modus erforderlich?",
+    "optionsDe": [
+      "lass mich",
+      "Sekretin",
+      "lineconin",
+      "linevtyin"
+    ],
+    "mnemonic": "Thema 2.4.3: Antwort = lineconin"
+  },
+  {
+    "id": 19,
+    "module": 2,
+    "type": "single",
+    "question": "A technician configures a switch with these commands:",
+    "options": [
+      "Telnet access",
+      "SVI",
+      "password encryption",
+      "physical switchport access"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "For a switch to have an IP address, a switch virtual interface must be configured. This allows the switch to be managed remotely over the network.",
+    "topic": "Topic 2.7.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Ein Techniker konfiguriert einen Switch mit diesen Befehlen:",
+    "optionsDe": [
+      "Telnet-Zugriff",
+      "SVI",
+      "Passwortverschlüsselung",
+      "physischer Switchport-Zugriff"
+    ],
+    "mnemonic": "Thema 2.7.4: Antwort = SVI"
+  },
+  {
+    "id": 20,
+    "module": 2,
+    "type": "single",
+    "question": "Which command or key combination allows a user to return to the previous level in the command hierarchy?",
+    "options": [
+      "end",
+      "exit",
+      "Ctrl-Z",
+      "Ctrl-C"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "End and CTRL-Z return the user to the privileged EXEC mode. Ctrl-C ends a command in process. The exit command returns the user to the previous level.",
+    "topic": "Topic 2.2.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Mit welchem Befehl oder welcher TastenkombiNATion kann ein Benutzer zur vorherigen Ebene in der Befehlshierarchie zurückkehren?",
+    "optionsDe": [
+      "Ende",
+      "Ausfahrt",
+      "Strg-Z",
+      "Strg-C"
+    ],
+    "mnemonic": "Thema 2.2.4: Antwort = Ausfahrt"
+  },
+  {
+    "id": 21,
+    "module": 2,
+    "type": "multiple",
+    "question": "What are two characteristics of RAM on a Cisco device? (Choose two.)",
+    "options": [
+      "RAM provides nonvolatile storage.",
+      "The configuration that is actively running on the device is stored in RAM.",
+      "The contents of RAM are lost during a power cycle.",
+      "RAM is a component in Cisco switches but not in Cisco routers.",
+      "RAM is able to store multiple versions of IOS and configuration files."
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "RAM stores data that is used by the device to support network operations. The running configuration is stored in RAM. This type of memory is considered volatile memory because data is lost during a power cycle. Flash memory stores the IOS and delivers a copy of the IOS into RAM when a device is powered on. Flash memory is nonvolatile since it retains stored contents during a loss of power.",
+    "topic": "Topic 2.5.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Was sind zwei Merkmale des RAM auf einem Cisco-Gerät? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "RAM bietet nichtflüchtigen Speicher.",
+      "Die Konfiguration, die aktiv auf dem Gerät ausgeführt wird, wird im RAM gespeichert.",
+      "Der Inhalt des RAM geht während eines Aus- und Wiedereinschaltens verloren.",
+      "RAM ist eine Komponente in Cisco-Switches, jedoch nicht in Cisco-Routern.",
+      "RAM ist in der Lage, mehrere Versionen von IOS und Konfigurationsdateien zu speichern."
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Die Konfiguration, die aktiv auf dem Ger, Der Inhalt des RAM geht während eines Au"
+  },
+  {
+    "id": 22,
+    "module": 2,
+    "type": "multiple",
+    "question": "Which two host names follow the guidelines for naming conventions on Cisco IOS devices? (Choose two.)",
+    "options": [
+      "Branch2!",
+      "RM-3-Switch-2A4",
+      "Floor(15)",
+      "HO Floor 17",
+      "SwBranch799"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "Some guidelines for naming conventions are that names should:\n\nStart with a letter\n\nContain no spaces\n\nEnd with a letter or digit\n\nUse only letters, digits, and dashes\n\nBe less than 64 characters in length",
+    "topic": "Topic 2.4.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welche beiden Hostnamen folgen den Richtlinien für Namenskonventionen auf Cisco IOS-Geräten? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Zweig2!",
+      "RM-3-Schalter-2A4",
+      "Etage(15)",
+      "HO Etage 17",
+      "SwBranch799"
+    ],
+    "mnemonic": "Richtig: 2 Antworten – RM-3-Schalter-2A4, SwBranch799"
+  },
+  {
+    "id": 23,
+    "module": 2,
+    "type": "single",
+    "question": "How is SSH different from Telnet?",
+    "options": [
+      "SSH makes connections over the network, whereas Telnet is for out-of-band access.",
+      "SSH provides security to remote sessions by encrypting messages and using user authentication. Telnet is considered insecure and sends messages in plaintext.",
+      "SSH requires the use of the PuTTY terminal emulation program. Tera Term must be used to connect to devices through the use of Telnet.",
+      "SSH must be configured over an active network connection, whereas Telnet is used to connect to a device from a console connection."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SSH is the preferred protocol for connecting to a device operating system over the network because it is much more secure than Telnet. Both SSH and Telnet are used to connect to devices over the network, and so are both used in-band. PuTTY and Terra Term can be used to make both SSH and Telnet connections.",
+    "topic": "Topic 2.1.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Wie unterscheidet sich SSH von Telnet?",
+    "optionsDe": [
+      "SSH stellt Verbindungen über das Netzwerk her, während Telnet für den Out-of-Band-Zugriff vorgesehen ist.",
+      "SSH bietet Sicherheit für Remote-Sitzungen, indem es Nachrichten verschlüsselt und Benutzerauthentifizierung verwendet. Telnet gilt als unsicher und sendet Nachrichten im Klartext.",
+      "SSH erfordert die Verwendung des Terminalemulationsprogramms PuTTY. Für die Verbindung mit Geräten über Telnet muss Tera Term verwendet werden.",
+      "SSH muss über eine aktive Netzwerkverbindung konfiguriert werden, während Telnet verwendet wird, um über eine Konsolenverbindung eine Verbindung zu einem Gerät herzustellen."
+    ],
+    "mnemonic": "Thema 2.1.4: Antwort = SSH bietet Sicherheit für Remote-Sitzungen, indem es Nachrichten verschlüsselt u..."
+  },
+  {
+    "id": 24,
+    "module": 2,
+    "type": "ordering",
+    "question": "An administrator is configuring a switch console port with a password. In what order will the administrator travel through the IOS modes of operation in order to reach the mode in which the configuration commands will be entered? (Not all options are used.)",
+    "options": [
+      "first mode → user EXEC mode",
+      "second mode → privileged EXEC mode",
+      "third mode → global configuration mode",
+      "final mode → line configuration mode"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "The configuration mode that the administrator first encounters is user EXEC mode. After the enable command is entered, the next mode is privileged EXEC mode. From there, the configure terminal command is entered to move to global configuration mode. Finally, the administrator enters the line console 0 command to enter the mode in which the configuration will be entered.",
+    "topic": "Topic 2.2.4",
+    "image": "assets/images/ccna1-mod1-3-q24-ee6e834437.jpg",
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Ein Administrator konfiguriert einen Switch-Konsolenport mit einem Passwort. In welcher Reihenfolge durchläuft der Administrator die IOS-Betriebsmodi, um den Modus zu erreichen, in dem die Konfigurationsbefehle eingegeben werden? (Es werden nicht alle Optionen verwendet.)",
+    "optionsDe": [
+      "erster Modus → Benutzer-EXEC-Modus",
+      "Zweiter Modus → privilegierter EXEC-Modus",
+      "Dritter Modus → Globaler Konfigurationsmodus",
+      "Endmodus → Leitungskonfigurationsmodus"
+    ],
+    "mnemonic": "Alle 4 Zuordnungen korrekt merken!"
+  },
+  {
+    "id": 25,
+    "module": 2,
+    "type": "multiple3",
+    "question": "What are three characteristics of an SVI? (Choose three.)",
+    "options": [
+      "It is designed as a security protocol to protect switch ports.",
+      "It is not associated with any physical interface on a switch.",
+      "It is a special interface that allows connectivity by different types of media.",
+      "It is required to allow connectivity by any device at any location.",
+      "It provides a means to remotely manage a switch.",
+      "It is associated with VLAN1 by default."
+    ],
+    "correct": [
+      1,
+      4,
+      5
+    ],
+    "explanation": "Switches have one or more switch virtual interfaces (SVIs). SVIs are created in software since there is no physical hardware associated with them. Virtual interfaces provide a means to remotely manage a switch over a network that is using IP. Each switch comes with one SVI appearing in the default configuration &#8220;out-of-the-box.&#8221; The default SVI interface is VLAN1.",
+    "topic": "Topic 2.6.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Was sind drei Merkmale eines SVI? (Wählen Sie drei.)",
+    "optionsDe": [
+      "Es ist als Sicherheitsprotokoll zum Schutz von Switch-Ports konzipiert.",
+      "Es ist keiner physischen Schnittstelle an einem Switch zugeordnet.",
+      "Es handelt sich um eine spezielle Schnittstelle, die die Konnektivität verschiedener Medientypen ermöglicht.",
+      "Es ist erforderlich, die Konnektivität jedes Geräts an jedem Standort zu ermöglichen.",
+      "Es bietet die Möglichkeit, einen Switch aus der Ferne zu verwalten.",
+      "Es ist standardmäßig VLAN1 zugeordnet."
+    ],
+    "mnemonic": "Richtig: 3 Antworten – Es ist keiner physischen Schnittstelle a, Es bietet die Möglichkeit, einen Switch , Es ist standardmäßig VLAN1 zugeordnet."
+  },
+  {
+    "id": 26,
+    "module": 2,
+    "type": "single",
+    "question": "What command is used to verify the condition of the switch interfaces, including the status of the interfaces and a configured IP address?",
+    "options": [
+      "ipconfig",
+      "ping",
+      "traceroute",
+      "show ip interface brief"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The show ip interface brief command is used to display a brief synopsis of the condition of the device interfaces. The ipconfig command is used to verify TCP/IP properties on a host. The ping command is used to verify Layer 3 connectivity. The traceroute command is used to trace the network path from source to destination.",
+    "topic": "Topic 2.8.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Mit welchem Befehl wird der Zustand der Switch-Schnittstellen überprüft, einschließlich des Status der Schnittstellen und einer konfigurierten IP-Adresse?",
+    "optionsDe": [
+      "ipconfig",
+      "Klingeln",
+      "Traceroute",
+      "Kurzbeschreibung zur IP-Schnittstelle anzeigen"
+    ],
+    "mnemonic": "Thema 2.8.1: Antwort = Kurzbeschreibung zur IP-Schnittstelle anzeigen"
+  },
+  {
+    "id": 27,
+    "module": 2,
+    "type": "ordering",
+    "question": "Match the description with the associated IOS mode. (Not all options are used.)",
+    "options": [
+      "limited number of basic monitoring commands → user EXEC mode",
+      "the first entrance into the CLI of an IOS device → user EXEC mode",
+      "accessed by entering the enable command → privileged EXEC mode",
+      "identified by a prompt ending with the # character → privileged EXEC mode",
+      "changes made affect the operation of the device as a whole → global configuration mode",
+      "accessed by entering the configure terminal command → global configuration mode"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "explanation": "",
+    "topic": "Topic 2.2.4",
+    "image": "assets/images/ccna1-mod1-3-q27.jpg",
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "optionsDe": [
+      "begrenzte Anzahl grundlegender Überwachungsbefehle → User-EXEC-Modus",
+      "der erste Zugang zur CLI eines IOS-Geräts → User-EXEC-Modus",
+      "Zugriff durch Eingabe des Befehls enable → privilegierter EXEC-Modus",
+      "erkennbar an einem Prompt, der mit dem Zeichen # endet → privilegierter EXEC-Modus",
+      "vorgenommene Änderungen wirken sich auf den Betrieb des gesamten Geräts aus → globaler Konfigurationsmodus",
+      "Zugriff durch Eingabe des Befehls configure terminal → globaler Konfigurationsmodus"
+    ],
+    "questionDe": "Ordnen Sie die Beschreibung dem zugehörigen IOS-Modus zu. (Nicht alle Optionen werden verwendet.)",
+    "mnemonic": "User = wenig + erster Zugang | Privileged = enable + # | Global = configure terminal + ganzes Gerät"
+  },
+  {
+    "id": 28,
+    "module": 2,
+    "type": "ordering",
+    "question": "Match the definitions to their respective CLI hot keys and shortcuts. (Not all options are used.)",
+    "options": [
+      "provides context-sensitive help → ?",
+      "displays the next screen → Space bar",
+      "completes abbreviated commands and parameters → Tab",
+      "scrolls backwards through previously entered commands → Up Arrow",
+      "aborts commands such as trace and ping → Ctrl-Shift-6"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "The shortcuts with their functions are as follows:\n\n&#8211; Tab &#8211; Completes the remainder of a partially typed command or keyword\n\n&#8211; Space bar &#8211; displays the next screen\n\n&#8211; ? &#8211; provides context-sensitive help\n\n&#8211; Up Arrow &#8211; Allows user to scroll backward through former commands\n\n&#8211; Ctrl-C &#8211; cancels any command currently being entered and returns directly to privileged EXEC mode\n\n&#8211; Ctrl-Shift-6 &#8211; Allows the user to interrupt an IOS process such as ping or traceroute",
+    "topic": "Topic 2.3.5",
+    "image": "assets/images/ccna1-mod1-3-q28-e5443fc533.jpg",
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Ordnen Sie die Definitionen den jeweiligen CLI-Hotkeys und -Verknüpfungen zu. (Es werden nicht alle Optionen verwendet.)",
+    "optionsDe": [
+      "bietet kontextsensitive Hilfe → ",
+      "zeigt den nächsten Bildschirm an → Leertaste",
+      "Vervollständigt abgekürzte Befehle und Parameter → Tab",
+      "blättert rückwärts durch zuvor eingegebene Befehle → Pfeil nach oben",
+      "bricht Befehle wie Trace und Ping ab → Strg-Umschalt-6"
+    ],
+    "mnemonic": "Alle 5 Zuordnungen korrekt merken!"
+  },
+  {
+    "id": 29,
+    "module": 2,
+    "type": "single",
+    "question": "In the show running-config command, which part of the syntax is represented by running-config ?",
+    "options": [
+      "the command",
+      "a keyword",
+      "a variable",
+      "a prompt"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The first part of the syntax, show, is the command, and the second part of the syntax, running-config, is the keyword. The keyword specifies what should be displayed as the output of the show command.",
+    "topic": "Topic 2.3.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welcher Teil der Syntax wird im Befehl „show running-config“ durch „running-config“ dargestellt?",
+    "optionsDe": [
+      "der Befehl",
+      "ein Schlüsselwort",
+      "eine Variable",
+      "eine Aufforderung"
+    ],
+    "mnemonic": "Thema 2.3.1: Antwort = ein Schlüsselwort"
+  },
+  {
+    "id": 30,
+    "module": 2,
+    "type": "single",
+    "question": "After making configuration changes on a Cisco switch, a network administrator issues a copy running-config startup-config command. What is the result of issuing this command?",
+    "options": [
+      "The new configuration will be stored in flash memory.",
+      "The new configuration will be loaded if the switch is restarted.",
+      "The current IOS file will be replaced with the newly configured file.",
+      "The configuration changes will be removed and the original configuration will be restored."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With the copy running-config startup-config command, the content of the current operating configuration replaces the startup configuration file stored in NVRAM. The configuration file saved in NVRAM will be loaded when the device is restarted.",
+    "topic": "Topic 2.5.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Nachdem Konfigurationsänderungen an einem Cisco-Switch vorgenommen wurden, gibt ein Netzwerkadministrator den Befehl „running-config restart-config kopieren“ aus. Was ist das Ergebnis der Ausgabe dieses Befehls?",
+    "optionsDe": [
+      "Die neue Konfiguration wird im Flash-Speicher gespeichert.",
+      "Die neue Konfiguration wird geladen, wenn der Switch neu gestartet wird.",
+      "Die aktuelle IOS-Datei wird durch die neu konfigurierte Datei ersetzt.",
+      "Die Konfigurationsänderungen werden entfernt und die ursprüngliche Konfiguration wird wiederhergestellt."
+    ],
+    "mnemonic": "Thema 2.5.2: Antwort = Die neue Konfiguration wird geladen, wenn der Switch neu gestartet wird."
+  },
+  {
+    "id": 31,
+    "module": 2,
+    "type": "single",
+    "question": "What command will prevent all unencrypted passwords from displaying in plain text in a configuration file?",
+    "options": [
+      "(config)# enable password secret",
+      "(config)# enable secret Secret_Password",
+      "(config-line)# password secret",
+      "(config)# service password-encryption",
+      "(config)# enable secret Encrypted_Password"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "To prevent all configured passwords from appearing in plain text in configuration files, an administrator can execute the service password-encryption command. This command encrypts all configured passwords in the configuration file.",
+    "topic": "Topic 2.4.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welcher Befehl verhindert, dass alle unverschlüsselten Passwörter in einer Konfigurationsdatei im Klartext angezeigt werden?",
+    "optionsDe": [
+      "(config)# Passwortgeheimnis aktivieren",
+      "(config)# geheimes Secret_Password aktivieren",
+      "(config-line)# Passwortgeheimnis",
+      "(config)# Dienst-Passwortverschlüsselung",
+      "(config)# geheimes Encrypted_Password aktivieren"
+    ],
+    "mnemonic": "Thema 2.4.4: Antwort = (config)# Dienst-Passwortverschlüsselung"
+  },
+  {
+    "id": 32,
+    "module": 2,
+    "type": "single",
+    "question": "A network administrator enters the service password-encryption command into the configuration mode of a router. What does this command accomplish?",
+    "options": [
+      "This command encrypts passwords as they are transmitted across serial WAN links.",
+      "This command prevents someone from viewing the running configuration passwords.",
+      "This command enables a strong encryption algorithm for the enable secret password command.",
+      "This command automatically encrypts passwords in configuration files that are currently stored in NVRAM.",
+      "This command provides an exclusive encrypted password for external service personnel who are required to do router maintenance."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The startup-config and running-config files display most passwords in plaintext. Use the service password-encryption global config command to encrypt all plaintext passwords in these files.",
+    "topic": "Topic 2.4.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Ein Netzwerkadministrator gibt den Dienst-Passwortverschlüsselungsbefehl in den Konfigurationsmodus eines Routers ein. Was bewirkt dieser Befehl?",
+    "optionsDe": [
+      "Dieser Befehl verschlüsselt Passwörter, während sie über serielle WAN-Verbindungen übertragen werden.",
+      "Dieser Befehl verhindert, dass jemand die laufenden Konfigurationskennwörter einsehen kann.",
+      "Dieser Befehl aktiviert einen starken Verschlüsselungsalgorithmus für den Befehl „Enable Secret Password“.",
+      "Dieser Befehl verschlüsselt automatisch Passwörter in Konfigurationsdateien, die derzeit im NVRAM gespeichert sind.",
+      "Dieser Befehl stellt ein exklusives verschlüsseltes Passwort für externes Servicepersonal bereit, das für die Wartung des Routers zuständig ist."
+    ],
+    "mnemonic": "Thema 2.4.4: Antwort = Dieser Befehl verhindert, dass jemand die laufenden Konfigurationskennwörter ein..."
+  },
+  {
+    "id": 33,
+    "module": 3,
+    "type": "single",
+    "question": "What method can be used by two computers to ensure that packets are not dropped because too much data is being sent too quickly?",
+    "options": [
+      "encapsulation",
+      "flow control",
+      "access method",
+      "response timeout"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In order for two computers to be able to communicate effectively, there must be a mechanism that allows both the source and destination to set the timing of the transmission and receipt of data. Flow control allows for this by ensuring that data is not sent too fast for it to be received properly.",
+    "topic": "Topic 3.1.9",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Mit welcher Methode können zwei Computer sicherstellen, dass Pakete nicht verworfen werden, weil zu viele Daten zu schnell gesendet werden?",
+    "optionsDe": [
+      "Verkapselung",
+      "Flusskontrolle",
+      "Zugriffsmethode",
+      "Antwort-Timeout"
+    ],
+    "mnemonic": "Thema 3.1.9: Antwort = Flusskontrolle"
+  },
+  {
+    "id": 34,
+    "module": 3,
+    "type": "single",
+    "question": "Which statement accurately describes a TCP/IP encapsulation process when a PC is sending data to the network?",
+    "options": [
+      "Data is sent from the internet layer to the network access layer.",
+      "Packets are sent from the network access layer to the transport layer.",
+      "Segments are sent from the transport layer to the internet layer.",
+      "Frames are sent from the network access layer to the internet layer."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When the data is traveling from the PC to the network, the transport layer sends segments to the internet layer. The internet layer sends packets to the network access layer, which creates frames and then converts the frames to bits. The bits are released to the network media.",
+    "topic": "Topic 3.6.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welche Aussage beschreibt genau einen TCP/IP-Kapselungsprozess, wenn ein PC Daten an das Netzwerk sendet?",
+    "optionsDe": [
+      "Daten werden von der Internetschicht an die Netzwerkzugriffsschicht gesendet.",
+      "Pakete werden von der Netzwerkzugriffsschicht an die Transportschicht gesendet.",
+      "Segmente werden von der Transportschicht an die Internetschicht gesendet.",
+      "Frames werden von der Netzwerkzugriffsschicht an die Internetschicht gesendet."
+    ],
+    "mnemonic": "Thema 3.6.4: Antwort = Segmente werden von der Transportschicht an die Internetschicht gesendet."
+  },
+  {
+    "id": 35,
+    "module": 3,
+    "type": "multiple3",
+    "question": "What three application layer protocols are part of the TCP/IP protocol suite? (Choose three.)",
+    "options": [
+      "ARP",
+      "DHCP",
+      "DNS",
+      "FTP",
+      "NAT",
+      "PPP"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "DNS, DHCP, and FTP are all application layer protocols in the TCP/IP protocol suite. ARP and PPP are network access layer protocols, and NAT is an internet layer protocol in the TCP/IP protocol suite.",
+    "topic": "Topic 3.3.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welche drei Protokolle der Anwendungsschicht sind Teil der TCP/IP-Protokollsuite? (Wählen Sie drei.)",
+    "optionsDe": [
+      "ARP",
+      "DHCP",
+      "DNS",
+      "FTP",
+      "NAT",
+      "PPP"
+    ],
+    "mnemonic": "Richtig: 3 Antworten – DHCP, DNS, FTP"
+  },
+  {
+    "id": 36,
+    "module": 3,
+    "type": "ordering",
+    "question": "Match the description to the organization. (Not all options are used.)",
+    "options": [
+      "This organization promotes the open development, evolution, and use of the Internet throughout the world. → ISOC",
+      "This organization is the largest developer of international standards in the world for a wide variety of products and services. It is known for its Open Systems Interconnection (OSI) reference model. → ISO",
+      "This organization is responsible for overseeing and managing IP address allocation, domain name management, and protocol identifiers. → IANA",
+      "This organization is an international standards and trade organization for electronics organizations. It is best known for its standards related to electrical wiring, connectors, and the 19-inch racks used to mount networking equipment. → EIA"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "and 3.4.2\n\nThe EIA is an international standards and trade organization for electronics organizations. It is best known for its standards related to electrical wiring, connectors, and the 19-inch racks used to mount networking equipment.",
+    "topic": "Topic 3.3.2",
+    "image": "assets/images/ccna1-mod1-3-q36.jpg",
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "optionsDe": [
+      "Diese Organisation fördert die offene Entwicklung, Weiterentwicklung und Nutzung des Internets weltweit. → ISOC",
+      "Diese Organisation ist der weltweit größte Entwickler internationaler Standards für eine Vielzahl von Produkten und Dienstleistungen. Sie ist bekannt für ihr Open Systems Interconnection (OSI)-Referenzmodell. → ISO",
+      "Diese Organisation ist für die Überwachung und Verwaltung der IP-Adressvergabe, Domainnamenverwaltung und Protokollkennungen zuständig. → IANA",
+      "Diese Organisation ist eine internationale Standardisierungs- und Handelsorganisation für Elektronikorganisationen. Sie ist vor allem bekannt für Standards zu elektrischer Verkabelung, Steckverbindern und 19-Zoll-Racks für Netzwerkgeräte. → EIA"
+    ],
+    "questionDe": "Ordnen Sie die Beschreibung der Organisation zu. (Nicht alle Optionen werden verwendet.)",
+    "mnemonic": "ISOC=Internet weltweit | ISO=OSI-Modell | IANA=IP+Domains | EIA=Verkabelung+Racks"
+  },
+  {
+    "id": 37,
+    "module": 3,
+    "type": "single",
+    "question": "Which name is assigned to the transport layer PDU?",
+    "options": [
+      "bits",
+      "data",
+      "frame",
+      "packet",
+      "segment"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "Application data is passed down the protocol stack on its way to be transmitted across the network media. During the process, various protocols add information to it at each level. At each stage of the process, a PDU (protocol data unit) has a different name to reflect its new functions. The PDUs are named according to the protocols of the TCP/IP suite:\n\nData &#8211; The general term for the PDU used at the application layer.\n\nSegment &#8211; transport layer PDU\n\nPacket &#8211; network layer PDU\n\nFrame – data link layer PDU\n\nBits &#8211; A physical layer PDU used when physically transmitting data over the medium",
+    "topic": "Topic 3.6.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welcher Name wird der Transportschicht-PDU zugewiesen?",
+    "optionsDe": [
+      "Bits",
+      "Daten",
+      "rahmen",
+      "Paket",
+      "Segment"
+    ],
+    "mnemonic": "Thema 3.6.3: Antwort = Segment"
+  },
+  {
+    "id": 38,
+    "module": 3,
+    "type": "single",
+    "question": "When IPv4 addressing is manually configured on a web server, which property of the IPv4 configuration identifies the network and host portion for an IPv4 address?",
+    "options": [
+      "DNS server address",
+      "subnet mask",
+      "default gateway",
+      "DHCP server address",
+      "IPv4 address &#8211; uniquely identifies an end device on the network",
+      "Subnet mask &#8211; determines the network address portion and host portion for an IPv4 address",
+      "Default gateway &#8211; the IP address of the router interface used for communicating with hosts in another network",
+      "DNS server address &#8211; the IP address of the Domain Name System (DNS) server"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "There are several components that need to be entered when configuring IPv4 for an end device:",
+    "topic": "Topic 3.7.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Wenn die IPv4-Adressierung manuell auf einem Webserver konfiguriert wird, welche Eigenschaft der IPv4-Konfiguration identifiziert den Netzwerk- und Hostteil für eine IPv4-Adresse?",
+    "optionsDe": [
+      "DNS-Serveradresse",
+      "Subnetzmaske",
+      "Standard-Gateway",
+      "DHCP-Serveradresse",
+      "IPv4-Adresse &#8211; Identifiziert ein Endgerät im Netzwerk eindeutig",
+      "Subnetzmaske &#8211; Bestimmt den Netzwerkadressteil und den Hostteil für eine IPv4-Adresse",
+      "Standard-Gateway &#8211; die IP-Adresse der Router-Schnittstelle, die für die Kommunikation mit Hosts in einem anderen Netzwerk verwendet wird",
+      "DNS-Serveradresse &#8211; die IP-Adresse des Domain Name System (DNS)-Servers"
+    ],
+    "mnemonic": "Thema 3.7.2: Antwort = Subnetzmaske"
+  },
+  {
+    "id": 39,
+    "module": 3,
+    "type": "single",
+    "question": "What process involves placing one PDU inside of another PDU?",
+    "options": [
+      "encapsulation",
+      "encoding",
+      "segmentation",
+      "flow control"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When a message is placed inside of another message, this is known as encapsulation. On networks, encapsulation takes place when one protocol data unit is carried inside of the data field of the next lower protocol data unit.",
+    "topic": "Topic 3.6.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Bei welchem Verfahren wird eine PDU in einer anderen PDU platziert?",
+    "optionsDe": [
+      "Verkapselung",
+      "Codierung",
+      "Segmentierung",
+      "Flusskontrolle"
+    ],
+    "mnemonic": "Thema 3.6.3: Antwort = Verkapselung"
+  },
+  {
+    "id": 40,
+    "module": 3,
+    "type": "single",
+    "question": "What layer is responsible for routing messages through an internetwork in the TCP/IP model?",
+    "options": [
+      "internet",
+      "transport",
+      "network access",
+      "session"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The TCP/IP model consists of four layers: application, transport, internet, and network access. Of these four layers, it is the internet layer that is responsible for routing messages. The session layer is not part of the TCP/IP model but is rather part of the OSI model.",
+    "topic": "Topic 3.5.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welche Schicht ist im TCP/IP-Modell für die Weiterleitung von Nachrichten über ein Internetnetzwerk verantwortlich?",
+    "optionsDe": [
+      "Internet",
+      "Transport",
+      "Netzwerkzugriff",
+      "Sitzung"
+    ],
+    "mnemonic": "Thema 3.5.4: Antwort = Internet"
+  },
+  {
+    "id": 41,
+    "module": 3,
+    "type": "ordering",
+    "question": "For the TCP/IP protocol suite, what is the correct order of events when a Telnet message is being prepared to be sent over the network?",
+    "options": [
+      "The Telnet-formatted data is provided to the next layer. → First",
+      "The TCP header is added. → Second",
+      "The IP header is added. → Third",
+      "The Ethernet header is added. → Fourth"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "",
+    "topic": "Topic 3.3.5",
+    "image": "assets/images/ccna1-mod1-3-q41-04c8ecd46c.jpg",
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Wie ist für die TCP/IP-Protokollsuite die richtige Reihenfolge der Ereignisse, wenn eine Telnet-Nachricht für den Versand über das Netzwerk vorbereitet wird?",
+    "optionsDe": [
+      "Die Telnet-formatierten Daten werden der nächsten Schicht bereitgestellt. → Erste",
+      "Der TCP-Header wird hinzugefügt. → Zweite",
+      "Der IP-Header wird hinzugefügt. → Dritte",
+      "Der Ethernet-Header wird hinzugefügt. → Vierte"
+    ],
+    "mnemonic": "Alle 4 Zuordnungen korrekt merken!"
+  },
+  {
+    "id": 42,
+    "module": 3,
+    "type": "single",
+    "question": "Which PDU format is used when bits are received from the network medium by the NIC of a host?",
+    "options": [
+      "file",
+      "frame",
+      "packet",
+      "segment"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "When received at the physical layer of a host, the bits are formatted into a frame at the data link layer. A packet is the PDU at the network layer. A segment is the PDU at the transport layer. A file is a data structure that may be used at the application layer.",
+    "topic": "Topic 3.6.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welches PDU-Format wird verwendet, wenn Bits vom Netzwerkmedium von der NIC eines Hosts empfangen werden?",
+    "optionsDe": [
+      "Datei",
+      "rahmen",
+      "Paket",
+      "Segment"
+    ],
+    "mnemonic": "Thema 3.6.3: Antwort = rahmen"
+  },
+  {
+    "id": 43,
+    "module": 3,
+    "type": "multiple",
+    "question": "Refer to the exhibit. ServerB is attempting to contact HostA. Which two statements correctly identify the addressing that ServerB will generate in the process? (Choose two.)",
+    "options": [
+      "ServerB will generate a packet with the destination IP address of RouterB.",
+      "ServerB will generate a frame with the destination MAC address of SwitchB.",
+      "ServerB will generate a packet with the destination IP address of RouterA.",
+      "ServerB will generate a frame with the destination MAC address of RouterB.",
+      "ServerB will generate a packet with the destination IP address of HostA.",
+      "ServerB will generate a frame with the destination MAC address of RouterA."
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "In order to send data to HostA, ServerB will generate a packet that contains the IP address of the destination device on the remote network and a frame that contains the MAC address of the default gateway device on the local network.",
+    "topic": "Topic 3.7.2",
+    "image": "assets/images/ccna1-mod1-3-q43-495402a84f.png",
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Siehe Ausstellung. ServerB versucht, HostA zu kontaktieren. Welche beiden Anweisungen identifizieren korrekt die Adressierung, die ServerB dabei generiert? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "ServerB generiert ein Paket mit der Ziel-IP-Adresse von RouterB.",
+      "ServerB generiert einen Frame mit der Ziel-MAC-Adresse von SwitchB.",
+      "ServerB generiert ein Paket mit der Ziel-IP-Adresse von RouterA.",
+      "ServerB generiert einen Frame mit der Ziel-MAC-Adresse von RouterB.",
+      "ServerB generiert ein Paket mit der Ziel-IP-Adresse von HostA.",
+      "ServerB generiert einen Frame mit der Ziel-MAC-Adresse von RouterA."
+    ],
+    "mnemonic": "Richtig: 2 Antworten – ServerB generiert einen Frame mit der Zi, ServerB generiert ein Paket mit der Ziel"
+  },
+  {
+    "id": 44,
+    "module": 3,
+    "type": "single",
+    "question": "Which method allows a computer to react accordingly when it requests data from a server and the server takes too long to respond?",
+    "options": [
+      "encapsulation",
+      "flow control",
+      "access method",
+      "response timeout"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "If a computer makes a request and does not hear a response within an acceptable amount of time, the computer assumes that no answer is coming and reacts accordingly.",
+    "topic": "Topic 3.1.9",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Mit welcher Methode kann ein Computer entsprechend reagieren, wenn er Daten von einem Server anfordert und der Server zu LANge für die Antwort benötigt?",
+    "optionsDe": [
+      "Verkapselung",
+      "Flusskontrolle",
+      "Zugriffsmethode",
+      "Antwort-Timeout"
+    ],
+    "mnemonic": "Thema 3.1.9: Antwort = Antwort-Timeout"
+  },
+  {
+    "id": 45,
+    "module": 3,
+    "type": "single",
+    "question": "A web client is receiving a response for a web page from a web server. From the perspective of the client, what is the correct order of the protocol stack that is used to decode the received transmission?",
+    "options": [
+      "Ethernet, IP, TCP, HTTP",
+      "HTTP, TCP, IP, Ethernet",
+      "Ethernet, TCP, IP, HTTP",
+      "HTTP, Ethernet, IP, TCP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "1. HTTP governs the way that a web server and client interact.\n\n2. TCP manages individual conversations between web servers and clients.\n\n3. IP is responsible for delivery across the best path to the destination.\n\n4. Ethernet takes the packet from IP and formats it for transmission.",
+    "topic": "Topic 3.6.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Ein WebCLIent empfängt eine Antwort für eine Webseite von einem Webserver. Wie ist aus Sicht des CLIents die richtige Reihenfolge des Protokollstapels, der zum Dekodieren der empfangenen Übertragung verwendet wird?",
+    "optionsDe": [
+      "Ethernet, IP, TCP, HTTP",
+      "HTTP, TCP, IP, Ethernet",
+      "Ethernet, TCP, IP, HTTP",
+      "HTTP, Ethernet, IP, TCP"
+    ],
+    "mnemonic": "Thema 3.6.3: Antwort = Ethernet, IP, TCP, HTTP"
+  },
+  {
+    "id": 46,
+    "module": 3,
+    "type": "multiple",
+    "question": "Which two OSI model layers have the same functionality as a single layer of the TCP/IP model? (Choose two.)",
+    "options": [
+      "data link",
+      "network",
+      "physical",
+      "session",
+      "transport"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "The OSI data link and physical layers together are equivalent to the TCP/IP network access layer. The OSI transport layer is functionally equivalent to the TCP/IP transport layer, and the OSI network layer is equivalent to the TCP/IP internet layer. The OSI application, presentation, and session layers are functionally equivalent to the application layer within the TCP/IP model.",
+    "topic": "Topic 3.5.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welche beiden OSI-Modellschichten haben die gleiche Funktionalität wie eine einzelne Schicht des TCP/IP-Modells? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Datenverbindung",
+      "Netzwerk",
+      "körperlich",
+      "Sitzung",
+      "Transport"
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Datenverbindung, körperlich"
+  },
+  {
+    "id": 47,
+    "module": 3,
+    "type": "single",
+    "question": "At which layer of the OSI model would a logical address be added during encapsulation?",
+    "options": [
+      "physical layer",
+      "data link layer",
+      "network layer",
+      "transport layer"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Logical addresses, also known as IP addresses, are added at the network layer. Physical addresses are edded at the data link layer. Port addresses are added at the transport layer. No addresses are added at the physical layer.",
+    "topic": "Topic 3.7.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Auf welcher Ebene des OSI-Modells würde während der Kapselung eine logische Adresse hinzugefügt?",
+    "optionsDe": [
+      "physikalische Schicht",
+      "Datenverbindungsschicht",
+      "Netzwerkschicht",
+      "Transportschicht"
+    ],
+    "mnemonic": "Thema 3.7.2: Antwort = Netzwerkschicht"
+  },
+  {
+    "id": 48,
+    "module": 3,
+    "type": "single",
+    "question": "What is a characteristic of multicast messages?",
+    "options": [
+      "They are sent to a select group of hosts.",
+      "They are sent to all hosts on a network.",
+      "They must be acknowledged.",
+      "They are sent to a single destination."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Multicast is a one-to-many type of communication. Multicast messages are addressed to a specific multicast group.",
+    "topic": "Topic 3.1.9",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Was ist ein Merkmal von Multicast-Nachrichten?",
+    "optionsDe": [
+      "Sie werden an eine ausgewählte Gruppe von Hosts gesendet.",
+      "Sie werden an alle Hosts in einem Netzwerk gesendet.",
+      "Sie müssen anerkannt werden.",
+      "Sie werden an ein einziges Ziel gesendet."
+    ],
+    "mnemonic": "Thema 3.1.9: Antwort = Sie werden an eine ausgewählte Gruppe von Hosts gesendet."
+  },
+  {
+    "id": 49,
+    "module": 3,
+    "type": "single",
+    "question": "Which statement is correct about network protocols?",
+    "options": [
+      "Network protocols define the type of hardware that is used and how it is mounted in racks.",
+      "They define how messages are exchanged between the source and the destination.",
+      "They all function in the network access layer of TCP/IP.",
+      "They are only required for exchange of messages between devices on remote networks."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Network protocols are implemented in hardware, or software, or both. They interact with each other within different layers of a protocol stack. Protocols have nothing to do with the installation of the network equipment. Network protocols are required to exchange information between source and destination devices in both local and remote networks.",
+    "topic": "Topic 3.1.7",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welche Aussage zu Netzwerkprotokollen ist richtig?",
+    "optionsDe": [
+      "Netzwerkprotokolle definieren die Art der verwendeten Hardware und wie sie in Racks montiert wird.",
+      "Sie definieren, wie Nachrichten zwischen der Quelle und dem Ziel ausgetauscht werden.",
+      "Sie alle funktionieren in der Netzwerkzugriffsschicht von TCP/IP.",
+      "Sie werden nur für den Nachrichtenaustausch zwischen Geräten in entfernten Netzwerken benötigt."
+    ],
+    "mnemonic": "Thema 3.1.7: Antwort = Sie definieren, wie Nachrichten zwischen der Quelle und dem Ziel ausgetauscht we..."
+  },
+  {
+    "id": 50,
+    "module": 3,
+    "type": "single",
+    "question": "What is an advantage of network devices using open standard protocols?",
+    "options": [
+      "Network communications is confined to data transfers between devices from the same vendor.",
+      "A client host and a server running different operating systems can successfully exchange data.",
+      "Internet access can be controlled by a single ISP in each market.",
+      "Competition and innovation are limited to specific types of products."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An advantage of network devices implementing open standard protocols, such as from the TCP/IP suite, is that clients and servers running different operating systems can communicate with each other. Open standard protocols facilitate innovation and competition between vendors and across markets, and can reduce the occurrence of monopolies in networking markets.",
+    "topic": "Topic 3.4.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Was ist der Vorteil von Netzwerkgeräten, die offene Standardprotokolle verwenden?",
+    "optionsDe": [
+      "Die Netzwerkkommunikation beschränkt sich auf Datenübertragungen zwischen Geräten desselben Herstellers.",
+      "Ein CLIent-Host und ein Server mit unterschiedlichen Betriebssystemen können erfolgreich Daten austauschen.",
+      "Der Internetzugang kann in jedem Markt von einem einzigen ISP kontrolliert werden.",
+      "Wettbewerb und Innovation beschränken sich auf bestimmte Produkttypen."
+    ],
+    "mnemonic": "Thema 3.4.1: Antwort = Ein CLIent-Host und ein Server mit unterschiedlichen Betriebssystemen können erf..."
+  },
+  {
+    "id": 51,
+    "module": 1,
+    "type": "single",
+    "question": "Which device performs the function of determining the path that messages should take through internetworks?",
+    "options": [
+      "a router",
+      "a firewall",
+      "a web server",
+      "a DSL modem"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A router is used to determine the path that the messages should take through the network. A firewall is used to filter incoming and outgoing traffic. A DSL modem is used to provide Internet connection for a home or an organization.",
+    "topic": "Topic 1.2.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welches Gerät übernimmt die Funktion, den Weg zu bestimmen, den Nachrichten durch Internetnetzwerke nehmen sollen?",
+    "optionsDe": [
+      "ein Router",
+      "eine Firewall",
+      "ein Webserver",
+      "ein DSL-Modem"
+    ],
+    "mnemonic": "Thema 1.2.4: Antwort = ein Router"
+  },
+  {
+    "id": 52,
+    "module": 2,
+    "type": "single",
+    "question": "Open the PT Activity. Perform the tasks in the activity instructions and then answer the question.",
+    "options": [
+      "192.168.5.10",
+      "192.168.10.5",
+      "192.168.10.1",
+      "192.168.5.0"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "After the enable command is issued, the show running-configuration command or the show ip interfaces brief command will display the IP address of the switch virtual interface (SVI).",
+    "topic": "Topic 2.7.4",
+    "image": "assets/images/ccna1-mod1-3-q52-04731e1eae.jpg",
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Öffnen Sie die PT-Aktivität. Führen Sie die Aufgaben in der Aktivitätsanweisung aus und beantworten Sie anschließend die Frage.",
+    "optionsDe": [
+      "192.168.5.10",
+      "192.168.10.5",
+      "192.168.10.1",
+      "192.168.5.0"
+    ],
+    "mnemonic": "Thema 2.7.4: Antwort = 192.168.5.10"
+  },
+  {
+    "id": 53,
+    "module": 2,
+    "type": "single",
+    "question": "Why would a Layer 2 switch need an IP address?",
+    "options": [
+      "to enable the switch to send broadcast frames to attached PCs",
+      "to enable the switch to function as a default gateway",
+      "to enable the switch to be managed remotely",
+      "to enable the switch to receive frames from attached PCs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A switch, as a Layer 2 device, does not need an IP address to transmit frames to attached devices. However, when a switch is accessed remotely through the network, it must have a Layer 3 address. The IP address must be applied to a virtual interface rather than to a physical interface. Routers, not switches, function as default gateways.",
+    "topic": "Topic 2.6.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Warum benötigt ein Layer-2-Switch eine IP-Adresse?",
+    "optionsDe": [
+      "Damit der Switch Broadcast-Frames an angeschlossene PCs senden kann",
+      "Damit der Switch als Standard-Gateway fungieren kann",
+      "um die Fernverwaltung des Switches zu ermöglichen",
+      "Damit der Switch Frames von angeschlossenen PCs empfangen kann"
+    ],
+    "mnemonic": "Thema 2.6.2: Antwort = um die Fernverwaltung des Switches zu ermöglichen"
+  },
+  {
+    "id": 54,
+    "module": 2,
+    "type": "single",
+    "question": "Refer to the exhibit. An administrator is trying to configure the switch but receives the error message that is displayed in the exhibit. What is the problem?",
+    "options": [
+      "The entire command, configure terminal, must be used.",
+      "The administrator is already in global configuration mode.",
+      "The administrator must first enter privileged EXEC mode before issuing the command.",
+      "The administrator must connect via the console port to access global configuration mode."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In order to enter global configuration mode, the command configure terminal, or a shortened version such as config t, must be entered from privileged EXEC mode. In this scenario the administrator is in user EXEC mode, as indicated by the &gt; symbol after the hostname. The administrator would need to use the enable command to move into privileged EXEC mode before entering the configure terminal command.",
+    "topic": "Topic 2.2.1",
+    "image": "assets/images/ccna1-mod1-3-q54-7bf37cae68.png",
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Siehe Ausstellung. Ein Administrator versucht, den Switch zu konfigurieren, erhält jedoch die Fehlermeldung, die in der Ausstellung angezeigt wird. Was ist das Problem?",
+    "optionsDe": [
+      "Der gesamte Befehl „Terminal konfigurieren“ muss verwendet werden.",
+      "Der Administrator befindet sich bereits im globalen Konfigurationsmodus.",
+      "Der Administrator muss zunächst in den privilegierten EXEC-Modus wechseln, bevor er den Befehl ausgibt.",
+      "Der Administrator muss über den Konsolenport eine Verbindung herstellen, um auf den globalen Konfigurationsmodus zuzugreifen."
+    ],
+    "mnemonic": "Thema 2.2.1: Antwort = Der Administrator muss zunächst in den privilegierten EXEC-Modus wechseln, bevor..."
+  },
+  {
+    "id": 55,
+    "module": 1,
+    "type": "single",
+    "question": "What term describes a network owned by one organization that provides safe and secure access to individuals who work for a different organization?",
+    "options": [
+      "extranet",
+      "cloud",
+      "BYOD",
+      "quality of service"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 1.4.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welcher Begriff beschreibt ein Netzwerk, das einer Organisation gehört und Personen, die für eine andere Organisation arbeiten, einen sicheren Zugang bietet?",
+    "optionsDe": [
+      "Extranet",
+      "Wolke",
+      "BYOD",
+      "Qualität der Dienstleistung"
+    ],
+    "mnemonic": "Thema 1.4.4: Antwort = Extranet"
+  },
+  {
+    "id": 56,
+    "module": 1,
+    "type": "single",
+    "question": "What term describes storing personal files on servers over the internet to provide access anywhere, anytime, and on any device?",
+    "options": [
+      "cloud",
+      "BYOD",
+      "quality of service",
+      "converged network"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 1.7.6",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welcher Begriff beschreibt die Speicherung persönlicher Dateien auf Servern über das Internet, um den Zugriff überall, jederzeit und auf jedem Gerät zu ermöglichen?",
+    "optionsDe": [
+      "Wolke",
+      "BYOD",
+      "Qualität der Dienstleistung",
+      "konvergentes Netzwerk"
+    ],
+    "mnemonic": "Thema 1.7.6: Antwort = Wolke"
+  },
+  {
+    "id": 57,
+    "module": 1,
+    "type": "single",
+    "question": "What term describes a network where one computer can be both client and server?",
+    "options": [
+      "peer-to-peer",
+      "cloud",
+      "BYOD",
+      "quality of service"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 1.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welcher Begriff beschreibt ein Netzwerk, in dem ein Computer sowohl CLIent als auch Server sein kann?",
+    "optionsDe": [
+      "Peer-to-Peer",
+      "Wolke",
+      "BYOD",
+      "Qualität der Dienstleistung"
+    ],
+    "mnemonic": "Thema 1.2.2: Antwort = Peer-to-Peer"
+  },
+  {
+    "id": 58,
+    "module": 1,
+    "type": "single",
+    "question": "What term describes a type of network used by people who work from home or from a small remote office?",
+    "options": [
+      "SOHO network",
+      "BYOD",
+      "quality of service",
+      "converged network"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 1.4.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welcher Begriff beschreibt eine Art Netzwerk, das von Menschen verwendet wird, die von zu Hause oder von einem kleinen Remote-Büro aus arbeiten?",
+    "optionsDe": [
+      "SOHO-Netzwerk",
+      "BYOD",
+      "Qualität der Dienstleistung",
+      "konvergentes Netzwerk"
+    ],
+    "mnemonic": "Thema 1.4.1: Antwort = SOHO-Netzwerk"
+  },
+  {
+    "id": 59,
+    "module": 1,
+    "type": "single",
+    "question": "What term describes a computing model where server software runs on dedicated computers?",
+    "options": [
+      "client/server",
+      "internet",
+      "intranet",
+      "extranet"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 1.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welcher Begriff beschreibt ein Computermodell, bei dem Serversoftware auf dedizierten Computern ausgeführt wird?",
+    "optionsDe": [
+      "CLIent/Server",
+      "Internet",
+      "Intranet",
+      "Extranet"
+    ],
+    "mnemonic": "Thema 1.2.2: Antwort = CLIent/Server"
+  },
+  {
+    "id": 61,
+    "module": 1,
+    "type": "single",
+    "question": "What term describes a technology that allows devices to connect to the LAN using an electrical outlet?",
+    "options": [
+      "powerline networking",
+      "internet",
+      "intranet",
+      "extranet"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 1.7.8",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welcher Begriff beschreibt eine Technologie, die es Geräten ermöglicht, über eine Steckdose eine Verbindung zum LAN herzustellen?",
+    "optionsDe": [
+      "Powerline-Netzwerke",
+      "Internet",
+      "Intranet",
+      "Extranet"
+    ],
+    "mnemonic": "Thema 1.7.8: Antwort = Powerline-Netzwerke"
+  },
+  {
+    "id": 62,
+    "module": 1,
+    "type": "single",
+    "question": "What term describes a policy that allows network devices to manage the flow of data to give priority to voice and video?",
+    "options": [
+      "quality of service",
+      "internet",
+      "intranet",
+      "extranet"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 1.6.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welcher Begriff beschreibt eine Richtlinie, die es Netzwerkgeräten ermöglicht, den Datenfluss so zu verwalten, dass Sprache und Video Vorrang haben?",
+    "optionsDe": [
+      "Qualität der Dienstleistung",
+      "Internet",
+      "Intranet",
+      "Extranet"
+    ],
+    "mnemonic": "Thema 1.6.4: Antwort = Qualität der Dienstleistung"
+  },
+  {
+    "id": 63,
+    "module": 1,
+    "type": "single",
+    "question": "What term describes a private collection of LANs and WANs that belongs to an organization?",
+    "options": [
+      "intranet",
+      "internet",
+      "extranet",
+      "peer-to-peer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 1.4.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welcher Begriff beschreibt eine private Sammlung von LANs und WANs, die einer Organisation gehört?",
+    "optionsDe": [
+      "Intranet",
+      "Internet",
+      "Extranet",
+      "Peer-to-Peer"
+    ],
+    "mnemonic": "Thema 1.4.4: Antwort = Intranet"
+  },
+  {
+    "id": 64,
+    "module": 1,
+    "type": "single",
+    "question": "What term describes the ability to use personal devices across a business or campus network?",
+    "options": [
+      "BYOD",
+      "internet",
+      "intranet",
+      "extranet"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 1.7.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welcher Begriff beschreibt die Möglichkeit, persönliche Geräte in einem Unternehmens- oder Campusnetzwerk zu verwenden?",
+    "optionsDe": [
+      "BYOD",
+      "Internet",
+      "Intranet",
+      "Extranet"
+    ],
+    "mnemonic": "Thema 1.7.2: Antwort = BYOD"
+  },
+  {
+    "id": 65,
+    "module": 3,
+    "type": "single",
+    "question": "At which OSI layer is a source IP address added to a PDU during the encapsulation process?",
+    "options": [
+      "network layer",
+      "data link layer",
+      "transport layer",
+      "application layer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 3.6.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Auf welcher OSI-Schicht wird einer PDU während des Kapselungsprozesses eine Quell-IP-Adresse hinzugefügt?",
+    "optionsDe": [
+      "Netzwerkschicht",
+      "Datenverbindungsschicht",
+      "Transportschicht",
+      "Anwendungsschicht"
+    ],
+    "mnemonic": "Thema 3.6.4: Antwort = Netzwerkschicht"
+  },
+  {
+    "id": 66,
+    "module": 3,
+    "type": "single",
+    "question": "At which OSI layer is a destination port number added to a PDU during the encapsulation process?",
+    "options": [
+      "transport layer",
+      "data link layer",
+      "network layer",
+      "application layer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 3.6.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Auf welcher OSI-Schicht wird einer PDU während des Kapselungsprozesses eine Zielportnummer hinzugefügt?",
+    "optionsDe": [
+      "Transportschicht",
+      "Datenverbindungsschicht",
+      "Netzwerkschicht",
+      "Anwendungsschicht"
+    ],
+    "mnemonic": "Thema 3.6.3: Antwort = Transportschicht"
+  },
+  {
+    "id": 67,
+    "module": 3,
+    "type": "single",
+    "question": "At which OSI layer is data added to a PDU during the encapsulation process?",
+    "options": [
+      "application layer",
+      "data link layer",
+      "network layer",
+      "transport layer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 3.6.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Auf welcher OSI-Schicht werden während des Kapselungsprozesses Daten zu einer PDU hinzugefügt?",
+    "optionsDe": [
+      "Anwendungsschicht",
+      "Datenverbindungsschicht",
+      "Netzwerkschicht",
+      "Transportschicht"
+    ],
+    "mnemonic": "Thema 3.6.3: Antwort = Anwendungsschicht"
+  },
+  {
+    "id": 68,
+    "module": 3,
+    "type": "single",
+    "question": "At which OSI layer is a source IP address added to a PDU during the encapsulation process?",
+    "options": [
+      "network layer",
+      "data link layer",
+      "application layer",
+      "presentation layer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 3.6.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Auf welcher OSI-Schicht wird einer PDU während des Kapselungsprozesses eine Quell-IP-Adresse hinzugefügt?",
+    "optionsDe": [
+      "Netzwerkschicht",
+      "Datenverbindungsschicht",
+      "Anwendungsschicht",
+      "Präsentationsschicht"
+    ],
+    "mnemonic": "Thema 3.6.4: Antwort = Netzwerkschicht"
+  },
+  {
+    "id": 69,
+    "module": 1,
+    "type": "single",
+    "question": "Which of the following is the name for all computers connected to a network that participate directly in network communication?",
+    "options": [
+      "Servers",
+      "Intermediary device",
+      "Host",
+      "media"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Hosts are all computers connected to a network that participate directly in network communication.",
+    "topic": "Topic 1.2.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Wie werden alle mit einem Netzwerk verbundenen Computer bezeichnet, die direkt an der Netzwerkkommunikation teilnehmen?",
+    "optionsDe": [
+      "Server",
+      "Zwischengerät",
+      "Gastgeber",
+      "Medien"
+    ],
+    "mnemonic": "Thema 1.2.1: Antwort = Gastgeber"
+  },
+  {
+    "id": 70,
+    "module": 3,
+    "type": "single",
+    "question": "At which OSI layer is a destination IP address added to a PDU during the encapsulation process?",
+    "options": [
+      "network layer",
+      "application layer",
+      "transport layer",
+      "presentation layer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 3.6.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Auf welcher OSI-Schicht wird einer PDU während des Kapselungsprozesses eine Ziel-IP-Adresse hinzugefügt?",
+    "optionsDe": [
+      "Netzwerkschicht",
+      "Anwendungsschicht",
+      "Transportschicht",
+      "Präsentationsschicht"
+    ],
+    "mnemonic": "Thema 3.6.3: Antwort = Netzwerkschicht"
+  },
+  {
+    "id": 71,
+    "module": 3,
+    "type": "single",
+    "question": "At which OSI layer is a source MAC address added to a PDU during the encapsulation process?",
+    "options": [
+      "data link layer",
+      "application layer",
+      "transport layer",
+      "presentation layer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 3.6.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Auf welcher OSI-Schicht wird einer PDU während des Kapselungsprozesses eine Quell-MAC-Adresse hinzugefügt?",
+    "optionsDe": [
+      "Datenverbindungsschicht",
+      "Anwendungsschicht",
+      "Transportschicht",
+      "Präsentationsschicht"
+    ],
+    "mnemonic": "Thema 3.6.3: Antwort = Datenverbindungsschicht"
+  },
+  {
+    "id": 72,
+    "module": 3,
+    "type": "single",
+    "question": "At which OSI layer is a source port number added to a PDU during the encapsulation process?",
+    "options": [
+      "transport layer",
+      "application layer",
+      "network layer",
+      "presentation layer",
+      "data link layer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 3.6.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Auf welcher OSI-Schicht wird einer PDU während des Kapselungsprozesses eine Quellportnummer hinzugefügt?",
+    "optionsDe": [
+      "Transportschicht",
+      "Anwendungsschicht",
+      "Netzwerkschicht",
+      "Präsentationsschicht",
+      "Datenverbindungsschicht"
+    ],
+    "mnemonic": "Thema 3.6.3: Antwort = Transportschicht"
+  },
+  {
+    "id": 73,
+    "module": 3,
+    "type": "single",
+    "question": "At which OSI layer is a destination MAC address added to a PDU during the encapsulation process?",
+    "options": [
+      "data link layer",
+      "transport layer",
+      "application layer",
+      "network layer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 3.6.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Auf welcher OSI-Schicht wird einer PDU während des Kapselungsprozesses eine Ziel-MAC-Adresse hinzugefügt?",
+    "optionsDe": [
+      "Datenverbindungsschicht",
+      "Transportschicht",
+      "Anwendungsschicht",
+      "Netzwerkschicht"
+    ],
+    "mnemonic": "Thema 3.6.3: Antwort = Datenverbindungsschicht"
+  },
+  {
+    "id": 74,
+    "module": 1,
+    "type": "single",
+    "question": "When data is encoded as pulses of light, which media is being used to transmit the data?",
+    "options": [
+      "Wireless",
+      "Fire optic cable",
+      "Copper cable"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fiber-optic cable is the media is being used to transmit the data when data is encoded as pulses of light.",
+    "topic": "Topic 1.2.5",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Wenn Daten als Lichtimpulse kodiert werden, welches Medium wird zur Übertragung der Daten verwendet?",
+    "optionsDe": [
+      "Kabellos",
+      "Feueroptisches Kabel",
+      "Kupferkabel"
+    ],
+    "mnemonic": "Thema 1.2.5: Antwort = Feueroptisches Kabel"
+  },
+  {
+    "id": 75,
+    "module": 1,
+    "type": "multiple",
+    "question": "Which two devices are intermediary devices? (Choose two)",
+    "options": [
+      "Host",
+      "Router",
+      "Switch",
+      "Servers"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "and 1.3.1\n\nRouters and switches are intermediary devices.",
+    "topic": "Topic 1.2.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Welche beiden Geräte sind Zwischengeräte? (Wählen Sie zwei)",
+    "optionsDe": [
+      "Gastgeber",
+      "Router",
+      "Schalten",
+      "Server"
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Router, Schalten"
+  },
+  {
+    "id": 76,
+    "module": 1,
+    "type": "single",
+    "question": "A college is building a new dormitory on its campus. Workers are digging in the ground to install a new water pipe for the dormitory. A worker accidentally damages a fiber optic cable that connects two of the existing dormitories to the campus data center. Although the cable has been cut, students in the dormitories only experience a very short interruption of network services. What characteristic of the network is shown here?",
+    "options": [
+      "quality of service (QoS)",
+      "scalability",
+      "security",
+      "fault tolerance",
+      "integrity"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Fault tolerance is the characteristic of a network which allows it to quickly respond to failures of network devices, media, or services. Quality of service refers to the measures taken to ensure that network traffic requiring higher throughput receives the required network resources. Scalability refers to the ability of the network to grow to accommodate new requirements. Security refers to protecting networks and data from theft, alteration, or destruction. Integrity refers to the completeness of something and is generally not used as a characteristic of networks in the same way as the other terms.",
+    "topic": "Topic 1.6.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod1-3",
+    "questionDe": "Eine Hochschule baut auf ihrem Campus ein neues Wohnheim. Arbeiter graben im Boden, um eine neue Wasserleitung für das Wohnheim zu installieren. Ein Arbeiter beschädigt versehentlich ein Glasfaserkabel, das zwei der bestehenden Wohnheime mit dem Rechenzentrum des Campus verbindet. Obwohl das Kabel gekappt wurde, kommt es für die Studenten in den Wohnheimen nur zu einer sehr kurzen Unterbrechung der Netzwerkdienste. Welche Charakteristik des Netzwerkes wird hier dargestellt?",
+    "optionsDe": [
+      "Dienstqualität (QoS)",
+      "Skalierbarkeit",
+      "Sicherheit",
+      "Fehlertoleranz",
+      "Integrität"
+    ],
+    "mnemonic": "Thema 1.6.2: Antwort = Fehlertoleranz"
+  }
+]

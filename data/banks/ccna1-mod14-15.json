@@ -1,0 +1,1824 @@
+[
+  {
+    "id": 1,
+    "module": 14,
+    "type": "single",
+    "question": "Which action is performed by a client when establishing communication with a server via the use of UDP at the transport layer?",
+    "options": [
+      "The client sets the window size for the session.",
+      "The client sends an ISN to the server to start the 3-way handshake.",
+      "The client randomly selects a source port number.",
+      "The client sends a synchronization segment to begin the session."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "topic": "Topic 14.7.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche Aktion führt ein CLIent aus, wenn er über UDP auf der Transportebene eine Kommunikation mit einem Server aufbaut?",
+    "optionsDe": [
+      "Der CLIent legt die Fenstergröße für die Sitzung fest.",
+      "Der CLIent sendet eine ISN an den Server, um den 3-Wege-Handshake zu starten.",
+      "Der CLIent wählt zufällig eine Quellportnummer aus.",
+      "Der CLIent sendet ein Synchronisierungssegment, um die Sitzung zu starten."
+    ],
+    "mnemonic": "Thema 14.7.4: Antwort = Der CLIent wählt zufällig eine Quellportnummer aus."
+  },
+  {
+    "id": 2,
+    "module": 14,
+    "type": "single",
+    "question": "Which transport layer feature is used to guarantee session establishment?",
+    "options": [
+      "UDP ACK flag",
+      "TCP 3-way handshake",
+      "UDP sequence number",
+      "TCP port number"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "topic": "Topic 14.5.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche Transportschichtfunktion wird verwendet, um den Sitzungsaufbau zu gewährleisten?",
+    "optionsDe": [
+      "UDP-ACK-Flag",
+      "TCP 3-Wege-Handshake",
+      "UDP-Sequenznummer",
+      "TCP-Portnummer"
+    ],
+    "mnemonic": "Thema 14.5.2: Antwort = TCP 3-Wege-Handshake"
+  },
+  {
+    "id": 3,
+    "module": 14,
+    "type": "single",
+    "question": "What is the complete range of TCP and UDP well-known ports?",
+    "options": [
+      "0 to 255",
+      "0 to 1023",
+      "256 &#8211; 1023",
+      "1024 &#8211; 49151"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "topic": "Topic 14.4.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Was ist die vollständige Palette der bekannten TCP- und UDP-Ports?",
+    "optionsDe": [
+      "0 bis 255",
+      "0 bis 1023",
+      "256 &#8211; 1023",
+      "1024 &#8211; 49151"
+    ],
+    "mnemonic": "Thema 14.4.3: Antwort = 0 bis 1023"
+  },
+  {
+    "id": 4,
+    "module": 14,
+    "type": "single",
+    "question": "What is a socket?",
+    "options": [
+      "the combination of the source and destination IP address and source and destination Ethernet address",
+      "the combination of a source IP address and port number or a destination IP address and port number",
+      "the combination of the source and destination sequence and acknowledgment numbers",
+      "the combination of the source and destination sequence numbers and port numbers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "topic": "Topic 14.4.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Was ist eine Steckdose?",
+    "optionsDe": [
+      "die KombiNATion aus Quell- und Ziel-IP-Adresse und Quell- und Ziel-Ethernet-Adresse",
+      "die KombiNATion aus Quell-IP-Adresse und Portnummer oder Ziel-IP-Adresse und Portnummer",
+      "die KombiNATion aus Quell- und Zielsequenz und Bestätigungsnummern",
+      "die KombiNATion aus Quell- und Zielsequenznummern und Portnummern"
+    ],
+    "mnemonic": "Thema 14.4.2: Antwort = die KombiNATion aus Quell-IP-Adresse und Portnummer oder Ziel-IP-Adresse und Por..."
+  },
+  {
+    "id": 5,
+    "module": 14,
+    "type": "single",
+    "question": "A PC is downloading a large file from a server. The TCP window is 1000 bytes. The server is sending the file using 100-byte segments. How many segments will the server send before it requires an acknowledgment from the PC?",
+    "options": [
+      "1 segment",
+      "10 segments",
+      "100 segments",
+      "1000 segments"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With a window of 1000 bytes, the destination host accepts segments until all 1000 bytes of data have been received. Then the destination host sends an acknowledgment.",
+    "topic": "Topic 14.6.5",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Ein PC lädt eine große Datei von einem Server herunter. Das TCP-Fenster ist 1000 Byte groß. Der Server sendet die Datei mit 100-Byte-Segmenten. Wie viele Segmente sendet der Server, bevor er eine Bestätigung vom PC benötigt?",
+    "optionsDe": [
+      "1 Segment",
+      "10 Segmente",
+      "100 Segmente",
+      "1000 Segmente"
+    ],
+    "mnemonic": "Thema 14.6.5: Antwort = 10 Segmente"
+  },
+  {
+    "id": 6,
+    "module": 14,
+    "type": "single",
+    "question": "Which factor determines TCP window size?",
+    "options": [
+      "the amount of data to be transmitted",
+      "the number of services included in the TCP segment",
+      "the amount of data the destination can process at one time",
+      "the amount of data the source is capable of sending at one time"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Window is the number of bytes that the sender will send prior to expecting an acknowledgement from the destination device. The initial window is agreed upon during the session startup via the three-way handshake between source and destination. It is determined by how much data the destination device of a TCP session is able to accept and process at one time.",
+    "topic": "Topic 14.6.5",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welcher Faktor bestimmt die TCP-Fenstergröße?",
+    "optionsDe": [
+      "die Menge der zu übertragenden Daten",
+      "die Anzahl der im TCP-Segment enthaltenen Dienste",
+      "die Datenmenge, die das Ziel gleichzeitig verarbeiten kann",
+      "die Datenmenge, die die Quelle gleichzeitig senden kann"
+    ],
+    "mnemonic": "Thema 14.6.5: Antwort = die Datenmenge, die das Ziel gleichzeitig verarbeiten kann"
+  },
+  {
+    "id": 7,
+    "module": 14,
+    "type": "single",
+    "question": "What does a client do when it has UDP datagrams to send?",
+    "options": [
+      "It just sends the datagrams.",
+      "It queries the server to see if it is ready to receive data.",
+      "It sends a simplified three-way handshake to the server.",
+      "It sends to the server a segment with the SYN flag set to synchronize the conversation."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When a client has UDP datagrams to send, it just sends the datagrams.",
+    "topic": "Topic 14.1.5",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Was macht ein CLIent, wenn er UDP-Datagramme senden muss?",
+    "optionsDe": [
+      "Es sendet lediglich die Datagramme.",
+      "Es fragt den Server ab, ob er bereit ist, Daten zu empfangen.",
+      "Es sendet einen vereinfachten Drei-Wege-Handshake an den Server.",
+      "Es sendet ein Segment mit gesetztem SYN-Flag an den Server, um die Konversation zu synchronisieren."
+    ],
+    "mnemonic": "Thema 14.1.5: Antwort = Es sendet lediglich die Datagramme."
+  },
+  {
+    "id": 8,
+    "module": 14,
+    "type": "multiple3",
+    "question": "Which three fields are used in a UDP segment header? (Choose three.)",
+    "options": [
+      "Window Size",
+      "Length",
+      "Source Port",
+      "Acknowledgment Number",
+      "Checksum",
+      "Sequence Number"
+    ],
+    "correct": [
+      1,
+      2,
+      4
+    ],
+    "explanation": "A UDP header consists of only the Source Port, Destination Port, Length, and Checksum fields. Sequence Number, Acknowledgment Number, and Window Size are TCP header fields.",
+    "topic": "Topic 14.3.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche drei Felder werden in einem UDP-Segmentheader verwendet? (Wählen Sie drei.)",
+    "optionsDe": [
+      "Fenstergröße",
+      "Länge",
+      "Quellport",
+      "Bestätigungsnummer",
+      "Prüfsumme",
+      "Sequenznummer"
+    ],
+    "mnemonic": "Richtig: 3 Antworten – Länge, Quellport, Prüfsumme"
+  },
+  {
+    "id": 9,
+    "module": 14,
+    "type": "multiple",
+    "question": "What are two roles of the transport layer in data communication on a network? (Choose two.)",
+    "options": [
+      "identifying the proper application for each communication stream",
+      "tracking the individual communication between applications on the source and destination hosts",
+      "providing frame delimiting to identify bits making up a frame",
+      "performing a cyclic redundancy check on the frame for errors",
+      "providing the interface between applications and the underlying network over which messages are transmitted",
+      "Tracking the individual communication streams between applications on the source and destination hosts",
+      "Segmenting data at the source and reassembling the data at the destination",
+      "Identifying the proper application for each communication stream through the use of port numbers"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "The transport layer has several responsibilities. The primary responsibilities include the following:",
+    "topic": "Topic 14.1.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche zwei Rollen hat die Transportschicht bei der Datenkommunikation in einem Netzwerk? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Identifizieren der richtigen Anwendung für jeden Kommunikationsstrom",
+      "Verfolgung der individuellen Kommunikation zwischen Anwendungen auf den Quell- und Zielhosts",
+      "Bereitstellung einer Rahmenbegrenzung zur Identifizierung der Bits, aus denen ein Rahmen besteht",
+      "Durchführen einer zyklischen Redundanzprüfung des Rahmens auf Fehler",
+      "Bereitstellung der Schnittstelle zwischen Anwendungen und dem zugrunde liegenden Netzwerk, über das Nachrichten übertragen werden",
+      "Verfolgen der einzelnen Kommunikationsströme zwischen Anwendungen auf den Quell- und Zielhosts",
+      "Daten an der Quelle segmentieren und am Ziel wieder zusammensetzen",
+      "Identifizieren der richtigen Anwendung für jeden Kommunikationsstrom mithilfe von Portnummern"
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Identifizieren der richtigen Anwendung f, Verfolgung der individuellen Kommunikati"
+  },
+  {
+    "id": 10,
+    "module": 14,
+    "type": "single",
+    "question": "What information is used by TCP to reassemble and reorder received segments?",
+    "options": [
+      "port numbers",
+      "sequence numbers",
+      "acknowledgment numbers",
+      "fragment numbers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "At the transport layer, TCP uses the sequence numbers in the header of each TCP segment to reassemble the segments into the correct order.",
+    "topic": "Topic 14.6.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche Informationen werden von TCP verwendet, um empfangene Segmente wieder zusammenzusetzen und neu anzuordnen?",
+    "optionsDe": [
+      "Portnummern",
+      "Sequenznummern",
+      "Bestätigungsnummern",
+      "Fragmentnummern"
+    ],
+    "mnemonic": "Thema 14.6.1: Antwort = Sequenznummern"
+  },
+  {
+    "id": 11,
+    "module": 14,
+    "type": "single",
+    "question": "What important information is added to the TCP/IP transport layer header to ensure communication and connectivity with a remote network device?",
+    "options": [
+      "timing and synchronization",
+      "destination and source port numbers",
+      "destination and source physical addresses",
+      "destination and source logical network addresses"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The destination and source port numbers are used to identify exactly which protocol and process is requesting or responding to a request.",
+    "topic": "Topic 14.4.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche wichtigen Informationen werden dem TCP/IP-Transportschicht-Header hinzugefügt, um die Kommunikation und Konnektivität mit einem Remote-Netzwerkgerät sicherzustellen?",
+    "optionsDe": [
+      "Timing und Synchronisation",
+      "Ziel- und Quellportnummern",
+      "physische Ziel- und Quelladressen",
+      "logische Ziel- und Quellnetzwerkadressen"
+    ],
+    "mnemonic": "Thema 14.4.1: Antwort = Ziel- und Quellportnummern"
+  },
+  {
+    "id": 12,
+    "module": 14,
+    "type": "multiple",
+    "question": "Which two characteristics are associated with UDP sessions? (Choose two.)",
+    "options": [
+      "Destination devices receive traffic with minimal delay.",
+      "Transmitted data segments are tracked.",
+      "Destination devices reassemble messages and pass them to an application.",
+      "Received data is unacknowledged.",
+      "Unacknowledged data packets are retransmitted.",
+      "Provides tracking of transmitted data segments",
+      "Destination devices will acknowledge received data.",
+      "Source devices will retransmit unacknowledged data.",
+      "Destination devices will not acknowledge received data",
+      "Headers use very little overhead and cause minimal delay.​"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "",
+    "topic": "Topic 14.7.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche zwei Merkmale sind mit UDP-Sitzungen verbunden? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Zielgeräte empfangen Datenverkehr mit minimaler Verzögerung.",
+      "Übertragene Datensegmente werden verfolgt.",
+      "Zielgeräte stellen Nachrichten wieder zusammen und leiten sie an eine Anwendung weiter.",
+      "Empfangene Daten sind unbestätigt.",
+      "Unbestätigte Datenpakete werden erneut übertragen.",
+      "Bietet die Verfolgung übertragener Datensegmente",
+      "Zielgeräte bestätigen empfangene Daten.",
+      "Quellgeräte übertragen unbestätigte Daten erneut.",
+      "Zielgeräte bestätigen empfangene Daten nicht",
+      "Header verbrauchen sehr wenig Overhead und verursachen minimale Verzögerungen."
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Zielgeräte empfangen Datenverkehr mit mi, Empfangene Daten sind unbestätigt."
+  },
+  {
+    "id": 13,
+    "module": 14,
+    "type": "ordering",
+    "question": "A client application needs to terminate a TCP communication session with a server. Place the termination process steps in the order that they will occur. (Not all options are used.)",
+    "options": [
+      "client sends FIN → step 1",
+      "server sends ACK → step 2",
+      "server sends FIN → step 3",
+      "client sends ACK → step 4"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "In order to terminate a TCP session, the client sends to the server a segment with the FIN flag set. The server acknowledges the client by sending a segment with the ACK flag set. The server sends a FIN to the client to terminate the server to client session. The client acknowledges the termination by sending a segment with the ACK flag set.",
+    "topic": "Topic 14.5.3",
+    "image": "assets/images/ccna1-mod14-15-q13.jpg",
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "optionsDe": [
+      "Client sendet FIN → Schritt 1",
+      "Server sendet ACK → Schritt 2",
+      "Server sendet FIN → Schritt 3",
+      "Client sendet ACK → Schritt 4"
+    ],
+    "questionDe": "Eine Client-Anwendung muss eine TCP-Kommunikationssitzung mit einem Server beenden. Ordnen Sie die Schritte des Beendigungsprozesses in der Reihenfolge zu, in der sie auftreten.",
+    "mnemonic": "TCP-Beendigung: FIN → ACK → FIN → ACK (4-Wege-Handshake)"
+  },
+  {
+    "id": 14,
+    "module": 14,
+    "type": "single",
+    "question": "Which flag in the TCP header is used in response to a received FIN in order to terminate connectivity between two network devices?",
+    "options": [
+      "FIN",
+      "ACK",
+      "SYN",
+      "RST"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In a TCP session, when a device has no more data to send, it will send a segment with the FIN flag set. The connected device that receives the segment will respond with an ACK to acknowledge that segment. The device that sent the ACK will then send a FIN message to close the connection it has with the other device. The sending of the FIN should be followed with the receipt of an ACK from the other device.​",
+    "topic": "Topic 14.5.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welches Flag im TCP-Header wird als Reaktion auf eine empfangene FIN verwendet, um die Konnektivität zwischen zwei Netzwerkgeräten zu beenden?",
+    "optionsDe": [
+      "FLOSSE",
+      "ACK",
+      "SYN",
+      "RST"
+    ],
+    "mnemonic": "Thema 14.5.3: Antwort = ACK"
+  },
+  {
+    "id": 15,
+    "module": 14,
+    "type": "single",
+    "question": "Which protocol or service uses UDP for a client-to-server communication and TCP for server-to-server communication?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "DNS",
+      "SMTP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Some applications may use both TCP and UDP. DNS uses UDP when clients send requests to a DNS server, and TCP when two DNS serves directly communicate.",
+    "topic": "Topic 14.4.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welches Protokoll oder welcher Dienst verwendet UDP für eine CLIent-zu-Server-Kommunikation und TCP für eine Server-zu-Server-Kommunikation?",
+    "optionsDe": [
+      "HTTP",
+      "FTP",
+      "DNS",
+      "SMTP"
+    ],
+    "mnemonic": "Thema 14.4.3: Antwort = DNS"
+  },
+  {
+    "id": 16,
+    "module": 14,
+    "type": "single",
+    "question": "What is a characteristic of UDP?",
+    "options": [
+      "UDP datagrams take the same path and arrive in the correct order at the destination.​",
+      "Applications that use UDP are always considered unreliable.​",
+      "UDP reassembles the received datagrams in the order they were received.",
+      "UDP only passes data to the network when the destination is ready to receive the data."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "UDP has no way to reorder the datagrams into their transmission order, so UDP simply reassembles the data in the order it was received and forwards it to the application.​",
+    "topic": "Topic 14.7.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Was ist ein Merkmal von UDP?",
+    "optionsDe": [
+      "UDP-Datagramme nehmen denselben Weg und kommen in der richtigen Reihenfolge am Ziel an.",
+      "Anwendungen, die UDP verwenden, gelten immer als unzuverlässig.",
+      "UDP setzt die empfangenen Datagramme in der Reihenfolge wieder zusammen, in der sie empfangen wurden.",
+      "UDP leitet Daten nur dann an das Netzwerk weiter, wenn das Ziel zum Empfang der Daten bereit ist."
+    ],
+    "mnemonic": "Thema 14.7.2: Antwort = UDP setzt die empfangenen Datagramme in der Reihenfolge wieder zusammen, in der ..."
+  },
+  {
+    "id": 17,
+    "module": 14,
+    "type": "single",
+    "question": "What kind of port must be requested from IANA in order to be used with a specific application?",
+    "options": [
+      "registered port",
+      "private port",
+      "dynamic port",
+      "source port"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Registered ports (numbers 1024 to 49151) are assigned by IANA to a requesting entity to use with specific processes or applications. These processes are primarily individual applications that a user has chosen to install, rather than common applications that would receive a well-known port number. For example, Cisco has registered port 1985 for its Hot Standby Routing Protocol (HSRP) process.​",
+    "topic": "Topic 14.4.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche Art von Port muss bei der IANA beantragt werden, um mit einer bestimmten Anwendung verwendet zu werden?",
+    "optionsDe": [
+      "registrierter Hafen",
+      "privater Hafen",
+      "dynamischer Port",
+      "Quellport"
+    ],
+    "mnemonic": "Thema 14.4.3: Antwort = registrierter Hafen"
+  },
+  {
+    "id": 18,
+    "module": 14,
+    "type": "multiple3",
+    "question": "Which three application layer protocols use TCP? (Choose three.)",
+    "options": [
+      "SMTP",
+      "FTP",
+      "SNMP",
+      "HTTP",
+      "TFTP",
+      "DHCP"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "Some protocols require the reliable data transport that is provided by TCP. In addition, these protocols do not have real time communication requirements and can tolerate some data loss while minimizing protocol overhead. Examples of these protocols are SMTP, FTP, and HTTP.",
+    "topic": "Topic 14.2.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche drei Protokolle der Anwendungsschicht verwenden TCP? (Wählen Sie drei.)",
+    "optionsDe": [
+      "SMTP",
+      "FTP",
+      "SNMP",
+      "HTTP",
+      "TFTP",
+      "DHCP"
+    ],
+    "mnemonic": "Richtig: 3 Antworten – SMTP, FTP, HTTP"
+  },
+  {
+    "id": 19,
+    "module": 14,
+    "type": "multiple3",
+    "question": "Which three statements characterize UDP? (Choose three.)",
+    "options": [
+      "UDP provides basic connectionless transport layer functions.",
+      "UDP provides connection-oriented, fast transport of data at Layer 3.",
+      "UDP relies on application layer protocols for error detection.",
+      "UDP is a low overhead protocol that does not provide sequencing or flow control mechanisms.",
+      "UDP relies on IP for error detection and recovery.",
+      "UDP provides sophisticated flow control mechanisms."
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "UDP is a simple protocol that provides the basic transport layer functions. It has much lower overhead than TCP because it is not connection-oriented and does not offer the sophisticated retransmission, sequencing, and flow control mechanisms that provide reliability.",
+    "topic": "Topic 14.7.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche drei Aussagen charakterisieren UDP? (Wählen Sie drei.)",
+    "optionsDe": [
+      "UDP bietet grundlegende verbindungslose Transportschichtfunktionen.",
+      "UDP bietet einen verbindungsorientierten, schnellen Transport von Daten auf Layer 3.",
+      "UDP stützt sich zur Fehlererkennung auf Protokolle der Anwendungsschicht.",
+      "UDP ist ein Protokoll mit geringem Overhead, das keine Sequenzierungs- oder Flusskontrollmechanismen bietet.",
+      "UDP ist zur Fehlererkennung und -behebung auf IP angewiesen.",
+      "UDP bietet ausgefeilte Flusskontrollmechanismen."
+    ],
+    "mnemonic": "Richtig: 3 Antworten – UDP bietet grundlegende verbindungslose , UDP stützt sich zur Fehlererkennung auf , UDP ist ein Protokoll mit geringem Overh"
+  },
+  {
+    "id": 20,
+    "module": 14,
+    "type": "multiple",
+    "question": "Which two fields are included in the TCP header but not in the UDP header? (Choose two.)",
+    "options": [
+      "window",
+      "checksum",
+      "source port",
+      "destination port",
+      "sequence number"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "explanation": "The sequence number and window fields are included in the TCP header but not in the UDP header.",
+    "topic": "Topic 14.2.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche beiden Felder sind im TCP-Header enthalten, aber nicht im UDP-Header? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Fenster",
+      "Prüfsumme",
+      "Quellport",
+      "Zielhafen",
+      "Sequenznummer"
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Fenster, Sequenznummer"
+  },
+  {
+    "id": 21,
+    "module": 14,
+    "type": "single",
+    "question": "Which field in the TCP header indicates the status of the three-way handshake process?",
+    "options": [
+      "window",
+      "reserved",
+      "checksum",
+      "control bits"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The value in the control bits field of theTCP header indicates the progress and status of the connection.",
+    "topic": "Topic 14.5.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welches Feld im TCP-Header gibt den Status des Drei-Wege-Handshake-Prozesses an?",
+    "optionsDe": [
+      "Fenster",
+      "reserviert",
+      "Prüfsumme",
+      "Steuerbits"
+    ],
+    "mnemonic": "Thema 14.5.4: Antwort = Steuerbits"
+  },
+  {
+    "id": 22,
+    "module": 14,
+    "type": "single",
+    "question": "Why does HTTP use TCP as the transport layer protocol?",
+    "options": [
+      "to ensure the fastest possible download speed",
+      "because HTTP is a best-effort protocol",
+      "because transmission errors can be tolerated easily",
+      "because HTTP requires reliable delivery"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "When a host requests a web page, transmission reliability and completeness must be guaranteed. Therefore, HTTP uses TCP as its transport layer protocol.",
+    "topic": "Topic 14.1.6",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Warum verwendet HTTP TCP als Transportschichtprotokoll?",
+    "optionsDe": [
+      "um die schnellstmögliche Download-Geschwindigkeit zu gewährleisten",
+      "weil HTTP ein Best-Effort-Protokoll ist",
+      "weil Übertragungsfehler problemlos toleriert werden können",
+      "weil HTTP eine zuverlässige Zustellung erfordert"
+    ],
+    "mnemonic": "Thema 14.1.6: Antwort = weil HTTP eine zuverlässige Zustellung erfordert"
+  },
+  {
+    "id": 23,
+    "module": 14,
+    "type": "multiple",
+    "question": "Which two types of applications are best suited for UDP? (Choose two.)",
+    "options": [
+      "applications that need data flow control",
+      "applications that require reliable delivery",
+      "applications that handle reliability themselves",
+      "applications that need the reordering of segments",
+      "applications that can tolerate some data loss, but require little or no delay"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "Applications that can tolerate some data loss, require a simple request and reply, and handle reliability themselves are best suited for UDP. UDP has low overhead and no requirement of reliability. TCP provides services for reliability, controlling data flow, and the reordering of segments.",
+    "topic": "Topic 14.1.6",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche zwei Arten von Anwendungen eignen sich am besten für UDP? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Anwendungen, die eine Datenflusskontrolle benötigen",
+      "Anwendungen, die eine zuverlässige Lieferung erfordern",
+      "Anwendungen, die sich selbst um die Zuverlässigkeit kümmern",
+      "Anwendungen, die eine Neuordnung der Segmente erfordern",
+      "Anwendungen, die einen gewissen Datenverlust tolerieren können, aber nur geringe oder keine Verzögerung erfordern"
+    ],
+    "mnemonic": "Richtig: 2 Antworten – Anwendungen, die sich selbst um die Zuve, Anwendungen, die einen gewissen Datenver"
+  },
+  {
+    "id": 24,
+    "module": 14,
+    "type": "single",
+    "question": "How are port numbers used in the TCP/IP encapsulation process?",
+    "options": [
+      "Source port numbers and destination port numbers are not necessary when UDP is the transport layer protocol being used for the communication.",
+      "Source port and destination port numbers are randomly generated.",
+      "If multiple conversations occur that are using the same service, the source port number is used to track the separate conversations.",
+      "Destination port numbers are assigned automatically and cannot be changed."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Both UDP and TCP use port numbers to provide a unique identifier for each conversation. Source port numbers are randomly generated and are used to track different conversations. Destination port numbers identify specific services by using either a default port number for the service or a port number that is assigned manually by a system administrator.",
+    "topic": "Topic 14.4.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Wie werden Portnummern im TCP/IP-Kapselungsprozess verwendet?",
+    "optionsDe": [
+      "Quellportnummern und Zielportnummern sind nicht erforderlich, wenn UDP das für die Kommunikation verwendete Transportschichtprotokoll ist.",
+      "Quellport- und Zielportnummern werden zufällig generiert.",
+      "Wenn mehrere Konversationen stattfinden, die denselben Dienst nutzen, wird die Quellportnummer verwendet, um die einzelnen Konversationen zu verfolgen.",
+      "Zielportnummern werden automatisch zugewiesen und können nicht geändert werden."
+    ],
+    "mnemonic": "Thema 14.4.1: Antwort = Wenn mehrere Konversationen stattfinden, die denselben Dienst nutzen, wird die Q..."
+  },
+  {
+    "id": 25,
+    "module": 14,
+    "type": "multiple",
+    "question": "In what two situations would UDP be better than TCP as the preferred transport protocol? (Choose two.)",
+    "options": [
+      "when applications need to guarantee that a packet arrives intact, in sequence, and unduplicated",
+      "when a faster delivery mechanism is needed",
+      "when delivery overhead is not an issue",
+      "when applications do not need to guarantee delivery of the data",
+      "when destination port numbers are dynamic"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "UDP is a very simple transport layer protocol that does not guarantee delivery. Devices on both ends of the conversation are not required to keep track of the conversation. UDP is used as the transport protocol for applications that need a speedy, best-effort delivery.",
+    "topic": "Topic 14.1.6",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "In welchen beiden Situationen wäre UDP als bevorzugtes Transportprotokoll besser als TCP? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "wenn Anwendungen garantieren müssen, dass ein Paket intakt, in der richtigen Reihenfolge und ohne Duplikate ankommt",
+      "wenn ein schnellerer Liefermechanismus benötigt wird",
+      "wenn der LieferaufWANd kein Problem darstellt",
+      "wenn Anwendungen die Bereitstellung der Daten nicht garantieren müssen",
+      "wenn Zielportnummern dynamisch sind"
+    ],
+    "mnemonic": "Richtig: 2 Antworten – wenn ein schnellerer Liefermechanismus b, wenn Anwendungen die Bereitstellung der "
+  },
+  {
+    "id": 26,
+    "module": 14,
+    "type": "multiple3",
+    "question": "What are three responsibilities of the transport layer? (Choose three.)",
+    "options": [
+      "meeting the reliability requirements of applications, if any",
+      "multiplexing multiple communication streams from many users or applications on the same network",
+      "identifying the applications and services on the client and server that should handle transmitted data",
+      "directing packets towards the destination network",
+      "formatting data into a compatible form for receipt by the destination devices",
+      "conducting error detection of the contents in frames"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "The transport layer has several responsibilities. Some of the primary responsibilities include the following:\n\nTracking the individual communication streams between applications on the source and destination hosts\n\nSegmenting data at the source and reassembling the data at the destination\n\nIdentifying the proper application for each communication stream through the use of port numbers\n\nMultiplexing the communications of multiple users or applications over a single network\n\nManaging the reliability requirements of applications",
+    "topic": "Topic 14.1.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Was sind die drei Verantwortlichkeiten der Transportschicht? (Wählen Sie drei.)",
+    "optionsDe": [
+      "Erfüllung der Zuverlässigkeitsanforderungen von Anwendungen, sofern vorhanden",
+      "Multiplexen mehrerer Kommunikationsströme von vielen Benutzern oder Anwendungen im selben Netzwerk",
+      "Identifizieren der Anwendungen und Dienste auf dem CLIent und Server, die übertragene Daten verarbeiten sollen",
+      "Weiterleiten von Paketen an das Zielnetzwerk",
+      "Formatieren von Daten in eine kompatible Form für den Empfang durch die Zielgeräte",
+      "Durchführung einer Fehlererkennung des Inhalts in Frames"
+    ],
+    "mnemonic": "Richtig: 3 Antworten – Erfüllung der Zuverlässigkeitsanforderun, Multiplexen mehrerer Kommunikationsström, Identifizieren der Anwendungen und Diens"
+  },
+  {
+    "id": 27,
+    "module": 15,
+    "type": "multiple3",
+    "question": "Which three statements describe a DHCP Discover message? (Choose three.)",
+    "options": [
+      "The source MAC address is 48 ones (FF-FF-FF-FF-FF-FF).",
+      "The destination IP address is 255.255.255.255.",
+      "The message comes from a server offering an IP address.",
+      "The message comes from a client seeking an IP address.",
+      "All hosts receive the message, but only a DHCP server replies.",
+      "Only the DHCP server receives the message."
+    ],
+    "correct": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "When a host configured to use DHCP powers up on a network it sends a DHCPDISCOVER message. FF-FF-FF-FF-FF-FF is the L2 broadcast address. A DHCP server replies with a unicast DHCPOFFER message back to the host.",
+    "topic": "Topic 15.4.7",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche drei Aussagen beschreiben eine DHCP-Discover-Nachricht? (Wählen Sie drei.)",
+    "optionsDe": [
+      "Die Quell-MAC-Adresse beträgt 48 Einsen (FF-FF-FF-FF-FF-FF).",
+      "Die Ziel-IP-Adresse ist 255.255.255.255.",
+      "Die Nachricht kommt von einem Server, der eine IP-Adresse anbietet.",
+      "Die Nachricht kommt von einem CLIent, der eine IP-Adresse sucht.",
+      "Alle Hosts empfangen die Nachricht, aber nur ein DHCP-Server antwortet.",
+      "Nur der DHCP-Server empfängt die Nachricht."
+    ],
+    "mnemonic": "Richtig: 3 Antworten – Die Ziel-IP-Adresse ist 255.255.255.255., Die Nachricht kommt von einem CLIent, de, Alle Hosts empfangen die Nachricht, aber"
+  },
+  {
+    "id": 28,
+    "module": 15,
+    "type": "multiple",
+    "question": "Which two protocols may devices use in the application process that sends email? (Choose two.)",
+    "options": [
+      "HTTP",
+      "SMTP",
+      "POP",
+      "IMAP",
+      "DNS",
+      "POP3"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "POP, POP3, and IMAP are protocols that are used to retrieve email from servers. SMTP is the default protocol that is used to send email. DNS may be used by the sender email server to find the address of the destination email server.",
+    "topic": "Topic 15.3.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche beiden Protokolle können Geräte im Bewerbungsprozess zum Versenden von E-Mails verwenden? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "HTTP",
+      "SMTP",
+      "POP",
+      "IMAP",
+      "DNS",
+      "POP3"
+    ],
+    "mnemonic": "Richtig: 2 Antworten – SMTP, DNS"
+  },
+  {
+    "id": 29,
+    "module": 15,
+    "type": "single",
+    "question": "What is true about the Server Message Block protocol?",
+    "options": [
+      "Different SMB message types have a different format.",
+      "Clients establish a long term connection to servers.",
+      "SMB messages cannot authenticate a session.",
+      "SMB uses the FTP protocol for communication."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Server Message Block protocol is a protocol for file, printer, and directory sharing. Clients establish a long term connection to servers and when the connection is active, the resources can be accessed. Every SMB message has the same format. The use of SMB differs from FTP mainly in the length of the sessions. SMB messages can authenticate sessions.",
+    "topic": "Topic 15.5.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Was ist wahr am Server Message Block-Protokoll?",
+    "optionsDe": [
+      "Verschiedene SMB-Nachrichtentypen haben ein unterschiedliches Format.",
+      "CLIents stellen eine LANgfristige Verbindung zu Servern her.",
+      "SMB-Nachrichten können eine Sitzung nicht authentifizieren.",
+      "SMB verwendet für die Kommunikation das FTP-Protokoll."
+    ],
+    "mnemonic": "Thema 15.5.2: Antwort = CLIents stellen eine LANgfristige Verbindung zu Servern her."
+  },
+  {
+    "id": 30,
+    "module": 15,
+    "type": "single",
+    "question": "What is the function of the HTTP GET message?",
+    "options": [
+      "to request an HTML page from a web server",
+      "to send error information from a web server to a web client",
+      "to upload content to a web server from a web client",
+      "to retrieve client email from an email server using TCP port 110",
+      "GET &#8211; used by clients to request data from the web server",
+      "POST &#8211; used by clients to upload data to a web server",
+      "PUT &#8211; used by clients to upload data to a web server"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "There are three common HTTP message types:",
+    "topic": "Topic 15.3.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche Funktion hat die HTTP-GET-Nachricht?",
+    "optionsDe": [
+      "um eine HTML-Seite von einem Webserver anzufordern",
+      "um Fehlerinformationen von einem Webserver an einen WebCLIent zu senden",
+      "um Inhalte von einem Web-CLIent auf einen Webserver hochzuladen",
+      "um CLIent-E-Mails von einem E-Mail-Server über TCP-Port 110 abzurufen",
+      "GET &#8211; Wird von CLIents verwendet, um Daten vom Webserver anzufordern",
+      "POST &#8211; Wird von CLIents zum Hochladen von Daten auf einen Webserver verwendet",
+      "PUT &#8211; Wird von CLIents zum Hochladen von Daten auf einen Webserver verwendet"
+    ],
+    "mnemonic": "Thema 15.3.2: Antwort = um eine HTML-Seite von einem Webserver anzufordern"
+  },
+  {
+    "id": 31,
+    "module": 15,
+    "type": "single",
+    "question": "Which OSI layer provides the interface between the applications used to communicate and the underlying network over which messages are transmitted?",
+    "options": [
+      "application",
+      "presentation",
+      "session",
+      "transport"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The application layer is the layer that is closest to the end user and provides the interface between the underlying network and the applications used to communicate.",
+    "topic": "Topic 15.1.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche OSI-Schicht stellt die Schnittstelle zwischen den zur Kommunikation verwendeten Anwendungen und dem zugrunde liegenden Netzwerk bereit, über das Nachrichten übertragen werden?",
+    "optionsDe": [
+      "Anwendung",
+      "Präsentation",
+      "Sitzung",
+      "Transport"
+    ],
+    "mnemonic": "Thema 15.1.1: Antwort = Anwendung"
+  },
+  {
+    "id": 32,
+    "module": 15,
+    "type": "single",
+    "question": "Which networking model is being used when an author uploads one chapter document to a file server of a book publisher?",
+    "options": [
+      "peer-to-peer",
+      "master-slave",
+      "client/server",
+      "point-to-point"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In the client/server network model, a network device assumes the role of server in order to provide a particular service such as file transfer and storage. In the client/server network model, a dedicated server does not have to be used, but if one is present, the network model being used is the client/server model. In contrast, a peer-to-peer network does not have a dedicated server.",
+    "topic": "Topic 15.2.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welches Netzwerkmodell wird verwendet, wenn ein Autor ein Kapiteldokument auf einen Dateiserver eines Buchverlags hochlädt?",
+    "optionsDe": [
+      "Peer-to-Peer",
+      "Meister-Sklave",
+      "CLIent/Server",
+      "Punkt-zu-Punkt"
+    ],
+    "mnemonic": "Thema 15.2.1: Antwort = CLIent/Server"
+  },
+  {
+    "id": 33,
+    "module": 15,
+    "type": "single",
+    "question": "What do the client/server and peer-to-peer network models have in common?",
+    "options": [
+      "Both models have dedicated servers.",
+      "Both models support devices in server and client roles.",
+      "Both models require the use of TCP/IP-based protocols.",
+      "Both models are used only in the wired network environment."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In both the client/server and peer-to-peer network models, clients and servers exist. In peer-to-peer networks, no dedicated server exists, but a device can assume the server role to provide information to a device serving in the client role.",
+    "topic": "Topic 15.2.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Was haben die Netzwerkmodelle CLIent/Server und Peer-to-Peer gemeinsam?",
+    "optionsDe": [
+      "Beide Modelle verfügen über dedizierte Server.",
+      "Beide Modelle unterstützen Geräte in Server- und CLIent-Rollen.",
+      "Beide Modelle erfordern die Verwendung von TCP/IP-basierten Protokollen.",
+      "Beide Modelle werden nur in der kabelgebundenen Netzwerkumgebung verwendet."
+    ],
+    "mnemonic": "Thema 15.2.1: Antwort = Beide Modelle unterstützen Geräte in Server- und CLIent-Rollen."
+  },
+  {
+    "id": 34,
+    "module": 15,
+    "type": "single",
+    "question": "In what networking model would eDonkey, eMule, BitTorrent, Bitcoin, and LionShare be used?",
+    "options": [
+      "peer-to-peer",
+      "client-based",
+      "master-slave",
+      "point-to-point"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In a peer-to-peer networking model, data is exchanged between two network devices without the use of a dedicated server. Peer-to-peer applications such as Shareaz, eDonkey, and Bitcoin allow one network device to assume the role of server, while one or more other network devices assume the role of client using the peer-to-peer application.",
+    "topic": "Topic 15.2.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "In welchem Netzwerkmodell würden eDonkey, eMule, BitTorrent, Bitcoin und LionShare verwendet?",
+    "optionsDe": [
+      "Peer-to-Peer",
+      "kundenbasiert",
+      "Meister-Sklave",
+      "Punkt-zu-Punkt"
+    ],
+    "mnemonic": "Thema 15.2.4: Antwort = Peer-to-Peer"
+  },
+  {
+    "id": 35,
+    "module": 15,
+    "type": "single",
+    "question": "What is a common protocol that is used with peer-to-peer applications such as WireShare, Bearshare, and Shareaza?",
+    "options": [
+      "Ethernet",
+      "Gnutella",
+      "POP",
+      "SMTP"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Gnutella protocol is used when one user shares an entire file with another user. A person would load a Gnutella-based application such as gtk-gnutella or WireShare and use that application to locate and access resources shared by others.",
+    "topic": "Topic 15.2.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Was ist ein gängiges Protokoll, das mit Peer-to-Peer-Anwendungen wie WireShare, Bearshare und Shareaza verwendet wird?",
+    "optionsDe": [
+      "Ethernet",
+      "Gnutella",
+      "POP",
+      "SMTP"
+    ],
+    "mnemonic": "Thema 15.2.4: Antwort = Gnutella"
+  },
+  {
+    "id": 36,
+    "module": 15,
+    "type": "single",
+    "question": "What is a key characteristic of the peer-to-peer networking model?",
+    "options": [
+      "wireless networking",
+      "social networking without the Internet",
+      "network printing using a print server",
+      "resource sharing without a dedicated server"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The peer-to-peer (P2P) networking model allows data, printer, and resource sharing without a dedicated server.​​",
+    "topic": "Topic 15.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Was ist ein wesentliches Merkmal des Peer-to-Peer-Netzwerkmodells?",
+    "optionsDe": [
+      "drahtlose Vernetzung",
+      "Soziale Netzwerke ohne Internet",
+      "Netzwerkdruck über einen Druckserver",
+      "Ressourcenfreigabe ohne einen dedizierten Server"
+    ],
+    "mnemonic": "Thema 15.2.2: Antwort = Ressourcenfreigabe ohne einen dedizierten Server"
+  },
+  {
+    "id": 37,
+    "module": 15,
+    "type": "multiple3",
+    "question": "The application layer of the TCP/IP model performs the functions of what three layers of the OSI model? (Choose three.)",
+    "options": [
+      "physical",
+      "session",
+      "network",
+      "presentation",
+      "data link",
+      "transport",
+      "application"
+    ],
+    "correct": [
+      1,
+      3,
+      6
+    ],
+    "explanation": "The network access layer of the TCP/IP model performs the same functions as the physical and data link layers of the OSI model. The internetwork layer equates to the network layer of the OSI model. The transport layers are the same in both models. The application layer of the TCP/IP model represents the session, presentation, and application layers of the OSI model.​",
+    "topic": "Topic 15.1.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Die Anwendungsschicht des TCP/IP-Modells führt die Funktionen welcher drei Schichten des OSI-Modells aus? (Wählen Sie drei.)",
+    "optionsDe": [
+      "körperlich",
+      "Sitzung",
+      "Netzwerk",
+      "Präsentation",
+      "Datenverbindung",
+      "Transport",
+      "Anwendung"
+    ],
+    "mnemonic": "Richtig: 3 Antworten – Sitzung, Präsentation, Anwendung"
+  },
+  {
+    "id": 38,
+    "module": 15,
+    "type": "single",
+    "question": "What is an example of network communication that uses the client-server model?",
+    "options": [
+      "A user uses eMule to download a file that is shared by a friend after the file location is determined.",
+      "A workstation initiates an ARP to find the MAC address of a receiving host.",
+      "A user prints a document by using a printer that is attached to a workstation of a coworker.",
+      "A workstation initiates a DNS request when the user types www.cisco.com in the address bar of a web browser."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "When a user types a domain name of a website into the address bar of a web browser, a workstation needs to send a DNS request to the DNS server for the name resolution process. This request is a client/server model application. The eMule application is P2P. Sharing a printer on a workstation is a peer-to-peer network. Using ARP is just a broadcast message sent by a host.",
+    "topic": "Topic 15.2.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Was ist ein BeISPiel für Netzwerkkommunikation, die das CLIent-Server-Modell verwendet?",
+    "optionsDe": [
+      "Ein Benutzer verwendet eMule, um eine Datei herunterzuladen, die von einem Freund geteilt wird, nachdem der Speicherort der Datei ermittelt wurde.",
+      "Eine Workstation initiiert einen ARP, um die MAC-Adresse eines empfangenden Hosts zu finden.",
+      "Ein Benutzer druckt ein Dokument mithilfe eines Druckers, der an die Workstation eines Kollegen angeschlossen ist.",
+      "Eine Workstation initiiert eine DNS-Anfrage, wenn der Benutzer www.cisco.com in die Adressleiste eines Webbrowsers eingibt."
+    ],
+    "mnemonic": "Thema 15.2.1: Antwort = Eine Workstation initiiert eine DNS-Anfrage, wenn der Benutzer www.cisco.com in ..."
+  },
+  {
+    "id": 39,
+    "module": 15,
+    "type": "single",
+    "question": "Which layer in the TCP/IP model is used for formatting, compressing, and encrypting data?",
+    "options": [
+      "internetwork",
+      "session",
+      "presentation",
+      "application",
+      "network access"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The application layer of the TCP/IP model performs the functions of three layers of the OSI model &#8211; application, presentation, and session. The application layer of the TCP/IP model is the layer that provides the interface between the applications, is responsible for formatting, compressing, and encrypting data, and is used to create and maintain dialogs between source and destination applications.",
+    "topic": "Topic 15.1.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche Schicht im TCP/IP-Modell wird zum Formatieren, Komprimieren und Verschlüsseln von Daten verwendet?",
+    "optionsDe": [
+      "Internetnetzwerk",
+      "Sitzung",
+      "Präsentation",
+      "Anwendung",
+      "Netzwerkzugriff"
+    ],
+    "mnemonic": "Thema 15.1.1: Antwort = Anwendung"
+  },
+  {
+    "id": 40,
+    "module": 15,
+    "type": "single",
+    "question": "What is an advantage of SMB over FTP?​",
+    "options": [
+      "Only with SMB can data transfers occur in both directions.",
+      "Only SMB establishes two simultaneous connections with the client, making the data transfer faster.​",
+      "SMB is more reliable than FTP because SMB uses TCP and FTP uses UDP.​",
+      "SMB clients can establish a long-term connection to the server.​"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SMB and FTP are client/server protocols that are used for file transfer. SMB allows the connecting device to access resources as if they were on the local client device. SMB and FTP use the TCP protocol for connection establishment and they can transfer data in both directions. FTP requires two connections between the client and the server, one for commands and replies, the other for the actual file transfer.",
+    "topic": "Topic 15.5.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Was ist der Vorteil von SMB gegenüber FTP?",
+    "optionsDe": [
+      "Nur mit SMB können Datenübertragungen in beide Richtungen erfolgen.",
+      "Nur SMB stellt zwei gleichzeitige Verbindungen mit dem CLIent her, wodurch die Datenübertragung schneller erfolgt.",
+      "SMB ist zuverlässiger als FTP, da SMB TCP und FTP UDP verwendet.",
+      "SMB-CLIents können eine LANgfristige Verbindung zum Server aufbauen."
+    ],
+    "mnemonic": "Thema 15.5.2: Antwort = SMB-CLIents können eine LANgfristige Verbindung zum Server aufbauen."
+  },
+  {
+    "id": 41,
+    "module": 15,
+    "type": "multiple3",
+    "question": "A manufacturing company subscribes to certain hosted services from its ISP. The services that are required include hosted world wide web, file transfer, and e-mail. Which protocols represent these three key applications? (Choose three.)",
+    "options": [
+      "FTP",
+      "HTTP",
+      "DNS",
+      "SNMP",
+      "DHCP",
+      "SMTP"
+    ],
+    "correct": [
+      0,
+      1,
+      5
+    ],
+    "explanation": "The ISP uses the HTTP protocol in conjunction with hosting web pages, the FTP protocol with file transfers, and SMTP with e-mail. DNS is used to translate domain names to IP addresses. SNMP is used for network management traffic. DHCP ic commonly used to manage IP addressing.",
+    "topic": "Topic 15.3.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Ein produzierendes Unternehmen abonniert bestimmte gehostete Dienste von seinem ISP. Zu den erforderlichen Diensten gehören gehostetes World Wide Web, Dateiübertragung und E-Mail. Welche Protokolle repräsentieren diese drei SchlüsseLANwendungen? (Wählen Sie drei.)",
+    "optionsDe": [
+      "FTP",
+      "HTTP",
+      "DNS",
+      "SNMP",
+      "DHCP",
+      "SMTP"
+    ],
+    "mnemonic": "Richtig: 3 Antworten – FTP, HTTP, SMTP"
+  },
+  {
+    "id": 42,
+    "module": 15,
+    "type": "single",
+    "question": "Which application layer protocol uses message types such as GET, PUT, and POST?",
+    "options": [
+      "DNS",
+      "DHCP",
+      "SMTP",
+      "HTTP",
+      "POP3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The GET command is a client request for data from a web server. A PUT command uploads resources and content, such as images, to a web server. A POST command uploads data files to a web server.",
+    "topic": "Topic 15.3.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welches Protokoll der Anwendungsschicht verwendet Nachrichtentypen wie GET, PUT und POST?",
+    "optionsDe": [
+      "DNS",
+      "DHCP",
+      "SMTP",
+      "HTTP",
+      "POP3"
+    ],
+    "mnemonic": "Thema 15.3.2: Antwort = HTTP"
+  },
+  {
+    "id": 43,
+    "module": 15,
+    "type": "single",
+    "question": "What type of information is contained in a DNS MX record?",
+    "options": [
+      "the FQDN of the alias used to identify a service",
+      "the IP address for an FQDN entry",
+      "the domain name mapped to mail exchange servers",
+      "the IP address of an authoritative name server"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "MX, or mail exchange messages, are used to map a domain name to several mail exchange servers that all belong to the same domain.",
+    "topic": "Topic 15.4.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche Art von Informationen sind in einem DNS-MX-Eintrag enthalten?",
+    "optionsDe": [
+      "der FQDN des Alias, der zur Identifizierung eines Dienstes verwendet wird",
+      "die IP-Adresse für einen FQDN-Eintrag",
+      "Der Domänenname, der Mail-Exchange-Servern zugeordnet ist",
+      "die IP-Adresse eines autorisierenden Nameservers"
+    ],
+    "mnemonic": "Thema 15.4.2: Antwort = Der Domänenname, der Mail-Exchange-Servern zugeordnet ist"
+  },
+  {
+    "id": 44,
+    "module": 15,
+    "type": "multiple3",
+    "question": "Which three protocols operate at the application layer of the TCP/IP model? (Choose three.)",
+    "options": [
+      "ARP",
+      "TCP",
+      "UDP",
+      "FTP",
+      "POP3",
+      "DHCP"
+    ],
+    "correct": [
+      3,
+      4,
+      5
+    ],
+    "explanation": "FTP, DHCP, and POP3 are application layer protocols. TCP and UDP are transport layer protocols. ARP is a network layer protocol.",
+    "topic": "Topic 15.1.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche drei Protokolle arbeiten auf der Anwendungsebene des TCP/IP-Modells? (Wählen Sie drei.)",
+    "optionsDe": [
+      "ARP",
+      "TCP",
+      "UDP",
+      "FTP",
+      "POP3",
+      "DHCP"
+    ],
+    "mnemonic": "Richtig: 3 Antworten – FTP, POP3, DHCP"
+  },
+  {
+    "id": 45,
+    "module": 15,
+    "type": "single",
+    "question": "Which protocol is used by a client to communicate securely with a web server?",
+    "options": [
+      "SMTP",
+      "SMB",
+      "IMAP",
+      "HTTPS"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "HTTPS is a secure form of HTTP used to access web content hosted by a web server.",
+    "topic": "Topic 15.3.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welches Protokoll verwendet ein CLIent, um sicher mit einem Webserver zu kommunizieren?",
+    "optionsDe": [
+      "SMTP",
+      "KMU",
+      "IMAP",
+      "HTTPS"
+    ],
+    "mnemonic": "Thema 15.3.2: Antwort = HTTPS"
+  },
+  {
+    "id": 46,
+    "module": 15,
+    "type": "single",
+    "question": "Which applications or services allow hosts to act as client and server at the same time?",
+    "options": [
+      "client/server applications",
+      "email applications",
+      "P2P applications",
+      "authentication services"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "P2P applications allow the clients to behave as servers if needed. When using authentication services, email exchange, and client/server applications, one host acts as server and the other acts as client at all times.",
+    "topic": "Topic 15.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche Anwendungen oder Dienste ermöglichen es Hosts, gleichzeitig als CLIent und Server zu fungieren?",
+    "optionsDe": [
+      "CLIent/Server-Anwendungen",
+      "E-Mail-Anwendungen",
+      "P2P-Anwendungen",
+      "Authentifizierungsdienste"
+    ],
+    "mnemonic": "Thema 15.2.2: Antwort = P2P-Anwendungen"
+  },
+  {
+    "id": 47,
+    "module": 15,
+    "type": "multiple",
+    "question": "What are two characteristics of peer-to-peer networks? (Choose two.)",
+    "options": [
+      "scalability",
+      "one way data flow",
+      "decentralized resources",
+      "centralized user accounts",
+      "resource sharing without a dedicated server"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "Peer-to-peer networks have decentralized resources because every computer can serve as both a server and a client. One computer might assume the role of server for one transaction while acting as a client for another transaction. Peer-to-peer networks can share resources among network devices without the use of a dedicated server.",
+    "topic": "Topic 15.2.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Was sind zwei Merkmale von Peer-to-Peer-Netzwerken? (Wählen Sie zwei.)",
+    "optionsDe": [
+      "Skalierbarkeit",
+      "einseitiger Datenfluss",
+      "dezentrale Ressourcen",
+      "zentralisierte Benutzerkonten",
+      "Ressourcenfreigabe ohne einen dedizierten Server"
+    ],
+    "mnemonic": "Richtig: 2 Antworten – dezentrale Ressourcen, Ressourcenfreigabe ohne einen dedizierte"
+  },
+  {
+    "id": 48,
+    "module": 14,
+    "type": "single",
+    "question": "Which scenario describes a function provided by the transport layer?",
+    "options": [
+      "A student is using a classroom VoIP phone to call home. The unique identifier burned into the phone is a transport layer address used to contact another network device on the same network.",
+      "A student is playing a short web-based movie with sound. The movie and sound are encoded within the transport layer header.",
+      "A student has two web browser windows open in order to access two web sites. The transport layer ensures the correct web page is delivered to the correct browser window.",
+      "A corporate worker is accessing a web server located on a corporate network. The transport layer formats the screen so the web page appears properly no matter what device is being used to view the web site."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The source and destination port numbers are used to identify the correct application and window within that application.",
+    "topic": "Topic 14.1.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welches Szenario beschreibt eine von der Transportschicht bereitgestellte Funktion?",
+    "optionsDe": [
+      "Ein Schüler nutzt ein VoIP-Telefon im Klassenzimmer, um zu Hause anzurufen. Die in das Telefon eingebrannte eindeutige Kennung ist eine Transportschichtadresse, die zur Kontaktaufnahme mit einem anderen Netzwerkgerät im selben Netzwerk verwendet wird.",
+      "Ein Schüler spielt einen kurzen webbasierten Film mit Ton ab. Der Film und der Ton werden im Transportschicht-Header codiert.",
+      "Ein Student hat zwei Webbrowserfenster geöffnet, um auf zwei Websites zuzugreifen. Die Transportschicht stellt sicher, dass die richtige Webseite an das richtige Browserfenster geliefert wird.",
+      "Ein Unternehmensmitarbeiter greift auf einen Webserver zu, der sich in einem Unternehmensnetzwerk befindet. Die Transportschicht formatiert den Bildschirm so, dass die Webseite unabhängig davon, welches Gerät zum Anzeigen der Website verwendet wird, ordnungsgemäß angezeigt wird."
+    ],
+    "mnemonic": "Thema 14.1.2: Antwort = Ein Student hat zwei Webbrowserfenster geöffnet, um auf zwei Websites zuzugreife..."
+  },
+  {
+    "id": 49,
+    "module": 15,
+    "type": "multiple3",
+    "question": "Which three layers of the OSI model provide similar network services to those provided by the application layer of the TCP/IP model? (Choose three.)",
+    "options": [
+      "physical layer",
+      "session layer",
+      "transport layer",
+      "application layer",
+      "presentation layer",
+      "data link layer"
+    ],
+    "correct": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "The three upper layers of the OSI model, the session, presentation, and application layers, provide application services similar to those provided by the TCP/IP model application layer. Lower layers of the OSI model are more concerned with data flow.",
+    "topic": "Topic 15.1.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Welche drei Schichten des OSI-Modells stellen ähnliche Netzwerkdienste bereit wie die Anwendungsschicht des TCP/IP-Modells? (Wählen Sie drei.)",
+    "optionsDe": [
+      "physikalische Schicht",
+      "Sitzungsschicht",
+      "Transportschicht",
+      "Anwendungsschicht",
+      "Präsentationsschicht",
+      "Datenverbindungsschicht"
+    ],
+    "mnemonic": "Richtig: 3 Antworten – Sitzungsschicht, Anwendungsschicht, Präsentationsschicht"
+  },
+  {
+    "id": 50,
+    "module": 14,
+    "type": "single",
+    "question": "A PC that is communicating with a web server has a TCP window size of 6,000 bytes when sending data and a packet size of 1,500 bytes. Which byte of information will the web server acknowledge after it has received two packets of data from the PC?",
+    "options": [
+      "3001",
+      "6001",
+      "4500",
+      "6000"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 14.6.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Ein PC, der mit einem Webserver kommuniziert, hat beim Senden von Daten eine TCP-Fenstergröße von 6.000 Byte und eine Paketgröße von 1.500 Byte. Welches Informationsbyte quittiert der Webserver, nachdem er zwei Datenpakete vom PC erhalten hat?",
+    "optionsDe": [
+      "3001",
+      "6001",
+      "4500",
+      "6000"
+    ],
+    "mnemonic": "Thema 14.6.3: Antwort = 3001"
+  },
+  {
+    "id": 51,
+    "module": 14,
+    "type": "single",
+    "question": "A PC that is communicating with a web server has a TCP window size of 6,000 bytes when sending data and a packet size of 1,500 bytes. Which byte of information will the web server acknowledge after it has received three packets of data from the PC?",
+    "options": [
+      "4501",
+      "6001",
+      "6000",
+      "4500"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 14.6.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Ein PC, der mit einem Webserver kommuniziert, hat beim Senden von Daten eine TCP-Fenstergröße von 6.000 Byte und eine Paketgröße von 1.500 Byte. Welches Informationsbyte quittiert der Webserver, nachdem er drei Datenpakete vom PC erhalten hat?",
+    "optionsDe": [
+      "4501",
+      "6001",
+      "6000",
+      "4500"
+    ],
+    "mnemonic": "Thema 14.6.3: Antwort = 4501"
+  },
+  {
+    "id": 52,
+    "module": 14,
+    "type": "single",
+    "question": "A PC that is communicating with a web server has a TCP window size of 6,000 bytes when sending data and a packet size of 1,500 bytes. Which byte of information will the web server acknowledge after it has received four packets of data from the PC?",
+    "options": [
+      "6001",
+      "3001",
+      "1501",
+      "1500"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 14.6.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Ein PC, der mit einem Webserver kommuniziert, hat beim Senden von Daten eine TCP-Fenstergröße von 6.000 Byte und eine Paketgröße von 1.500 Byte. Welches Informationsbyte quittiert der Webserver, nachdem er vier Datenpakete vom PC erhalten hat?",
+    "optionsDe": [
+      "6001",
+      "3001",
+      "1501",
+      "1500"
+    ],
+    "mnemonic": "Thema 14.6.3: Antwort = 6001"
+  },
+  {
+    "id": 53,
+    "module": 15,
+    "type": "single",
+    "question": "A client creates a packet to send to a server. The client is requesting TFTP service. What number will be used as the destination port number in the sending packet?",
+    "options": [
+      "69",
+      "67",
+      "53",
+      "80"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 15.5.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Ein CLIent erstellt ein Paket, das es an einen Server sendet. Der CLIent fordert einen TFTP-Dienst an. Welche Nummer wird als Zielportnummer im Sendepaket verwendet?",
+    "optionsDe": [
+      "69",
+      "67",
+      "53",
+      "80"
+    ],
+    "mnemonic": "Thema 15.5.1: Antwort = 69"
+  },
+  {
+    "id": 54,
+    "module": 15,
+    "type": "single",
+    "question": "A client creates a packet to send to a server. The client is requesting FTP service. What number will be used as the destination port number in the sending packet?",
+    "options": [
+      "21",
+      "69",
+      "67",
+      "80"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 15.5.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Ein CLIent erstellt ein Paket, das es an einen Server sendet. Der CLIent fordert einen FTP-Dienst an. Welche Nummer wird als Zielportnummer im Sendepaket verwendet?",
+    "optionsDe": [
+      "21",
+      "69",
+      "67",
+      "80"
+    ],
+    "mnemonic": "Thema 15.5.1: Antwort = 21"
+  },
+  {
+    "id": 55,
+    "module": 15,
+    "type": "single",
+    "question": "A client creates a packet to send to a server. The client is requesting SSH service. What number will be used as the destination port number in the sending packet?",
+    "options": [
+      "22",
+      "69",
+      "67",
+      "80"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 15.5.1",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Ein CLIent erstellt ein Paket, das es an einen Server sendet. Der CLIent fordert einen SSH-Dienst an. Welche Nummer wird als Zielportnummer im Sendepaket verwendet?",
+    "optionsDe": [
+      "22",
+      "69",
+      "67",
+      "80"
+    ],
+    "mnemonic": "Thema 15.5.1: Antwort = 22"
+  },
+  {
+    "id": 56,
+    "module": 15,
+    "type": "single",
+    "question": "A client creates a packet to send to a server. The client is requesting HTTP service. What number will be used as the destination port number in the sending packet?",
+    "options": [
+      "80",
+      "67",
+      "53",
+      "69"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 15.1.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Ein CLIent erstellt ein Paket, das es an einen Server sendet. Der CLIent fordert einen HTTP-Dienst an. Welche Nummer wird als Zielportnummer im Sendepaket verwendet?",
+    "optionsDe": [
+      "80",
+      "67",
+      "53",
+      "69"
+    ],
+    "mnemonic": "Thema 15.1.3: Antwort = 80"
+  },
+  {
+    "id": 57,
+    "module": 15,
+    "type": "single",
+    "question": "A client creates a packet to send to a server. The client is requesting POP3 service. What number will be used as the destination port number in the sending packet?",
+    "options": [
+      "110",
+      "67",
+      "53",
+      "69",
+      "443",
+      "161",
+      "80"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 15.3.4",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Ein CLIent erstellt ein Paket, das es an einen Server sendet. Der CLIent fordert einen POP3-Dienst an. Welche Nummer wird als Zielportnummer im Sendepaket verwendet?",
+    "optionsDe": [
+      "110",
+      "67",
+      "53",
+      "69",
+      "443",
+      "161",
+      "80"
+    ],
+    "mnemonic": "Thema 15.3.4: Antwort = 110"
+  },
+  {
+    "id": 58,
+    "module": 15,
+    "type": "single",
+    "question": "A client creates a packet to send to a server. The client is requesting telnet service. What number will be used as the destination port number in the sending packet?",
+    "options": [
+      "23",
+      "443",
+      "161",
+      "110"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 15.1.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Ein CLIent erstellt ein Paket, das es an einen Server sendet. Der CLIent fordert einen Telnet-Dienst an. Welche Nummer wird als Zielportnummer im Sendepaket verwendet?",
+    "optionsDe": [
+      "23",
+      "443",
+      "161",
+      "110"
+    ],
+    "mnemonic": "Thema 15.1.3: Antwort = 23"
+  },
+  {
+    "id": 59,
+    "module": 15,
+    "type": "single",
+    "question": "A client creates a packet to send to a server. The client is requesting SNMP service. What number will be used as the destination port number in the sending packet?",
+    "options": [
+      "161",
+      "443",
+      "110",
+      "80"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 15.1.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Ein CLIent erstellt ein Paket, das es an einen Server sendet. Der CLIent fordert einen SNMP-Dienst an. Welche Nummer wird als Zielportnummer im Sendepaket verwendet?",
+    "optionsDe": [
+      "161",
+      "443",
+      "110",
+      "80"
+    ],
+    "mnemonic": "Thema 15.1.3: Antwort = 161"
+  },
+  {
+    "id": 60,
+    "module": 15,
+    "type": "single",
+    "question": "A client creates a packet to send to a server. The client is requesting SMTP service. What number will be used as the destination port number in the sending packet?",
+    "options": [
+      "25",
+      "443",
+      "161",
+      "110"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 15.1.3",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Ein CLIent erstellt ein Paket, das es an einen Server sendet. Der CLIent fordert den SMTP-Dienst an. Welche Nummer wird als Zielportnummer im Sendepaket verwendet?",
+    "optionsDe": [
+      "25",
+      "443",
+      "161",
+      "110"
+    ],
+    "mnemonic": "Thema 15.1.3: Antwort = 25"
+  },
+  {
+    "id": 61,
+    "module": 15,
+    "type": "single",
+    "question": "A client creates a packet to send to a server. The client is requesting HTTPS service. What number will be used as the destination port number in the sending packet?",
+    "options": [
+      "443",
+      "161",
+      "110",
+      "80"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "topic": "Topic 15.3.2",
+    "image": null,
+    "exhibit": null,
+    "bankId": "ccna1-mod14-15",
+    "questionDe": "Ein CLIent erstellt ein Paket, das es an einen Server sendet. Der CLIent fordert einen HTTPS-Dienst an. Welche Nummer wird als Zielportnummer im Sendepaket verwendet?",
+    "optionsDe": [
+      "443",
+      "161",
+      "110",
+      "80"
+    ],
+    "mnemonic": "Thema 15.3.2: Antwort = 443"
+  }
+]
