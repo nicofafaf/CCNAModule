@@ -27,6 +27,11 @@ function saveProgress() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
 }
 
+// Sync check: questions.js must define QUESTIONS before this script runs.
+if (typeof QUESTIONS === 'undefined' || !Array.isArray(QUESTIONS) || QUESTIONS.length !== 76) {
+  console.error('QUESTIONS data invalid – expected 76 questions');
+}
+
 function getMastery(id) {
   return progress.mastery[id] || 0;
 }

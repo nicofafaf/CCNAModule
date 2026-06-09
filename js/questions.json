@@ -13,7 +13,7 @@
     "correct": [
       1
     ],
-    "explanation": "**2\\. A computer has to send a packet to a destination host in the same LAN. How will the packet be sent?**\n\n* The packet will be sent to the default gateway first, and then, depending on the response from the gateway, it may be sent to the destination host.\n* **The packet will be sent directly to the destination host.**\n* The packet will first be sent to the default gateway, and then from the default gateway it will be sent directly to the destination host.\n* The packet will be sent only to the default gateway.\n\n**Explanation:** Topic 8.4.1",
+    "explanation": "",
     "topic": "Topic 8.5.1",
     "image": null,
     "exhibit": null,
@@ -57,7 +57,7 @@
     "correct": [
       1
     ],
-    "explanation": "**4\\. Which IPv4 address can a host use to ping the loopback interface?**\n\n* 126.0.0.1\n* 127.0.0.0\n* 126.0.0.0\n* **127.0.0.1**\n\n**Explanation:** Topic 8.4.1",
+    "explanation": "",
     "topic": "Topic 8.5.1",
     "image": null,
     "exhibit": null,
@@ -101,7 +101,7 @@
     "correct": [
       3
     ],
-    "explanation": "**6\\. Which statement describes a feature of the IP protocol?**\n\n* IP encapsulation is modified based on network media.\n* IP relies on Layer 2 protocols for transmission error control.\n* MAC addresses are used during the IP packet encapsulation.\n* **IP relies on upper layer services to handle situations of missing or out-of-order packets.**\n\n**Explanation:** Topic 8.1.5  \nIP protocol is a connection-less protocol, considered unreliable in terms of end-to-end delivery. It does not provide error control in the cases where receiving packets are out-of-order or in cases of missing packets. It relies on upper layer services, such as TCP, to resolve these issues.",
+    "explanation": "",
     "topic": "Topic 8.4.2",
     "image": null,
     "exhibit": null,
@@ -167,7 +167,7 @@
     "correct": [
       0
     ],
-    "explanation": "**9\\. What are two services provided by the OSI network layer? (Choose two.)**\n\n* performing error detection\n* **routing packets toward the destination**\n* **encapsulating PDUs from the transport layer**\n* placement of frames on the media\n* collision detection\n\n**Explanation:** Topic 8.1.1  \nThe OSI network layer provides several services to allow communication between devices:\n\n* addressing\n* encapsulation\n* routing\n* de-encapsulation\n\nError detection, placing frames on the media, and collision detection are all functions of the data ink layer.",
+    "explanation": "",
     "topic": "Topic 8.5.1",
     "image": null,
     "exhibit": null,
@@ -185,11 +185,7 @@
       "routing packets toward the destination",
       "encapsulating PDUs from the transport layer",
       "placement of frames on the media",
-      "collision detection",
-      "addressing",
-      "encapsulation",
-      "routing",
-      "de-encapsulation"
+      "collision detection"
     ],
     "correct": [
       1,
@@ -278,11 +274,7 @@
       "smaller-sized header",
       "little requirement for processing checksums",
       "smaller-sized source and destination IP addresses",
-      "efficient packet handling",
-      "Better routing efficiency and efficient packet handling for performance and forwarding-rate scalability",
-      "No requirement for processing checksums",
-      "Simplified and more efficient extension header mechanisms (as opposed to the IPv4 Options field)",
-      "A Flow Label field for per-flow processing with no need to open the transport inner packet to identify the various traffic flows"
+      "efficient packet handling"
     ],
     "correct": [
       3
@@ -336,7 +328,7 @@
       3,
       4
     ],
-    "explanation": "Packets with a destination of 172.17.6.15 are forwarded through Fa0/0\\. Packets with a destination of 172.17.10.5 are forwarded through Fa1/1\\. Packets with a destination of 172.17.12.10 are forwarded through Fa1/0\\. Packets with a destination of 172.17.14.8 are forwarded through Fa0/1\\. Because network 172.17.8.0 has no entry in the routing table, it will take the gateway of last resort, which means that packets with a destination of 172.17.8.20 are forwarded through Serial0/0/0\\. Because a gateway of last resort exists, no packets will be dropped.",
+    "explanation": "Packets with a destination of 172.17.6.15 are forwarded through Fa0/0. Packets with a destination of 172.17.10.5 are forwarded through Fa1/1. Packets with a destination of 172.17.12.10 are forwarded through Fa1/0. Packets with a destination of 172.17.14.8 are forwarded through Fa0/1. Because network 172.17.8.0 has no entry in the routing table, it will take the gateway of last resort, which means that packets with a destination of 172.17.8.20 are forwarded through Serial0/0/0. Because a gateway of last resort exists, no packets will be dropped.",
     "topic": "Topic 8.5.1",
     "image": "assets/images/q15-routing.png",
     "exhibit": null,
@@ -528,7 +520,7 @@
     "id": 24,
     "module": 9,
     "type": "single",
-    "question": "A network technician issues the arp -d \\* command on a PC after the router that is connected to the LAN is reconfigured. What is the result after this command is issued?",
+    "question": "A network technician issues the arp -d * command on a PC after the router that is connected to the LAN is reconfigured. What is the result after this command is issued?",
     "options": [
       "The ARP cache is cleared.",
       "The current content of the ARP cache is displayed.",
@@ -538,7 +530,7 @@
     "correct": [
       0
     ],
-    "explanation": "Issuing the **arp –d \\*** command on a PC will clear the ARP cache content. This is helpful when a network technician wants to ensure the cache is populated with updated information.",
+    "explanation": "Issuing the **arp –d *** command on a PC will clear the ARP cache content. This is helpful when a network technician wants to ensure the cache is populated with updated information.",
     "topic": "Topic 9.2.6",
     "image": null,
     "exhibit": null,
@@ -550,7 +542,7 @@
     "id": 25,
     "module": 9,
     "type": "single",
-    "question": "Refer to the exhibit. The exhibit shows a small switched network and the contents of the MAC address table of the switch. PC1 has sent a frame addressed to PC3\\. What will the switch do with the frame?",
+    "question": "Refer to the exhibit. The exhibit shows a small switched network and the contents of the MAC address table of the switch. PC1 has sent a frame addressed to PC3. What will the switch do with the frame?",
     "options": [
       "The switch will discard the frame.",
       "The switch will forward the frame only to port 2.",
@@ -572,7 +564,7 @@
   {
     "id": 26,
     "module": 9,
-    "type": "single",
+    "type": "multiple",
     "question": "Which two types of IPv6 messages are used in place of ARP for address resolution?",
     "options": [
       "anycast",
@@ -620,13 +612,13 @@
     "id": 28,
     "module": 9,
     "type": "single",
-    "question": "Refer to the exhibit. PC1 attempts to connect to File\\_server1 and sends an ARP request to obtain a destination MAC address. Which MAC address will PC1 receive in the ARP reply?",
+    "question": "Refer to the exhibit. PC1 attempts to connect to File_server1 and sends an ARP request to obtain a destination MAC address. Which MAC address will PC1 receive in the ARP reply?",
     "options": [
       "the MAC address of S1",
       "the MAC address of the G0/0 interface on R1",
       "the MAC address of the G0/0 interface on R2",
       "the MAC address of S2",
-      "the MAC address of File\\_server1"
+      "the MAC address of File_server1"
     ],
     "correct": [
       1
@@ -686,7 +678,7 @@
   },
   {
     "id": 31,
-    "module": 9,
+    "module": 10,
     "type": "ordering",
     "question": "Match the commands to the correct actions. (Not all options are used.)",
     "options": [
@@ -699,13 +691,13 @@
       1,
       2
     ],
-    "explanation": "Place the options in the following order:\n\n| displays a message after accessing the router | Router(config)# banner motd #       |\n| --------------------------------------------- | ----------------------------------- |\n| provides security on the console              | Router(config-line)# password class |\n| configures a name on the router               | Router(config)# hostname CL1        |",
+    "explanation": "",
     "topic": "Topic 10.1.1",
     "image": "assets/images/q31-commands.jpg",
     "exhibit": null,
     "questionDe": "Ordne die Befehle den korrekten Aktionen zu.",
     "mnemonic": "banner motd=Banner, password=Console, hostname=Name",
-    "moduleName": "Address Resolution (ARP, Switching, Ethernet)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
   },
   {
     "id": 32,
@@ -760,9 +752,15 @@
     "module": 10,
     "type": "ordering",
     "question": "Match the phases to the functions during the boot up process of a Cisco router. (Not all options are used.)",
-    "options": [],
+    "options": [
+      "phase 1 → perform the POST and load the bootstrap program",
+      "phase 2 → locate and load the Cisco IOS software",
+      "phase 3 → locate and load the startup configuration file"
+    ],
     "correct": [
-      0
+      0,
+      1,
+      2
     ],
     "explanation": "There are three major phases to the bootup process of a Cisco router:\n\n1. Perform the POST and load the bootstrap program.\n2. Locate and load the Cisco IOS software.\n3. Locate and load the startup configuration file\n\nIf a startup configuration file cannot be located, the router will enter setup mode by displaying the setup mode prompt.",
     "topic": "Topic 10.1.1",
@@ -904,7 +902,7 @@
     "correct": [
       2
     ],
-    "explanation": "**41\\. Match the configuration mode with the command that is available in that mode. (Not all options are used.)**\n\nPlace the options in the following order:\n\n| R1>              | enable                             |\n| ---------------- | ---------------------------------- |\n| R1#              | copy running-config startup-config |\n| R1(config-line)# | login                              |\n| R1(config)#      | interface fastethernet 0/0         |\n\n**Explanation:** Topic 10.2.1  \nThe **enable** command is entered at the R1> prompt. The **login** command is entered at the R1(config-line)# prompt. The **copy running-config startup-config** command is entered at the R1# prompt. The **interface fastethernet 0/0** command is entered at the R1(config)# prompt.",
+    "explanation": "",
     "topic": "Topic 10.3.1",
     "image": "assets/images/q40-network.png",
     "exhibit": null,
@@ -948,18 +946,12 @@
       "line console 0",
       "enable secret cisco",
       "login",
-      "password cisco",
-      "line console 0",
-      "password cisco",
-      "login"
+      "password cisco"
     ],
     "correct": [
       2,
       4,
-      5,
-      6,
-      7,
-      8
+      5
     ],
     "explanation": "The three commands needed to password protect the console port are as follows:\n\n* **line console 0**\n* **password cisco**\n* **login**\n\nThe **interface fastethernet 0/0** command is commonly used to access the configuration mode used to apply specific parameters such as the IP address to the Fa0/0 port. The **line vty 0 4** command is used to access the configuration mode for Telnet. The0and 4 parameters specify ports 0 through 4, or a maximum of five simultaneous Telnet connections. The **enable secret** command is used to apply a password used on the router to access the privileged mode.",
     "topic": "Topic 10.1.1",
@@ -973,7 +965,7 @@
     "id": 43,
     "module": 10,
     "type": "single",
-    "question": "Refer to the exhibit. Consider the IP address configuration shown from PC1\\. What is a description of the default gateway address?",
+    "question": "Refer to the exhibit. Consider the IP address configuration shown from PC1. What is a description of the default gateway address?",
     "options": [
       "It is the IP address of the Router1 interface that connects the company to the Internet.",
       "It is the IP address of the Router1 interface that connects the PC1 LAN to Router1.",
@@ -1088,16 +1080,17 @@
     "id": 48,
     "module": 10,
     "type": "single",
-    "question": "Open the PT activity. Perform the tasks in the activity instructions and then answer the question.",
+    "question": "Open the PT activity. Perform the tasks in the activity instructions and then answer the question. Which interfaces in each router are active and operational?",
     "options": [
-      "Which interfaces in each router are active and operational?",
-      "R1: G0/0 and S0/0/0",
-      "R2: G0/1 and S0/0/0"
+      "R1: G0/0 and S0/0/0 / R2: G0/0 and S0/0/0",
+      "R1: G0/1 and S0/0/1 / R2: G0/0 and S0/0/1",
+      "R1: G0/0 and S0/0/0 / R2: G0/1 and S0/0/0",
+      "R1: G0/0 and S0/0/1 / R2: G0/1 and S0/0/1"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "The command to use for this activity is **show ip interface brief** in each router. The active and operational interfaces are represented by the value “up” in the “Status” and “Protocol” columns. The interfaces in R1 with these characteristics are G0/0 and S0/0/0\\. In R2 they are G0/1 and S0/0/0.",
+    "explanation": "The command to use for this activity is **show ip interface brief** in each router. The active and operational interfaces are represented by the value “up” in the “Status” and “Protocol” columns. The interfaces in R1 with these characteristics are G0/0 and S0/0/0. In R2 they are G0/1 and S0/0/0.",
     "topic": "Topic 10.2.4",
     "image": "assets/images/q48-pt.jpg",
     "exhibit": null,
@@ -1141,7 +1134,7 @@
     "correct": [
       0
     ],
-    "explanation": "**51\\. Which term describes a field in the IPv4 packet header that contains a 32-bit binary value associated with an interface on the sending device?**\n\n* **source IPv4 address**\n* destination IPv4 address\n* protocol\n* TTL\n\n**Explanation:** Topic 8.2.2\n\nThe **source IPv4 address** is a 32-bit field within the IPv4 packet header that identifies the logical address of the interface on the sending device. When a host transmits data across a network, it inserts its own IP address into this field. This allows the destination device to identify the origin of the packet, ensuring it knows exactly where to send any subsequent return traffic, acknowledgments, or error messages.",
+    "explanation": "",
     "topic": "Topic 8.2.2",
     "image": null,
     "exhibit": null,
@@ -1185,10 +1178,10 @@
     "correct": [
       0
     ],
-    "explanation": "The **header checksum** field is a 16-bit field in the IPv4 header used to verify the integrity of the header data. During transmission, the sending device calculates a checksum value based on the fields within the IP header. When the packet arrives at its destination, the receiving device performs the same calculation. If the calculated value does not match the received value, the packet is considered corrupted and is discarded immediately by the receiving node.",
+    "explanation": "The **header checksum** field is a 16-bit field in the IPv4 header used to verify the integrity of the header data. During transmission, the sending device calculates a checksum value based on the fields within the IP header. When the packet arrives at its destination, the receiving device performs the same calculation. If the calculated value does not match the received value, the packet is considered corrupted and is discarded immediately by the receiving node.\n\n**53.** \n\nCopy\n\nRTR1(config)# interface gi0/1\nRTR1(config-if)# description Connects to the Marketing LAN\nRTR1(config-if)# ip address 10.27.15.17 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface gi0/0\nRTR1(config-if)# description Connects to the Payroll LAN\nRTR1(config-if)# ip address 10.27.14.148 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface s0/0/0\nRTR1(config-if)# description Connects to the ISP\nRTR1(config-if)# ip address 10.14.15.254 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface s0/0/1\nRTR1(config-if)# description Connects to the Head Office WAN\nRTR1(config-if)# ip address 203.0.113.39 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# end\n\n**Refer to the exhibit. A network administrator is connecting a new host to the Payroll LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?**\n\n* **10.27.14.148**\n* 10.27.14.1\n* 10.14.15.254\n* 203.0.113.39\n* 10.27.15.17\n\n**Explanation:** Topic 10.3.1\n\nA host’s default gateway must always correspond to the IP address of the local router interface that is directly attached to its specific network segment. By examining the configuration output in the exhibit, it is evident that interface **gi0/0** is configured with the description description Connects to the Payroll LAN. The unique IP address assigned to this interface is **10.27.14.148**. Consequently, any new host deployed on the “Payroll LAN” must use this exac",
     "topic": "Topic 8.2.2",
     "image": null,
-    "exhibit": null,
+    "exhibit": "RTR1(config)# interface gi0/1\nRTR1(config-if)# description Connects to the Marketing LAN\nRTR1(config-if)# ip address 10.27.15.17 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface gi0/0\nRTR1(config-if)# description Connects to the Payroll LAN\nRTR1(config-if)# ip address 10.27.14.148 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface s0/0/0\nRTR1(config-if)# description Connects to the ISP\nRTR1(config-if)# ip address 10.14.15.254 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface s0/0/1\nRTR1(config-if)# description Connects to the Head Office WAN\nRTR1(config-if)# ip address 203.0.113.39 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# end",
     "questionDe": "Welcher Begriff beschreibt ein Feld zur Erkennung von Header-Korruption?",
     "mnemonic": "Header Checksum = Header-Integrität prüfen",
     "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
@@ -1199,171 +1192,14 @@
     "type": "single",
     "question": "Refer to the exhibit. A network administrator is connecting a new host to the Payroll LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
     "options": [
-      "Refer to the exhibit. A network administrator is connecting a new host to the Payroll LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
       "10.27.14.148",
       "10.27.14.1",
       "10.14.15.254",
       "203.0.113.39",
-      "10.27.15.17",
-      "54\\. Which term describes a field in the IPv4 packet header that contains a unicast, multicast, or broadcast address?",
-      "destination IPv4 address",
-      "protocol",
-      "TTL",
-      "header checksum",
-      "55\\. Which term describes a field in the IPv4 packet header used to limit the lifetime of a packet?",
-      "TTL",
-      "source IPv4 address",
-      "protocol",
-      "header checksum",
-      "56\\. Which term describes a field in the IPv4 packet header that contains a 4-bit binary value set to 0100?",
-      "version",
-      "source IPv4 address",
-      "protocol",
-      "TTL",
-      "57\\. Which term describes a field in the IPv4 packet header used to identify the next level protocol?",
-      "protocol",
-      "version",
-      "differentiated services",
-      "header checksum",
-      "58\\. Which term describes a field in the IPv4 packet header that contains a 4-bit binary value set to 0100?",
-      "version",
-      "differentiated services",
-      "header checksum",
-      "TTL",
-      "59\\. What property of ARP causes cached IP-to-MAC mappings to remain in memory longer?",
-      "Entries in an ARP table are time-stamped and are purged after the timeout expires.",
-      "A static IP-to-MAC address entry can be entered manually into an ARP table.",
-      "The type field 0x806 appears in the header of the Ethernet frame.",
-      "The port-to-MAC address table on a switch has the same entries as the ARP table on the switch.",
-      "60\\. What property of ARP allows MAC addresses of frequently used servers to be fixed in the ARP table?",
-      "A static IP-to-MAC address entry can be entered manually into an ARP table.",
-      "Entries in an ARP table are time-stamped and are purged after the timeout expires.",
-      "The type field 0x806 appears in the header of the Ethernet frame.",
-      "The port-to-MAC address table on a switch has the same entries as the ARP table on the switch.",
-      "61\\. What property of ARP allows MAC addresses of frequently used servers to be fixed in the ARP table?",
-      "A static IP-to-MAC address entry can be entered manually into an ARP table.",
-      "The destination MAC address FF-FF-FF-FF-FF-FF appears in the header of the Ethernet frame.",
-      "The source MAC address appears in the header of the Ethernet frame.",
-      "The port-to-MAC address table on a switch has the same entries as the ARP table on the switch.",
-      "62\\. What property of ARP allows hosts on a LAN to send traffic to remote networks?",
-      "Local hosts learn the MAC address of the default gateway.",
-      "The destination MAC address FF-FF-FF-FF-FF-FF appears in the header of the Ethernet frame.",
-      "The source MAC address appears in the header of the Ethernet frame.",
-      "The port-to-MAC address table on a switch has the same entries as the ARP table on the switch.",
-      "63\\.",
-      "Refer to the exhibit. A network administrator is connecting a new host to the Registrar LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
-      "192.168.235.234",
-      "192.168.235.1",
-      "10.234.235.254",
-      "203.0.113.3",
-      "192.168.234.114",
-      "64\\. What property of ARP forces all Ethernet NICs to process an ARP request?",
-      "The destination MAC address FF-FF-FF-FF-FF-FF appears in the header of the Ethernet frame.",
-      "The source MAC address appears in the header of the Ethernet frame.",
-      "The type field 0x806 appears in the header of the Ethernet frame.",
-      "ARP replies are broadcast on the network when a host receives an ARP request.",
-      "65\\. What property of ARP causes a reply only to the source sending an ARP request?",
-      "The source MAC address appears in the header of the Ethernet frame.",
-      "The destination MAC address FF-FF-FF-FF-FF-FF appears in the header of the Ethernet frame.",
-      "The type field 0x806 appears in the header of the Ethernet frame.",
-      "ARP replies are broadcast on the network when a host receives an ARP request.",
-      "66\\. What property of ARP causes the request to be flooded out all ports of a switch except for the port receiving the ARP request?",
-      "The destination MAC address FF-FF-FF-FF-FF-FF appears in the header of the Ethernet frame.",
-      "The type field 0x806 appears in the header of the Ethernet frame.",
-      "Entries in an ARP table are time-stamped and are purged after the timeout expires.",
-      "ARP replies are broadcast on the network when a host receives an ARP request.",
-      "67\\. What property of ARP causes the NICs receiving an ARP request to pass the data portion of the Ethernet frame to the ARP process?",
-      "The type field 0x806 appears in the header of the Ethernet frame.",
-      "The destination MAC address FF-FF-FF-FF-FF-FF appears in the header of the Ethernet frame.",
-      "Entries in an ARP table are time-stamped and are purged after the timeout expires.",
-      "ARP replies are broadcast on the network when a host receives an ARP request.",
-      "68\\. What property of ARP causes the NICs receiving an ARP request to pass the data portion of the Ethernet frame to the ARP process?",
-      "The type field 0x806 appears in the header of the Ethernet frame.",
-      "The destination MAC address FF-FF-FF-FF-FF-FF appears in the header of the Ethernet frame.",
-      "Entries in an ARP table are time-stamped and are purged after the timeout expires.",
-      "The port-to-MAC address table on a switch has the same entries as the ARP table on the switch.",
-      "69\\.",
-      "Refer to the exhibit. A network administrator is connecting a new host to the Service LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
-      "172.29.157.156",
-      "172.29.157.1",
-      "10.156.157.254",
-      "198.51.100.177",
-      "172.29.156.36",
-      "70\\.",
-      "Refer to the exhibit. A network administrator is connecting a new host to the Medical LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
-      "192.168.191.189",
-      "192.168.191.1",
-      "10.190.191.254",
-      "198.51.100.213",
-      "192.168.190.70",
-      "71\\.",
-      "Refer to the exhibit. A network administrator is connecting a new host to the Registrar LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
-      "192.168.225.223",
-      "192.168.225.1",
-      "10.224.225.254",
-      "203.0.113.246",
-      "192.168.224.103",
-      "72\\.",
-      "Refer to the exhibit. A network administrator is connecting a new host to the Manager LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
-      "10.118.62.196",
-      "10.118.62.1",
-      "10.62.63.254",
-      "209.165.200.87",
-      "10.118.63.65",
-      "73\\.",
-      "Refer to the exhibit. A network administrator is connecting a new host to the Store LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
-      "172.19.98.230",
-      "172.19.98.1",
-      "10.98.99.254",
-      "209.165.200.120",
-      "172.19.99.99",
-      "74\\.",
-      "Refer to the exhibit. A network administrator is connecting a new host to the Store LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
-      "172.20.132.13",
-      "172.20.132.1",
-      "10.132.133.254",
-      "198.51.100.156",
-      "172.20.133.132",
-      "75\\.",
-      "Refer to the exhibit. A network administrator is connecting a new host to the Service LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
-      "192.168.167.166",
-      "192.168.167.1",
-      "10.166.167.254",
-      "198.51.100.189",
-      "192.168.166.46",
-      "76\\.",
-      "Refer to the exhibit. A network administrator is connecting a new host to the Medical LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
-      "192.168.201.200",
-      "192.168.201.1",
-      "10.200.201.254",
-      "203.0.113.222",
-      "192.168.200.80"
+      "10.27.15.17"
     ],
     "correct": [
-      1,
-      7,
-      12,
-      17,
-      22,
-      27,
-      32,
-      37,
-      42,
-      47,
-      53,
-      59,
-      64,
-      69,
-      74,
-      79,
-      85,
-      92,
-      99,
-      106,
-      113,
-      120,
-      127,
-      134
+      0
     ],
     "explanation": "A host’s default gateway must always correspond to the IP address of the local router interface that is directly attached to its specific network segment. By examining the configuration output in the exhibit, it is evident that interface **gi0/0** is configured with the description description Connects to the Payroll LAN. The unique IP address assigned to this interface is **10.27.14.148**. Consequently, any new host deployed on the “Payroll LAN” must use this exact IP address as its default gateway to successfully communicate with destinations on remote networks.",
     "topic": "Topic 10.3.1",
@@ -1497,7 +1333,7 @@
     "correct": [
       0
     ],
-    "explanation": "**60\\. What property of ARP allows MAC addresses of frequently used servers to be fixed in the ARP table?**\n\n* **A static IP-to-MAC address entry can be entered manually into an ARP table.**\n* Entries in an ARP table are time-stamped and are purged after the timeout expires.\n* The type field 0x806 appears in the header of the Ethernet frame.\n* The port-to-MAC address table on a switch has the same entries as the ARP table on the switch.\n\n**Explanation:** Topic 9.2.4",
+    "explanation": "",
     "topic": "Topic 9.2.4",
     "image": null,
     "exhibit": null,
@@ -1563,10 +1399,10 @@
     "correct": [
       0
     ],
-    "explanation": "When a local host wants to send data to a device on a remote network, the Layer 3 IP packet contains the ultimate destination IP address. However, to deliver the frame over the local network medium at Layer 2, the host must encapsulate and address the frame to its **default gateway** (the local router). Since the host initially only knows the default gateway’s IPv4 address, it relies on **ARP** to dynamically discover its corresponding hardware MAC address. Once this MAC address is learned, the local host can successfully forward the traffic to the router for further internetwork routing.",
+    "explanation": "When a local host wants to send data to a device on a remote network, the Layer 3 IP packet contains the ultimate destination IP address. However, to deliver the frame over the local network medium at Layer 2, the host must encapsulate and address the frame to its **default gateway** (the local router). Since the host initially only knows the default gateway’s IPv4 address, it relies on **ARP** to dynamically discover its corresponding hardware MAC address. Once this MAC address is learned, the local host can successfully forward the traffic to the router for further internetwork routing.\n\n**63.** \n\nCopy\n\nFloor(config)# interface gi0/1\nFloor(config-if)# description Connects to the Registrar LAN\nFloor(config-if)# ip address 192.168.235.234 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface gi0/0\nFloor(config-if)# description Connects to the Manager LAN\nFloor(config-if)# ip address 192.168.234.114 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/0\nFloor(config-if)# description Connects to the ISP\nFloor(config-if)# ip address 10.234.235.254 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/1\nFloor(config-if)# description Connects to the Head Office WAN\nFloor(config-if)# ip address 203.0.113.3 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# end\n\n**Refer to the exhibit. A network administrator is connecting a new host to the Registrar LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?**\n\n* **192.168.235.234**\n* 192.168.235.1\n* 10.234.235.254\n* 203.0.113.3\n* 192.168.234.114\n\n**Explanation:** Topic 10.3.1\n\nA host’s default gateway must correspond to the IP address of the local router interface that is directly attached to its specific network segment. Based on the configuration snippet provided, the **gi0/1** interface is configured with the description descripction Se conecta al Registrador LAN and has ",
     "topic": "Topic 9.2.4",
     "image": null,
-    "exhibit": null,
+    "exhibit": "Floor(config)# interface gi0/1\nFloor(config-if)# description Connects to the Registrar LAN\nFloor(config-if)# ip address 192.168.235.234 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface gi0/0\nFloor(config-if)# description Connects to the Manager LAN\nFloor(config-if)# ip address 192.168.234.114 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/0\nFloor(config-if)# description Connects to the ISP\nFloor(config-if)# ip address 10.234.235.254 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/1\nFloor(config-if)# description Connects to the Head Office WAN\nFloor(config-if)# ip address 203.0.113.3 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# end",
     "questionDe": "Welche ARP-Eigenschaft ermöglicht Hosts den Versand an entfernte Netzwerke?",
     "mnemonic": "Remote senden = Gateway-MAC per ARP lernen",
     "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
@@ -1575,8 +1411,7 @@
     "id": 63,
     "module": 10,
     "type": "single",
-    "question": "Refer to the exhibit. A network administrator is connecting a new host. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
-    "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Registrar LAN?",
+    "question": "Refer to the exhibit. A network administrator is connecting a new host to the Registrar LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
     "options": [
       "192.168.235.234",
       "192.168.235.1",
@@ -1587,10 +1422,11 @@
     "correct": [
       0
     ],
-    "explanation": "Das Standard-Gateway muss die IP-Adresse der Router-Schnittstelle sein, die direkt mit dem LAN des Hosts verbunden ist. Lies die \"description\" in der Konfiguration!",
+    "explanation": "A host’s default gateway must correspond to the IP address of the local router interface that is directly attached to its specific network segment. Based on the configuration snippet provided, the **gi0/1** interface is configured with the description descripction Se conecta al Registrador LAN and has been assigned the IP address **192.168.235.234**. Consequently, any host connected to the “Registrar LAN” must use this specific IP address as its default gateway to successfully route traffic to remote networks.",
     "topic": "Topic 10.3.1",
     "image": null,
     "exhibit": "Floor(config)# interface gi0/1\nFloor(config-if)# description Connects to the Registrar LAN\nFloor(config-if)# ip address 192.168.235.234 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface gi0/0\nFloor(config-if)# description Connects to the Manager LAN\nFloor(config-if)# ip address 192.168.234.114 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/0\nFloor(config-if)# description Connects to the ISP\nFloor(config-if)# ip address 10.234.235.254 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/1\nFloor(config-if)# description Connects to the Head Office WAN\nFloor(config-if)# ip address 203.0.113.3 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# end",
+    "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Registrar LAN?",
     "mnemonic": "Registrar LAN → gi0/1 IP (description lesen!)",
     "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
   },
@@ -1696,10 +1532,10 @@
     "correct": [
       0
     ],
-    "explanation": "The Ethernet II frame header contains a 2-byte field known as the **Type** field _(or EtherType)_. This field is responsible for specifying which upper-layer protocol or local subsystem should receive the payload enclosed within the frame. Every network protocol has a distinct hexadecimal identifier; for the Address Resolution Protocol (**ARP**), this specific code is **0x0806**. When a receiving network interface card (NIC) decapsulates an incoming frame and reads 0x0806 in the Type field, it instantly recognizes that the contents belong to an ARP message. As a result, the NIC bypasses the standard network stacks like IPv4 (0x0800) or IPv6 (0x86DD) and hands the data portion directly to the operating system’s internal ARP process.",
+    "explanation": "The Ethernet II frame header contains a 2-byte field known as the **Type** field _(or EtherType)_. This field is responsible for specifying which upper-layer protocol or local subsystem should receive the payload enclosed within the frame. Every network protocol has a distinct hexadecimal identifier; for the Address Resolution Protocol (**ARP**), this specific code is **0x0806**. When a receiving network interface card (NIC) decapsulates an incoming frame and reads 0x0806 in the Type field, it instantly recognizes that the contents belong to an ARP message. As a result, the NIC bypasses the standard network stacks like IPv4 (0x0800) or IPv6 (0x86DD) and hands the data portion directly to the operating system’s internal ARP process.\n\n**69.** \n\nCopy\n\nMain(config)# interface gi0/1\nMain(config-if)# description Connects to the Service LAN\nMain(config-if)# ip address 172.29.157.156 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface gi0/0\nMain(config-if)# description Connects to the Engineering LAN\nMain(config-if)# ip address 172.29.156.36 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface s0/0/0\nMain(config-if)# description Connects to the ISP\nMain(config-if)# ip address 10.156.157.254 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface s0/0/1\nMain(config-if)# description Connects to the Head Office WAN\nMain(config-if)# ip address 198.51.100.177 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# end\n\n**Refer to the exhibit. A network administrator is connecting a new host to the Service LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?**\n\n* **172.29.157.156**\n* 172.29.157.1\n* 10.156.157.254\n* 198.51.100.177\n* 172.29.156.36\n\n**Explanation:** Topic 10.3.1  \n\n**70.** \n\nCopy\n\nBldgA(config)# interface gi0/1\nBldgA(config-if)# description Connects to the Medical LAN\nBldgA(config-if)# ip address 192.168.191.189 255.255.255.0\nBldgA(con",
     "topic": "Topic 9.2.3",
     "image": null,
-    "exhibit": null,
+    "exhibit": "Main(config)# interface gi0/1\nMain(config-if)# description Connects to the Service LAN\nMain(config-if)# ip address 172.29.157.156 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface gi0/0\nMain(config-if)# description Connects to the Engineering LAN\nMain(config-if)# ip address 172.29.156.36 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface s0/0/0\nMain(config-if)# description Connects to the ISP\nMain(config-if)# ip address 10.156.157.254 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface s0/0/1\nMain(config-if)# description Connects to the Head Office WAN\nMain(config-if)# ip address 198.51.100.177 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# end",
     "questionDe": "Welche ARP-Eigenschaft leitet den Frame-Inhalt an den ARP-Prozess weiter?",
     "mnemonic": "EtherType 0x0806 = ARP-Prozess",
     "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
@@ -1708,8 +1544,7 @@
     "id": 69,
     "module": 10,
     "type": "single",
-    "question": "Refer to the exhibit. A network administrator is connecting a new host. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
-    "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Service LAN?",
+    "question": "Refer to the exhibit. A network administrator is connecting a new host to the Service LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
     "options": [
       "172.29.157.156",
       "172.29.157.1",
@@ -1720,10 +1555,11 @@
     "correct": [
       0
     ],
-    "explanation": "Das Standard-Gateway muss die IP-Adresse der Router-Schnittstelle sein, die direkt mit dem LAN des Hosts verbunden ist. Lies die \"description\" in der Konfiguration!",
+    "explanation": "",
     "topic": "Topic 10.3.1",
     "image": null,
     "exhibit": "Main(config)# interface gi0/1\nMain(config-if)# description Connects to the Service LAN\nMain(config-if)# ip address 172.29.157.156 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface gi0/0\nMain(config-if)# description Connects to the Engineering LAN\nMain(config-if)# ip address 172.29.156.36 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface s0/0/0\nMain(config-if)# description Connects to the ISP\nMain(config-if)# ip address 10.156.157.254 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface s0/0/1\nMain(config-if)# description Connects to the Head Office WAN\nMain(config-if)# ip address 198.51.100.177 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# end",
+    "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Service LAN?",
     "mnemonic": "Service LAN → gi0/1 IP-Adresse",
     "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
   },
@@ -1731,8 +1567,7 @@
     "id": 70,
     "module": 10,
     "type": "single",
-    "question": "Refer to the exhibit. A network administrator is connecting a new host. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
-    "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Medical LAN?",
+    "question": "Refer to the exhibit. A network administrator is connecting a new host to the Medical LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
     "options": [
       "192.168.191.189",
       "192.168.191.1",
@@ -1743,10 +1578,11 @@
     "correct": [
       0
     ],
-    "explanation": "Das Standard-Gateway muss die IP-Adresse der Router-Schnittstelle sein, die direkt mit dem LAN des Hosts verbunden ist. Lies die \"description\" in der Konfiguration!",
+    "explanation": "By examining the configuration of the **BldgA** router, we can see that interface **gi0/1** is configured with the description description Connects to the Medical LAN. The IP address assigned to this interface is **192.168.191.189**. Consequently, any device connected to the Medical LAN must be configured with this IP address as its default gateway, allowing the router to properly route its traffic toward remote networks.",
     "topic": "Topic 10.3.1",
     "image": null,
     "exhibit": "BldgA(config)# interface gi0/1\nBldgA(config-if)# description Connects to the Medical LAN\nBldgA(config-if)# ip address 192.168.191.189 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# interface gi0/0\nBldgA(config-if)# description Connects to the Client LAN\nBldgA(config-if)# ip address 192.168.190.70 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# interface s0/0/0\nBldgA(config-if)# description Connects to the ISP\nBldgA(config-if)# ip address 10.190.191.254 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# interface s0/0/1\nBldgA(config-if)# description Connects to the Head Office WAN\nBldgA(config-if)# ip address 198.51.100.213 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# end",
+    "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Medical LAN?",
     "mnemonic": "Medical LAN → gi0/1 IP-Adresse",
     "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
   },
@@ -1754,8 +1590,7 @@
     "id": 71,
     "module": 10,
     "type": "single",
-    "question": "Refer to the exhibit. A network administrator is connecting a new host. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
-    "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Registrar LAN?",
+    "question": "Refer to the exhibit. A network administrator is connecting a new host to the Registrar LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
     "options": [
       "192.168.225.223",
       "192.168.225.1",
@@ -1766,10 +1601,11 @@
     "correct": [
       0
     ],
-    "explanation": "Das Standard-Gateway muss die IP-Adresse der Router-Schnittstelle sein, die direkt mit dem LAN des Hosts verbunden ist. Lies die \"description\" in der Konfiguration!",
+    "explanation": "A host’s default gateway must always be the IP address of the local router interface that is directly attached to its specific network segment. By examining the configuration output provided, it is evident that interface **gi0/1** is configured with the description description Connects to the Registrar LAN. The IP address assigned to this specific interface is **192.168.225.223**. Consequently, any new host deployed on the “Registrar LAN” must be configured with this exact IP address as its default gateway to successfully route traffic to remote networks.",
     "topic": "Topic 10.3.1",
     "image": null,
     "exhibit": "Floor(config)# interface gi0/1\nFloor(config-if)# description Connects to the Registrar LAN\nFloor(config-if)# ip address 192.168.225.223 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface gi0/0\nFloor(config-if)# description Connects to the Manager LAN\nFloor(config-if)# ip address 192.168.224.103 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/0\nFloor(config-if)# description Connects to the ISP\nFloor(config-if)# ip address 10.224.225.254 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/1\nFloor(config-if)# description Connects to the Head Office WAN\nFloor(config-if)# ip address 203.0.113.246 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# end",
+    "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Registrar LAN?",
     "mnemonic": "Registrar LAN → gi0/1 IP-Adresse",
     "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
   },
@@ -1777,8 +1613,7 @@
     "id": 72,
     "module": 10,
     "type": "single",
-    "question": "Refer to the exhibit. A network administrator is connecting a new host. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
-    "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Manager LAN?",
+    "question": "Refer to the exhibit. A network administrator is connecting a new host to the Manager LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
     "options": [
       "10.118.62.196",
       "10.118.62.1",
@@ -1789,10 +1624,11 @@
     "correct": [
       0
     ],
-    "explanation": "Das Standard-Gateway muss die IP-Adresse der Router-Schnittstelle sein, die direkt mit dem LAN des Hosts verbunden ist. Lies die \"description\" in der Konfiguration!",
+    "explanation": "A host’s default gateway must be the IP address of the local router interface that is directly attached to its specific network segment. Based on the provided configuration for the “Manager LAN” (_interface gi0/0_), the administrator has assigned the IP address **10.118.62.196**. Consequently, any new device connected to this network segment must be configured with this exact IP address as its default gateway to successfully route traffic to remote networks.",
     "topic": "Topic 10.3.1",
     "image": null,
     "exhibit": "Floor(config)# interface gi0/1\nFloor(config-if)# description Connects to the Registrar LAN\nFloor(config-if)# ip address 10.118.63.65 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface gi0/0\nFloor(config-if)# description Connects to the Manager LAN\nFloor(config-if)# ip address 10.118.62.196 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/0\nFloor(config-if)# description Connects to the ISP\nFloor(config-if)# ip address 10.62.63.254 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/1\nFloor(config-if)# description Connects to the Head Office WAN\nFloor(config-if)# ip address 209.165.200.87 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# end",
+    "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Manager LAN?",
     "mnemonic": "Manager LAN → gi0/0 IP-Adresse",
     "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
   },
@@ -1800,8 +1636,7 @@
     "id": 73,
     "module": 10,
     "type": "single",
-    "question": "Refer to the exhibit. A network administrator is connecting a new host. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
-    "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Store LAN?",
+    "question": "Refer to the exhibit. A network administrator is connecting a new host to the Store LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
     "options": [
       "172.19.98.230",
       "172.19.98.1",
@@ -1812,10 +1647,11 @@
     "correct": [
       0
     ],
-    "explanation": "Das Standard-Gateway muss die IP-Adresse der Router-Schnittstelle sein, die direkt mit dem LAN des Hosts verbunden ist. Lies die \"description\" in der Konfiguration!",
+    "explanation": "A host’s default gateway must be the IP address of the local router interface that is attached to its specific network segment. By examining the configuration output provided in the exhibit, we can see that the administrator configured interface **gi0/0** with a description explicitly stating it connects to the Store LAN (description Connects to the Store LAN). The IP address assigned to this particular interface is **172.19.98.230**. Therefore, any new host connecting to the “Store LAN” must use this exact IP address as its default gateway in order to successfully route traffic to remote or external networks.",
     "topic": "Topic 10.3.1",
     "image": null,
     "exhibit": "HQ(config)# interface gi0/1\nHQ(config-if)# description Connects to the Branch LAN\nHQ(config-if)# ip address 172.19.99.99 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface gi0/0\nHQ(config-if)# description Connects to the Store LAN\nHQ(config-if)# ip address 172.19.98.230 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface s0/0/0\nHQ(config-if)# description Connects to the ISP\nHQ(config-if)# ip address 10.98.99.254 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface s0/0/1\nHQ(config-if)# description Connects to the Head Office WAN\nHQ(config-if)# ip address 209.165.200.120 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# end",
+    "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Store LAN?",
     "mnemonic": "Store LAN → gi0/0 IP-Adresse",
     "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
   },
@@ -1823,8 +1659,7 @@
     "id": 74,
     "module": 10,
     "type": "single",
-    "question": "Refer to the exhibit. A network administrator is connecting a new host. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
-    "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Store LAN?",
+    "question": "Refer to the exhibit. A network administrator is connecting a new host to the Store LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
     "options": [
       "172.20.132.13",
       "172.20.132.1",
@@ -1835,10 +1670,11 @@
     "correct": [
       0
     ],
-    "explanation": "Das Standard-Gateway muss die IP-Adresse der Router-Schnittstelle sein, die direkt mit dem LAN des Hosts verbunden ist. Lies die \"description\" in der Konfiguration!",
+    "explanation": "",
     "topic": "Topic 10.3.1",
     "image": null,
     "exhibit": "HQ(config)# interface gi0/1\nHQ(config-if)# description Connects to the Branch LAN\nHQ(config-if)# ip address 172.20.133.132 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface gi0/0\nHQ(config-if)# description Connects to the Store LAN\nHQ(config-if)# ip address 172.20.132.13 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface s0/0/0\nHQ(config-if)# description Connects to the ISP\nHQ(config-if)# ip address 10.132.133.254 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface s0/0/1\nHQ(config-if)# description Connects to the Head Office WAN\nHQ(config-if)# ip address 198.51.100.156 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# end",
+    "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Store LAN?",
     "mnemonic": "Store LAN → gi0/0 IP-Adresse",
     "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
   },
@@ -1846,8 +1682,7 @@
     "id": 75,
     "module": 10,
     "type": "single",
-    "question": "Refer to the exhibit. A network administrator is connecting a new host. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
-    "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Service LAN?",
+    "question": "Refer to the exhibit. A network administrator is connecting a new host to the Service LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
     "options": [
       "192.168.167.166",
       "192.168.167.1",
@@ -1858,10 +1693,11 @@
     "correct": [
       0
     ],
-    "explanation": "Das Standard-Gateway muss die IP-Adresse der Router-Schnittstelle sein, die direkt mit dem LAN des Hosts verbunden ist. Lies die \"description\" in der Konfiguration!",
+    "explanation": "A default gateway is the local router interface IP address responsible for handling traffic from a specific subnet to forward it toward remote networks. By examining the configuration of the **Main** router in the exhibit, we can see that interface **gi0/1** is assigned the description description Connects to the S (referring to the _Service LAN_). The IP address configured on this specific interface is **192.168.167.166**. Consequently, any new host connecting to this Service LAN must be configured with this IP address as its default gateway to successfully communicate beyond its local segment.",
     "topic": "Topic 10.3.1",
     "image": null,
     "exhibit": "Main(config)# interface gi0/1\nMain(config-if)# description Connects to the Service LAN\nMain(config-if)# ip address 192.168.167.166 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface gi0/0\nMain(config-if)# description Connects to the Engineering LAN\nMain(config-if)# ip address 192.168.166.46 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface s0/0/0\nMain(config-if)# description Connects to the ISP\nMain(config-if)# ip address 10.166.167.254 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface s0/0/1\nMain(config-if)# description Connects to the Head Office WAN\nMain(config-if)# ip address 198.51.100.189 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# end",
+    "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Service LAN?",
     "mnemonic": "Service LAN → gi0/1 IP-Adresse",
     "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
   },
@@ -1869,8 +1705,7 @@
     "id": 76,
     "module": 10,
     "type": "single",
-    "question": "Refer to the exhibit. A network administrator is connecting a new host. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
-    "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Medical LAN?",
+    "question": "Refer to the exhibit. A network administrator is connecting a new host to the Medical LAN. The host needs to communicate with remote networks. What IP address would be configured as the default gateway on the new host?",
     "options": [
       "192.168.201.200",
       "192.168.201.1",
@@ -1881,10 +1716,11 @@
     "correct": [
       0
     ],
-    "explanation": "Das Standard-Gateway muss die IP-Adresse der Router-Schnittstelle sein, die direkt mit dem LAN des Hosts verbunden ist. Lies die \"description\" in der Konfiguration!",
+    "explanation": "A host’s default gateway must always be the specific IP address assigned to the local router interface that is directly connected to the host’s network segment. In this configuration scenario, the interface on the local router (labeled as BldgA) that services the Medical LAN is configured with the IP address **192.168.201.200**. Consequently, any new device deployed within the Medical LAN domain must be explicitly configured with this exact IP address as its default gateway to successfully route traffic outside of the local area network.",
     "topic": "Topic 10.3.1",
     "image": null,
     "exhibit": "BldgA(config)# interface gi0/1\nBldgA(config-if)# description Connects to the Medical LAN\nBldgA(config-if)# ip address 192.168.201.200 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# interface gi0/0\nBldgA(config-if)# description Connects to the Client LAN\nBldgA(config-if)# ip address 192.168.200.80 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# interface s0/0/0\nBldgA(config-if)# description Connects to the ISP\nBldgA(config-if)# ip address 10.200.201.254 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# interface s0/0/1\nBldgA(config-if)# description Connects to the Head Office WAN\nBldgA(config-if)# ip address 203.0.113.222 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# end",
+    "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Medical LAN?",
     "mnemonic": "Medical LAN → gi0/1 IP-Adresse",
     "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
   }
