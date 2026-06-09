@@ -3,7 +3,7 @@
 OPTIONS_DE = {
     1: ["Quell-IP-Adresse", "Ziel-IP-Adresse", "Quell-Datenverbindungsadresse", "Ziel-Datenverbindungsadresse"],
     2: [
-        "Das Paket wird zuerst an das Standard-Gateway gesendet und je nach Antwort des Gateways eventuell an den Ziel-Host.",
+        "Das Paket wird zuerst an das Standard-Gateway gesendet, und dann kann es je nach Antwort des Gateways an den Ziel-Host gesendet werden.",
         "Das Paket wird direkt an den Ziel-Host gesendet.",
         "Das Paket wird zuerst an das Standard-Gateway gesendet, und dann wird es vom Standard-Gateway direkt an den Ziel-Host gesendet.",
         "Das Paket wird nur an das Standard-Gateway gesendet.",
@@ -25,11 +25,11 @@ OPTIONS_DE = {
         "Die IP-Kapselung wird je nach Netzwerkmedium angepasst.",
         "IP verlässt sich auf Layer-2-Protokolle zur Übertragungsfehlerkontrolle.",
         "MAC-Adressen werden bei der IP-Paket-Kapselung verwendet.",
-        "IP verlässt sich auf höhere Schichten bei fehlenden oder falsch sortierten Paketen.",
+        "IP verlässt sich auf Dienste höherer Schichten, um Situationen mit fehlenden oder falsch geordneten Paketen zu behandeln.",
     ],
     7: [
         "Da IPv6 integrierte Sicherheit hat, müssen IPv6-Adressen interner Netze nicht verborgen werden.",
-        "Jeder Host kann eine öffentliche IPv6-Adresse erhalten, weil extrem viele IPv6-Adressen verfügbar sind.",
+        "Jeder Host oder Benutzer kann eine öffentliche IPv6-Netzwerkadresse erhalten, weil die Anzahl der verfügbaren IPv6-Adressen extrem groß ist.",
         "Die Probleme, die durch NAT-Anwendungen verursacht werden, werden gelöst, weil der IPv6-Header die Paketverarbeitung durch Zwischenrouter verbessert.",
         "Die Ende-zu-Ende-Konnektivitätsprobleme, die durch NAT verursacht werden, werden gelöst, weil die Anzahl der Routen mit der Anzahl der Knoten zunimmt, die mit dem Internet verbunden sind.",
     ],

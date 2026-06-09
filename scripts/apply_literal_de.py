@@ -52,6 +52,18 @@ def main() -> None:
             )
             continue
 
+        en_q = q["question"].replace("\u200b", "").strip()
+        if len(de_question) < len(en_q) * 0.75:
+            errors.append(
+                f"Q{qid}: questionDe too short ({len(de_question)} vs {len(en_q)} chars)"
+            )
+        for i, (en_opt, de_opt) in enumerate(zip(q["options"], de_options)):
+            en_clean = en_opt.replace("\u200b", "").strip()
+            if len(en_clean) > 30 and len(de_opt) < len(en_clean) * 0.75:
+                errors.append(
+                    f"Q{qid} opt[{i}]: optionsDe too short ({len(de_opt)} vs {len(en_clean)})"
+                )
+
         q["questionDe"] = de_question
         q["optionsDe"] = de_options
 
