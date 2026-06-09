@@ -8,6 +8,7 @@ from options_de import OPTIONS_DE
 ROOT = Path(__file__).parent.parent
 JSON_PATH = ROOT / "js" / "questions.json"
 JS_PATH = ROOT / "js" / "questions.js"
+FALLBACK_PATH = ROOT / "js" / "options-de-data.js"
 
 
 def main():
@@ -37,6 +38,10 @@ def main():
     )
     JS_PATH.write_text(
         "const QUESTIONS = " + json.dumps(questions, ensure_ascii=False, indent=2) + ";\n",
+        encoding="utf-8",
+    )
+    FALLBACK_PATH.write_text(
+        "const OPTIONS_DE_DATA = " + json.dumps(OPTIONS_DE, ensure_ascii=False, indent=2) + ";\n",
         encoding="utf-8",
     )
     print(f"Updated {len(questions)} questions with optionsDe")

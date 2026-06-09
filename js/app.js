@@ -3,7 +3,7 @@ const STORAGE_KEY = 'ccna_mod8_10_progress';
 const LANG_KEY = 'ccna_lang';
 const THEME_KEY = 'ccna_theme';
 
-window.appLang = localStorage.getItem(LANG_KEY) || 'de';
+window.appLang = (localStorage.getItem(LANG_KEY) || 'de').toLowerCase();
 
 const state = {
   mode: 'learn',

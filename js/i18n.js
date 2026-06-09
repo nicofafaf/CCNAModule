@@ -148,19 +148,24 @@ function t(key, vars = {}) {
   return str;
 }
 
+function currentLang() {
+  const raw = (window.appLang || 'de').toLowerCase();
+  return raw === 'en' ? 'en' : 'de';
+}
+
 function getQuestionText(q) {
-  const lang = window.appLang || 'de';
-  return lang === 'de' ? (q.questionDe || q.question) : q.question;
+  return currentLang() === 'de' ? (q.questionDe || q.question) : q.question;
 }
 
 function getAltQuestionText(q) {
-  const lang = window.appLang || 'de';
-  return lang === 'de' ? q.question : (q.questionDe || '');
+  return currentLang() === 'de' ? q.question : (q.questionDe || '');
 }
 
 function getOptions(q) {
-  const lang = window.appLang || 'de';
-  if (lang === 'de' && q.optionsDe && q.optionsDe.length) return q.optionsDe;
+  if (currentLang() !== 'de') return q.options;
+  if (q.optionsDe && q.optionsDe.length === q.options.length) return q.optionsDe;
+  const fallback = typeof OPTIONS_DE_DATA !== 'undefined' ? OPTIONS_DE_DATA[q.id] : null;
+  if (fallback && fallback.length === q.options.length) return fallback;
   return q.options;
 }
 
