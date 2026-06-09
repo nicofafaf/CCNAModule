@@ -85,11 +85,11 @@ const OPTIONS_DE_DATA = {
     "Differentiated Services"
   ],
   "15": [
-    "Pakete mit Ziel 172.17.6.15 → FastEthernet0/0",
-    "Pakete mit Ziel 172.17.14.8 → FastEthernet0/1",
-    "Pakete mit Ziel 172.17.12.10 → FastEthernet1/0",
-    "Pakete mit Ziel 172.17.10.5 → FastEthernet1/1",
-    "Pakete mit Ziel 172.17.8.20 → Serial0/0/0"
+    "Pakete mit Zieladresse 172.17.6.15 → FastEthernet0/0",
+    "Pakete mit Zieladresse 172.17.14.8 → FastEthernet0/1",
+    "Pakete mit Zieladresse 172.17.12.10 → FastEthernet1/0",
+    "Pakete mit Zieladresse 172.17.10.5 → FastEthernet1/1",
+    "Pakete mit Zieladresse 172.17.8.20 → Serial0/0/0"
   ],
   "16": [
     "Der TCP/IP-Stack auf dem Gerät funktioniert korrekt.",
@@ -190,9 +190,9 @@ const OPTIONS_DE_DATA = {
     "Ziel-IP-Adresse"
   ],
   "31": [
-    "Meldung nach Router-Zugriff anzeigen → Router(config)# banner motd #",
+    "eine Nachricht nach dem Zugriff auf den Router anzeigen → Router(config)# banner motd #",
     "Sicherheit auf der Konsole bereitstellen → Router(config-line)# password class",
-    "Namen auf dem Router konfigurieren → Router(config)# hostname CL1"
+    "einen Namen auf dem Router konfigurieren → Router(config)# hostname CL1"
   ],
   "32": [
     "Das Gerät neu starten.",
@@ -202,10 +202,10 @@ const OPTIONS_DE_DATA = {
     "Privileged-EXEC-Modus verlassen und Enter drücken."
   ],
   "33": [
-    "Remote-Zugriff mit Verschlüsselung → SSH",
-    "Bevorzugte Out-of-Band-Zugriffsmethode → Konsole",
-    "Remote-Zugriff per Einwahlverbindung → AUX",
-    "Unsicherer Remote-Zugriff → Telnet"
+    "Remote-Zugriffsmethode, die Verschlüsselung verwendet → SSH",
+    "bevorzugte Out-of-Band-Zugriffsmethode → Konsole",
+    "Remote-Zugriff über eine Einwahlverbindung → AUX",
+    "unsicherer Remote-Zugriff → Telnet"
   ],
   "34": [
     "Phase 1 → POST ausführen und Bootstrap-Programm laden",

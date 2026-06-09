@@ -181,9 +181,18 @@ function renderQuestion() {
 
   document.getElementById('q-text').textContent = getQuestionText(q);
   const altEl = document.getElementById('q-text-alt');
+  const altLabel = document.getElementById('q-text-alt-label');
   const alt = getAltQuestionText(q);
-  altEl.textContent = alt && alt !== getQuestionText(q) ? alt : '';
-  altEl.style.display = altEl.textContent ? 'block' : 'none';
+  const showAlt = alt && alt !== getQuestionText(q);
+  if (showAlt && currentLang() === 'de') {
+    altLabel.textContent = t('examReference');
+    altLabel.classList.remove('hidden');
+  } else {
+    altLabel.textContent = '';
+    altLabel.classList.add('hidden');
+  }
+  altEl.textContent = showAlt ? alt : '';
+  altEl.style.display = showAlt ? 'block' : 'none';
 
   const imgWrap = document.getElementById('q-image-wrap');
   if (q.image) {
