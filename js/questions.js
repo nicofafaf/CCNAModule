@@ -51,7 +51,7 @@ const QUESTIONS = [
     "optionsDe": [
       "Das Paket wird zuerst an das Standard-Gateway gesendet und je nach Antwort des Gateways eventuell an den Ziel-Host.",
       "Das Paket wird direkt an den Ziel-Host gesendet.",
-      "Das Paket wird zuerst an das Standard-Gateway gesendet und von dort direkt an den Ziel-Host.",
+      "Das Paket wird zuerst an das Standard-Gateway gesendet, und dann wird es vom Standard-Gateway direkt an den Ziel-Host gesendet.",
       "Das Paket wird nur an das Standard-Gateway gesendet."
     ]
   },
@@ -191,8 +191,8 @@ const QUESTIONS = [
     "optionsDe": [
       "Da IPv6 integrierte Sicherheit hat, müssen IPv6-Adressen interner Netze nicht verborgen werden.",
       "Jeder Host kann eine öffentliche IPv6-Adresse erhalten, weil extrem viele IPv6-Adressen verfügbar sind.",
-      "NAT-Probleme werden gelöst, weil der IPv6-Header die Paketverarbeitung durch Router verbessert.",
-      "End-to-End-Probleme durch NAT werden gelöst, weil die Routenanzahl mit der Anzahl der Internet-Knoten steigt."
+      "Die Probleme, die durch NAT-Anwendungen verursacht werden, werden gelöst, weil der IPv6-Header die Paketverarbeitung durch Zwischenrouter verbessert.",
+      "Die Ende-zu-Ende-Konnektivitätsprobleme, die durch NAT verursacht werden, werden gelöst, weil die Anzahl der Routen mit der Anzahl der Knoten zunimmt, die mit dem Internet verbunden sind."
     ]
   },
   {
@@ -217,10 +217,10 @@ const QUESTIONS = [
     "mnemonic": "Metric: Niedriger = Besser (wie Golf-Score)",
     "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
     "optionsDe": [
-      "der niedrigere Metrikwert des Zielnetzwerks",
+      "der niedrigere Metrikwert, der mit dem Zielnetzwerk verknüpft ist",
       "die niedrigere Gateway-IP-Adresse zum Zielnetzwerk",
-      "der höhere Metrikwert des Zielnetzwerks",
-      "die höhere Gateway-IP-Adresse zum Zielnetzwerk"
+      "der höhere Metrikwert, der mit dem Zielnetzwerk verknüpft ist",
+      "die höhere Gateway-IP-Adresse, um zum Zielnetzwerk zu gelangen"
     ]
   },
   {
@@ -248,7 +248,7 @@ const QUESTIONS = [
     "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
     "optionsDe": [
       "Fehlererkennung durchführen",
-      "Pakete zum Ziel weiterleiten",
+      "Pakete in Richtung des Ziels routen",
       "PDUs der Transportschicht kapseln",
       "Frames auf das Medium platzieren",
       "Kollisionserkennung"
@@ -362,7 +362,7 @@ const QUESTIONS = [
     "optionsDe": [
       "kleinerer Header",
       "geringerer Aufwand für Prüfsummenberechnung",
-      "kleinere Quell- und Ziel-IP-Adressen",
+      "kleiner dimensionierte Quell- und Ziel-IP-Adressen",
       "effiziente Paketverarbeitung"
     ]
   },
@@ -1370,9 +1370,9 @@ const QUESTIONS = [
     "optionsDe": [
       "Manuelle statische ARP-Einträge könnten ARP-Poisoning oder MAC-Spoofing erleichtern.",
       "Auf großen Netzen mit geringer Bandbreite können viele ARP-Broadcasts Verzögerungen verursachen.",
-      "Angreifer könnten IP-MAC-Zuordnungen in ARP-Nachrichten manipulieren, um Verkehr abzufangen.",
-      "Viele ARP-Anfragen könnten die Host-MAC-Tabelle überlaufen und Kommunikation verhindern.",
-      "Mehrere ARP-Antworten führen dazu, dass die Switch-MAC-Tabelle passende Einträge enthält."
+      "Netzwerkangreifer könnten MAC-Adress- und IP-Adress-Zuordnungen in ARP-Nachrichten manipulieren, mit der Absicht, Netzwerkverkehr abzufangen.",
+      "Große Anzahlen von ARP-Anfrage-Broadcasts könnten dazu führen, dass die Host-MAC-Adresstabelle überläuft, und den Host daran hindern, im Netzwerk zu kommunizieren.",
+      "Mehrere ARP-Antworten führen dazu, dass die Switch-MAC-Adresstabelle Einträge enthält, die mit den MAC-Adressen von Hosts übereinstimmen, die mit dem relevanten Switch-Port verbunden sind."
     ]
   },
   {
