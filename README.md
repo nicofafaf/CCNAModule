@@ -43,6 +43,14 @@ npx serve .
 
 Fragen basieren auf [ITExamAnswers.net – CCNA 1 v7 Modules 8-10](https://itexamanswers.net/ccna-1-v7-modules-8-10-communicating-between-networks-exam-answers.html).
 
-## GitHub Pages
+## Online nutzen
 
-Nach dem Push kann das Quiz unter `https://nicofafaf.github.io/CCNAModule/` geöffnet werden (GitHub Pages aktivieren unter Repository Settings → Pages → Source: main branch).
+### GitLab Pages (empfohlen)
+
+Nach dem Push auf GitLab und erfolgreicher Pipeline:
+
+**https://nicofafaf.gitlab.io/CCNAModulenico/**
+
+### GitHub Pages
+
+**https://nicofafaf.github.io/CCNAModule/**
