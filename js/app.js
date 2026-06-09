@@ -1,5 +1,9 @@
 /* CCNA Module 8-10 Quiz App */
 const STORAGE_KEY = 'ccna_mod8_10_progress';
+const LANG_KEY = 'ccna_lang';
+const THEME_KEY = 'ccna_theme';
+
+window.appLang = localStorage.getItem(LANG_KEY) || 'de';
 
 const state = {
   mode: 'learn',
@@ -27,9 +31,8 @@ function saveProgress() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
 }
 
-// Sync check: questions.js must define QUESTIONS before this script runs.
 if (typeof QUESTIONS === 'undefined' || !Array.isArray(QUESTIONS) || QUESTIONS.length !== 76) {
-  console.error('QUESTIONS data invalid – expected 76 questions');
+  console.error('QUESTIONS data invalid');
 }
 
 function getMastery(id) {
@@ -38,14 +41,9 @@ function getMastery(id) {
 
 function updateMastery(id, correct) {
   const current = getMastery(id);
-  progress.mastery[id] = correct
-    ? Math.min(100, current + 20)
-    : Math.max(0, current - 15);
-  if (!correct && !progress.mistakes.includes(id)) {
-    progress.mistakes.push(id);
-  } else if (correct && getMastery(id) >= 80) {
-    progress.mistakes = progress.mistakes.filter(m => m !== id);
-  }
+  progress.mastery[id] = correct ? Math.min(100, current + 20) : Math.max(0, current - 15);
+  if (!correct && !progress.mistakes.includes(id)) progress.mistakes.push(id);
+  else if (correct && getMastery(id) >= 80) progress.mistakes = progress.mistakes.filter(m => m !== id);
   progress.stats.total++;
   if (correct) progress.stats.correct++;
   saveProgress();
@@ -65,31 +63,55 @@ function showScreen(id) {
   document.getElementById(id).classList.add('active');
 }
 
+function applyI18n() {
+  document.documentElement.lang = window.appLang;
+  document.title = t('pageTitle');
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.dataset.i18n;
+    if (key) el.textContent = t(key);
+  });
+
+  ['mod8', 'mod9', 'mod10'].forEach(mod => {
+    const ul = document.getElementById(`${mod}-list`);
+    if (ul) {
+      const items = I18N[window.appLang][`${mod}Items`] || [];
+      ul.innerHTML = items.map(item => `<li>${item}</li>`).join('');
+    }
+  });
+
+  document.getElementById('btn-lang').textContent = t('langSwitch');
+
+  const theme = document.documentElement.dataset.theme;
+  document.getElementById('btn-theme').textContent = theme === 'dark' ? '🌙' : '☀️';
+
+  renderStats();
+  if (state.questions.length && document.getElementById('screen-quiz').classList.contains('active')) {
+    const labels = { learn: 'modeLearn', practice: 'modePractice', exam: 'modeExam', mistakes: 'modeMistakes', weak: 'modeWeak', module: 'modeModule' };
+    document.getElementById('quiz-mode-label').textContent = t(labels[state.mode] || 'modeLearn');
+    renderQuestion();
+  }
+}
+
 function renderStats() {
   const total = QUESTIONS.length;
   const mastered = Object.values(progress.mastery).filter(v => v >= 80).length;
   const mistakes = progress.mistakes.length;
-  const accuracy = progress.stats.total > 0
-    ? Math.round((progress.stats.correct / progress.stats.total) * 100)
-    : 0;
+  const accuracy = progress.stats.total > 0 ? Math.round((progress.stats.correct / progress.stats.total) * 100) : 0;
 
   document.getElementById('stats-overview').innerHTML = `
-    <div class="stat-card"><div class="stat-value">${total}</div><div class="stat-label">Fragen</div></div>
-    <div class="stat-card"><div class="stat-value">${mastered}</div><div class="stat-label">Gemeistert</div></div>
-    <div class="stat-card"><div class="stat-value">${mistakes}</div><div class="stat-label">Fehler</div></div>
-    <div class="stat-card"><div class="stat-value">${accuracy}%</div><div class="stat-label">Genauigkeit</div></div>
+    <div class="stat-card"><div class="stat-value">${total}</div><div class="stat-label">${t('statQuestions')}</div></div>
+    <div class="stat-card"><div class="stat-value">${mastered}</div><div class="stat-label">${t('statMastered')}</div></div>
+    <div class="stat-card"><div class="stat-value">${mistakes}</div><div class="stat-label">${t('statMistakes')}</div></div>
+    <div class="stat-card"><div class="stat-value">${accuracy}%</div><div class="stat-label">${t('statAccuracy')}</div></div>
   `;
-  document.getElementById('mistakes-count').textContent =
-    mistakes > 0 ? `${mistakes} Fragen zum Wiederholen` : 'Keine Fehler – weiter üben!';
+  const mc = document.getElementById('mistakes-count');
+  if (mc) mc.textContent = mistakes > 0 ? t('modeMistakesCount', { n: mistakes }) : t('modeMistakesNone');
 }
 
 function buildQuestionPool(mode, moduleFilter) {
   let pool = [...QUESTIONS];
-
-  if (moduleFilter && moduleFilter !== 'all') {
-    pool = pool.filter(q => q.module === parseInt(moduleFilter));
-  }
-
+  if (moduleFilter && moduleFilter !== 'all') pool = pool.filter(q => q.module === parseInt(moduleFilter));
   switch (mode) {
     case 'mistakes':
       pool = pool.filter(q => progress.mistakes.includes(q.id));
@@ -102,7 +124,6 @@ function buildQuestionPool(mode, moduleFilter) {
     default:
       pool = shuffle(pool);
   }
-
   return pool;
 }
 
@@ -116,24 +137,12 @@ function startQuiz(mode, moduleFilter = null) {
   state.showFeedback = mode !== 'exam';
   state.timeLeft = 3600;
 
-  const labels = {
-    learn: 'Lernmodus',
-    practice: 'Übungsmodus',
-    exam: 'Prüfungsmodus',
-    mistakes: 'Fehler wiederholen',
-    weak: 'Schwächen trainieren',
-    module: 'Modul-Übung',
-  };
-  document.getElementById('quiz-mode-label').textContent = labels[mode] || mode;
+  const labels = { learn: 'modeLearn', practice: 'modePractice', exam: 'modeExam', mistakes: 'modeMistakes', weak: 'modeWeak', module: 'modeModule' };
+  document.getElementById('quiz-mode-label').textContent = t(labels[mode] || 'modeLearn');
 
   const timer = document.getElementById('exam-timer');
-  if (mode === 'exam') {
-    timer.classList.remove('hidden');
-    startTimer();
-  } else {
-    timer.classList.add('hidden');
-    clearInterval(state.timerInterval);
-  }
+  if (mode === 'exam') { timer.classList.remove('hidden'); startTimer(); }
+  else { timer.classList.add('hidden'); clearInterval(state.timerInterval); }
 
   showScreen('screen-quiz');
   renderQuestion();
@@ -145,8 +154,7 @@ function startTimer() {
     state.timeLeft--;
     const m = Math.floor(state.timeLeft / 60);
     const s = state.timeLeft % 60;
-    document.getElementById('exam-timer').textContent =
-      `${m}:${s.toString().padStart(2, '0')}`;
+    document.getElementById('exam-timer').textContent = `${m}:${s.toString().padStart(2, '0')}`;
     if (state.timeLeft <= 0) finishQuiz();
   }, 1000);
 }
@@ -157,68 +165,51 @@ function renderQuestion() {
 
   state.selected = new Set();
 
-  document.getElementById('quiz-progress').textContent =
-    `${state.currentIndex + 1} / ${state.questions.length}`;
-  document.getElementById('progress-fill').style.width =
-    `${((state.currentIndex) / state.questions.length) * 100}%`;
+  document.getElementById('quiz-progress').textContent = `${state.currentIndex + 1} / ${state.questions.length}`;
+  document.getElementById('progress-fill').style.width = `${(state.currentIndex / state.questions.length) * 100}%`;
 
   const modEl = document.getElementById('q-module');
-  modEl.textContent = `Modul ${q.module}`;
+  modEl.textContent = t('moduleLabel', { n: q.module });
   modEl.className = `q-badge mod${q.module}`;
 
   document.getElementById('q-topic').textContent = q.topic || '';
-  
+
   const mastery = getMastery(q.id);
   const masteryEl = document.getElementById('q-mastery');
-  masteryEl.textContent = `Beherrschung: ${mastery}%`;
+  masteryEl.textContent = t('mastery', { n: mastery });
   masteryEl.className = `q-badge mastery ${mastery >= 80 ? 'high' : mastery >= 40 ? 'mid' : 'low'}`;
 
-  document.getElementById('q-text').textContent = q.questionDe || q.question;
-  const enEl = document.getElementById('q-text-en');
-  if (q.questionDe && q.question !== q.questionDe) {
-    enEl.textContent = q.question;
-    enEl.style.display = 'block';
-  } else {
-    enEl.style.display = 'none';
-  }
+  document.getElementById('q-text').textContent = getQuestionText(q);
+  const altEl = document.getElementById('q-text-alt');
+  const alt = getAltQuestionText(q);
+  altEl.textContent = alt && alt !== getQuestionText(q) ? alt : '';
+  altEl.style.display = altEl.textContent ? 'block' : 'none';
 
   const imgWrap = document.getElementById('q-image-wrap');
   if (q.image) {
     document.getElementById('q-image').src = q.image;
+    document.getElementById('q-image').alt = t('exhibit');
     imgWrap.classList.remove('hidden');
-  } else {
-    imgWrap.classList.add('hidden');
-  }
+  } else imgWrap.classList.add('hidden');
 
   const exhibitEl = document.getElementById('q-exhibit');
-  if (q.exhibit) {
-    exhibitEl.textContent = q.exhibit;
-    exhibitEl.classList.remove('hidden');
-  } else {
-    exhibitEl.classList.add('hidden');
-  }
+  if (q.exhibit) { exhibitEl.textContent = q.exhibit; exhibitEl.classList.remove('hidden'); }
+  else exhibitEl.classList.add('hidden');
 
   const isMulti = q.type === 'multiple' || q.type === 'multiple3' || q.type === 'ordering';
   const optionsEl = document.getElementById('q-options');
   const shuffledIndices = shuffle(q.options.map((_, i) => i));
-  state.shuffledMap = shuffledIndices;
 
-  optionsEl.innerHTML = shuffledIndices.map((origIdx, displayIdx) => {
-    const letter = String.fromCharCode(65 + displayIdx);
-    return `<div class="option" data-idx="${origIdx}" data-display="${displayIdx}">
-      <span class="option-marker">${letter}</span>
-      <span>${q.options[origIdx]}</span>
-    </div>`;
-  }).join('');
-
+  let html = '';
   if (isMulti) {
-    const hint = document.createElement('p');
-    hint.style.cssText = 'font-size:0.82rem;color:var(--warning);margin-bottom:10px;';
-    if (q.type === 'ordering') hint.textContent = 'Zuordnungsfrage: Wähle alle korrekten Paare.';
-    else if (q.type === 'multiple3') hint.textContent = 'Wähle drei Antworten.';
-    else hint.textContent = 'Wähle zwei Antworten.';
-    optionsEl.prepend(hint);
+    const hintKey = q.type === 'ordering' ? 'hintOrdering' : q.type === 'multiple3' ? 'hintThree' : 'hintTwo';
+    html += `<p class="option-hint">${t(hintKey)}</p>`;
   }
+  html += shuffledIndices.map((origIdx, displayIdx) => {
+    const letter = String.fromCharCode(65 + displayIdx);
+    return `<div class="option" data-idx="${origIdx}"><span class="option-marker">${letter}</span><span>${q.options[origIdx]}</span></div>`;
+  }).join('');
+  optionsEl.innerHTML = html;
 
   optionsEl.querySelectorAll('.option').forEach(opt => {
     opt.addEventListener('click', () => selectOption(opt, isMulti));
@@ -236,17 +227,11 @@ function selectOption(el, isMulti) {
   const idx = parseInt(el.dataset.idx);
 
   if (isMulti) {
-    if (state.selected.has(idx)) {
-      state.selected.delete(idx);
-      el.classList.remove('selected');
-    } else {
+    if (state.selected.has(idx)) { state.selected.delete(idx); el.classList.remove('selected'); }
+    else {
       const qType = state.questions[state.currentIndex].type;
-      const max = qType === 'ordering' ? state.questions[state.currentIndex].options.length
-        : qType === 'multiple3' ? 3 : 2;
-      if (state.selected.size < max) {
-        state.selected.add(idx);
-        el.classList.add('selected');
-      }
+      const max = qType === 'ordering' ? state.questions[state.currentIndex].options.length : qType === 'multiple3' ? 3 : 2;
+      if (state.selected.size < max) { state.selected.add(idx); el.classList.add('selected'); }
     }
   } else {
     document.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
@@ -255,9 +240,7 @@ function selectOption(el, isMulti) {
   }
 
   const q = state.questions[state.currentIndex];
-  const required = q.type === 'ordering' ? q.options.length
-    : q.type === 'multiple3' ? 3
-    : q.type === 'multiple' ? 2 : 1;
+  const required = q.type === 'ordering' ? q.options.length : q.type === 'multiple3' ? 3 : q.type === 'multiple' ? 2 : 1;
   document.getElementById('btn-check').disabled = state.selected.size < required;
 }
 
@@ -265,9 +248,7 @@ function checkAnswer() {
   const q = state.questions[state.currentIndex];
   const correct = new Set(q.correct);
   const selected = state.selected;
-
-  const isCorrect = correct.size === selected.size &&
-    [...selected].every(s => correct.has(s));
+  const isCorrect = correct.size === selected.size && [...selected].every(s => correct.has(s));
 
   state.answers.push({ id: q.id, correct: isCorrect, selected: [...selected] });
   updateMastery(q.id, isCorrect);
@@ -280,33 +261,28 @@ function checkAnswer() {
   });
 
   if (state.showFeedback) {
-    const fb = document.getElementById('feedback');
-    fb.classList.remove('hidden');
+    document.getElementById('feedback').classList.remove('hidden');
     const result = document.getElementById('feedback-result');
     result.className = `feedback-result ${isCorrect ? 'correct' : 'incorrect'}`;
-    result.textContent = isCorrect ? '✓ Richtig!' : `✗ Falsch. Richtige Antwort: ${q.correct.map(i => q.options[i]).join(', ')}`;
+    result.textContent = isCorrect
+      ? `✓ ${t('correct')}`
+      : `✗ ${t('incorrect')} ${q.correct.map(i => q.options[i]).join(', ')}`;
 
     const mnemonicBox = document.getElementById('feedback-mnemonic');
     if (q.mnemonic) {
+      document.getElementById('mnemonic-label').textContent = `🧠 ${t('mnemonic')}:`;
       document.getElementById('mnemonic-text').textContent = q.mnemonic;
       mnemonicBox.classList.remove('hidden');
-    } else {
-      mnemonicBox.classList.add('hidden');
-    }
+    } else mnemonicBox.classList.add('hidden');
 
-    document.getElementById('feedback-explanation').textContent =
-      q.explanation || q.topic || 'Keine weitere Erklärung verfügbar.';
+    document.getElementById('feedback-explanation').textContent = q.explanation || q.topic || t('noExplanation');
 
     document.getElementById('btn-check').classList.add('hidden');
     const isLast = state.currentIndex >= state.questions.length - 1;
-    if (isLast) {
-      document.getElementById('btn-finish').classList.remove('hidden');
-    } else {
-      document.getElementById('btn-next').classList.remove('hidden');
-    }
+    if (isLast) document.getElementById('btn-finish').classList.remove('hidden');
+    else document.getElementById('btn-next').classList.remove('hidden');
   } else {
-    const isLast = state.currentIndex >= state.questions.length - 1;
-    if (isLast) finishQuiz();
+    if (state.currentIndex >= state.questions.length - 1) finishQuiz();
     else nextQuestion();
   }
 }
@@ -323,40 +299,50 @@ function finishQuiz() {
   const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
 
   document.getElementById('score-percent').textContent = `${pct}%`;
-  document.getElementById('score-detail').textContent = `${correct} von ${total} richtig`;
+  document.getElementById('score-detail').textContent = t('resultDetail', { c: correct, t: total });
 
   const modules = { 8: { c: 0, t: 0 }, 9: { c: 0, t: 0 }, 10: { c: 0, t: 0 } };
   state.answers.forEach(a => {
-    const q = QUESTIONS.find(q => q.id === a.id);
-    if (q) {
-      modules[q.module].t++;
-      if (a.correct) modules[q.module].c++;
-    }
+    const q = QUESTIONS.find(x => x.id === a.id);
+    if (q) { modules[q.module].t++; if (a.correct) modules[q.module].c++; }
   });
 
   document.getElementById('results-breakdown').innerHTML = Object.entries(modules)
     .filter(([, v]) => v.t > 0)
     .map(([mod, v]) => {
       const p = Math.round((v.c / v.t) * 100);
-      return `<div class="result-module"><span>Modul ${mod}</span><span>${v.c}/${v.t} (${p}%)</span></div>`;
+      return `<div class="result-module"><span>${t('moduleLabel', { n: mod })}</span><span>${v.c}/${v.t} (${p}%)</span></div>`;
     }).join('');
 
-  const btnRepeat = document.getElementById('btn-repeat-mistakes');
-  btnRepeat.style.display = progress.mistakes.length > 0 ? 'block' : 'none';
-
+  document.getElementById('btn-repeat-mistakes').style.display = progress.mistakes.length > 0 ? 'block' : 'none';
   showScreen('screen-results');
   renderStats();
 }
 
-// Event listeners
+function initTheme() {
+  const saved = localStorage.getItem(THEME_KEY) || 'light';
+  document.documentElement.dataset.theme = saved;
+}
+
+function toggleTheme() {
+  const current = document.documentElement.dataset.theme;
+  const next = current === 'light' ? 'dark' : 'light';
+  document.documentElement.dataset.theme = next;
+  localStorage.setItem(THEME_KEY, next);
+  document.getElementById('btn-theme').textContent = next === 'dark' ? '🌙' : '☀️';
+}
+
+function toggleLang() {
+  window.appLang = window.appLang === 'de' ? 'en' : 'de';
+  localStorage.setItem(LANG_KEY, window.appLang);
+  applyI18n();
+}
+
 document.querySelectorAll('.mode-card').forEach(card => {
   card.addEventListener('click', () => {
     const mode = card.dataset.mode;
-    if (mode === 'module') {
-      showScreen('screen-module');
-    } else {
-      startQuiz(mode);
-    }
+    if (mode === 'module') showScreen('screen-module');
+    else startQuiz(mode);
   });
 });
 
@@ -375,8 +361,9 @@ document.querySelectorAll('[data-back]').forEach(btn => {
 document.getElementById('btn-check').addEventListener('click', checkAnswer);
 document.getElementById('btn-next').addEventListener('click', nextQuestion);
 document.getElementById('btn-finish').addEventListener('click', finishQuiz);
-
 document.getElementById('btn-repeat-mistakes').addEventListener('click', () => startQuiz('mistakes'));
+document.getElementById('btn-lang').addEventListener('click', toggleLang);
+document.getElementById('btn-theme').addEventListener('click', toggleTheme);
 
-// Init
-renderStats();
+initTheme();
+applyI18n();

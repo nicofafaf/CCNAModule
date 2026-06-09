@@ -1,22 +1,32 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CCNA Modul 8-10 Quiz | Checkpoint Prüfung</title>
+  <title>CCNA Modul 8-10 Quiz</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="topbar">
+    <div class="topbar-brand">
+      <span class="brand-icon">◈</span>
+      <span class="brand-text">CCNA Quiz</span>
+    </div>
+    <div class="topbar-controls">
+      <button type="button" id="btn-lang" class="ctrl-btn" title="Sprache / Language">DE</button>
+      <button type="button" id="btn-theme" class="ctrl-btn ctrl-theme" title="Theme">☀️</button>
+    </div>
+  </header>
+
   <div id="app">
-    <!-- Home Screen -->
     <section id="screen-home" class="screen active">
       <header class="hero">
-        <div class="hero-badge">CCNA 1 v7 · ITN</div>
-        <h1>Kommunikation zwischen Netzwerken</h1>
-        <p class="hero-sub">Module 8 – 10 · 76 Prüfungsfragen · Auswendiglernen mit Spaced Repetition</p>
+        <div class="hero-badge" data-i18n="badge"></div>
+        <h1 data-i18n="heroTitle"></h1>
+        <p class="hero-sub" data-i18n="heroSub"></p>
       </header>
 
       <div class="stats-grid" id="stats-overview"></div>
@@ -24,88 +34,83 @@
       <div class="mode-grid">
         <button class="mode-card" data-mode="learn">
           <span class="mode-icon">📖</span>
-          <h3>Lernmodus</h3>
-          <p>Sofortiges Feedback + Erklärung + Eselsbrücke nach jeder Antwort</p>
+          <h3 data-i18n="modeLearnTitle"></h3>
+          <p data-i18n="modeLearnDesc"></p>
         </button>
         <button class="mode-card" data-mode="practice">
           <span class="mode-icon">🎯</span>
-          <h3>Übungsmodus</h3>
-          <p>Alle Fragen durchgehen, Fortschritt tracken</p>
+          <h3 data-i18n="modePracticeTitle"></h3>
+          <p data-i18n="modePracticeDesc"></p>
         </button>
         <button class="mode-card" data-mode="exam">
           <span class="mode-icon">⏱️</span>
-          <h3>Prüfungsmodus</h3>
-          <p>60 Min Timer, Feedback erst am Ende</p>
+          <h3 data-i18n="modeExamTitle"></h3>
+          <p data-i18n="modeExamDesc"></p>
         </button>
         <button class="mode-card highlight" data-mode="mistakes">
           <span class="mode-icon">🔄</span>
-          <h3>Fehler wiederholen</h3>
-          <p id="mistakes-count">Nur falsch beantwortete Fragen</p>
+          <h3 data-i18n="modeMistakesTitle"></h3>
+          <p id="mistakes-count" data-i18n="modeMistakesDesc"></p>
         </button>
         <button class="mode-card" data-mode="weak">
           <span class="mode-icon">💪</span>
-          <h3>Schwächen trainieren</h3>
-          <p>Fragen mit niedrigster Beherrschung</p>
+          <h3 data-i18n="modeWeakTitle"></h3>
+          <p data-i18n="modeWeakDesc"></p>
         </button>
         <button class="mode-card" data-mode="module">
           <span class="mode-icon">📚</span>
-          <h3>Nach Modul</h3>
-          <p>Modul 8, 9 oder 10 einzeln üben</p>
+          <h3 data-i18n="modeModuleTitle"></h3>
+          <p data-i18n="modeModuleDesc"></p>
         </button>
       </div>
 
       <div class="learning-overview">
-        <h2>Was lernst du?</h2>
+        <h2 data-i18n="learnTitle"></h2>
         <div class="topic-cards">
           <div class="topic-card mod8">
-            <h4>Modul 8 – Netzwerkschicht</h4>
-            <ul>
-              <li>IP-Protokoll (verbindungslos, unzuverlässig)</li>
-              <li>IPv4/IPv6 Header-Felder</li>
-              <li>Routing & Routing-Tabelle</li>
-              <li>Default Gateway & Loopback</li>
-            </ul>
+            <h4 data-i18n="mod8Title"></h4>
+            <ul id="mod8-list"></ul>
           </div>
           <div class="topic-card mod9">
-            <h4>Modul 9 – Address Resolution</h4>
-            <ul>
-              <li>ARP-Protokoll & ARP-Cache</li>
-              <li>Ethernet Frame Forwarding</li>
-              <li>Switch Flooding & MAC-Tabelle</li>
-              <li>IPv6 Neighbor Discovery</li>
-            </ul>
+            <h4 data-i18n="mod9Title"></h4>
+            <ul id="mod9-list"></ul>
           </div>
           <div class="topic-card mod10">
-            <h4>Modul 10 – Cisco IOS</h4>
-            <ul>
-              <li>Router Boot-Prozess & NVRAM</li>
-              <li>IOS-Befehle & Konfigurationsmodi</li>
-              <li>Console/SSH/Telnet-Zugang</li>
-              <li>Switch Default Gateway</li>
-            </ul>
+            <h4 data-i18n="mod10Title"></h4>
+            <ul id="mod10-list"></ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Module Select -->
     <section id="screen-module" class="screen">
-      <button class="btn-back" data-back>← Zurück</button>
-      <h2>Modul wählen</h2>
+      <button class="btn-back" data-back data-i18n="back"></button>
+      <h2 data-i18n="chooseModule"></h2>
       <div class="module-select">
-        <button class="module-btn" data-module="8">Modul 8 <span>Netzwerkschicht</span></button>
-        <button class="module-btn" data-module="9">Modul 9 <span>Address Resolution</span></button>
-        <button class="module-btn" data-module="10">Modul 10 <span>Cisco IOS</span></button>
-        <button class="module-btn all" data-module="all">Alle Module <span>76 Fragen</span></button>
+        <button class="module-btn" data-module="8">
+          <span data-i18n="mod8Btn"></span>
+          <small data-i18n="mod8Sub"></small>
+        </button>
+        <button class="module-btn" data-module="9">
+          <span data-i18n="mod9Btn"></span>
+          <small data-i18n="mod9Sub"></small>
+        </button>
+        <button class="module-btn" data-module="10">
+          <span data-i18n="mod10Btn"></span>
+          <small data-i18n="mod10Sub"></small>
+        </button>
+        <button class="module-btn all" data-module="all">
+          <span data-i18n="modAllBtn"></span>
+          <small data-i18n="modAllSub"></small>
+        </button>
       </div>
     </section>
 
-    <!-- Quiz Screen -->
     <section id="screen-quiz" class="screen">
       <div class="quiz-header">
-        <button class="btn-back" data-back>← Beenden</button>
+        <button class="btn-back" data-back data-i18n="backQuiz"></button>
         <div class="quiz-meta">
-          <span id="quiz-mode-label">Lernmodus</span>
+          <span id="quiz-mode-label"></span>
           <span id="quiz-progress">1 / 76</span>
         </div>
         <div class="progress-bar"><div id="progress-fill"></div></div>
@@ -114,15 +119,15 @@
 
       <div class="question-card">
         <div class="question-meta">
-          <span class="q-badge" id="q-module">Modul 8</span>
-          <span class="q-badge topic" id="q-topic">Topic 8.5.1</span>
+          <span class="q-badge" id="q-module"></span>
+          <span class="q-badge topic" id="q-topic"></span>
           <span class="q-badge mastery" id="q-mastery"></span>
         </div>
         <h2 id="q-text" class="question-text"></h2>
-        <p id="q-text-en" class="question-text-en"></p>
+        <p id="q-text-alt" class="question-text-alt"></p>
 
         <div id="q-image-wrap" class="image-wrap hidden">
-          <img id="q-image" alt="Exhibit">
+          <img id="q-image" alt="">
         </div>
         <pre id="q-exhibit" class="exhibit hidden"></pre>
 
@@ -131,38 +136,38 @@
         <div id="feedback" class="feedback hidden">
           <div id="feedback-result" class="feedback-result"></div>
           <div id="feedback-mnemonic" class="mnemonic-box hidden">
-            <strong>🧠 Eselsbrücke:</strong>
+            <strong id="mnemonic-label"></strong>
             <span id="mnemonic-text"></span>
           </div>
           <div id="feedback-explanation" class="explanation-box"></div>
         </div>
 
         <div class="quiz-actions">
-          <button id="btn-check" class="btn-primary" disabled>Antwort prüfen</button>
-          <button id="btn-next" class="btn-primary hidden">Weiter →</button>
-          <button id="btn-finish" class="btn-primary hidden">Ergebnis anzeigen</button>
+          <button id="btn-check" class="btn-primary" disabled data-i18n="checkAnswer"></button>
+          <button id="btn-next" class="btn-primary hidden" data-i18n="next"></button>
+          <button id="btn-finish" class="btn-primary hidden" data-i18n="showResult"></button>
         </div>
       </div>
     </section>
 
-    <!-- Results Screen -->
     <section id="screen-results" class="screen">
       <div class="results-card">
-        <h2>Ergebnis</h2>
+        <h2 data-i18n="resultTitle"></h2>
         <div class="score-circle" id="score-circle">
           <span id="score-percent">0%</span>
         </div>
-        <p id="score-detail">0 von 0 richtig</p>
+        <p id="score-detail"></p>
         <div id="results-breakdown"></div>
         <div class="results-actions">
-          <button class="btn-primary" data-mode="mistakes" id="btn-repeat-mistakes">Fehler wiederholen</button>
-          <button class="btn-secondary" data-back>Zur Startseite</button>
+          <button class="btn-primary" data-mode="mistakes" id="btn-repeat-mistakes" data-i18n="repeatMistakes"></button>
+          <button class="btn-secondary" data-back data-i18n="home"></button>
         </div>
       </div>
     </section>
   </div>
 
   <script src="js/questions.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
