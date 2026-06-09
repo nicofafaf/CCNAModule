@@ -19,7 +19,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche Informationen werden von Routern verwendet, um ein Datenpaket zu seinem Ziel weiterzuleiten?",
     "mnemonic": "Router schaut nur aufs ZIEL (Layer 3) – nicht Quelle, nicht MAC!",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "Quell-IP-Adresse",
+      "Ziel-IP-Adresse",
+      "Quell-Datenverbindungsadresse",
+      "Ziel-Datenverbindungsadresse"
+    ]
   },
   {
     "id": 2,
@@ -41,7 +47,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Ein Computer muss ein Paket an einen Ziel-Host im selben LAN senden. Wie wird das Paket verschickt?",
     "mnemonic": "Gleiches LAN = Direktversand. Kein Gateway nötig!",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "Das Paket wird zuerst an das Standard-Gateway gesendet und je nach Antwort des Gateways eventuell an den Ziel-Host.",
+      "Das Paket wird direkt an den Ziel-Host gesendet.",
+      "Das Paket wird zuerst an das Standard-Gateway gesendet und von dort direkt an den Ziel-Host.",
+      "Das Paket wird nur an das Standard-Gateway gesendet."
+    ]
   },
   {
     "id": 3,
@@ -63,7 +75,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Ein Router empfängt ein Paket von der Gigabit-0/0-Schnittstelle und bestimmt, dass das Paket über die Gigabit-0/1-Schnittstelle weitergeleitet werden muss. Was wird der Router als Nächstes tun?",
     "mnemonic": "Routing-Tabelle ✓ → Neuer L2-Frame! (MAC ändert sich pro Hop)",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "Das Paket über die Gigabit-0/1-Schnittstelle weiterleiten",
+      "Einen neuen Layer-2-Ethernet-Frame für das Ziel erstellen",
+      "Den ARP-Cache prüfen, um die Ziel-IP-Adresse zu ermitteln",
+      "Die Routing-Tabelle prüfen, ob das Zielnetzwerk in der Routing-Tabelle ist"
+    ]
   },
   {
     "id": 4,
@@ -85,7 +103,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche IPv4-Adresse kann ein Host verwenden, um die Loopback-Schnittstelle zu pingen?",
     "mnemonic": "127 = Loopback. Merke: 127.0.0.1 = 'Ich selbst'",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "126.0.0.1",
+      "127.0.0.0",
+      "126.0.0.0",
+      "127.0.0.1"
+    ]
   },
   {
     "id": 5,
@@ -107,7 +131,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Ein Computer kann auf Geräte im selben Netzwerk zugreifen, aber nicht auf Geräte in anderen Netzwerken. Was ist die wahrscheinliche Ursache?",
     "mnemonic": "Lokal OK, remote nicht → Gateway falsch!",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "Das Kabel ist nicht richtig an die NIC angeschlossen.",
+      "Der Computer hat eine ungültige IP-Adresse.",
+      "Der Computer hat eine falsche Subnetzmaske.",
+      "Der Computer hat eine ungültige Standard-Gateway-Adresse."
+    ]
   },
   {
     "id": 6,
@@ -129,7 +159,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche Anweisung beschreibt eine Funktion des IP-Protokolls?",
     "mnemonic": "IP = unzuverlässig → TCP räumt auf",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "Die IP-Kapselung wird je nach Netzwerkmedium angepasst.",
+      "IP verlässt sich auf Layer-2-Protokolle zur Übertragungsfehlerkontrolle.",
+      "MAC-Adressen werden bei der IP-Paket-Kapselung verwendet.",
+      "IP verlässt sich auf höhere Schichten bei fehlenden oder falsch sortierten Paketen."
+    ]
   },
   {
     "id": 7,
@@ -151,7 +187,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Warum wird NAT in IPv6 nicht benötigt?",
     "mnemonic": "IPv6 = so viele Adressen, NAT überflüssig",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "Da IPv6 integrierte Sicherheit hat, müssen IPv6-Adressen interner Netze nicht verborgen werden.",
+      "Jeder Host kann eine öffentliche IPv6-Adresse erhalten, weil extrem viele IPv6-Adressen verfügbar sind.",
+      "NAT-Probleme werden gelöst, weil der IPv6-Header die Paketverarbeitung durch Router verbessert.",
+      "End-to-End-Probleme durch NAT werden gelöst, weil die Routenanzahl mit der Anzahl der Internet-Knoten steigt."
+    ]
   },
   {
     "id": 8,
@@ -173,7 +215,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welchen Parameter verwendet der Router, um den Pfad zum Ziel zu wählen, wenn mehrere Routen verfügbar sind?",
     "mnemonic": "Metric: Niedriger = Besser (wie Golf-Score)",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "der niedrigere Metrikwert des Zielnetzwerks",
+      "die niedrigere Gateway-IP-Adresse zum Zielnetzwerk",
+      "der höhere Metrikwert des Zielnetzwerks",
+      "die höhere Gateway-IP-Adresse zum Zielnetzwerk"
+    ]
   },
   {
     "id": 9,
@@ -197,7 +245,14 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche zwei Dienste bietet die OSI-Netzwerkschicht? (Wähle zwei.)",
     "mnemonic": "Netzwerkschicht = Routing + Kapselung (NICHT Fehlererkennung!)",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "Fehlererkennung durchführen",
+      "Pakete zum Ziel weiterleiten",
+      "PDUs der Transportschicht kapseln",
+      "Frames auf das Medium platzieren",
+      "Kollisionserkennung"
+    ]
   },
   {
     "id": 10,
@@ -219,7 +274,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Was ist innerhalb eines Produktionsnetzwerks der Zweck der Konfiguration eines Switches mit einer Standard-Gateway-Adresse?",
     "mnemonic": "Switch-Gateway = für EIGENEN Verkehr (Management), nicht für PCs",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "Hosts am Switch können die Standard-Gateway-Adresse des Switches nutzen, um Pakete an ein entferntes Ziel zu senden.",
+      "Ein Switch benötigt ein Standard-Gateway, um per Telnet und SSH erreichbar zu sein.",
+      "Die Standard-Gateway-Adresse wird genutzt, um vom Switch ausgehende Pakete an entfernte Netze weiterzuleiten.",
+      "Sie liefert eine Next-Hop-Adresse für den gesamten durch den Switch fließenden Verkehr."
+    ]
   },
   {
     "id": 11,
@@ -241,7 +302,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Was ist ein grundlegendes Merkmal des IP-Protokolls?",
     "mnemonic": "IP = Connectionless, Media-unabhängig",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "verbindungslos",
+      "medienabhängig",
+      "Segmentierung von Nutzerdaten",
+      "zuverlässige End-to-End-Übertragung"
+    ]
   },
   {
     "id": 12,
@@ -263,7 +330,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welches Feld im IPv4-Header verhindert, dass ein Paket endlos ein Netzwerk durchquert?",
     "mnemonic": "TTL = Time To Live → verhindert Endlosschleifen",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "Time-to-Live",
+      "Sequenznummer",
+      "Bestätigungsnummer",
+      "Differentiated Services"
+    ]
   },
   {
     "id": 13,
@@ -285,7 +358,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Was ist ein Vorteil des vereinfachten IPv6-Headers gegenüber IPv4?",
     "mnemonic": "IPv6 = weniger Checksummen, effizientere Verarbeitung",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "kleinerer Header",
+      "geringerer Aufwand für Prüfsummenberechnung",
+      "kleinere Quell- und Ziel-IP-Adressen",
+      "effiziente Paketverarbeitung"
+    ]
   },
   {
     "id": 14,
@@ -307,7 +386,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welches IPv4-Headerfeld identifiziert das Protokoll der oberen Schicht?",
     "mnemonic": "Protocol-Feld = welches Upper-Layer-Protokoll (TCP=6, UDP=17)",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "Protokoll",
+      "Identifikation",
+      "Version",
+      "Differentiated Services"
+    ]
   },
   {
     "id": 15,
@@ -334,7 +419,14 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Ordne die Pakete mit ihrer Ziel-IP-Adresse den ausgehenden Schnittstellen des Routers zu.",
     "mnemonic": "Routing-Tabelle lesen: Longest Match + Gateway of Last Resort",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "Pakete mit Ziel 172.17.6.15 → FastEthernet0/0",
+      "Pakete mit Ziel 172.17.14.8 → FastEthernet0/1",
+      "Pakete mit Ziel 172.17.12.10 → FastEthernet1/0",
+      "Pakete mit Ziel 172.17.10.5 → FastEthernet1/1",
+      "Pakete mit Ziel 172.17.8.20 → Serial0/0/0"
+    ]
   },
   {
     "id": 16,
@@ -357,7 +449,14 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche Informationen liefert der Loopback-Test?",
     "mnemonic": "Loopback = nur TCP/IP-Stack testen, NICHT Netzwerk",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "Der TCP/IP-Stack auf dem Gerät funktioniert korrekt.",
+      "Das Gerät hat End-to-End-Konnektivität.",
+      "DHCP funktioniert korrekt.",
+      "Das Ethernet-Kabel funktioniert korrekt.",
+      "Das Gerät hat die richtige IP-Adresse im Netzwerk."
+    ]
   },
   {
     "id": 17,
@@ -379,7 +478,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welcher Eintrag in der Routing-Tabelle hat eine Next-Hop-Adresse?",
     "mnemonic": "Remote Routes haben Next-Hop, Direct/Local nicht",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "direkt verbundene Routen",
+      "lokale Routen",
+      "Remote-Routen",
+      "C- und L-Quellrouten"
+    ]
   },
   {
     "id": 18,
@@ -401,7 +506,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Wie stellen Hosts sicher, dass ihre Pakete an das richtige Netzwerkziel geleitet werden?",
     "mnemonic": "Host hat eigene Routing-Tabelle (Loopback + Lokal + Default)",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "Sie führen eine eigene lokale Routing-Tabelle mit Route zur Loopback-Schnittstelle, lokaler Netzwerk-Route und Remote-Default-Route.",
+      "Sie leiten alle Pakete immer an das Standard-Gateway weiter, das für die Zustellung zuständig ist.",
+      "Sie suchen in der lokalen Routing-Tabelle nach einer Route zum Ziel und übergeben diese Information an das Standard-Gateway.",
+      "Sie senden ein Abfragepaket an das Standard-Gateway und fragen nach der besten Route."
+    ]
   },
   {
     "id": 19,
@@ -423,7 +534,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welches Feld im IPv6-Header informiert Router, denselben Pfad für Echtzeit-Pakete beizubehalten?",
     "mnemonic": "Flow Label = Echtzeit, gleicher Pfad",
-    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)"
+    "moduleName": "Netzwerkschicht (IP, IPv6, Routing, Gateway)",
+    "optionsDe": [
+      "Next Header",
+      "Flow Label",
+      "Traffic Class",
+      "Differentiated Services"
+    ]
   },
   {
     "id": 20,
@@ -445,7 +562,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche Aussage beschreibt die Funktion des Address Resolution Protocol (ARP)?",
     "mnemonic": "ARP = IP → MAC im GLEICHEN Netzwerk",
-    "moduleName": "Address Resolution (ARP, Switching, Ethernet)"
+    "moduleName": "Address Resolution (ARP, Switching, Ethernet)",
+    "optionsDe": [
+      "ARP wird genutzt, um die IP-Adresse eines Hosts in einem anderen Netzwerk zu ermitteln.",
+      "ARP wird genutzt, um die IP-Adresse eines Hosts im lokalen Netzwerk zu ermitteln.",
+      "ARP wird genutzt, um die MAC-Adresse eines Hosts in einem anderen Netzwerk zu ermitteln.",
+      "ARP wird genutzt, um die MAC-Adresse eines Hosts im lokalen Netzwerk zu ermitteln."
+    ]
   },
   {
     "id": 21,
@@ -469,7 +592,14 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Unter welchen zwei Umständen flutet ein Switch einen Frame aus jedem Port? (Wähle zwei.)",
     "mnemonic": "Flooding bei: Broadcast ODER unbekannte MAC",
-    "moduleName": "Address Resolution (ARP, Switching, Ethernet)"
+    "moduleName": "Address Resolution (ARP, Switching, Ethernet)",
+    "optionsDe": [
+      "Der Frame hat die Broadcast-Adresse als Zieladresse.",
+      "Die Zieladresse ist dem Switch unbekannt.",
+      "Die Quelladresse im Frame-Header ist die Broadcast-Adresse.",
+      "Die Quelladresse im Frame ist eine Multicast-Adresse.",
+      "Die Zieladresse im Frame ist eine bekannte Unicast-Adresse."
+    ]
   },
   {
     "id": 22,
@@ -491,7 +621,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche Aussage beschreibt die Behandlung von ARP-Anfragen auf der lokalen Verbindung?",
     "mnemonic": "ARP = Broadcast → ALLE Geräte müssen verarbeiten",
-    "moduleName": "Address Resolution (ARP, Switching, Ethernet)"
+    "moduleName": "Address Resolution (ARP, Switching, Ethernet)",
+    "optionsDe": [
+      "Sie müssen von allen Routern im lokalen Netzwerk weitergeleitet werden.",
+      "Sie werden von jedem Gerät im lokalen Netzwerk empfangen und verarbeitet.",
+      "Sie werden von allen Switches im lokalen Netzwerk verworfen.",
+      "Sie werden nur vom Zielgerät empfangen und verarbeitet."
+    ]
   },
   {
     "id": 23,
@@ -514,7 +650,14 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche Zieladresse wird in einem ARP-Anforderungsrahmen verwendet?",
     "mnemonic": "ARP-Request Ziel-MAC = FFFF.FFFF.FFFF (Broadcast)",
-    "moduleName": "Address Resolution (ARP, Switching, Ethernet)"
+    "moduleName": "Address Resolution (ARP, Switching, Ethernet)",
+    "optionsDe": [
+      "0.0.0.0",
+      "255.255.255.255",
+      "FFFF.FFFF.FFFF",
+      "AAAA.AAAA.AAAA",
+      "die physische Adresse des Ziel-Hosts"
+    ]
   },
   {
     "id": 24,
@@ -536,7 +679,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Was ist das Ergebnis des Befehls arp -d * auf einem PC?",
     "mnemonic": "arp -d * = ARP-Cache LÖSCHEN (d=delete)",
-    "moduleName": "Address Resolution (ARP, Switching, Ethernet)"
+    "moduleName": "Address Resolution (ARP, Switching, Ethernet)",
+    "optionsDe": [
+      "Der ARP-Cache wird geleert.",
+      "Der aktuelle Inhalt des ARP-Cache wird angezeigt.",
+      "Detaillierte Informationen des ARP-Cache werden angezeigt.",
+      "Der ARP-Cache wird mit der Router-Schnittstelle synchronisiert."
+    ]
   },
   {
     "id": 25,
@@ -559,7 +708,14 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "PC1 hat einen Frame an PC3 gesendet. Was macht der Switch mit dem Frame?",
     "mnemonic": "MAC unbekannt → Flood alle Ports außer Eingangsport",
-    "moduleName": "Address Resolution (ARP, Switching, Ethernet)"
+    "moduleName": "Address Resolution (ARP, Switching, Ethernet)",
+    "optionsDe": [
+      "Der Switch verwirft den Frame.",
+      "Der Switch leitet den Frame nur an Port 2 weiter.",
+      "Der Switch leitet den Frame an alle Ports außer Port 4 weiter.",
+      "Der Switch leitet den Frame an alle Ports weiter.",
+      "Der Switch leitet den Frame nur an Port 1 und 3 weiter."
+    ]
   },
   {
     "id": 26,
@@ -584,7 +740,15 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche zwei IPv6-Nachrichtentypen ersetzen ARP? (Wähle zwei.)",
     "mnemonic": "IPv6: Neighbor Solicitation + Advertisement (kein ARP!)",
-    "moduleName": "Address Resolution (ARP, Switching, Ethernet)"
+    "moduleName": "Address Resolution (ARP, Switching, Ethernet)",
+    "optionsDe": [
+      "Anycast",
+      "Broadcast",
+      "Echo Reply",
+      "Echo Request",
+      "Neighbor Solicitation",
+      "Neighbor Advertisement"
+    ]
   },
   {
     "id": 27,
@@ -606,7 +770,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Was ist das Ziel eines ARP-Spoofing-Angriffs?",
     "mnemonic": "ARP Spoofing = falsche IP-MAC-Zuordnung",
-    "moduleName": "Address Resolution (ARP, Switching, Ethernet)"
+    "moduleName": "Address Resolution (ARP, Switching, Ethernet)",
+    "optionsDe": [
+      "Das Netzwerk mit ARP-Antwort-Broadcasts fluten",
+      "Switch-MAC-Tabellen mit falschen Adressen füllen",
+      "IP-Adressen falschen MAC-Adressen zuordnen",
+      "Netzwerk-Hosts mit ARP-Anfragen überlasten"
+    ]
   },
   {
     "id": 28,
@@ -629,7 +799,14 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "PC1 sendet eine ARP-Anfrage an File_server1. Welche MAC-Adresse erhält PC1?",
     "mnemonic": "Remote-Ziel → ARP-Antwort vom GATEWAY (R1), nicht Zielserver",
-    "moduleName": "Address Resolution (ARP, Switching, Ethernet)"
+    "moduleName": "Address Resolution (ARP, Switching, Ethernet)",
+    "optionsDe": [
+      "die MAC-Adresse von S1",
+      "die MAC-Adresse der G0/0-Schnittstelle auf R1",
+      "die MAC-Adresse der G0/0-Schnittstelle auf R2",
+      "die MAC-Adresse von S2",
+      "die MAC-Adresse von File_server1"
+    ]
   },
   {
     "id": 29,
@@ -651,7 +828,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Wo werden IPv4-zu-MAC-Zuordnungen auf einem Host gespeichert?",
     "mnemonic": "ARP-Cache = IP↔MAC Zuordnung auf dem Host",
-    "moduleName": "Address Resolution (ARP, Switching, Ethernet)"
+    "moduleName": "Address Resolution (ARP, Switching, Ethernet)",
+    "optionsDe": [
+      "Neighbor-Tabelle",
+      "ARP-Cache",
+      "Routing-Tabelle",
+      "MAC-Adresstabelle"
+    ]
   },
   {
     "id": 30,
@@ -674,7 +857,14 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche Information im Ethernet-Frame-Header nutzt ein Layer-2-Gerät zum Weiterleiten?",
     "mnemonic": "L2 = Destination MAC Adresse!",
-    "moduleName": "Address Resolution (ARP, Switching, Ethernet)"
+    "moduleName": "Address Resolution (ARP, Switching, Ethernet)",
+    "optionsDe": [
+      "Quell-MAC-Adresse",
+      "Quell-IP-Adresse",
+      "Ziel-MAC-Adresse",
+      "Ethernet-Typ",
+      "Ziel-IP-Adresse"
+    ]
   },
   {
     "id": 31,
@@ -697,7 +887,12 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Ordne die Befehle den korrekten Aktionen zu.",
     "mnemonic": "banner motd=Banner, password=Console, hostname=Name",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Meldung nach Router-Zugriff anzeigen → Router(config)# banner motd #",
+      "Sicherheit auf der Konsole bereitstellen → Router(config-line)# password class",
+      "Namen auf dem Router konfigurieren → Router(config)# hostname CL1"
+    ]
   },
   {
     "id": 32,
@@ -720,7 +915,14 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Wie testet ein Netzwerkadministrator am schnellsten, ob ein Banner korrekt konfiguriert ist?",
     "mnemonic": "Banner testen: exit + Enter (schnellster Weg)",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Das Gerät neu starten.",
+      "STRG-Z im Privileged-Modus eingeben.",
+      "Den globalen Konfigurationsmodus verlassen.",
+      "Das Gerät stromlos schalten.",
+      "Privileged-EXEC-Modus verlassen und Enter drücken."
+    ]
   },
   {
     "id": 33,
@@ -745,7 +947,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Ordne die Beschreibung der Zugriffsmethode zu.",
     "mnemonic": "SSH=sicher+remote, Console=out-of-band, AUX=Dialup, Telnet=unsicher",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Remote-Zugriff mit Verschlüsselung → SSH",
+      "Bevorzugte Out-of-Band-Zugriffsmethode → Konsole",
+      "Remote-Zugriff per Einwahlverbindung → AUX",
+      "Unsicherer Remote-Zugriff → Telnet"
+    ]
   },
   {
     "id": 34,
@@ -768,7 +976,12 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Ordne die Phasen den Funktionen beim Bootvorgang eines Cisco-Routers zu.",
     "mnemonic": "Boot: POST → IOS laden → Startup-Config laden",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Phase 1 → POST ausführen und Bootstrap-Programm laden",
+      "Phase 2 → Cisco-IOS-Software finden und laden",
+      "Phase 3 → Startup-Konfigurationsdatei finden und laden"
+    ]
   },
   {
     "id": 35,
@@ -795,7 +1008,14 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Ordne den Befehl dem Gerätemodus zu, in dem er eingegeben wird.",
     "mnemonic": "enable=R1>, copy=R1#, login=config-line, ip=config-if",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "service password-encryption → R1(config)#",
+      "enable → R1>",
+      "copy running-config startup-config → R1#",
+      "login → R1(config-line)#",
+      "ip address 192.168.4.4 255.255.255.0 → R1(config-if)#"
+    ]
   },
   {
     "id": 36,
@@ -819,7 +1039,14 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche zwei Funktionen hat NVRAM? (Wähle zwei.)",
     "mnemonic": "NVRAM = Non-Volatile → Startup-Config bleibt",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Routing-Tabelle speichern",
+      "Inhalt bei Stromausfall behalten",
+      "Startup-Konfigurationsdatei speichern",
+      "Running-Konfigurationsdatei enthalten",
+      "ARP-Tabelle speichern"
+    ]
   },
   {
     "id": 37,
@@ -841,7 +1068,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Ein Router bootet und geht in den Setup-Modus. Was ist der Grund?",
     "mnemonic": "Setup-Modus = keine Config in NVRAM",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Das IOS-Image ist beschädigt.",
+      "Cisco IOS fehlt im Flash-Speicher.",
+      "Die Konfigurationsdatei fehlt im NVRAM.",
+      "Der POST-Prozess hat einen Hardwarefehler erkannt."
+    ]
   },
   {
     "id": 38,
@@ -863,7 +1096,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Was bewirkt ip default-gateway 172.16.100.1 auf einem Switch?",
     "mnemonic": "Switch ip default-gateway = Remote-Management möglich",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Der Switch erhält eine Management-Schnittstelle mit der Adresse 172.16.100.1.",
+      "Der Switch kann von einem Host in einem anderen Netzwerk remote verwaltet werden.",
+      "Der Switch kann mit anderen Hosts im Netz 172.16.100.0 kommunizieren.",
+      "Der Switch darf Frames nur an das Gateway 172.16.100.1 senden und empfangen."
+    ]
   },
   {
     "id": 39,
@@ -885,7 +1124,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Was passiert bei transport input ssh auf den Switch-VTY-Leitungen?",
     "mnemonic": "transport input ssh = nur verschlüsselte Verbindungen",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Der SSH-Client auf dem Switch wird aktiviert.",
+      "Die Kommunikation zwischen Switch und Remote-Benutzern wird verschlüsselt.",
+      "Der Switch verlangt Benutzername/Passwort für Remote-Zugriff.",
+      "Der Switch verlangt Remote-Verbindungen über proprietäre Client-Software."
+    ]
   },
   {
     "id": 40,
@@ -908,7 +1153,14 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche IP-Adresse nutzt der PC, um Daten aus dem lokalen Netzwerk herauszusenden?",
     "mnemonic": "Default Gateway IP = Router-Interface im lokalen Netz",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "172.24.255.17",
+      "172.24.1.22",
+      "172.20.0.254",
+      "172.24.255.4",
+      "172.20.1.18"
+    ]
   },
   {
     "id": 41,
@@ -933,7 +1185,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Ordne den Konfigurationsmodus dem verfügbaren Befehl zu.",
     "mnemonic": "enable→R1>, copy→R1#, login→config-line, interface→config",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "R1> → enable",
+      "R1# → copy running-config startup-config",
+      "R1(config-line)# → login",
+      "R1(config)# → interface fastethernet 0/0"
+    ]
   },
   {
     "id": 42,
@@ -959,7 +1217,15 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche drei Befehle sichern den Konsolenzugang? (Wähle drei.)",
     "mnemonic": "Console sichern: line console 0 + password + login",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "interface fastethernet 0/0",
+      "line vty 0 4",
+      "line console 0",
+      "enable secret cisco",
+      "login",
+      "password cisco"
+    ]
   },
   {
     "id": 43,
@@ -981,7 +1247,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Was beschreibt die Standard-Gateway-Adresse von PC1?",
     "mnemonic": "Default Gateway = Router-Interface im SELBEN LAN",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Es ist die IP-Adresse der Router1-Schnittstelle, die das Unternehmen mit dem Internet verbindet.",
+      "Es ist die IP-Adresse der Router1-Schnittstelle, die das PC1-LAN mit Router1 verbindet.",
+      "Es ist die IP-Adresse von Switch1, der PC1 mit anderen Geräten im LAN verbindet.",
+      "Es ist die IP-Adresse des ISP-Netzwerkgeräts in der Cloud."
+    ]
   },
   {
     "id": 44,
@@ -1005,7 +1277,14 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche zwei Funktionen sind Hauptfunktionen eines Routers? (Wähle zwei.)",
     "mnemonic": "Router = Paketweiterleitung + Pfadauswahl",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Paketweiterleitung",
+      "Mikrosegmentierung",
+      "Domänennamenauflösung",
+      "Pfadauswahl",
+      "Flusskontrolle"
+    ]
   },
   {
     "id": 45,
@@ -1027,7 +1306,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Was bewirkt copy running-config startup-config?",
     "mnemonic": "copy run start = RAM → NVRAM speichern",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Der Inhalt des ROM ändert sich.",
+      "Der Inhalt des RAM ändert sich.",
+      "Der Inhalt des NVRAM ändert sich.",
+      "Der Inhalt des Flash ändert sich."
+    ]
   },
   {
     "id": 46,
@@ -1050,7 +1335,14 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Was passiert, wenn die Standard-Gateway-Adresse falsch konfiguriert ist?",
     "mnemonic": "Falsches Gateway = nur Remote-Netze betroffen",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Der Host kann nicht mit anderen Hosts im lokalen Netzwerk kommunizieren.",
+      "Der Switch leitet vom Host initiierte Pakete nicht weiter.",
+      "Der Host muss ARP nutzen, um die korrekte Standard-Gateway-Adresse zu ermitteln.",
+      "Der Host kann nicht mit Hosts in anderen Netzwerken kommunizieren.",
+      "Ein Ping vom Host zu 127.0.0.1 wäre nicht erfolgreich."
+    ]
   },
   {
     "id": 47,
@@ -1074,7 +1366,14 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche zwei Netzwerkprobleme können durch ARP entstehen? (Wähle zwei.)",
     "mnemonic": "ARP-Probleme: Broadcast-Delays + Spoofing/Angriffe",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Manuelle statische ARP-Einträge könnten ARP-Poisoning oder MAC-Spoofing erleichtern.",
+      "Auf großen Netzen mit geringer Bandbreite können viele ARP-Broadcasts Verzögerungen verursachen.",
+      "Angreifer könnten IP-MAC-Zuordnungen in ARP-Nachrichten manipulieren, um Verkehr abzufangen.",
+      "Viele ARP-Anfragen könnten die Host-MAC-Tabelle überlaufen und Kommunikation verhindern.",
+      "Mehrere ARP-Antworten führen dazu, dass die Switch-MAC-Tabelle passende Einträge enthält."
+    ]
   },
   {
     "id": 48,
@@ -1096,7 +1395,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche Schnittstellen in jedem Router sind aktiv und betriebsbereit?",
     "mnemonic": "show ip interface brief → Status+Protocol = up",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "R1: G0/0 und S0/0/0 / R2: G0/0 und S0/0/0",
+      "R1: G0/1 und S0/0/1 / R2: G0/0 und S0/0/1",
+      "R1: G0/0 und S0/0/0 / R2: G0/1 und S0/0/0",
+      "R1: G0/0 und S0/0/1 / R2: G0/1 und S0/0/1"
+    ]
   },
   {
     "id": 49,
@@ -1118,7 +1423,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welcher Begriff beschreibt ein IPv4-Headerfeld zur Identifikation des nächsten Protokolls?",
     "mnemonic": "Protocol-Feld = Upper Layer (TCP/UDP/ICMP)",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Protokoll",
+      "Ziel-IPv4-Adresse",
+      "Quell-IPv4-Adresse",
+      "TTL"
+    ]
   },
   {
     "id": 50,
@@ -1140,7 +1451,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welcher Begriff beschreibt ein 8-Bit-Feld zur Paketpriorität?",
     "mnemonic": "Differentiated Services = Priorität (8 Bit)",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Differentiated Services",
+      "Ziel-IPv4-Adresse",
+      "Quell-IPv4-Adresse",
+      "Protokoll"
+    ]
   },
   {
     "id": 51,
@@ -1162,7 +1479,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welcher Begriff beschreibt ein 32-Bit-Feld der sendenden Schnittstelle?",
     "mnemonic": "Source IP = 32 Bit, Absender-Interface",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Quell-IPv4-Adresse",
+      "Ziel-IPv4-Adresse",
+      "Protokoll",
+      "TTL"
+    ]
   },
   {
     "id": 52,
@@ -1184,7 +1507,13 @@ const QUESTIONS = [
     "exhibit": "RTR1(config)# interface gi0/1\nRTR1(config-if)# description Connects to the Marketing LAN\nRTR1(config-if)# ip address 10.27.15.17 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface gi0/0\nRTR1(config-if)# description Connects to the Payroll LAN\nRTR1(config-if)# ip address 10.27.14.148 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface s0/0/0\nRTR1(config-if)# description Connects to the ISP\nRTR1(config-if)# ip address 10.14.15.254 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface s0/0/1\nRTR1(config-if)# description Connects to the Head Office WAN\nRTR1(config-if)# ip address 203.0.113.39 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# end",
     "questionDe": "Welcher Begriff beschreibt ein Feld zur Erkennung von Header-Korruption?",
     "mnemonic": "Header Checksum = Header-Integrität prüfen",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Header-Prüfsumme",
+      "Quell-IPv4-Adresse",
+      "Protokoll",
+      "TTL"
+    ]
   },
   {
     "id": 53,
@@ -1207,7 +1536,14 @@ const QUESTIONS = [
     "exhibit": "RTR1(config)# interface gi0/1\nRTR1(config-if)# description Connects to the Marketing LAN\nRTR1(config-if)# ip address 10.27.15.17 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface gi0/0\nRTR1(config-if)# description Connects to the Payroll LAN\nRTR1(config-if)# ip address 10.27.14.148 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface s0/0/0\nRTR1(config-if)# description Connects to the ISP\nRTR1(config-if)# ip address 10.14.15.254 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# interface s0/0/1\nRTR1(config-if)# description Connects to the Head Office WAN\nRTR1(config-if)# ip address 203.0.113.39 255.255.255.0\nRTR1(config-if)# no shutdown\nRTR1(config-if)# end",
     "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen neuen Host im Payroll LAN?",
     "mnemonic": "Gateway = Router-IP im GLEICHEN LAN (description lesen!)",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "10.27.14.148",
+      "10.27.14.1",
+      "10.14.15.254",
+      "203.0.113.39",
+      "10.27.15.17"
+    ]
   },
   {
     "id": 54,
@@ -1229,7 +1565,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welcher Begriff beschreibt ein Feld mit Unicast/Multicast/Broadcast-Adresse?",
     "mnemonic": "Destination IP = Ziel (Unicast/Multicast/Broadcast)",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Ziel-IPv4-Adresse",
+      "Protokoll",
+      "TTL",
+      "Header-Prüfsumme"
+    ]
   },
   {
     "id": 55,
@@ -1251,7 +1593,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welcher Begriff beschreibt ein Feld zur Begrenzung der Paket-Lebensdauer?",
     "mnemonic": "TTL = Lebensdauer begrenzen",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "TTL",
+      "Quell-IPv4-Adresse",
+      "Protokoll",
+      "Header-Prüfsumme"
+    ]
   },
   {
     "id": 56,
@@ -1273,7 +1621,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welcher Begriff beschreibt ein 4-Bit-Feld mit Wert 0100?",
     "mnemonic": "Version 0100 = IPv4 (4 in Binär)",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Version",
+      "Quell-IPv4-Adresse",
+      "Protokoll",
+      "TTL"
+    ]
   },
   {
     "id": 57,
@@ -1295,7 +1649,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welcher Begriff beschreibt ein Feld zur Identifikation des nächsten Protokolls?",
     "mnemonic": "Protocol = nächstes Protokoll (wie Frage 49)",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Protokoll",
+      "Version",
+      "Differentiated Services",
+      "Header-Prüfsumme"
+    ]
   },
   {
     "id": 58,
@@ -1317,7 +1677,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welcher Begriff beschreibt ein 4-Bit-Feld mit Wert 0100 (IPv4)?",
     "mnemonic": "Version 0100 = IPv4",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Version",
+      "Differentiated Services",
+      "Header-Prüfsumme",
+      "TTL"
+    ]
   },
   {
     "id": 59,
@@ -1339,7 +1705,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche ARP-Eigenschaft lässt IP-MAC-Einträge länger im Speicher?",
     "mnemonic": "Dynamische Einträge = Timeout/Aging",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Einträge in der ARP-Tabelle sind zeitgestempelt und werden nach Timeout gelöscht.",
+      "Ein statischer IP-zu-MAC-Eintrag kann manuell in die ARP-Tabelle eingegeben werden.",
+      "Das Typ-Feld 0x806 erscheint im Ethernet-Frame-Header.",
+      "Die Port-zu-MAC-Tabelle eines Switches hat dieselben Einträge wie die ARP-Tabelle."
+    ]
   },
   {
     "id": 60,
@@ -1361,7 +1733,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche ARP-Eigenschaft fixiert MAC-Adressen wichtiger Server?",
     "mnemonic": "Statischer Eintrag = manuell, kein Timeout",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Ein statischer IP-zu-MAC-Eintrag kann manuell in die ARP-Tabelle eingegeben werden.",
+      "Einträge in der ARP-Tabelle sind zeitgestempelt und werden nach Timeout gelöscht.",
+      "Das Typ-Feld 0x806 erscheint im Ethernet-Frame-Header.",
+      "Die Port-zu-MAC-Tabelle eines Switches hat dieselben Einträge wie die ARP-Tabelle."
+    ]
   },
   {
     "id": 61,
@@ -1383,7 +1761,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche ARP-Eigenschaft fixiert MAC-Adressen häufig genutzter Server?",
     "mnemonic": "Statischer Eintrag = fixiert für Server",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Ein statischer IP-zu-MAC-Eintrag kann manuell in die ARP-Tabelle eingegeben werden.",
+      "Die Ziel-MAC-Adresse FF-FF-FF-FF-FF-FF erscheint im Ethernet-Frame-Header.",
+      "Die Quell-MAC-Adresse erscheint im Ethernet-Frame-Header.",
+      "Die Port-zu-MAC-Tabelle eines Switches hat dieselben Einträge wie die ARP-Tabelle."
+    ]
   },
   {
     "id": 62,
@@ -1405,7 +1789,13 @@ const QUESTIONS = [
     "exhibit": "Floor(config)# interface gi0/1\nFloor(config-if)# description Connects to the Registrar LAN\nFloor(config-if)# ip address 192.168.235.234 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface gi0/0\nFloor(config-if)# description Connects to the Manager LAN\nFloor(config-if)# ip address 192.168.234.114 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/0\nFloor(config-if)# description Connects to the ISP\nFloor(config-if)# ip address 10.234.235.254 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/1\nFloor(config-if)# description Connects to the Head Office WAN\nFloor(config-if)# ip address 203.0.113.3 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# end",
     "questionDe": "Welche ARP-Eigenschaft ermöglicht Hosts den Versand an entfernte Netzwerke?",
     "mnemonic": "Remote senden = Gateway-MAC per ARP lernen",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Lokale Hosts lernen die MAC-Adresse des Standard-Gateways.",
+      "Die Ziel-MAC-Adresse FF-FF-FF-FF-FF-FF erscheint im Ethernet-Frame-Header.",
+      "Die Quell-MAC-Adresse erscheint im Ethernet-Frame-Header.",
+      "Die Port-zu-MAC-Tabelle eines Switches hat dieselben Einträge wie die ARP-Tabelle."
+    ]
   },
   {
     "id": 63,
@@ -1428,7 +1818,14 @@ const QUESTIONS = [
     "exhibit": "Floor(config)# interface gi0/1\nFloor(config-if)# description Connects to the Registrar LAN\nFloor(config-if)# ip address 192.168.235.234 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface gi0/0\nFloor(config-if)# description Connects to the Manager LAN\nFloor(config-if)# ip address 192.168.234.114 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/0\nFloor(config-if)# description Connects to the ISP\nFloor(config-if)# ip address 10.234.235.254 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/1\nFloor(config-if)# description Connects to the Head Office WAN\nFloor(config-if)# ip address 203.0.113.3 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# end",
     "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Registrar LAN?",
     "mnemonic": "Registrar LAN → gi0/1 IP (description lesen!)",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "192.168.235.234",
+      "192.168.235.1",
+      "10.234.235.254",
+      "203.0.113.3",
+      "192.168.234.114"
+    ]
   },
   {
     "id": 64,
@@ -1450,7 +1847,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche ARP-Eigenschaft zwingt alle NICs, ARP-Anfragen zu verarbeiten?",
     "mnemonic": "FF:FF:FF:FF:FF:FF = Broadcast, alle NICs verarbeiten",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Die Ziel-MAC-Adresse FF-FF-FF-FF-FF-FF erscheint im Ethernet-Frame-Header.",
+      "Die Quell-MAC-Adresse erscheint im Ethernet-Frame-Header.",
+      "Das Typ-Feld 0x806 erscheint im Ethernet-Frame-Header.",
+      "ARP-Antworten werden als Broadcast gesendet, wenn ein Host eine ARP-Anfrage erhält."
+    ]
   },
   {
     "id": 65,
@@ -1472,7 +1875,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche ARP-Eigenschaft bewirkt eine Unicast-Antwort nur an den Anfragenden?",
     "mnemonic": "Source MAC in Request → Unicast-Reply zurück",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Die Quell-MAC-Adresse erscheint im Ethernet-Frame-Header.",
+      "Die Ziel-MAC-Adresse FF-FF-FF-FF-FF-FF erscheint im Ethernet-Frame-Header.",
+      "Das Typ-Feld 0x806 erscheint im Ethernet-Frame-Header.",
+      "ARP-Antworten werden als Broadcast gesendet, wenn ein Host eine ARP-Anfrage erhält."
+    ]
   },
   {
     "id": 66,
@@ -1494,7 +1903,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche ARP-Eigenschaft bewirkt Flooding auf allen Switch-Ports?",
     "mnemonic": "Broadcast MAC → Switch floodet alle Ports",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Die Ziel-MAC-Adresse FF-FF-FF-FF-FF-FF erscheint im Ethernet-Frame-Header.",
+      "Das Typ-Feld 0x806 erscheint im Ethernet-Frame-Header.",
+      "Einträge in der ARP-Tabelle sind zeitgestempelt und werden nach Timeout gelöscht.",
+      "ARP-Antworten werden als Broadcast gesendet, wenn ein Host eine ARP-Anfrage erhält."
+    ]
   },
   {
     "id": 67,
@@ -1516,7 +1931,13 @@ const QUESTIONS = [
     "exhibit": null,
     "questionDe": "Welche ARP-Eigenschaft leitet den Frame-Inhalt an den ARP-Prozess weiter?",
     "mnemonic": "EtherType 0x0806 = ARP an OS weitergeben",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Das Typ-Feld 0x806 erscheint im Ethernet-Frame-Header.",
+      "Die Ziel-MAC-Adresse FF-FF-FF-FF-FF-FF erscheint im Ethernet-Frame-Header.",
+      "Einträge in der ARP-Tabelle sind zeitgestempelt und werden nach Timeout gelöscht.",
+      "ARP-Antworten werden als Broadcast gesendet, wenn ein Host eine ARP-Anfrage erhält."
+    ]
   },
   {
     "id": 68,
@@ -1538,7 +1959,13 @@ const QUESTIONS = [
     "exhibit": "Main(config)# interface gi0/1\nMain(config-if)# description Connects to the Service LAN\nMain(config-if)# ip address 172.29.157.156 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface gi0/0\nMain(config-if)# description Connects to the Engineering LAN\nMain(config-if)# ip address 172.29.156.36 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface s0/0/0\nMain(config-if)# description Connects to the ISP\nMain(config-if)# ip address 10.156.157.254 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface s0/0/1\nMain(config-if)# description Connects to the Head Office WAN\nMain(config-if)# ip address 198.51.100.177 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# end",
     "questionDe": "Welche ARP-Eigenschaft leitet den Frame-Inhalt an den ARP-Prozess weiter?",
     "mnemonic": "EtherType 0x0806 = ARP-Prozess",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "Das Typ-Feld 0x806 erscheint im Ethernet-Frame-Header.",
+      "Die Ziel-MAC-Adresse FF-FF-FF-FF-FF-FF erscheint im Ethernet-Frame-Header.",
+      "Einträge in der ARP-Tabelle sind zeitgestempelt und werden nach Timeout gelöscht.",
+      "Die Port-zu-MAC-Tabelle eines Switches hat dieselben Einträge wie die ARP-Tabelle."
+    ]
   },
   {
     "id": 69,
@@ -1561,7 +1988,14 @@ const QUESTIONS = [
     "exhibit": "Main(config)# interface gi0/1\nMain(config-if)# description Connects to the Service LAN\nMain(config-if)# ip address 172.29.157.156 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface gi0/0\nMain(config-if)# description Connects to the Engineering LAN\nMain(config-if)# ip address 172.29.156.36 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface s0/0/0\nMain(config-if)# description Connects to the ISP\nMain(config-if)# ip address 10.156.157.254 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface s0/0/1\nMain(config-if)# description Connects to the Head Office WAN\nMain(config-if)# ip address 198.51.100.177 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# end",
     "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Service LAN?",
     "mnemonic": "Service LAN → gi0/1 IP-Adresse",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "172.29.157.156",
+      "172.29.157.1",
+      "10.156.157.254",
+      "198.51.100.177",
+      "172.29.156.36"
+    ]
   },
   {
     "id": 70,
@@ -1584,7 +2018,14 @@ const QUESTIONS = [
     "exhibit": "BldgA(config)# interface gi0/1\nBldgA(config-if)# description Connects to the Medical LAN\nBldgA(config-if)# ip address 192.168.191.189 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# interface gi0/0\nBldgA(config-if)# description Connects to the Client LAN\nBldgA(config-if)# ip address 192.168.190.70 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# interface s0/0/0\nBldgA(config-if)# description Connects to the ISP\nBldgA(config-if)# ip address 10.190.191.254 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# interface s0/0/1\nBldgA(config-if)# description Connects to the Head Office WAN\nBldgA(config-if)# ip address 198.51.100.213 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# end",
     "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Medical LAN?",
     "mnemonic": "Medical LAN → gi0/1 IP-Adresse",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "192.168.191.189",
+      "192.168.191.1",
+      "10.190.191.254",
+      "198.51.100.213",
+      "192.168.190.70"
+    ]
   },
   {
     "id": 71,
@@ -1607,7 +2048,14 @@ const QUESTIONS = [
     "exhibit": "Floor(config)# interface gi0/1\nFloor(config-if)# description Connects to the Registrar LAN\nFloor(config-if)# ip address 192.168.225.223 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface gi0/0\nFloor(config-if)# description Connects to the Manager LAN\nFloor(config-if)# ip address 192.168.224.103 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/0\nFloor(config-if)# description Connects to the ISP\nFloor(config-if)# ip address 10.224.225.254 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/1\nFloor(config-if)# description Connects to the Head Office WAN\nFloor(config-if)# ip address 203.0.113.246 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# end",
     "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Registrar LAN?",
     "mnemonic": "Registrar LAN → gi0/1 IP-Adresse",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "192.168.225.223",
+      "192.168.225.1",
+      "10.224.225.254",
+      "203.0.113.246",
+      "192.168.224.103"
+    ]
   },
   {
     "id": 72,
@@ -1630,7 +2078,14 @@ const QUESTIONS = [
     "exhibit": "Floor(config)# interface gi0/1\nFloor(config-if)# description Connects to the Registrar LAN\nFloor(config-if)# ip address 10.118.63.65 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface gi0/0\nFloor(config-if)# description Connects to the Manager LAN\nFloor(config-if)# ip address 10.118.62.196 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/0\nFloor(config-if)# description Connects to the ISP\nFloor(config-if)# ip address 10.62.63.254 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# interface s0/0/1\nFloor(config-if)# description Connects to the Head Office WAN\nFloor(config-if)# ip address 209.165.200.87 255.255.255.0\nFloor(config-if)# no shutdown\nFloor(config-if)# end",
     "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Manager LAN?",
     "mnemonic": "Manager LAN → gi0/0 IP-Adresse",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "10.118.62.196",
+      "10.118.62.1",
+      "10.62.63.254",
+      "209.165.200.87",
+      "10.118.63.65"
+    ]
   },
   {
     "id": 73,
@@ -1653,7 +2108,14 @@ const QUESTIONS = [
     "exhibit": "HQ(config)# interface gi0/1\nHQ(config-if)# description Connects to the Branch LAN\nHQ(config-if)# ip address 172.19.99.99 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface gi0/0\nHQ(config-if)# description Connects to the Store LAN\nHQ(config-if)# ip address 172.19.98.230 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface s0/0/0\nHQ(config-if)# description Connects to the ISP\nHQ(config-if)# ip address 10.98.99.254 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface s0/0/1\nHQ(config-if)# description Connects to the Head Office WAN\nHQ(config-if)# ip address 209.165.200.120 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# end",
     "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Store LAN?",
     "mnemonic": "Store LAN → gi0/0 IP-Adresse",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "172.19.98.230",
+      "172.19.98.1",
+      "10.98.99.254",
+      "209.165.200.120",
+      "172.19.99.99"
+    ]
   },
   {
     "id": 74,
@@ -1676,7 +2138,14 @@ const QUESTIONS = [
     "exhibit": "HQ(config)# interface gi0/1\nHQ(config-if)# description Connects to the Branch LAN\nHQ(config-if)# ip address 172.20.133.132 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface gi0/0\nHQ(config-if)# description Connects to the Store LAN\nHQ(config-if)# ip address 172.20.132.13 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface s0/0/0\nHQ(config-if)# description Connects to the ISP\nHQ(config-if)# ip address 10.132.133.254 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# interface s0/0/1\nHQ(config-if)# description Connects to the Head Office WAN\nHQ(config-if)# ip address 198.51.100.156 255.255.255.0\nHQ(config-if)# no shutdown\nHQ(config-if)# end",
     "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Store LAN?",
     "mnemonic": "Store LAN → gi0/0 IP-Adresse",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "172.20.132.13",
+      "172.20.132.1",
+      "10.132.133.254",
+      "198.51.100.156",
+      "172.20.133.132"
+    ]
   },
   {
     "id": 75,
@@ -1699,7 +2168,14 @@ const QUESTIONS = [
     "exhibit": "Main(config)# interface gi0/1\nMain(config-if)# description Connects to the Service LAN\nMain(config-if)# ip address 192.168.167.166 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface gi0/0\nMain(config-if)# description Connects to the Engineering LAN\nMain(config-if)# ip address 192.168.166.46 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface s0/0/0\nMain(config-if)# description Connects to the ISP\nMain(config-if)# ip address 10.166.167.254 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# interface s0/0/1\nMain(config-if)# description Connects to the Head Office WAN\nMain(config-if)# ip address 198.51.100.189 255.255.255.0\nMain(config-if)# no shutdown\nMain(config-if)# end",
     "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Service LAN?",
     "mnemonic": "Service LAN → gi0/1 IP-Adresse",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "192.168.167.166",
+      "192.168.167.1",
+      "10.166.167.254",
+      "198.51.100.189",
+      "192.168.166.46"
+    ]
   },
   {
     "id": 76,
@@ -1722,6 +2198,13 @@ const QUESTIONS = [
     "exhibit": "BldgA(config)# interface gi0/1\nBldgA(config-if)# description Connects to the Medical LAN\nBldgA(config-if)# ip address 192.168.201.200 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# interface gi0/0\nBldgA(config-if)# description Connects to the Client LAN\nBldgA(config-if)# ip address 192.168.200.80 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# interface s0/0/0\nBldgA(config-if)# description Connects to the ISP\nBldgA(config-if)# ip address 10.200.201.254 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# interface s0/0/1\nBldgA(config-if)# description Connects to the Head Office WAN\nBldgA(config-if)# ip address 203.0.113.222 255.255.255.0\nBldgA(config-if)# no shutdown\nBldgA(config-if)# end",
     "questionDe": "Welche IP-Adresse ist das Standard-Gateway für einen Host im Medical LAN?",
     "mnemonic": "Medical LAN → gi0/1 IP-Adresse",
-    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)"
+    "moduleName": "Cisco IOS (Router-Konfiguration, Boot, Sicherheit)",
+    "optionsDe": [
+      "192.168.201.200",
+      "192.168.201.1",
+      "10.200.201.254",
+      "203.0.113.222",
+      "192.168.200.80"
+    ]
   }
 ];

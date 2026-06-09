@@ -198,7 +198,8 @@ function renderQuestion() {
 
   const isMulti = q.type === 'multiple' || q.type === 'multiple3' || q.type === 'ordering';
   const optionsEl = document.getElementById('q-options');
-  const shuffledIndices = shuffle(q.options.map((_, i) => i));
+  const displayOptions = getOptions(q);
+  const shuffledIndices = shuffle(displayOptions.map((_, i) => i));
 
   let html = '';
   if (isMulti) {
@@ -207,7 +208,7 @@ function renderQuestion() {
   }
   html += shuffledIndices.map((origIdx, displayIdx) => {
     const letter = String.fromCharCode(65 + displayIdx);
-    return `<div class="option" data-idx="${origIdx}"><span class="option-marker">${letter}</span><span>${q.options[origIdx]}</span></div>`;
+    return `<div class="option" data-idx="${origIdx}"><span class="option-marker">${letter}</span><span>${displayOptions[origIdx]}</span></div>`;
   }).join('');
   optionsEl.innerHTML = html;
 
@@ -266,7 +267,7 @@ function checkAnswer() {
     result.className = `feedback-result ${isCorrect ? 'correct' : 'incorrect'}`;
     result.textContent = isCorrect
       ? `✓ ${t('correct')}`
-      : `✗ ${t('incorrect')} ${q.correct.map(i => q.options[i]).join(', ')}`;
+      : `✗ ${t('incorrect')} ${q.correct.map(i => getOptionText(q, i)).join(', ')}`;
 
     const mnemonicBox = document.getElementById('feedback-mnemonic');
     if (q.mnemonic) {

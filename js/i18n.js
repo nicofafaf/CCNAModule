@@ -157,3 +157,14 @@ function getAltQuestionText(q) {
   const lang = window.appLang || 'de';
   return lang === 'de' ? q.question : (q.questionDe || '');
 }
+
+function getOptions(q) {
+  const lang = window.appLang || 'de';
+  if (lang === 'de' && q.optionsDe && q.optionsDe.length) return q.optionsDe;
+  return q.options;
+}
+
+function getOptionText(q, index) {
+  const opts = getOptions(q);
+  return opts[index] ?? q.options[index] ?? '';
+}
